@@ -1,0 +1,525 @@
+<resources>
+    <string name="app_name">BSER</string>
+    <string name="title_activity_select_subject">विषय चुनें</string>
+
+    <string name="action_settings">सेटिंग्स</string>
+    <string name="title_activity_login">लॉग इन</string>
+    <string name="title_activity_internal_chapters">आंतरिक अध्याय</string>
+    <string name="title_activity_profile">प्रोफाइल</string>
+    <string name="todo">TODO</string>
+    <string name="email">ईमेल</string>
+    <string name="account_details">खाता विवरण</string>
+    <string name="Physics">भौतिकी</string>
+
+    <string name="rupee_symbol">\u20B9</string>
+    <string name="dollar_symbol">$</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">हैलो रिक्त फ़्रैगमेंट</string>
+    <string name="personal_details">व्यक्तिगत विवरण</string>
+    <string name="edit">संपादित करें</string>
+    <string name="title_activity_doubts">DoubtsActivity</string>
+    <string name="section_format">हैलो वर्ल्ड सेक्शन से: %1$d</string>
+    <string name="no_answer">कोई उत्तर नहीं</string>
+    <string name="answered">उत्तर दिया गया है</string>
+
+    <string name="simply_easy_learning"></string>
+    <string name="don_t_have_an_account_register">नया उपयोगकर्ता? <font color='#338676'>साइन अप करें</font></string>
+    <string name="mobile_not_registered_msg">मोबाइल नंबर हमारे साथ पंजीकृत नहीं है।</string>
+    <string name="would_you_like_to_register">क्या आप इस मोबाइल नंबर को पंजीकृत करना चाहेंगे?</string>
+    <string name="would_you_like_to_generatepassword">क्या आप पासवर्ड भूल गए, विकल्प का उपयोग करना चाहेंगे?</string>
+    <string name="wrong_password_msg">आपने दिए गए मोबाइल नंबर के लिए एक गलत पासवर्ड दर्ज किया है।</string>
+    <string name="forgot_password">पासवर्ड भूल गए?</string>
+    <string name="generate_password">नया पासवर्ड बनाये</string>
+    <string name="phone_number">फ़ोन नंबर</string>
+    <string name="password">पासवर्ड</string>
+    <string name="enter_new_password">नया पासवर्ड दर्ज करें</string>
+    <string name="copyright">© कॉपीराइट 2023. सर्वाधिकार सुरक्षित.</string>
+    <string name="copyright_update">© कॉपीराइट %s. सर्वाधिकार सुरक्षित.</string>
+    <string name="do_you_have_go_back_click">क्या आपको वापस जाना है?<u><font color='#338676'>क्लिक करें</font></u></string>
+    <string name="please_enter_your_registered_mobile_number">कृपया अपना पंजीकृत मोबाइल नंबर दर्ज करें</string>
+
+    <string name="no_internet_message">इंटरनेट कनेक्शन नहीं है।</string>
+    <string name="fields_mandatory">उहो! कृपया सभी फ़ील्ड दर्ज करें</string>
+    <string name="invalid_phone_number">अमान्य फोन नंबर।</string>
+    <string name="server_error">कुछ त्रुटि है, कृपया पुनः प्रयास करें</string>
+    <string name="_6th_class">कक्षा 6</string>
+    <string name="_7th_class">कक्षा 7</string>
+    <string name="_8th_class">कक्षा 8</string>
+    <string name="_9th_class">कक्षा 9</string>
+    <string name="_class">कक्षा </string>
+    <string name="back">वापस</string>
+    <string name="proceed">आगे बढ़ें</string>
+    <string name="_th_class">वीं कक्षा</string>
+    <string name="name">अपना नाम दर्ज करें</string>
+    <string name="do_you_have_an_account_login"><u>क्या आपका खाता है? लॉग इन करें</u></string>
+    <string name="otp">OTP दर्ज करें</string>
+    <string name="please_enter_your_4_digit_otp_from_your_respective_mobile_number">कृपया अपने संबंधित मोबाइल नंबर से अपना 4 अंकों का ओटीपी दर्ज करें</string>
+    <string name="please_enter_your_4_digit_otp_from_your_respective_email">कृपया अपने संबंधित ईमेल खाते से अपना 4 अंकों का ओटीपी दर्ज करें</string>
+    <string name="do_you_wanna_go_back_click">क्या आप वापस जाना चाहते हैं?<u><font color='#338676'> क्लिक </font></u></string>
+    <string name="switch_class">कक्षा बदलें</string>
+    <string name="refer_a_friend">दोस्त को रेफर करें</string>
+    <string name="call_us">हमें कॉल करें</string>
+    <!--<string name="subscribe_now">Activate now</string>-->
+    <string name="subscribe_now">सदस्यता सक्रिय करें</string>
+
+    <string name="subscribed">सदस्यता देखें</string>
+    <string name="terms_conditions"><![CDATA[ उपयोग की शर्तें]]></string>
+    <string name="register_a_complaint">शिकायत दर्ज करें</string>
+    <string name="logout">लॉगआउट</string>
+    <string name="class_name">कक्षा का नाम</string>
+    <string name="physics">भौतिक विज्ञान</string>
+    <string name="chemistry">रसायन विज्ञान</string>
+    <string name="mathematics">गणित</string>
+    <string name="biology">जीवविज्ञान</string>
+    <string name="activity_timeline">गतिविधि समयरेखा.</string>
+    <string name="performance_analysis">प्रदर्शन विश्लेषण</string>
+    <string name="bookmark">बुकमार्क्स</string>
+    <string name="completed_tasks">पूर्ण कार्य</string>
+    <string name="completed_tasks_t">पूर्ण कार्य</string>
+    <!--<string name="our_subject_matter_experts">हमारे विषयवस्तु विशेषज्ञ</string>-->
+    <string name="our_subject_matter_experts">व्यावसायिक पाठ्यक्रम</string>
+
+    <string name="click_here">यहाँ क्लिक करें</string>
+    <string name="we_work_with_some_of_the_most_talented_and_passionate_professionals_in_the_industry">हमारे विशेषज्ञ प्राध्यापक</string>
+    <string name="our_expert">हमारे विशेषज्ञ प्राध्यापक</string>
+    <string name="welcome_to_tutorix_school">ट्यूटोरिक्स स्कूल में आपका स्वागत है</string>
+    <string name="welcome_to_tutorix">ट्यूटोरिक्स में आपका स्वागत है</string>
+    <string name="lean_concepts_through_interactive_text_and_rich_videos_on_our_brand_new_app_from_6th_standard_to_12th_standard">6वीं कक्षा से 12वीं कक्षा तक हमारे एकदम नए ऐप पर इंटरएक्टिव टेक्स्ट और समृद्ध वीडियो के माध्यम से अवधारणाएं सीखें</string>
+    <string name="feed_back">फ़ीडबैक</string>
+
+    <string name="_6th">कक्षा 6</string>
+    <string name="_7th">कक्षा 7</string>
+    <string name="_8th">कक्षा 8</string>
+    <string name="locked">लॉक्ड</string>
+
+    <string name="pls_subscribe">कृपया सदस्यता लें</string>
+    <string name="asked_questions">कोई संदेह</string>
+    <string name="start">शुरू करें</string>
+    <string name="no_internet">इंटरनेट कनेक्शन नहीं है</string>
+    <string name="no_sdcard">वर्तमान कक्षा के लिए कोई एसडी कार्ड उपलब्ध नहीं है</string>
+    <string name="there_is_error">कुछ त्रुटि है</string>
+    <string name="json_error">Json त्रुटि : </string>
+    <string name="comming_soon">जल्द आ रहा है...</string>
+    <string name="invalid_coupon_code">कूपन कोड मान्य नहीं है</string>
+    <string name="content">सामग्री</string>
+    <string name="notes_saved">नोट सहेजे गए</string>
+    <string name="title_activity_web_view_test">WebViewTestActivity</string>
+    <string name="freshchat_file_provider_authority">com.example.rbse.provider</string>
+    <string name="succuess">सफलता</string>
+    <string name="failure">असफलता</string>
+    <string name="title_activity_webview_payment">WebviewPaymentActivity</string>
+    <string name="paymentprocess">भुगतान प्रक्रिया</string>
+    <string name="activation_ended">आपकी सदसयता तिथि समाप्त हो गई है \n कृपया फिर से सदस्यता लें</string>
+    <string name="Ok">ठीक है</string>
+    <string name="cancel">रद्द करें</string>
+    <string name="subscribe">सदस्यता लें</string>
+    <string name="no_data">कोई डेटा उपलब्ध नहीं है</string>
+    <string name="zipcode">ज़िपकोड</string>
+    <string name="country">देश</string>
+    <string name="all">सभी</string>
+    <string name="hint_question_details">संदेह का विवरण...</string>
+    <string name="typeyourdoubt">अपना संदेह यहां लिखें करें...</string>
+    <string name="buy_activation">सदस्यता लें</string>
+    <string name="sales_support">समर्थन</string>
+    <string name="aboutus">हमारे बारे में</string>
+    <string name="pick_country">देश चुनें</string>
+    <string name="notes">संक्षिप्त लेख</string>
+    <string name="more">अधिक</string>
+    <string name="billingdetails"><u>भुगतान विवरण</u></string>
+    <string name="deactivate">एसडी कार्ड अक्षम करें</string>
+    <string name="renual">नवीनीकरण</string>
+    <string name="ok">ठीक है</string>
+    <string name="activation_success">पंजीकरण सफलतापूर्वक हुआ</string>
+
+    <string name="contin">जारी रखें</string>
+    <string name="sub_online_string">आप वीडियो पाठों को ऑनलाइन देख सकते हैं। इस विकल्प के लिए आपको एक स्थिर इंटरनेट कनेक्शन की आवश्यकता होगी।</string>
+    <string name="sub_sdcard_string">हम आपको आवश्यक अध्ययन सामग्री के साथ एक मेमोरी कार्ड (एसडी कार्ड) भेजेंगे।
+आपको इस सदस्यता को एक्टिवेशन कुंजी (activation key) से सक्रिय करना होगा जो आपको मिलेगी।</string>
+
+    <string name="sub_tab_string">आपको लेनोवो टैबलेट में सभी अध्ययन सामग्री मिलेगी।
+आपको इस सदस्यता को एक्टिवेशन कुंजी (activation key) से सक्रिय करना होगा जो आपको मिलेगी।</string>
+    <string name="shippingdetails"><u>शिपिंग विवरण</u></string>
+    <string name="billingshiping">शिपिंग विवरण भुगतान विवरण के समान हैं</string>
+
+    <string name="q">Q. </string>
+    <string name="raiseyourdbts">अपना सवाल उठाएं</string>
+    <string name="myorders">ऑर्डर हिस्ट्री</string>
+    <string name="trackinfo"><u>जानकारी ट्रैक करें</u></string>
+    <string name="syllabus">पाठ्यक्रम</string>
+    <string name="signin">साइन इन</string>
+    <string name="signup">साइन अप</string>
+    <string name="alreadyhaveacnt">पहले से ही खाता है?<font color='#338676'> लॉगिन</font></string>
+    <string name="submit">सब्मिट करें</string>
+    <string name="service_availabile">यह सुविधा केवल सक्रिय उपयोगकर्ताओं के लिए उपलब्ध है। एक्टिवेशन कोड (Activation Code) का उपयोग करके अपना खाता अभी सक्रिय करें!</string>
+
+
+    <string name="error_1">इंटरनेट कनेक्शन धीमा हैं, फिर से कोशिश करें</string>
+    <!--  <string name="error_2">Server Not responded, Try again</string>-->
+    <string name="error_2">कृपया पुन: प्रयास करें</string>
+    <string name="error_3">कृपया नेटवर्क जाँचें और फिर से प्रयास करें</string>
+    <string name="error_4">आंतरिक त्रुटि, फिर से प्रयास करें</string>
+    <string name="over_all_tracking">सम्पूर्ण गतिविधि</string>
+    <string name="over_all_activity">गतिविधि</string>
+
+
+    <string name="home"> होम </string>
+    <string name="perform">विश्लेषण</string>
+    <string name="bookmarks"> बुकमार्क्स </string>
+    <string name="activity"> गतिविधियाँ </string>
+    <string name="menu"> अधिक </string>
+    <!--FontAswesom-->
+    <string name="home_font"> &#xf015; </string>
+    <string name="perform_font"> &#xf201; </string>
+    <string name="perform_font_2"> &#xf080; </string>
+    <string name="bookmark_font"> &#xf02e; </string>
+    <string name="tools_font"> &#xf013; </string>
+    <string name="activity_font"> &#xf08d; </string>
+    <string name="doubt_font"> &#xf086; </string>
+    <string name="search_font"> &#xf002; </string>
+    <string name="menu_font"> &#xf0c9; </string>
+    <string name="dount_font"> &#xf059; </string>
+    <string name="grid_font"> &#xf58e; </string>
+    <string name="list_font"> &#xf03a; </string>
+    <string name="faq">पूछे जाने वाले प्रश्न</string>
+    <string name="refund">धनवापसी (राशि) नीति</string>
+    <string name="privacy">गोपनीयता नीति</string>
+    <string name="personaldetails">व्यक्तिगत विवरण</string>
+    <string name="tools">उपकरण</string>
+    <string name="support">सहायता</string>
+    <string name="aboutcompany">कंपनी के बारे में</string>
+    <string name="newpass">नया पासवर्ड</string>
+    <string name="accuracy">प्रश्नोत्तरी सटीकता</string>
+    <string name="speed">प्रश्नोत्तरी गति विश्लेषण</string>
+    <string name="read_terms">मैंने इसे पढ़ा और सहमत हूँ </string>
+    <string name="read_terms_2"> <u><font color='#338676'>उपयोग की शर्तें</font></u> </string>
+    <string name="hint_fathername">पिता का नाम</string>
+    <string name="hint_dob">जन्मतिथि</string>
+    <string name="passwordrestrict">पासवर्ड में अल्फान्यूमेरिक अक्षर होने चाहिए और लंबाई 4 अक्षर होनी चाहिए</string>
+    <string name="go">जाओ</string>
+    <string name="recentactivity">गतिविधि देखें</string>
+    <string name="ScoreCard">स्कोर</string>
+    <string name="TimeSpent">समय</string>
+    <string name="minuts">मिनट</string>
+    <string name="previous">पिछली रिपोर्ट</string>
+    <string name="recomanded">महत्वपूर्ण सुधार क्षेत्र</string>
+    <string name="zero_percent">अरे वाह! क्या यह आपका पहला प्रयास था? आपको वास्तव में कड़ी मेहनत करने की जरूरत है!</string>
+    <string name="twenty_percent">यह निश्चित रूप से आपका सर्वश्रेष्ठ नहीं था। वीडियो को दोबारा देखने से अच्छा हो सकता है!</string>
+    <string name="fourty_percent">अच्छा प्रयास, लेकिन केवल पास होना पर्याप्त नहीं है। आप वास्तव में बहुत बेहतर कर सकते हैं!</string>
+    <string name="sixty_percent">शाबाश... शानदार प्रदर्शन। आप बेहतर करने के लिए एक ही प्रयास दूर हैं!</string>
+    <string name="eight_percent">वाह, एक पूर्ण स्कोर से चूक गए। आइए अगली अवधि के निर्धारित करें!</string>
+    <string name="nighty_percent">शानदार, आपने यह बढ़िया किया है! आइए अगली अवधारणा में महारत हासिल करें!</string>
+    <string name="watchvideo">वीडियो देखें</string>
+    <string name="click_here_previous">पिछले प्रदर्शन देखने के लिए <u>यहां क्लिक </u> करें</string>
+    <string name="buyactivationkey">पंजीकरण कुंजी खरीदें</string>
+    <string name="activation_key">पंजीकरण कुंजी</string>
+    <string name="whytobuyactivation">हमारे पास और भी बहुत कुछ है \n ऑफर करने के लिए...</string>
+    <string name="fullaccess"><ul><li>सभी उच्च-गुणवत्ता वाले वीडियो तक पहुंचे</li></ul></string>
+    <string name="fullaccessnotes"><ul><li>एक सेट के रूप में प्रश्नोत्तरी, संक्षिप्त लेख, अध्यया परीक्षा प्राप्त करें</li></ul></string>
+    <string name="fullaccesssmes"><ul><li>हमारे विशेषज्ञों से अपनी शंकाओं का समाधान करवाएं!</li></ul></string>
+    <string name="notifictions">अधिसूचनाएं</string>
+    <string name="easy">आसान</string>
+    <string name="medium">मध्यम</string>
+    <string name="hard">कठिन</string>
+    <string name="gotadoubt">संदेह पूछें</string>
+    <string name="doubt">संदेह</string>
+    <string name="search">खोजें</string>
+    <string name="keyimpreovementarea">मुख्य सुधार क्षेत्र</string>
+    <string name="mocktestattended">शम्मिलित अध्याय परीक्षाये</string>
+    <string name="yournotes">मेरे लेख</string>
+    <string name="Marks">अंक</string>
+    <string name="title_activity_webview">वेब-दृश्य</string>
+    <string name="writeyourquestion">अपना संदेह पोस्ट करें?</string>
+    <string name="noofquestionsasked">आपके द्वारा पूछे गए प्रश्नों की संख्या</string>
+    <string name="doubt_alert_1">आपने पहले से ही 30 में से %d सवाल पूछ लिए हैं।</string>
+    <string name="doubt_alert_2">इस महीने आपने 30 सवालों में से 20 सवालों का उपयोग कर लिया है!</string>
+    <string name="doubt_alert_3">आपने इस महीने 25 सवाल पूछे हैं। आपका 5 शेष है!</string>
+    <string name="doubts_limited_policy">हालाँकि, आपको अभी भी अपना होमवर्क (Home work) स्वयं करना है, है ना? इसलिए, अभी के लिए, हम प्रति माह प्रश्नों की संख्या को तीस (30) तक सीमित कर रहे हैं।</string>
+    <string name="reply">जवाब दें</string>
+    <string name="close">बंद करें</string>
+    <string name="taptoseeimg">छवि देखने के लिए टैप करें</string>
+
+
+    <!--Smile RatingBar-->
+
+    <string name="smile_rating_terrible">खराब</string>
+    <string name="smile_rating_bad">बुरा</string>
+    <string name="smile_rating_okay">ठीक</string>
+    <string name="smile_rating_good">अच्छा</string>
+    <string name="smile_rating_great">शानदार</string>
+    <string name="writeyourfeedbaconthisvideo">इस वीडियो के बारे में अपनी प्रतिक्रिया लिखें</string>
+    <string name="youractivationsucc">आपकी पंजीकरण प्रक्रिया पूर्ण हो गई है।\n Tutorix ऐप का उपयोग करने के लिए धन्यवाद।</string>
+    <string name="havemoredoubts">और संदेह है?</string>
+    <string name="havemoreanswer">जवाब</string>
+    <string name="tryagain">पुनः प्रयास करें</string>
+
+    <string-array name="names">
+        <item>@string/smile_rating_terrible</item>
+        <item>@string/smile_rating_bad</item>
+        <item>@string/smile_rating_okay</item>
+        <item>@string/smile_rating_good</item>
+        <item>@string/smile_rating_great</item>
+    </string-array>
+
+    <string name="phone_code" translatable="false">+%s</string>
+    <string name="country_name_and_code" translatable="false">%1$s (%2$s)</string>
+    <string name="search_hint">खोजें&#8230;</string>
+    <string name="search_content">सामग्री खोज</string>
+    <string name="no_result_found">कोई परिणाम नहीं मिला</string>
+    <string name="select_country">देश चुनें</string>
+    <string name="country_code_and_phone_code" translatable="false">(%1$s) +%2$s</string>
+    <string name="country_full_name_and_phone_code" translatable="false">%1$s +%2$s</string>
+    <string name="error_unregister_carrier_number" translatable="false">सम्पादन के लिए कैरियर नंबर पंजीकृत नहीं है। getFullNumber() या setFullNumber() से पहले registerPhoneNumberTextView() का उपयोग करके इसे रजिस्टर करें।</string>
+    <string name="track_selection_title">गतिविधि चुनें</string>
+    <string name="effects">प्रभाव</string>
+    <string name="button_effects">बटन प्रभाव</string>
+    <string name="quiz_effects">प्रश्नोत्तरी प्रभाव</string>
+    <string name="settings">सेटिंग्स</string>
+    <string name="previous_arrow">पिछला</string>
+    <string name="next_arraow">अगला</string>
+    <string name="resend">फिर से भेजें</string>
+    <string name="explanation">विवरण देखें</string>
+    <string name="expiredactivation">आपकी सदस्यता समाप्त हो गई है, कृपया इसे नवीकृत करें।</string>
+    <string name="Activate">सक्रिय करें</string>
+    <string name="dsw_str1">डिस्कवर\nविज्ञान\nविजार्ड</string>
+    <string name="dsw_str2"><![CDATA[<font color="#A3A3A5">Discover Science Wizard</font> is india\'s biggest national level scholarship programme for middle school students.]]></string>
+    <string name="checkyourresult">अपना परिणाम देखें</string>
+    <string name="downloadyourdsw">अपना DSW प्रमाणपत्र डाउनलोड करें</string>
+    <string name="taketheonlinetest">ऑनलाइन परीक्षा</string>
+    <string name="gotadoubtclick"><![CDATA[संदेह हुआ? अपने उत्तर खोजने के लिए हमारे अक्सर पूछे जाने वाले प्रश्न अनुभाग देखें <font color="#1EB9BE">यहाँ क्लिक करें</font>]]></string>
+    <string name="scolashipprogramm">छात्रवृत्ति कार्यक्रम</string>
+    <string name="enterdws_key">DWS शीट नंबर दर्ज करें</string>
+    <string name="checkresult">परिणाम देखें</string>
+    <string name="ascolorshipprgm">छात्रवृत्ति कार्यक्रम</string>
+
+    <string name="youareselected"><![CDATA[<b><font color=#FA8E0A>You are selected for</font> <font color=#1A7EA4>Tutorix 1 lac contest</font></b>]]></string>
+    <string name="congratulations">बधाई हो!</string>
+    <string name="youscored">आपने %s अंक प्राप्त किए हैं।</string>
+    <string name="discountsctring">आप %s छूट के लिए पात्र हैं।</string>
+    <string name="call_on"> कृपया %s पर संपर्क करें। </string>
+    <string name="activate_sdcard">एसडी कार्ड सक्रिय करें</string>
+    <string name="onlinractivation_key">ऑनलाइन पंजीकरण कुंजी</string>
+    <string name="enter_sdcard_activation">ऑनलाइन और ऑफलाइन वीडियो दोनों का उपयोग करने के लिए एसडी कार्ड पंजीकरण कुंजी (Activation key) दर्ज करें</string>
+    <string name="reward_text1">ओह, बहुत बढ़िया!</string>
+    <string name="reward_text2">ऐसा लगता है कि आप सही रास्ते पर हैं! </string>
+    <string name="reward_text3">जारी रखें। </string>
+
+    <string name="reward_text4">उफ़, सचमुच?</string>
+    <string name="reward_text5">यह अच्छा नहीं हो सकता। \nआपको और अधिक मेहनत करनी होगी!</string>
+    <string name="reward_text6">पुनः प्रयास करें</string>
+    <string name="use_sdcard">एप्लिकेशन को ऑफ़लाइन चलाने के लिए कृपया नीचे बटन दबाकर एसडी कार्ड पंजीकरण सक्षम करें।</string>
+
+
+    <string name="preference_days_notification">अधिसूचना दिन</string>
+    <string name="howtowinrewards">पुरस्कार कैसे जीतें?</string>
+    <string name="goldcointext">यदि आप मॉक टेस्टों में किसी भी एक में 100% अंक हासिल करते हैं, तो आपको एक वर्चुअल गोल्ड कॉइन दिया जाएगा।</string>
+    <string name="silverdata">यदि आप किसी भी क्विज़ में 100% हासिल करते हैं, तो आपको एक वर्चुअल सिल्वर कॉइन दिया जाएगा।</string>
+    <string name="howtoredeemrewards">पुरस्कार को कैसे भुनाएं?</string>
+    <string name="howtoreemtext"><![CDATA[आप अपने पुरस्कार किसी भी समय रिडीम कर सकते हैं। एवरे गोल्ड कॉइन में बदला जाएगा <font color=#FA8E0A>Rs 5</font> और प्रत्येक चांदी का सिक्का परिवर्तित हो जाएगा <font color=#FA8E0A>Rs 1</font> और राशि आपके ट्यूटोरिक्स वॉलेट में जमा कर दी जाएगी जहां से आप अगली सदस्यता खरीदते समय इसका उपयोग कर सकते हैं.\n\nअधिक जानकारी के लिए आप ट्यूटोरिक्स सपोर्ट से बात कर सकते हैं.]]></string>
+    <string name="ratethisapp">इस ऐप को रेट करें</string>
+    <string name="keeperaning">अधिक सिक्के कमाते रहें। ये सिक्के आपकी प्रदर्शन को अन्य Tutorix उपयोगकर्ताओं के साथ तुलना करने के लिए नहीं बल्कि आपकी अगली Tutorix सदस्यता खरीद पर भारी छूट के लिए भी मान्य होंगे।</string>
+    <string name="myrewards">मेरे पुरस्कार</string>
+    <string name="mydoubts">मेरे संदेह</string>
+    <string name="latestdoubts">नवीनतम संदेह</string>
+    <string name="no_doubtaskedyet">अभी तक कोई संदेह नहीं पूछा गया है</string>
+    <string name="ididnotfindasolution">मुझे उत्तर नहीं मिला</string>
+    <string name="submitdoubt">संदेह पूछें</string>
+    <string name="no_similardoubts">कोई संबंधित संदेह नहीं मिला</string>
+    <string name="uploadingtoserver">कृपया प्रतीक्षा करें, सर्वर पर पोस्ट हो रहा है</string>
+    <string name="pleasewait">कृपया प्रतीक्षा करें...</string>
+    <string name="studyClass">वर्तमान अध्ययन कक्षा</string>
+
+
+    <!-- **************** Image Crope *************** -->
+    <string name="crop_image_activity_title"></string>
+    <string name="crop_image_menu_rotate_left">वामावर्त स्थिति में घुमाएं</string>
+    <string name="crop_image_menu_rotate_right">घुमाएँ</string>
+    <string name="crop_image_menu_crop">कटौती</string>
+    <string name="crop_image_menu_flip">उलटा करें</string>
+    <string name="crop_image_menu_flip_horizontally">क्षैतिज रूप से पलटें</string>
+    <string name="crop_image_menu_flip_vertically">लंबवत रूप से पलटें</string>
+
+    <string name="pick_image_intent_chooser_title">स्रोत चुनें</string>
+
+    <string name="crop_image_activity_no_permissions">रद्द किया जा रहा है, आवश्यक अनुमतियां प्रदान नहीं की गई हैं</string>
+    <string name="crop_image_menu_reset">रीसेट</string>
+    <string name="premium_feature">यह एक प्रीमियम फीचर है</string>
+    <string name="renew_feature">पुनर्नवीकरण सक्रिय करें</string>
+    <string name="tocontinuew_subscrib">जारी रखने के लिए कृपया अपनी सदस्यता सक्रिय करें</string>
+    <string name="getunlimitedaccess">अगले 365 दिनों के लिए सभी कक्षाओं के लिए असीमित पहुँच प्राप्त करें।</string>
+    <string name="getnotes">सभी प्रश्नोत्तरी, संक्षिप्त लेख, अध्यया परीक्षा तक पहुंच प्राप्त करें।</string>
+    <string name="getyourdoubts">हमारे विशेषज्ञों से अपनी शंकाओं का समाधान करवाएं</string>
+    <string name="submitasnewdoubt">एक नई शंका के रूप में प्रस्तुत करें</string>
+    <string name="next">आगामी</string>
+    <string name="whocansubmitdoubts">कौन संदेह प्रस्तुत कर सकता है?</string>
+    <string name="activated_user">सक्रिय उपयोगकर्ता</string>
+    <string name="activated_string_for_doubts">यदि आप एक सक्रिय उपयोगकर्ता हैं, तो आप असीमित संख्या में संदेह प्रस्तुत कर सकते हैं और उन्हें प्राथमिकता से स्पष्ट कर सकते हैं।</string>
+    <string name="rewardpoints">इनाम के सिक्के</string>
+    <string name="use_rewardpoints">अपने अगले सब्सक्रिप्शन पर बढ़िया छूट पाने के लिए अपने इनाम के सिक्कों का उपयोग करें या उन्हें नए संदेह प्रस्तुत करने के लिए उपयोग करें।</string>
+    <string name="one_gold">1 गोल्ड सिक्का</string>
+    <string name="one_gold_value">= 2 संदेह</string>
+    <string name="one_siver">1 सिल्वर सिक्का </string>
+    <string name="one_siver_value">= 1 संदेह</string>
+    <!--  <string name="use_rewardpoints">Use your reward points to submit a new doubt.\n\n 1 Gold Coin = 2 Doubts\n1 Silver Coin = 1 Doubt</string>-->
+    <string name="currently_you_have">वर्तमान में आप %s संदेह पूछ सकते हैं</string>
+    <string name="shareknowledge">सभी के लिए शिक्षा</string>
+    <string name="official_website">आधिकारिक वेबसाइट</string>
+    <string name="facebook">फेसबुक</string>
+    <string name="twitter">ट्विटर</string>
+    <string name="linkedin">लिंक्डइन</string>
+    <string name="instagram">इंस्टाग्राम</string>
+    <string name="connect_with_us">हमसे जुड़ें</string>
+    <string name="youtube">यूट्यूब</string>
+    <string name="no">नहीं</string>
+    <string name="yes">हाँ</string>
+    <string name="morevideoscome">जल्द ही अधिक वीडियो जोड़े जाएंगे...</string>
+    <string name="getotp">OTP प्राप्त करें</string>
+    <string name="apply">आवेदन करना</string>
+    <string name="enter_ref_code">रेफ़रल कोड दर्ज करें</string>
+    <string name="have_ref_code">क्या आपके पास रेफरल कोड है?</string>
+    <string name="join_referral_program">रेफरल प्रोग्राम में शामिल हों</string>
+    <string name="refer_frinds">अपने 15 दोस्तों को ट्यूटोरिक्स देखें\nएक साल के सब्सक्रिप्शन का बिल्कुल मुफ्त आनंद लें</string>
+    <string name="you_ref_code">रेफरल कोड - %s</string>
+    <string name="so_far_ref_code" formatted="false">(अब तक आपने उल्लेख किया है %s/%s)</string>
+    <string name="ref_desc" formatted="false">अपने दोस्तों को रेफ़रल कोड %s वितरित करें और उन्हें इस रेफ़रल कोड का उपयोग करके ट्यूटोरिक्स के साथ पंजीकरण करने के लिए कहें। \n\nएक बार जब हम आपके रेफ़रल कोड के साथ %s सब्सक्रिप्शन प्राप्त कर लेते हैं, तो हम आपकी एक साल की सब्सक्रिप्शन बिल्कुल मुफ्त सक्रिय कर देंगे। \n\nआपके सब्स्क्राइब्ड दोस्त को भी एक महीने का सब्सक्रिप्शन बिल्कुल मुफ्त मिलेगा.</string>
+    <string name="test_series">टेस्ट सीरीज</string>
+    <string name="english">अंग्रेज़ी</string>
+    <string name="hindi">हिंदी</string>
+    <string name="neet_test_series">NEET टेस्ट सीरीज</string>
+    <string name="attemptes_tracker">प्रयास ट्रैकर</string>
+    <string name="no_test_Attempted">अभी तक कोई परीक्षण प्रयास नहीं है</string>
+    <string name="test_rule_1">इस मॉक टेस्ट में जीव विज्ञान, भौतिकी और रसायन विज्ञान से 180 बहुविकल्पीय प्रश्न (MCQs) शामिल हैं</string>
+    <string name="test_rule_2">हर प्रश्न के बाद अलग-अलग विकल्प दिए गए हैं। प्रश्न के लिए अपने उत्तर का चयन करने के लिए बस सही विकल्प पर टैब करें.</string>
+    <string name="test_rule_3">इस मॉक टेस्ट की कुल अवधि 180 मिनट है। आपके पास परीक्षण को कभी भी रोकने और फिर से शुरू करने का विकल्प भी है। ठहराव के दौरान, आपके परीक्षण के समय की गणना नहीं की जाएगी.</string>
+    <string name="test_rule_4">प्रत्येक सही उत्तर का प्रयास करने पर आपको 4 अंक मिलेंगे जबकि प्रत्येक गलत उत्तर का प्रयास करने पर आपको -1 अंक का दंड देना होगा.</string>
+    <string name="test_rule_status">दिया गया प्रश्न पैलेट निम्नलिखित में से किसी एक चिन्ह का उपयोग करके प्रत्येक प्रश्न की स्थिति दिखाएगा.</string>
+    <string name="test_rule_status_1">आपने प्रश्न का उत्तर दिया है</string>
+    <string name="test_rule_status_2">प्रश्न का दौरा किया गया है लेकिन अभी तक उत्तर नहीं दिया गया है.</string>
+    <string name="test_rule_status_3">प्रश्न का उत्तर नहीं दिया गया है लेकिन समीक्षा के लिए चिह्नित किया गया है</string>
+    <string name="test_rule_status_4">प्रश्न का उत्तर दिया गया है और समीक्षा के लिए चिह्नित किया गया है</string>
+    <string name="test_rule_status_5">प्रश्न अभी तक दौरा नहीं किया गया है</string>
+    <string name="test_rule_marks">प्रश्नों और संबंधित अंकों के वितरण के बारे में विवरण निम्नलिखित है</string>
+    <string name="test_rule_desc">मैंने निर्देशों को पढ़ और समझ लिया है। मैं घोषणा करता हूं कि मेरे पास मोबाइल फोन, ब्लूटूथ आदि जैसी कोई प्रतिबंधित वस्तु नहीं है/नहीं पहनी/नहीं ले जा रहा हूं। मैं सहमत हूं कि निर्देशों का पालन नहीं करने की स्थिति में, मुझे इस परीक्षा से वंचित किया जा सकता है और/या अनुशासनात्मक कार्रवाइयों के लिए, जिसमें भविष्य के रुझानों/परीक्षाओं से प्रतिबंध शामिल हो सकता है। \n\nयह वास्तविक परीक्षा के अभ्यास और तैयारी के लिए प्रदान किया गया एक मॉक टेस्ट है, जो इसके पैटर्न, निर्देशों और प्रदान किए गए प्रश्नों में भिन्न हो सकता है।\n\nइस मॉक टेस्ट परीक्षा को शुरू करके, मैं उपरोक्त सभी शर्तों को स्वीकार करने के लिए सहमत हूं और शर्तें.</string>
+    <string name="pause">रोकना</string>
+    <string name="play">खेल</string>
+    <string name="markforreview">समीक्षा के लिए निशान</string>
+    <string name="clearresposne">जवाब साफ़ करें</string>
+    <string name="continuetest">परीक्षण जारी रखें</string>
+    <string name="submittest">टेस्ट सबमिट करें</string>
+    <string name="resumetest">परीक्षण फिर से शुरू करें</string>
+    <string name="exittest">एग्जिट टेस्ट</string>
+    <string name="testpaused">परीक्षण रोका गया</string>
+    <string name="comingsoon">अधिक अध्याय जल्द ही आ रहे हैं!</string>
+    <string name="delete_account">खाता हटा दो</string>
+    <string name="reason_delete_account">अपना कारण लिखिए</string>
+    <string name="student_dashboard">छात्र विवरण</string>
+    <string name="student_list">छात्रों की सूची</string>
+    <string name="student_performance">छात्र प्रदर्शन</string>
+    <string name="add_student">विद्यार्थी जोड़ें</string>
+    <string name="welcome">स्वागत  </string>
+    <string name="select_language">भाषा चुने</string>
+    <string name="ask_your_doubt">अपना संदेह पूछें</string>
+    <string name="before_attempting">इस प्रश्नोत्तरी का प्रयास करने से पहले, कृपया सुनिश्चित करें कि आपने संबंधित वीडियो देख लिया है.</string>
+    <string name="every_quetion_is">प्रत्येक प्रश्न के बाद विकल्प दिए गए हैं। सही विकल्प पर टैप करें.</string>
+    <string name="the_time_you">आपके द्वारा प्रत्येक प्रश्न पर खर्च किए गए समय की गणना की जाती है.</string>
+    <string name="quiz_attempted">प्रश्नोत्तरी का प्रयास किया</string>
+    <string name="quiz">प्रश्नोत्तरी</string>
+    <string name="quiz_analysis">प्रश्नोत्तरी विश्लेषण</string>
+    <string name="track">क्या सीखा</string>
+    <string name="mock_tests">मॉक टेस्ट</string>
+    <string name="mock_test_performance">मॉक टेस्ट प्रदर्शन</string>
+    <string name="ncert_solutions">एनसीईआरटी समाधान</string>
+    <string name="are_you_sure">क्या आपको यकीन है</string>
+    <string name="areyou_sure_deactivate">क्या आप सुनिश्चित हैं, क्या आप अपने खाते को डी-एक्टिवेट करना चाहते हैं ?</string>
+    <string name="aryou_sure_renuwal">क्या आप सुनिश्चित हैं, क्या आप अपने खाते का नवीनीकरण करना चाहते हैं ?</string>
+    <string name="you_want_go_back">क्या आप वाकई वापस जाना चाहते हैं?</string>
+    <string name="you_want_exit">क्या आप वाकई टेस्ट से बाहर निकलना चाहते हैं?</string>
+    <string name="activate">सक्रिय</string>
+    <string name="activate_now">अब सक्रिय करें</string>
+    <string name="upgrade_now">अभी अपग्रेड करें</string>
+    <string name="view_status">स्थिति देखें</string>
+    <string name="view_answer">अभी तक उत्तर नहीं दिया</string>
+    <string name="closed">बंद किया हुआ</string>
+    <string name="view_explanation">स्पष्टीकरण देखें</string>
+    <string name="hide_explanation">स्पष्टीकरण छुपाएं</string>
+    <string name="marks_obtained_in_percentage">प्राप्त अंक \nप्रतिशत में</string>
+    <string name="marks">निशान</string>
+    <string name="retake">फिर से लेना</string>
+    <string name="review_text">समीक्षा परीक्षण</string>
+    <string name="review_quiz">क्विज़ की समीक्षा करें</string>
+    <string name="mock_test_review">मॉक टेस्ट की समीक्षा</string>
+    <string name="review">समीक्षा</string>
+    <string name="quite">छोड़ना</string>
+    <string name="correct_answeres"> सही उत्तर </string>
+    <string name="wrong_answers"> गलत उत्तर </string>
+    <string name="attempted_on">प्रयास किया गया </string>
+    <string name="attemped">का प्रयास किया गया</string>
+    <string name="correct"> सही</string>
+    <string name="wrong"> गलत</string>
+    <string name="skip">आगे बढ़ें</string>
+    <string name="get_started">शुरू करे</string>
+    <string name="lectures">व्याख्यान</string>
+    <string name="duration">अवधि</string>
+    <string name="timup">समय समाप्त!</string>
+    <string name="do_you_realy_close_mocktest">क्या आप वाकई मॉक टेस्ट खत्म करना चाहते हैं?</string>
+    <string name="do_you_realy_close_quiz">क्या आप वास्तव में प्रश्नोत्तरी समाप्त करना चाहते हैं?</string>
+    <string name="video_quality">विडियो की गुणवत्ता</string>
+    <string name="languages">बोली</string>
+    <string name="subtitles">उपशीर्षक</string>
+    <string name="Best">श्रेष्ठ</string>
+    <string name="Basic">बुनियादी</string>
+    <string name="average">औसत</string>
+    <string name="progress">प्रगति</string>
+    <string name="Performance">प्रदर्शन</string>
+    <string name="days">दिन</string>
+    <string name="months">महीने</string>
+    <string name="overall">कुल मिलाकर</string>
+    <string name="chapter_performance">अध्याय प्रदर्शन</string>
+    <string name="not_attempted">प्रयास नहीं किया</string>
+    <string name="avaerage_marks">औसत अंक</string>
+    <string name="in">में</string>
+    <string name="attempts">प्रयास</string>
+    <string name="no_tests_attempted_yet">अभी तक मॉक टेस्ट का प्रयास नहीं किया!</string>
+    <string name="your_anser">आपका उत्तर</string>
+    <string name="is_correct">सही है</string>
+    <string name="you_have_select_correct_option">आपने सही विकल्प चुना है</string>
+    <string name="you_did_not_attempt_this_question">आपने इस प्रश्न का प्रयास नहीं किया.</string>
+    <string name="you_have_selected_the_correct_option">आपने सही विकल्प चुना है</string>
+    <string name="you_didnot_attempt_the_correct_option">आपने गलत विकल्प चुना है। सही विकल्प है</string>
+    <string name="the_answer_is">जवाब है</string>
+    <string name="min_marks"> * मिन मार्क्स</string>
+    <string name="max_marks"> * मैक्स मार्क्स</string>
+    <string name="whic_is_wrong_">क्या गलत है। सही उत्तर है</string>
+    <string name="you_have_selected_the_option_as">आपने इस विकल्प का चयन किया है</string>
+    <string name="wchic_is_absolute_right">जो बिल्कुल सही है</string>
+    <string name="no_quiz_attempted">कोई प्रश्नोत्तरी का प्रयास नहीं किया गया</string>
+    <string name="enter_school_code">स्कूल कोड दर्ज करें</string>
+    <string name="get_school_details">विवरण प्राप्त करें</string>
+    <string name="school_name">स्कूल के नाम</string>
+    <string name="school_village">स्कूल गांव</string>
+    <string name="school_district">सिक्योरिटी कोड गलत है</string>
+    <string name="save">बचाना</string>
+    <string name="select_class">कक्षा का चयन करें</string>
+    <string name="information_of_schoole">स्कूल की जानकारी</string>
+    <string name="talk_to_us">हमसे बात करें\n1800-833-6464</string>
+    <string name="no_content_found">दिए गए खोज इनपुट से कोई सामग्री नहीं मिली</string>
+    <string name="get_in_touch">संपर्क करें</string>
+    <string name="latest_doubts">नए संदेह</string>
+    <string name="before_attempting_this_mock">इस मॉक टेस्ट का प्रयास करने से पहले, कृपया सुनिश्चित करें कि आपने अध्याय के सभी वीडियो देख लिए हैं।</string>
+    <string name="before_attempting_this_mock_test_please_make_sure_you_have_watched">"इस मॉक टेस्ट का प्रयास करने से पहले, कृपया सुनिश्चित करें कि आपने देख लिया है  "</string>
+    <string name="chapter_videos">" अध्याय के वीडियो।"</string>
+    <string name="write_your_message_here">यहां अपना संदेश लिखें...</string>
+    <string name="send">भेजें</string>
+    <string name="_30_days">30 दिन</string>
+    <string name="minutes">" मिनट"</string>
+    <string name="clear_player_settings">प्लेयर सेटिंग्स को हटा दें</string>
+    <string name="filters">फिल्टर</string>
+    <string name="father_name">पिता का नाम</string>
+    <string name="address">पता</string>
+    <string name="city">शहर</string>
+    <string name="state">राज्य</string>
+    <string name="pin_code">पिन कोड</string>
+    <string name="current_study_class">वर्तमान अध्ययन वर्ग</string>
+    <string name="change_password">पासवर्ड बदलें</string>
+    <!--<string name="currently_you_have">Currently you have %s Gold Coins and %s Silver Coins</string>-->
+</resources>

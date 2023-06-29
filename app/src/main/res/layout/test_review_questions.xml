@@ -1,0 +1,214 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <RelativeLayout
+                android:id="@+id/rel_top_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_main_background_small"
+                >
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/rel_headers"
+
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radio_sub_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:gravity="center"
+
+                        android:visibility="visible"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/radio_phy"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:background="@drawable/button_selector_phy_p"
+                            android:text="@string/physics"
+
+                            android:button="@null"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/opensans_regular"
+                            android:minHeight="30dp"
+
+                            android:textColor="@drawable/color_selector"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_che"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:background="@drawable/button_selector_phy_p"
+                            android:text="@string/chemistry"
+                            android:layout_marginLeft="10dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="30dp"
+
+                            android:fontFamily="@font/opensans_regular"
+                            android:textColor="@drawable/color_selector"
+                            android:textSize="10sp"
+                            tools:ignore="ButtonStyle" />
+
+
+
+                        <RadioButton
+                            android:id="@+id/radio_bio"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:background="@drawable/button_selector_phy_p"
+                            android:text="@string/biology"
+                            android:layout_marginLeft="10dp"
+                            android:button="@null"
+
+                            android:gravity="center"
+                            android:minHeight="30dp"
+
+                            android:textColor="@drawable/color_selector"
+                            android:textSize="10sp" />
+                        <RadioButton
+                            android:id="@+id/radio_math"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:background="@drawable/button_selector_phy_p"
+                            android:text="@string/mathematics"
+                            android:layout_marginLeft="10dp"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:fontFamily="@font/opensans_regular"
+                            android:minHeight="30dp"
+
+                            android:textColor="@drawable/color_selector"
+                            android:textSize="10sp" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+
+                <!--<include layout="@layout/cloude_image_view" />-->
+
+            </RelativeLayout>
+
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/lnr_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnr_main"
+            android:layout_below="@+id/lnr_top"
+            android:layout_marginTop="@dimen/quiz_top_minus"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_question_no"
+                    android:layout_width="match_parent"
+                    android:layout_margin="@dimen/_10dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingRight="@dimen/_10dp"
+                    android:layout_height="wrap_content">
+
+                </androidx.recyclerview.widget.RecyclerView>
+                <include layout="@layout/test_rule_two"/>
+
+            </LinearLayout>
+
+
+        </androidx.core.widget.NestedScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/lnr_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="10dp"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Prev"
+                    android:layout_toLeftOf="@+id/Next"
+
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <Button
+                        android:id="@+id/btn_continue_test"
+                        android:layout_width="wrap_content"
+                        android:minWidth="@dimen/_125dp"
+                        android:minHeight="@dimen/_32dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sp"
+                        android:layout_margin="@dimen/_5dp"
+                        android:background="@drawable/webviewquiz_select_one"
+                        android:text="@string/continuetest"
+                        />
+                    <Button
+                        android:id="@+id/btn_submit_test"
+                        android:layout_width="wrap_content"
+                        android:minWidth="@dimen/_125dp"
+                        android:minHeight="@dimen/_32dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sp"
+                        android:layout_margin="@dimen/_5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:background="@drawable/webviewquiz_select_one"
+                        android:text="@string/submittest"
+                        />
+
+                </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/lnr_container"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            android:background="@drawable/top_main_background_small"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="home"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@drawable/ripple_radius"
+                android:layout_centerVertical="true"
+                app:layout_collapseMode="pin"
+                >
+
+
+                <LinearLayout
+                    android:id="@+id/lnr_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:background="@drawable/ripple_radius"
+                    android:layout_centerVertical="true"
+                    app:layout_collapseMode="pin"
+                    >
+
+
+
+                    <ImageView
+                        android:layout_width="@dimen/back_icon_size"
+                        android:layout_height="@dimen/back_icon_size"
+
+
+                        android:layout_margin="@dimen/_10dp"
+
+
+                        app:srcCompat="@drawable/ic_home_out"
+                        android:tint="@color/white"
+                        />
+                </LinearLayout>
+                <!--<ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_margin="@dimen/_10dp"
+                    app:srcCompat="@drawable/ic_home_out"
+                    android:tint="@color/white"
+                    />-->
+            </LinearLayout>
+           <!-- <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="end"
+                android:layout_marginEnd="@dimen/_8dp"
+                android:padding="@dimen/_5dp"
+                android:background="@drawable/ripple_radius"
+                android:contentDescription="@string/app_name"
+                android:onClick="home"
+                app:srcCompat="@drawable/ic_home_out"
+                android:tint="@color/white"
+                app:layout_collapseMode="pin" />-->
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <com.tutorix.tutorialspoint.views.CustomWebview
+        android:id="@+id/wv_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:scrollbars="none"
+
+        tools:ignore="WebViewLayout" />
+</LinearLayout>

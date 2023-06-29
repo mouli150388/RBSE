@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4dp"
+
+
+
+    android:elevation="@dimen/_5dp"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <TextView
+                android:id="@+id/txt_q"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:fontFamily="@font/opensans_regular"
+                android:letterSpacing=".12"
+
+
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+            <com.tutorix.tutorialspoint.views.CustomWebview
+                android:id="@+id/txt_web"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_5dp"
+
+                android:padding="10dp"
+                android:scrollbarSize="@dimen/_1dp"
+
+
+                />
+
+
+            <TextView
+                android:id="@+id/txt_q_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_image_default"
+                android:drawablePadding="5dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:text="@string/taptoseeimg" />
+        </LinearLayout>
+        <!--<View android:layout_width="match_parent"
+            android:layout_height=".8dp"
+            android:background="@color/colorPrimary"
+            />-->
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

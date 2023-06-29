@@ -1,0 +1,4135 @@
+{
+  "class_id": "8",
+  "user_id": "8",
+  "lecture_id": "",
+  "section_id": "",
+  "subject_id": "",
+  "lecture_name": "Test Series",
+  "quiz_duration": "1:1:10",
+  "total_marks": 0,
+  "total_correct": 0,
+  "access_token": "d32b755ea5a8a5fdec7c416be2edd8a8",
+  "total_questions": "180",
+  "total_wrong": 1,
+  "quiz_json": {
+    "biology": {
+      "attempted_questions": 0,
+      "correct_answers": 0,
+      "questions": [
+        {
+          "explanation": "Robert Hooke published his observations related to the discovery of cell in his scientific book called Micrographia.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Macrograph",
+              "option_2": "Nanographia",
+              "option_3": "Mycographia",
+              "option_4": "Micrographia"
+            }
+          ],
+          "question": "Robert Hooke published his observations in a book called _______.",
+          "question_id": 1,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A simple microscope is made up of a single lens.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Compound microscope",
+              "option_2": "Light microscope",
+              "option_3": "Simple microscope",
+              "option_4": "Electron microscope"
+            }
+          ],
+          "question": "Which of the following types of microscopes has a single lens?",
+          "question_id": 2,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A coverslip is gently placed on the mounted material to avoid the formation of air bubbles.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "To avoid oozing of water.",
+              "option_2": "To avoid oozing of stain.",
+              "option_3": "To avoid formation of air bubbles.",
+              "option_4": "To avoid crushing of mounting materials."
+            }
+          ],
+          "question": "Why is the coverslip put on the mounted material on a slide very gently?",
+          "question_id": 3,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Diffusion is also known as passive transport.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Active transport",
+              "option_2": "Simple transport",
+              "option_3": "Passive transport",
+              "option_4": "Complex transport"
+            }
+          ],
+          "question": "Diffusion is also known as __________.",
+          "question_id": 4,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "When an egg is placed in dilute hydrochloric acid, the egg shell made of calcium carbonate breaks, leaving behind a naked egg (with only a cell membrane). This de&minus;shelled egg is used for performing osmosis experiments to enable a better under understanding of movement of substances into and out of the egg.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Dilute hydrochloric acid deshells the egg.",
+              "option_2": "Dilute hydrochloric acid softens the egg.",
+              "option_3": "Dilute hydrochloric acid hardens the egg.",
+              "option_4": "Dilute hydrochloric acid divides the egg into halves."
+            }
+          ],
+          "question": "What is the importance of placing the egg in dilute hydrochloric acid while experimenting with osmosis?",
+          "question_id": 5,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Nucleoplasm is the fibrous, transparent, semi&minus;solid granular liquid present inside the nucleus.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Outer covering of the nucleus.",
+              "option_2": "Fibrous, transparent, semi&minus;solid granular liquid inside the nucleus.",
+              "option_3": "Dense body found inside the nucleus.",
+              "option_4": "Globular structure involved in protein synthesis."
+            }
+          ],
+          "question": "Nucleoplasm is the __________.",
+          "question_id": 6,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Plant and animal cells are examples of eukaryotic cells.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Prokaryotic",
+              "option_2": "Eukaryotic",
+              "option_3": "Heterokaryotic",
+              "option_4": "Akaryotic"
+            }
+          ],
+          "question": "Plant and animal cells are examples of _________ cells.",
+          "question_id": 7,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Ectoplasm is also known as the cell cortex.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Endoplasm",
+              "option_2": "Cytoplasm",
+              "option_3": "Protoplasm",
+              "option_4": "Ectoplasm"
+            }
+          ],
+          "question": "Cell cortex is also known as _________.",
+          "question_id": 8,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Golgi complex was discovered by Camillo Golgi.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Camillo Golgi",
+              "option_2": "Santiago Cajal",
+              "option_3": "W. Flemming",
+              "option_4": "Ramon Golgi"
+            }
+          ],
+          "question": "Golgi complex was discovered by __________.",
+          "question_id": 9,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "All lipases, proteases, and nucleases are types of digestive or hydrolytic enzymes.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Proteases",
+              "option_2": "Nucleases",
+              "option_3": "Lipases",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "_________ are the hydrolytic enzymes.",
+          "question_id": 10,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The ATP or the Adenosine Triphosphate is referred to as the energy currency of the cell.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Mitochondria",
+              "option_2": "Adenosine Triphosphate",
+              "option_3": "Chloroplast",
+              "option_4": "Lysosome"
+            }
+          ],
+          "question": "The energy currency of the cell is the _________.",
+          "question_id": 11,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The third phase of mitosis is anaphase.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Metaphase",
+              "option_2": "Anaphase",
+              "option_3": "Prophase",
+              "option_4": "Telophase"
+            }
+          ],
+          "question": "The third phase of mitosis is known as __________.",
+          "question_id": 12,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>Robert Hooke lived in the 16th century.<\/p><p>He observed dead cork cells under a microscope.<\/p><p>Zacharia Janssen and Hans Zanssen invented microscope using lenses.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Robert Hooke lived in the 18th century.",
+              "option_2": "Robert Hooke observed cork cells under a microscope.",
+              "option_3": "Robert Hooke invented a microscope using lenses.",
+              "option_4": "Both A and B"
+            }
+          ],
+          "question": "Choose the correct statement related to Robert Hooke.",
+          "question_id": 13,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Prokaryotes are organisms which lack a distinct nucleus and membrane&minus;bound cell organelles.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Eukaryotes",
+              "option_2": "Prokaryotes",
+              "option_3": "Diploids",
+              "option_4": "True organisms"
+            }
+          ],
+          "question": "Organisms lacking a distinct nucleus and membrane&minus;bound cell organelles are called  __________.",
+          "question_id": 14,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A concentrated solution is a solution with a greater concentration of solutes.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Solution A",
+              "option_2": "Solution B",
+              "option_3": "Solution C",
+              "option_4": "All the above"
+            }
+          ],
+          "question": "There are three 200 ml sugar solutions, A, B, and C. However, the quantity of the solute in each solution varies. Solution A has 30 gm of sugar, solution B has 45gms of sugar, and solution C has 55 gm of sugar dissolved in 200 ml of water, respectively. Which of these solutions has a high concentration?",
+          "question_id": 15,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>Nucleolus acts as a site for ribosome formation, and is hence known as the factory of ribosomes.<\/p><p>Nucleolus is rich in proteins and ribonucleic acid(RNA).<\/p><p>Nucleolus is embedded within the nucleoplasm.<\/p><p>Nucleolus is a non&minus;membrane bound organelle.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "True&rarr; 3, 4; False&rarr; 1, 2",
+              "option_2": "True&rarr; 1, 2; False&rarr; 3, 4",
+              "option_3": "True&rarr; 1, 3; False&rarr; 2, 4",
+              "option_4": "True&rarr; 2, 4; False&rarr; 1, 3"
+            }
+          ],
+          "question": "State true or false:<p>1. Nucleolus acts as a site for ribosome formation.<\/p><p>2. Nucleolus is rich in proteins and ribonucleic acid(RNA).<\/p><p>3. Nucleolus is embedded within the cytoplasm.<\/p><p>4. Nucleolus is surrounded by a single membrane.<\/p>",
+          "question_id": 16,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>Chromosomes are found inside a nucleus during cell division.<\/p><p>DNA is a dense coded structure elaborately known as Deoxyribonucleic acid.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "1 and 3",
+              "option_2": "2 and 3",
+              "option_3": "1 and 2",
+              "option_4": "All are incorrect"
+            }
+          ],
+          "question": "Identify the incorrect statements from the following:<p>1. Chromosomes are found suspended in the cytoplasm of a cell.<\/p><p>2. During fertilisation, the haploid male and female gametes unite to form diploid cells.<\/p><p>3. DNA is a dense coded structure elaborately known as Ribonucleic acid.<\/p>",
+          "question_id": 17,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Vacuoles help in expelling excess water and waste materials from the bacterial cells, digest food in protozoans, and also provide turgidity and a rigid support to the plant.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Expelling excess water and waste materials from the bacterial cells.",
+              "option_2": "Digesting food in protozoans.",
+              "option_3": "Providing turgidity and a rigid support to the plant.",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "Which of these are the functions of a vacuole?",
+          "question_id": 18,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Chromoplasts store certain pigments in the roots, fruits, and flowers of a plant which give a distinctive colour. These bright colours help in attracting the insects towards the plants for pollination or seed dispersal.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both the statements 1 and 2 are correct, and 2 is the correct explanation of 1.",
+              "option_2": "Both the statements 1 and 2 are correct, and 2 is not related to 1.",
+              "option_3": "Statement 1 is correct, and statement 2 is incorrect.",
+              "option_4": "Statement 1 is incorrect, and statement 2 is correct."
+            }
+          ],
+          "question": "Statement 1: Chromoplasts help in attracting insects for pollination.<p>Statement 2: Chromoplast helps in giving distinctive colour to the fruits, roots, and flowers of a plant.<\/p>",
+          "question_id": 19,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "In osmosis, the water molecules are free to move in both directions across the plasma membrane. However, osmosis is the net movement of water molecules that takes place from the lower concentrated region (dilute) to the higher concentrated region.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are correct, and R is the correct explanation of A.",
+              "option_2": "Both A and R are correct, and R is the incorrect explanation of A.",
+              "option_3": "A is correct, R is incorrect.",
+              "option_4": "A is incorrect, R is correct."
+            }
+          ],
+          "question": "Assertion(A): Osmosis is a one&minus;sided movement of solvent particles.<p>Reason(R): In osmosis, the net movement of water molecules takes place from the dilute solution to the concentrated one.<\/p>",
+          "question_id": 20,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Cheek cells divide approximately every 24 hours and constantly shed from the body. The rod&minus;shaped chromosomes appear only during the division of a cell. As the observation clearly states the visibility of chromosomes, cheek cells are undergoing cell divisions.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Cheek cells are shedding.",
+              "option_2": "Cheek cells are in the process of intaking nutrients.",
+              "option_3": "Transport of substances is taking place inside the cheek cells.",
+              "option_4": "Cheek cells are undergoing cell division."
+            }
+          ],
+          "question": "Jack prepares a sample of human cheek cells and places them under a powerful microscope to capture the live image of these cells. He observes a distinct nucleus with rod&minus;shaped chromosomes in each cell. What can be inferred from these results?",
+          "question_id": 21,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Plant cells contain an outer protective layer known as the cell wall, which is made up of a complex polysaccharide, cellulose. In contrast, animal cells do not have a cell wall. Hence, this particular function of the Golgi complex is seen only in plant cells and not in the animal cells.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Animal cells",
+              "option_2": "Plant cells",
+              "option_3": "Both A and B",
+              "option_4": "Insufficient information"
+            }
+          ],
+          "question": "While learning about the Golgi complex, Jack comes across a statement &#34;The Golgi apparatus serves as the site for the synthesis of complex polysaccharides of the cell wall.&#34; This function of the Golgi complex is seen in which type of cell?",
+          "question_id": 22,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The branch of science that deals with identification, nomenclature, and classification of organisms is called taxonomy.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Biodiversity",
+              "option_2": "Taxonomy",
+              "option_3": "Classification",
+              "option_4": "Ecology"
+            }
+          ],
+          "question": "The branch of science that deals with identification, nomenclature, and classification of organisms is called __________.",
+          "question_id": 23,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "All prokaryotes, i.e. organisms which lack a true nucleus are placed under kingdom Monera. All the other kingdoms consist of eukaryotic organisms, i.e. organisms with a true nucleus.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Kingdom Animalia",
+              "option_2": "Kingdom Fungi",
+              "option_3": "Kingdom Monera",
+              "option_4": "Kingdom Plantae"
+            }
+          ],
+          "question": "Pick the odd one based on the presence of a true nucleus.",
+          "question_id": 24,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<i>Marchantia<\/i> is a bryophyte, while all others are thallophytes.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Chara",
+              "option_2": "Ulothrix",
+              "option_3": "Marchantia",
+              "option_4": "Laminaria"
+            }
+          ],
+          "question": "Pick the odd one out.",
+          "question_id": 25,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Dicots have pentamerous flowers, i.e. flowers have five or multiples of 5 petals.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Monocots",
+              "option_2": "Gymnosperms",
+              "option_3": "Dicots",
+              "option_4": "Thallophytes"
+            }
+          ],
+          "question": "Pentamerous flowers is a characteristic feature of _________.",
+          "question_id": 26,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A triploblastic animal has three germ layers&minus; ectoderm, mesoderm, and endoderm.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Two",
+              "option_2": "Four",
+              "option_3": "Three",
+              "option_4": "One"
+            }
+          ],
+          "question": "How many germ layers does a triploblastic animal have?",
+          "question_id": 27,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Gastrozooids are the feeding individuals, while dactylozooids are the protective individuals.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Gonozooids, Dactylozooids",
+              "option_2": "Dactylozooids, Gastrozooids",
+              "option_3": "Gastrozooids, Gonozooids",
+              "option_4": "Gastrozooids, Dactylozooids"
+            }
+          ],
+          "question": "Feeding individuals: ____________; Protective individuals: __________",
+          "question_id": 28,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Annelids are also known as ringed worms or segmented worms.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Unsegmented worms",
+              "option_2": "Threadworms",
+              "option_3": "Flatworms",
+              "option_4": "Ringed worms"
+            }
+          ],
+          "question": "Annelids are also known as __________.",
+          "question_id": 29,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Molluscs form the second largest group of animals.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Arthropods",
+              "option_2": "Annelids",
+              "option_3": "Molluscs",
+              "option_4": "Echinoderms"
+            }
+          ],
+          "question": "Which of these is the second largest group of animals?",
+          "question_id": 30,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A feature of reproduction that is common to amoeba, spirogyra and yeast is that they all reproduce asexually.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "They reproduce asexually.",
+              "option_2": "They are all unicellular.",
+              "option_3": "They reproduce only sexually.",
+              "option_4": "They are all multicellular."
+            }
+          ],
+          "question": "Which among the following is a feature of reproduction that is common in amoeba, spirogyra, and yeast?",
+          "question_id": 31,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The nucleus of a cell contains chromosomes which are made up of DNA molecules.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "RNA",
+              "option_2": "DNA",
+              "option_3": "Nucleus",
+              "option_4": "Mitochondria"
+            }
+          ],
+          "question": "The nucleus of a cell contains chromosomes which are made up of __________ molecules.",
+          "question_id": 32,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The process of replication of DNA is a biochemical process which takes place inside the cell. This process is not a perfect process as DNA molecules are really big in size and some changes can happen while DNA is being copied. These changes make the daughter DNA different from the parent one, which further causes variation.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "DNA change",
+              "option_2": "Environmental change",
+              "option_3": "Cell malfunction",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "Variation in the offspring&#39;s occurs due to ___________.",
+          "question_id": 33,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Cloning is the only way by which sexually reproducing animals can produce identical offsprings.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Sexually reproduction",
+              "option_2": "Asexual reproduction",
+              "option_3": "Cloning",
+              "option_4": "Replication"
+            }
+          ],
+          "question": "Which is the only way by which larger animals by sexual reproduction can have identical offspring?",
+          "question_id": 34,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "DNA copying is necessary during reproduction because it leads to the transmission of characters from one generation to the next generation and brings about variation.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are true.",
+              "option_2": "Both A and R are true, but R is not the right explanation of A.",
+              "option_3": "Assertion A is true, but R is false.",
+              "option_4": "Assertion A is false, but R is true."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer:<p>Assertion(A): DNA copying is necessary during reproduction.<\/p><p>Reason (R): DNA copying leads to the transmission of characteristics from parents to offspring.<\/p>",
+          "question_id": 35,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Advantages of multiple fission are single individual can produce large numbers, can occur in unfavourable conditions also and progenies are identical to parents.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i and ii",
+              "option_2": "i and iii",
+              "option_3": "ii and iii",
+              "option_4": "i, ii and iii"
+            }
+          ],
+          "question": "Malarial parasite divides into many daughter individuals simultaneously through multiple fission. Which statement justify the advantage of this type of reproduction in this malarial parasite?<p>i. A single individual can produce large number<\/p><p>ii. Can occur in unfavourable conditions also.<\/p><p>iii. Progenies are identical to parents.<\/p>",
+          "question_id": 36,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "During unfavourable conditions, a protective wall, known as Cyst is formed around the cell of plasmodium.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Plasma membrane",
+              "option_2": "Cell membrane",
+              "option_3": "Cyst",
+              "option_4": "Protective layer"
+            }
+          ],
+          "question": "During unfavourable conditions, a protective wall, known as ..... is formed around the cell of plasmodium.",
+          "question_id": 37,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Bread mould prefers damp and warm substratum with ample supply of nutrients on which its air-borne spore lands and germinate to produce mycelium.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i and iii",
+              "option_2": "ii and iv",
+              "option_3": "i and ii",
+              "option_4": "iii and iv"
+            }
+          ],
+          "question": "Factors responsible for the rapid spread of bread mould on slice of bread are:<p>i. large number of spores<\/p><p>ii. availability of moisture and nutrients in bread<\/p><p>iii. presence of tubular branched hyphae<\/p><p>iv. formation of round shaped sporangia<\/p>",
+          "question_id": 38,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The spores can be of varied types in the varied individuals like Bacteria, fungi and Algae. But spores are not formed in paramecium.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Bacteria",
+              "option_2": "Paramecium",
+              "option_3": "Fungi",
+              "option_4": "Algae"
+            }
+          ],
+          "question": "Among the following unicellular organisms, choose the organism which does not reproduce through spore formation.",
+          "question_id": 39,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "If the head of planaria is cut in half down its centre, and each side is retained on the organism, it is possible for the planaria to regenerate two heads and continue to live.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "It will die.",
+              "option_2": "Each head will develop into a new organism.",
+              "option_3": "Head will stick again.",
+              "option_4": "Without any problem, each head will continue to live."
+            }
+          ],
+          "question": "What will happen if the head of the planaria is cut into two halves?",
+          "question_id": 40,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "When the body of the planaria is cut into a number of pieces, then each piece can regenerate into a completely new organism by growing its lost parts.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Paramecium",
+              "option_2": "Spirogyra",
+              "option_3": "Planaria",
+              "option_4": "Amoeba"
+            }
+          ],
+          "question": "Among the following organisms, which organism is capable of regeneration?",
+          "question_id": 41,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Vegetative propagation is a kind of asexual reproduction in which new plants are produced from parts of the parent plant such as root, stem or leaves without the help of any reproductive organ.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Stem, roots and flowers",
+              "option_2": "Stem, roots and leaves",
+              "option_3": "Stem, flower and fruits",
+              "option_4": "Stem, leaves and flowers"
+            }
+          ],
+          "question": "Vegetative propagation refers to the formation of new plants from ____________.",
+          "question_id": 42,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Bryophyllum reproduces through leaf by vegetative propagation.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Bryophyllum",
+              "option_2": "Rose",
+              "option_3": "Potato",
+              "option_4": "Ginger"
+            }
+          ],
+          "question": "Which of the following plants reproduces vegetatively by leaf?",
+          "question_id": 43,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>All disadvantages are correct, except Option A.<\/p><p>We can produce any number of plants through vegetative propagation.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "It cannot produce large number of plants. If a diseased parent plant is used, then it may cause disease to the daughter plant too.",
+              "option_2": "As time passes, the plants produced by propagation lose vigour or their good health.",
+              "option_3": "Sometimes, due to lack of variations, plants cannot adapt to the changes in the environment. ",
+              "option_4": ""
+            }
+          ],
+          "question": "Which of the following is NOT a disadvantage of vegetative propagation?",
+          "question_id": 44,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The organs which are producing sperms and ova respectively in the human body are testis and ovary.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Ovary and testis",
+              "option_2": "Fallopian and scrotum",
+              "option_3": "Testis and ovary",
+              "option_4": "Uterus and epididymis"
+            }
+          ],
+          "question": "The organs which are producing sperms and ova, respectively, in the human body are ___________.",
+          "question_id": 45,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>The basic requirement of sexual reproduction are:<\/p><p>Presence of male and female<\/p><p>formation of male and female gametes<\/p><p>Fusion of gametes<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Presence of male and female individuals",
+              "option_2": "formation of male and female gametes",
+              "option_3": "Fusion of gametes",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "What is the basic requirement of sexual reproduction?",
+          "question_id": 46,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Unisexual flower either carry female reproductive part or male reproductive part. They exhibit cross-pollination. They cannot produce fruits.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i and ii",
+              "option_2": "i and iii",
+              "option_3": "ii and iii",
+              "option_4": "i, ii and iii"
+            }
+          ],
+          "question": "Which of the following statements are true about unisexual flowers?<p>I. They possess both stamen and pistil.<\/p><p>II. They possess either stamen or pistil.<\/p><p>III. They exhibit cross-pollination.<\/p><p>IV. Unisexual flowers possessing the only stamen cannot produce fruits.<\/p>",
+          "question_id": 47,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Pollination by birds is known as ornithophily.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Hydrophily",
+              "option_2": "Entomophily",
+              "option_3": "Ornithophily",
+              "option_4": "chiropterophily."
+            }
+          ],
+          "question": "Pollination by birds is known as ____________.",
+          "question_id": 48,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Sexual reproduction involves fertilization of male and female gametes to produce zygote having genetic variations.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "1 and 4",
+              "option_2": "1, 2 and 4",
+              "option_3": "1, 2 and 3",
+              "option_4": "1, 2 and 4"
+            }
+          ],
+          "question": "Which of the following statements is&#47;are true about sexual reproduction in flowering plants?<p>1. It requires two types of gametes<\/p><p>2. Fertilization is compulsory event<\/p><p>3. It always results in formation of zygote<\/p><p>4. Offspring’s formed are clones.<\/p>",
+          "question_id": 49,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Vas deferens is long in human beings to carry sperm from testes, which enter penis for their release.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "For structural benefits",
+              "option_2": "Sperms live for long",
+              "option_3": "For collection of sperms",
+              "option_4": "To carry sperm from testes, which enter penis for their release"
+            }
+          ],
+          "question": "Why is vas deferens long in human beings?",
+          "question_id": 50,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A coverslip is gently placed on the mounted material to avoid the formation of air bubbles.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "To avoid oozing of water.",
+              "option_2": "To avoid oozing of stain.",
+              "option_3": "To avoid formation of air bubbles.",
+              "option_4": "To avoid crushing of mounting materials."
+            }
+          ],
+          "question": "Why is the coverslip put on the mounted material on a slide very gently?",
+          "question_id": 51,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Formation of sperm needs lower temperature than the normal body temperature.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are true.",
+              "option_2": "Both A and R are true, but R is not the right explanation of A.",
+              "option_3": "A is true, but R is false.",
+              "option_4": "A is false, but R is true."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer:<p>Assertion (A): In human male, testes are extra-abdominal which are present inside the scrotum.<\/p><p>Reason (R): Scrotum has a relatively lower temperature needed for the production and storage of sperm.<\/p>",
+          "question_id": 52,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "First, the Zygote starts dividing then Implantation of zygote occurs in the inner uterine wall. Thereafter, the embryo starts growing with the help of placenta and the last stage is the stage of birth. Birth of a child occurs as a result of the rhythmic contraction of muscles in the uterus.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i &minus; ii &minus; iii &minus; iv",
+              "option_2": "iv &minus; ii &minus; i &minus; iii",
+              "option_3": "ii &minus; iii &minus; iv &minus; i",
+              "option_4": "iv &minus; iii &minus; i &minus; ii"
+            }
+          ],
+          "question": "Arrange the steps that take place in a fertilized egg till the birth of the child in the human reproductive system in series.<p>i. The embryo starts growing with the help of the placenta<\/p><p>ii. Implantation of the zygote in the inner uterine wall.<\/p><p>iii. Birth of a child as a result of rhythmic contraction of the muscles in the uterus.<\/p><p>iv. Zygote starts dividing<\/p>",
+          "question_id": 53,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The period before ovulation is the pre-ovulation phase and the period after the ovulation is the post-ovulation phase.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Ovulation and menstrual phase",
+              "option_2": "Post-ovulation and pre-ovulation phase",
+              "option_3": "Postmenstrual and pre-menstrual phase",
+              "option_4": "Pre-ovulation and post-ovulation phase"
+            }
+          ],
+          "question": "The period before ovulation is the __________ phase and the period after the ovulation is ___________ phase.",
+          "question_id": 54,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The virus doesn&#39;t spread in air or water, or through casual contact. HIV is transmitted through bodily fluids that include: blood, semen, vaginal fluids and breast milk.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Through casual contact",
+              "option_2": "Through blood semen",
+              "option_3": "Vaginal fluids",
+              "option_4": "Breast milk"
+            }
+          ],
+          "question": "HIV is NOT transmitted through ___________.",
+          "question_id": 55,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Banana, yeast, and amoeba reproduce asexually, while dogs reproduce sexually.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "ii and iv",
+              "option_2": "i, ii and iv",
+              "option_3": "i and iv",
+              "option_4": "ii, iii and iv"
+            }
+          ],
+          "question": "In the list of organisms given below, those that reproduce by the asexual method are:<p>A) Banana<\/p><p>B) Dog<\/p><p>C) Yeast<\/p><p>D) Amoeba<\/p>",
+          "question_id": 56,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Newly formed DNA copies may not be identical at times due to the error in the DNA copies.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Due to replication",
+              "option_2": "Due to asexual reproduction",
+              "option_3": "Due to error in DNA copies",
+              "option_4": "All of the above."
+            }
+          ],
+          "question": "Newly formed DNA copies may not be identical at times. Give one reason.",
+          "question_id": 57,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The advantage of sexual reproduction over asexual reproduction is that sexual reproduction shows variation which further causes evolution.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Sexual reproduction produces large offspring",
+              "option_2": "Sexual reproduction can show variation",
+              "option_3": "Sexual reproduction occurs easily",
+              "option_4": "None off the above"
+            }
+          ],
+          "question": "What is the advantage of sexual reproduction over asexual reproduction?",
+          "question_id": 58,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Variation occurs  by this new combination of DNA&#39;s of parents, this variation makes the offspring more adapted for the environment.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "By creating new combination",
+              "option_2": "Suitable variation has more chances of survival",
+              "option_3": "By variation, there are more chances for adaptation in the environment.",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "How does the creation of variation in a species promote survival?",
+          "question_id": 59,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Leishmania reproduces through longitudinal binary fission not though multiple fission.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Leishmania",
+              "option_2": "Plasmodium",
+              "option_3": "Sporozoa",
+              "option_4": "Algae"
+            }
+          ],
+          "question": "Among the following unicellular organisms, which unicellular organism does not show the process of multiple fission?",
+          "question_id": 60,
+          "status": 0,
+          "subject_id": 3
+        }
+      ],
+      "total_marks": 60,
+      "total_questions": 60,
+      "wrong_answers": 0
+    },
+    "chemistry": {
+      "attempted_questions": 0,
+      "correct_answers": 0,
+      "questions": [
+        {
+          "explanation": "Boiling is not a surface phenomenon. It involves all the particles of a liquid and hence is a bulk phenomenon.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Bulk phenomenon",
+              "option_2": "Fast process",
+              "option_3": "Occurs at definite temperature",
+              "option_4": "Surface phenomenon"
+            }
+          ],
+          "question": "Which of the following is NOT relevant to boiling?",
+          "question_id": 1,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "When the temperature of the matter increases, it gets added up to the kinetic energy of its particles.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Increases",
+              "option_2": "Decreases",
+              "option_3": "First decreases, later increases suddenly",
+              "option_4": "No relation between temperature and kinetic energy"
+            }
+          ],
+          "question": "The kinetic energy of the particles __________ with temperature.",
+          "question_id": 2,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>The inter-particle spaces in gases are larger compared to those in liquids. This makes gases highly compressible.<\/p><p>Liquids are relatively less compressible than gases. Only significantly high pressures can affect liquids in changing their states.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Only statement (i) is correct",
+              "option_2": "Only statement (ii) is correct",
+              "option_3": "Only statement (iii) is correct",
+              "option_4": "Only statement  (iv) is correct"
+            }
+          ],
+          "question": "Identify the CORRECT statement from among the following.<p>i. Liquids and gases are equally compressible.<\/p><p>ii. Liquids are more compressible than gases.<\/p><p>iii. Liquids are relatively less compressible than gases.<\/p><p>iv. Liquids can never be compressed while gases can be compressed.<\/p>",
+          "question_id": 3,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The lesser the boiling point, the higher is the rate of evaporation. Thus, at room temperature, ether evaporates faster than water.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Ether evaporates quicker than water.",
+              "option_2": "Water evaporates quicker than ether.",
+              "option_3": "The rate of evaporation is the same for both.",
+              "option_4": "Data insufficient to arrive at a conclusion."
+            }
+          ],
+          "question": "Consider the following two statements:<p style='padding-left:30px;'>&#34;The boiling point of water is 100&deg;C&#34;<\/p><p style='padding-left:30px;'>&#34;The boiling point of ether is 34&deg;C&#34;<\/p><p>Which of the following statements holds TRUE at room temperature?<\/p>",
+          "question_id": 4,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The state of matter depends on the kinetic energy of its particles, which changes with temperature. Hence, when there is no change in the temperature, the state of the matter does not change.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Changes",
+              "option_2": "Does not change",
+              "option_3": "Initially does not change, but changes after some time",
+              "option_4": "Initially changes, but comes back to original state after some time"
+            }
+          ],
+          "question": "The state of the matter _________ when there is no change in temperature.",
+          "question_id": 5,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "During the change of state of a substance, only the temperature remains constant.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "The kinetic energy of particles decreases",
+              "option_2": "The temperature of the substance increases",
+              "option_3": "Temperature of substance remains constant ",
+              "option_4": "Both A and C"
+            }
+          ],
+          "question": "Which of the following statement(s) holds good during the change of state of a substance?",
+          "question_id": 6,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The particles in solids are tightly packed rendering them a defined shape and volume.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Solid ",
+              "option_2": "Liquid",
+              "option_3": "Gas",
+              "option_4": "All the above"
+            }
+          ],
+          "question": "A _________ has definite shape and volume.",
+          "question_id": 7,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The particles in gases have weak forces of attraction and hence gases are highly compressible.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Solid ",
+              "option_2": "Liquid",
+              "option_3": "Gas",
+              "option_4": "All the above"
+            }
+          ],
+          "question": "Which of the following states of matter has the highest compressibility?",
+          "question_id": 8,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "According to particulate theory, matter is composed of tiny particles which are always in continuous motion. This conclusion was arrived based on the property of diffusion.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Continuous theory of matter",
+              "option_2": "Particulate theory of matter",
+              "option_3": "Selective theory of matter",
+              "option_4": "Empirical theory of matter"
+            }
+          ],
+          "question": "&#34;Matter is composed of tiny particles which are always in continuous motion.&#34; &minus; Which of the following theories of matter forms the basis for this inference?",
+          "question_id": 9,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>A liquid that has a higher boiling point has stronger interparticle forces of attraction. Hence its evaporation will be less.<\/p><p>Thus, boiling point and evaporation are inversely related.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Directly proportional",
+              "option_2": "Inversely proportional",
+              "option_3": "Equal",
+              "option_4": "Not related to each other"
+            }
+          ],
+          "question": "Boiling point and evaporation of a liquid are :",
+          "question_id": 10,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>The particles of camphor are loosely bound than the particles of ice, and they can easily break their bonds and turn into vapor at room temperature.<\/p><p>Camphor undergoes sublimation as a result of this property.<\/p><p>Thus, after some time, ice turns into water due to melting, while camphor sublimes into vapor and disappears from the dish.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both ice and camphor melts and forms their liquids",
+              "option_2": "Both ice and camphor evaporate and disappear from the dishes",
+              "option_3": "Ice melts into water and camphor disappears from the dish",
+              "option_4": "Ice turns into vapor and disappears while camphor turns into liquid"
+            }
+          ],
+          "question": "Equal amounts of solid ice and camphor are kept in two separate dishes at room temperature. After ten hours, which of the following can be observed?",
+          "question_id": 11,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "If the heating process still continues even after the melting point, the kinetic energy of the liquid particles increases and then they move faster.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Increases, they move faster",
+              "option_2": "Decreases, they move slowly",
+              "option_3": "Becomes zero, they disappear",
+              "option_4": "Decreases,  it turns into solid"
+            }
+          ],
+          "question": "If the heating process of a substance still continues even beyond its melting point, the kinetic energy of the liquid particles _________ and then __________. ",
+          "question_id": 12,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Cotton clothes absorb sweat from our body and discharges the sweat into air through evaporation. This evaporation of sweat cools our body.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both statements are true.",
+              "option_2": "Both statements are false.",
+              "option_3": "Only statement 1 is true.",
+              "option_4": "Only statement 2 is true."
+            }
+          ],
+          "question": "Statement 1: Cotton clothes are preferred over synthetic clothes in summer.<p>Statement 2: Cotton clothes absorb sweat and keep us cool while synthetic clothes cannot.<\/p>",
+          "question_id": 13,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Water is a liquid and hence takes the shape of the container stored in.<\/p><p>Here the volume of water is one liter. It does not matter which shape the container is as long as its volume is 1 liter.<\/p><p>Hence, the water from cylindrical bottle will fit perfectly in the cubical box because both the volumes are the same.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "The water does not fit into the cubical box.",
+              "option_2": "The water will fit perfectly.",
+              "option_3": "This is not practically possible as the shapes are different.",
+              "option_4": "None of the above."
+            }
+          ],
+          "question": "Himansh wants to transfer one liter of water from a cylindrical bottle of one-liter capacity to a cubical box of one-liter capacity. Which of the following statements is true in this regard?",
+          "question_id": 14,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Breakage of brick, when dropped from a certain height, is not related to heating the material.<\/p><p>When a blacksmith heats the iron rod, the particles acquire kinetic energy and move distant from each other. This makes it easier to change its shape.<\/p><p>A river flowing from higher areas to lower areas is due to gravitational energy.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Only i ",
+              "option_2": "Only ii",
+              "option_3": "Only iii",
+              "option_4": "All i,  ii, and iii "
+            }
+          ],
+          "question": "Particles of matter acquire kinetic energy on heating. Identify the example(s) that best support this statement.<p>i. Breakage of brick when dropped from a certain height<\/p><p>ii. Blacksmith heating iron rod to beat it into a different shape<\/p><p>iii. A river flowing from high area to lower area<\/p>",
+          "question_id": 15,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The antiseptic liquid particles mix uniformly with the particles of water when mixed thoroughly and forms a uniform solution of the antiseptic liquid and water due to diffusion.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Diffuses into water and forms a uniform solution",
+              "option_2": "Settles down at the bottom of the water",
+              "option_3": "Reacts with water and forms a new chemical solution",
+              "option_4": "Can&#39;t say"
+            }
+          ],
+          "question": "Bobby&#39;s sister adds antiseptic liquid to his bathing water and then mixes them thoroughly. At the end of this process, the antiseptic liquid __________.",
+          "question_id": 16,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Substances with lesser density than water float on it.<\/p><p>Sponge is solid, which contains pores filled with air and has density lesser than that of water. Hence sponge floats on water till it absorbs a considerable amount of water.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Yes",
+              "option_2": "No",
+              "option_3": "May be",
+              "option_4": "Can&#39;t say"
+            }
+          ],
+          "question": "Bobby is playing with a sponge. He kept it over the surface of the water in a tub. Surprisingly, it floated on it for a very long time. Will sponge sink to the bottom of the tub immediately?",
+          "question_id": 17,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Lightning is a natural phenomenon that discharges a huge amount of electricity from the cloud onto Earth.<\/p><p>Thus, when such a huge amount of electricity passes through the air, the gases in air ionize and turn into ions and electrons.<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Light energy",
+              "option_2": "Sound energy",
+              "option_3": "Wave energy ",
+              "option_4": "Electrical energy"
+            }
+          ],
+          "question": "When lightning forms in the sky, the surrounding air molecules break down into ions. Which property of lightning is responsible for this phenomenon?",
+          "question_id": 18,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Bose Einstein Condensate is formed when gases are cooled to temperatures very close to absolute zero (&minus;273.15&deg;C or 0 K).",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "0&deg;C",
+              "option_2": "&minus;100&deg;C",
+              "option_3": "Approximately 0 K",
+              "option_4": "100 K"
+            }
+          ],
+          "question": "Bose Einstein Condensate forms at temperatures of __________.",
+          "question_id": 19,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Evaporation is a process where liquids turn into vapor much below their boiling point. This process is unique to and occurs only in liquids.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Solids",
+              "option_2": "Liquids",
+              "option_3": "Gases",
+              "option_4": "Occurs in all the three states of matter"
+            }
+          ],
+          "question": "Evaporation is a process that occurs in _________.",
+          "question_id": 20,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Kelvin scale of temperature does not have negative readings.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "343 K",
+              "option_2": "233 K",
+              "option_3": "&minus;233 K",
+              "option_4": "All are valid readings of Kelvin scale"
+            }
+          ],
+          "question": "Which of the following is NOT a reading on Kelvin scale?",
+          "question_id": 21,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Substances with stronger attractive forces between their particles have a higher latent heat.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Size of its particles",
+              "option_2": "Volume of the substance",
+              "option_3": "Strength of attractive forces between its particles",
+              "option_4": "Shape of the substance"
+            }
+          ],
+          "question": "The latent heat of a substance is proportional to ________.",
+          "question_id": 22,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Neon lights work on the principle of ionization of gas.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Condensation of gas",
+              "option_2": "Ionization of gas",
+              "option_3": "Solidification of gas",
+              "option_4": "Hydrogenation of gas"
+            }
+          ],
+          "question": "Neon lights work on the principle of ____________.",
+          "question_id": 23,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Sublimation is a change of state where solids convert directly into vapors, or vice-versa.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Condensation",
+              "option_2": "Frosting",
+              "option_3": "Evaporation",
+              "option_4": "Sublimation"
+            }
+          ],
+          "question": "The process by which a solid changes into vapor without going through liquid phase is called __________.",
+          "question_id": 24,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Evaporation is the phenomenon behind the cooling of water stored in  an earthen pot.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Condensation",
+              "option_2": "Transpiration",
+              "option_3": "Osmosis",
+              "option_4": "Evaporation"
+            }
+          ],
+          "question": "The phenomenon responsible for the cooling of water stored in an earthen pot is:",
+          "question_id": 25,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The melting point of a substance depends on its inter particle forces of attraction, but not on the colour. Greater the forces of attraction, higher is the melting point.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Condensation is the reverse of boiling.",
+              "option_2": "When a liquid is heated it becomes a gas or vapor.",
+              "option_3": "The melting point of a substance depends on its colour.",
+              "option_4": "All are false statements."
+            }
+          ],
+          "question": "Identify the FALSE statement from among the following.",
+          "question_id": 26,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Common salt completely diffuses into the water when mixed thoroughly. Thus, the final solution will be completely in a liquid state.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Solid",
+              "option_2": "Liquid",
+              "option_3": "Gaseous",
+              "option_4": "Partly liquid and partly gaseous"
+            }
+          ],
+          "question": "When a spoon of common salt is thoroughly mixed into a glass of water, the final solution will be in the state of :",
+          "question_id": 27,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Food colour completely dissolves in water and hence is a diffusion process.<\/p><p>Oil does not mix with water irrespective of stirring, hence it is not a diffusion process.<\/p><p>Sand does not mix with water. It settles down at the bottom of water irrespective of stirring. Hence it is not a diffusion process.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Only i",
+              "option_2": "Only i and iii",
+              "option_3": "Only ii and iii",
+              "option_4": "i,  ii, and iii"
+            }
+          ],
+          "question": "Which of the following processes involves diffusion?<p>i. Adding food colour to water<\/p><p>ii. Adding oil to water and stirring<\/p><p>iii. Adding sand to water and stirring<\/p>",
+          "question_id": 28,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Evaporation is a slow process compared to boiling.<\/p><p>More is the surface area of the liquid higher is the evaporation.<\/p><p>Boiling point of a liquid is fixed irrespective of its volume.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Only statement (i) is correct.",
+              "option_2": "Only statement (ii) is correct.",
+              "option_3": "Only statements (i) and (ii) are correct.",
+              "option_4": "Only statements (i) and  (iii) are correct."
+            }
+          ],
+          "question": "Identify the CORRECT statement(s) from among the following.<p>i. Evaporation is quicker than boiling.<\/p><p>ii. Evaporation depends on the surface area of the liquid.<\/p><p>iii. Boiling point of a liquid varies with the volume of the liquid.<\/p>",
+          "question_id": 29,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Matter contains millions of tiny particles. Forces of attraction between particles bind them together. The forces of attraction are highest in solids, medium in liquids and least in gases.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Only (i)",
+              "option_2": "Both (i) and (ii)",
+              "option_3": "Only (ii)",
+              "option_4": "All (i), (ii), and (iii)"
+            }
+          ],
+          "question": "Which of the following statements is true?<p>i) Matter contains huge sized particles.<\/p><p>ii) The particles are bound together by forces of attraction.<\/p><p>iii) The forces of attraction are the same in solids and liquids.<\/p>",
+          "question_id": 30,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Plasma is gas that is super-heated with electricity or heat.<\/p><p>BEC is gas that is super-cooled to temperatures around absolute zero.<\/p><p>Though the theory of BEC was proposed by Bose-Einstein pair in 1924, it was in 1995 that the first BEC was made.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "a&minus;(ii) b&minus; (iii) c&minus;(i) ",
+              "option_2": "a&minus;(iii) b&minus; (i) c&minus;(iv) ",
+              "option_3": "a&minus;(i) b&minus; (iii) c&minus;(i) ",
+              "option_4": "a&minus;(iii) b&minus; (ii) c&minus;(iv)"
+            }
+          ],
+          "question": "Match the following:<table class='quiz-table' cellspacing='0' cellpadding='0'><tr><td>a. Plasma <\/td><td>i) 1924<\/td><\/tr><tr><td>b. Bose-Einstein condensate<\/td><td>ii) Super-hot gas<\/td><\/tr><tr><td rowspan='2'>c. Year in which first BEC was made <\/td><td> iii) Super-cooled gas<\/td><\/tr><tr><td>iv) 1995<\/td><\/tr><\/table>",
+          "question_id": 31,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The inter-particle forces of gases are weakest compared to solids and liquids. Hence the gas particles are not bound to each other and they are always free to move.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both the statements are correct, and 2 is the correct explanation of 1",
+              "option_2": "Both the statements are correct, and 2 is the incorrect explanation of 1",
+              "option_3": "Statement 1 is correct, and 2 is incorrect",
+              "option_4": "Statement 1 is incorrect, and 2 is correct"
+            }
+          ],
+          "question": "Statement 1: Gas particles are very distant from each other.<p>Statement 2: Gases have weakest interparticle forces; this makes gas particles move freely.<\/p>",
+          "question_id": 32,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>To convert Celsius to Kelvin, the formula is T(K) = T(C) &plus; 273<\/p><p>Thus, 25&deg;C = 25 &plus; 273 = 298 K<\/p><p>38&deg;C = 38 &plus; 273 = 311 K<\/p><p>66&deg;C = 66 &plus; 273 = 339 K<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "a&minus;(ii) b&minus; (iii) c&minus;(i) ",
+              "option_2": "a&minus;(ii) b&minus; (i) c&minus;(iii) ",
+              "option_3": "a&minus;(i) b&minus; (iii) c&minus;(ii) ",
+              "option_4": "a&minus;(iii) b&minus; (ii) c&minus;(i)"
+            }
+          ],
+          "question": "Match the following Kelvin temperatures with their correct Celsius temperatures.<table class='quiz-table' cellspacing='0' cellpadding='0'><tr><td>a. 25&deg;C<\/td><td>i) 339K<\/td><\/tr><tr><td>b. 38&deg;C<\/td><td>ii) 298K<\/td><\/tr><tr><td>c. 66&deg;C<\/td><td> iii) 311K<\/td><\/tr><\/table>",
+          "question_id": 33,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Steel is a very rigid metal. It melts at very high temperatures around 1370&deg;C.<\/p><p>At melting point, the attractive forces in steel break turning it into liquid. Then the molten liquid is poured into molds to create new shapes.<\/p><p>Freezing steel to &minus;40&deg;C or boiling steel in water to 100&deg;C does not change the chemical property of steel and will not help in creating new shapes from it.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Breaking steel into fine pieces ",
+              "option_2": "Adding water to steel and boiling to 100&deg;C",
+              "option_3": "Melting steel in furnaces at very high temperatures",
+              "option_4": "Freezing steel to &minus;40&deg;C"
+            }
+          ],
+          "question": "Identify a process suitable to create new shapes from steel.",
+          "question_id": 34,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Iodine sublimes into vapor when heated, while salt will not.<\/p><p>To separate the iodine from iodine salt mixture, she has to heat it. On heating, iodine will form purple vapors leaving behind salt crystals.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Dissolve the mixture in water; salt will dissolve and iodine will form residue",
+              "option_2": "Freeze the mixture; iodine cannot be frozen, so remains powdery",
+              "option_3": "Heat the mixture; iodine sublimes leaving behind salt",
+              "option_4": "Put the mixture in sun and observe for color change"
+            }
+          ],
+          "question": "Riya has a mixture of iodine and non&minus;iodized table salt. If she wants to separate salt from the mixture, which of the following will be the best suited method?",
+          "question_id": 35,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "There are free spaces between ice particles, hence ice has lesser density compared to water. This makes ice cubes float on liquids such as water and juice.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Yes",
+              "option_2": "No",
+              "option_3": "May be",
+              "option_4": "Can&#39;t say"
+            }
+          ],
+          "question": "On a hot summer day, Lily wanted to drink juice. Her mother gave her watermelon juice and added some ice cubes into the juice glass. Will ice cubes sink to the bottom?",
+          "question_id": 36,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "When air particles touch the chilled surface of the cool drink glasses, the water vapor in the air particles loses its temperature and converts into water, and gets settled on the glass surface. This process is called condensation.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Evaporation",
+              "option_2": "Condensation",
+              "option_3": "Melting",
+              "option_4": "Vaporisation"
+            }
+          ],
+          "question": "Shruti and her friends are having a party with chilled cool drinks. They all poured cool drinks into glasses and are talking to each other. After some time, the outer surfaces of the glasses are coated with water droplets. What is the phenomenon behind this?",
+          "question_id": 37,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>The boiling point of water depends on the pressure on its particles.<\/p><p>The higher the pressure, the higher the boiling point and vice versa.<\/p><p>In a vacuum chamber, the pressure is zero on water particles.<\/p><p>So, they are free to break their bonds and become vapor easily. So water boils at less than its usual boiling point, i.e., less than 100&deg;C in a vacuum chamber.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Water always boils at 100&deg;C irrespective of where it is present.",
+              "option_2": "Water boils at less than 100&deg;C in a vacuum chamber.",
+              "option_3": "Water boils at more than 100&deg;C in a vacuum chamber.",
+              "option_4": "Water evaporates as soon as it is kept in a vacuum chamber."
+            }
+          ],
+          "question": "Smith and John are conducting an experiment. They put a vessel of water in a vacuum chamber and are supplying heat to it to boil the water. At what temperature will the water boil under these conditions?",
+          "question_id": 38,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Water of crystallisation is the fixed number of water molecules present in one formula unit of a salt.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Water of crystallisation",
+              "option_2": "Water of crystal",
+              "option_3": "Water of composition",
+              "option_4": "Both B and C"
+            }
+          ],
+          "question": "___________ is the fixed number of water molecules present in one formula unit of a salt.",
+          "question_id": 39,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The chemical formula of washing soda is Na<sub>2<\/sub>CO<sub>3<\/sub>.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Na<sub>2<\/sub>CO<sub>3<\/sub>",
+              "option_2": "NaH<sub>2<\/sub>CO<sub>3<\/sub>",
+              "option_3": "NaHCO<sub>3<\/sub>",
+              "option_4": "Na<sub>2<\/sub>CO<sub>3<\/sub>. 10 H<sub>2<\/sub>O"
+            }
+          ],
+          "question": "The chemical formula of Washing soda is _________.",
+          "question_id": 40,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The chemical name of bleaching powder is Calcium oxychloride.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Calcium bichloride",
+              "option_2": "Calcium oxychloride",
+              "option_3": "Calcium chlorite",
+              "option_4": "Calcium hypochloride"
+            }
+          ],
+          "question": "The chemical name of bleaching powder is ________________.",
+          "question_id": 41,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Sodium hydroxide is crystalline which is white in colour and it is a deliquescent solid.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "White in colour",
+              "option_2": "Crystalline",
+              "option_3": "Deliquescent",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "Which of the following are the physical properties of NaOH?",
+          "question_id": 42,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "When CH<sub>3<\/sub>COOH and NaOH combine to form a salt, the salt formed by the reaction of these two compounds is CH<sub>3<\/sub>COONa. The nature of CH<sub>3<\/sub>COONa is basic and the pH value of CH<sub>3<\/sub>COONa salt solution is greater than 7.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Basic, equal to 14",
+              "option_2": "Neutral, equal to 7",
+              "option_3": "Acidic, less than 7",
+              "option_4": "Basic, More than 7"
+            }
+          ],
+          "question": "When CH<sub>3<\/sub>COOH and NaOH combine to form a salt, the salt formed by the reaction of these two compounds is CH<sub>3<\/sub>COONa. The nature of CH<sub>3<\/sub>COONa is ______ and the pH value of CH<sub>3<\/sub>COONa salt solution is __________ .",
+          "question_id": 43,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The salts which have the same positive ions or negative ions are said to belong to one family of salts.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "The salts have the same positive ion.",
+              "option_2": "The salts have the same negative ion.",
+              "option_3": "The salts have the same no. of ions.",
+              "option_4": "Both A and B."
+            }
+          ],
+          "question": "Salts are said to belong to one family if &minus;",
+          "question_id": 44,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The pH of the rainwater in the industrial area is less than 7 due to the presence of acidic gases. When this water flows into the water bodies it kills most of the aquatic life.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Basic gases",
+              "option_2": "Ozone gas",
+              "option_3": "Acidic gases",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "The pH of the rainwater in the industrial area is less than 7 due to the presence of _______. When this flows into the water bodies it kills most of the aquatic life.",
+          "question_id": 45,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Household ammonia is less basic than sodium hydroxide because the pH of household ammonia is less than pH of Sodium hydroxide.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both I and II are correct and, II is the reason behind I.",
+              "option_2": "Both I and II are correct, but II is not the reason behind I.",
+              "option_3": "I is correct and II is incorrect.",
+              "option_4": "I is incorrect and II is correct."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer &minus;<p>I. Household ammonia is less basic than sodium hydroxide.<\/p><p>II. The pH of household ammonia is less than pH of Sodium hydroxide.<\/p>",
+          "question_id": 46,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "pH scale is used to estimate the strength of acids and bases by measuring the concentration of H<sup>&plus;<\/sup> ions.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Concentration of H<sup>&plus;<\/sup> ions",
+              "option_2": "Concentration of H atoms",
+              "option_3": "Concentration of H<sub>2<\/sub>O molecules",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "pH scale is used to estimate the strength of acids and bases by measuring which of the following &minus;",
+          "question_id": 47,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "When the soil is too acidic, farmers protect their crop by spreading slaked lime over the soil or powdered limestone over the soil. This is because limestone is basic in nature and can neutralise the acidic soil.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "They spread slaked lime over the soil.",
+              "option_2": "They spread powdered limestone over the soil.",
+              "option_3": "They spread water over the soil.",
+              "option_4": "Both A and B"
+            }
+          ],
+          "question": "When the soil is too acidic, how do the farmers protect their crop?",
+          "question_id": 48,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Non&minus;metal&minus;oxides are acidic in nature because when they react with a base they form salt and water, just the way reaction between a base and an acid forms salt and water. Hence, the reaction between a base and a non&minus;metal oxide can be classified as a neutralisation reaction.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both I and II are correct and, II is the reason behind I.",
+              "option_2": "Both I and II are correct, but II is not the reason behind I.",
+              "option_3": "I is correct and II is incorrect.",
+              "option_4": "I is incorrect and II is correct."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer &minus;<p>I. Non&minus;metal oxides are acidic in nature.<\/p><p>II. The reaction between a base and a non&minus;metal oxide is a neutralisation reaction.<\/p>",
+          "question_id": 49,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The acids reaction in which a single compound breaks into two or more single substances is called decomposition reaction.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Acids produce H<sup>&plus;<\/sup> ions in water.",
+              "option_2": "Acids produce &minus;OH ions in water.",
+              "option_3": "Acids produce H<sub>2<\/sub>O ions in water.",
+              "option_4": "All of the above."
+            }
+          ],
+          "question": "Why do acids conduct electricity in aqueous solution?",
+          "question_id": 50,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "When carbon dioxide is passed through the lime water it turns milky because when carbon dioxide reacts with lime water (Ca(OH)<sub>2<\/sub>) it produces calcium carbonate in the form of white precipitate which creates the milky effect.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both I and II are correct and, II is the reason behind I.",
+              "option_2": "Both I and II are correct, but II is not the reason behind I.",
+              "option_3": "I is correct and II is incorrect",
+              "option_4": "I is incorrect and II is correct."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer &minus;<p>I. When carbon dioxide is passed through the lime water it turns milky.<\/p><p>II. When carbon dioxide reacts with lime water it produces milk.<\/p>",
+          "question_id": 51,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "When a metal&minus;oxide are basic in nature because when they react with an acid they form salt and water, just the way reaction between a base and an acid forms salt and water. Hence, the reaction between an acid and a metal&minus;oxide can be classified as a neutralisation reaction.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both I and II are correct and, II is the reason behind I",
+              "option_2": "Both I and II are correct, but II is not the reason behind I.",
+              "option_3": "I is correct and II is incorrect.",
+              "option_4": "I is incorrect and II is correct."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer &minus;<p>I. Metal oxides are acidic in nature.<\/p><p>II. The reaction between an acid and a metal&minus;oxide is also a neutralisation reaction.<\/p>",
+          "question_id": 52,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Vanilla essence and onion lose their odour in the presence of a base. Both of them lose their odour in basic medium whereas their odour is retained in the acidic medium.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Onion",
+              "option_2": "Vanilla essence",
+              "option_3": "Rosewater",
+              "option_4": "Both A and B"
+            }
+          ],
+          "question": "In a basic medium, which of the following olfactory indicators will lose their odour?",
+          "question_id": 53,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Phenolphthalein and Methyl orange are natural indicators. Whereas, Litmus, Turmeric, Cabbage leaves, Hydrangea, Petunia and Geranium are natural indicators.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "I, II and IV",
+              "option_2": "III, VII and VIII",
+              "option_3": "II, III and IV",
+              "option_4": "II and IV"
+            }
+          ],
+          "question": "Which of the following is&#8725;are not natural acid&minus;base indicators?<p>I. Litmus<\/p><p>II. Phenolphthalein<\/p><p>III. Geranium<\/p><p>IV. Methyl orange<\/p><p>V. Turmeric<\/p><p>VI. Cabbage leaves<\/p><p>VII. Hydrangea<\/p><p>VIII. Petunia<\/p>",
+          "question_id": 54,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "The chemical formula of baking soda is NaHCO<sub>3<\/sub>.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "NaH<sub>2<\/sub>CO<sub>3<\/sub>",
+              "option_2": "Na<sub>2<\/sub>CO<sub>3<\/sub>",
+              "option_3": "NaHCO<sub>3<\/sub>",
+              "option_4": "Na(HCO<sub>3<\/sub>)<sub>2<\/sub>"
+            }
+          ],
+          "question": "The chemical formula of Baking soda is _________.",
+          "question_id": 55,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p> Sodium carbonate (Na<sub>2<\/sub>CO<sub>3<\/sub>) turns the colour of litmus solution into blue.<\/p><p> Sodium carbonate (Na<sub>2<\/sub>CO<sub>3<\/sub>) is basic in nature because it is made from a weak acid (H<sub>2<\/sub>CO<sub>3<\/sub>) and a strong base (NaOH).<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both I and II are correct and, II is the reason behind I.",
+              "option_2": "Both I and II are correct, but II is not the reason behind I.",
+              "option_3": "I is correct and II is incorrect.",
+              "option_4": "I is incorrect and II is correct."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer &minus;<p>I. Sodium carbonate (Na<sub>2<\/sub>CO<sub>3<\/sub>) turns the colour of litmus solution into blue.<\/p><p>II. Sodium carbonate (Na<sub>2<\/sub>CO<sub>3<\/sub>) is neutral in nature because it is made from a strong acid (H<sub>2<\/sub>CO<sub>3<\/sub>) and a strong base (NaOH).<\/p>",
+          "question_id": 56,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Water of crystallisation is the fixed number of water molecules present in one formula unit of a salt.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Water of crystallisation",
+              "option_2": "Water of crystal",
+              "option_3": "Water of composition",
+              "option_4": "Both B and C"
+            }
+          ],
+          "question": "___________ is the fixed number of water molecules present in one formula unit of a salt.",
+          "question_id": 57,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Baking soda solution is alkaline in nature and it can neutralise the acid. The reaction<\/p><p>can be represented by the following chemical equation &minus;<\/p><p style='text-align:center;'>NaHCO<sub>3<\/sub> (aq.) &plus; HCl (aq.) &rarr; NaCl (aq.) &plus; H<sub>2<\/sub>O (l) &plus; CO<sub>2<\/sub> (g) &uarr;<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "NaHCO<sub>3<\/sub> (aq.) &plus; HCl (aq.) &rarr; NaCl (aq.) &plus; H<sub>2<\/sub> (g) &plus; CO<sub>2<\/sub> (g) &uarr;",
+              "option_2": "NaHCO<sub>3<\/sub> (aq.) &plus; HCl (aq.) &rarr; NaCl (aq.) &plus; H<sub>2<\/sub>O (g) &plus; CO<sub>2<\/sub> (g) &uarr;",
+              "option_3": "NaHCO<sub>3<\/sub> (aq.) &plus; HCl (aq.) &rarr; NaCl (aq.) &plus; O<sub>2<\/sub> (g) &plus; CO<sub>2<\/sub> (g) &uarr;",
+              "option_4": "NaHCO<sub>3<\/sub> (aq.) &plus; HCl (aq.) &rarr; NaCl (aq.) &plus; H<sub>2<\/sub>O (l) &plus; CO<sub>2<\/sub> (g) &uarr;"
+            }
+          ],
+          "question": "Baking soda solution is alkaline in nature and it can neutralise the acid. The reaction can be represented by which of the following chemical equation?",
+          "question_id": 58,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "Bleaching powder deteriorates when to exposed to air because carbon dioxide reacts with bleaching powder to form calcium carbonate while releasing chlorine gas.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Hydrogen, calcium hydroxide",
+              "option_2": "Water vapour, calcium hydroxide",
+              "option_3": "Oxygen, calcium oxide",
+              "option_4": "Carbon dioxide, calcium carbonate"
+            }
+          ],
+          "question": "Bleaching powder deteriorates when to exposed to air because ___________ reacts with bleaching powder to form ___________ while releasing chlorine gas",
+          "question_id": 59,
+          "status": 0,
+          "subject_id": 2
+        },
+        {
+          "explanation": "<p>Statement I, II and IV are true. Whereas III and V are false. The correct version of false the statement is as follows &minus;<\/p><p>Bleaching powder is used for bleaching wood pulp in the paper industry.<\/p><p>Bleaching powder is used in the manufacture of chloroform.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "I, IV and III",
+              "option_2": "II and IV",
+              "option_3": "III and V",
+              "option_4": "Only I"
+            }
+          ],
+          "question": "Which of the following statements are false?<p>I. Sodium hydroxide is used in the manufacture of soaps and detergents.<\/p><p>II. Sodium hydroxide is used as a cleansing agent for machines and metal sheets.<\/p><p>III. Sodium hydroxide is used for bleaching wood pulp in the paper industry.<\/p><p>IV. Sodium hydroxide is used in the purification of bauxite, the ore of aluminium<\/p><p>V. Sodium hydroxide is used in the manufacture of chloroform.<\/p>",
+          "question_id": 60,
+          "status": 0,
+          "subject_id": 2
+        }
+      ],
+      "total_marks": 60,
+      "total_questions": 60,
+      "wrong_answers": 0
+    },
+    "mathematics": {
+      "attempted_questions": 0,
+      "correct_answers": 0,
+      "questions": [
+        {
+          "explanation": "Robert Hooke published his observations related to the discovery of cell in his scientific book called Micrographia.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Macrograph",
+              "option_2": "Nanographia",
+              "option_3": "Mycographia",
+              "option_4": "Micrographia"
+            }
+          ],
+          "question": "Robert Hooke published his observations in a book called _______.",
+          "question_id": 1,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A simple microscope is made up of a single lens.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Compound microscope",
+              "option_2": "Light microscope",
+              "option_3": "Simple microscope",
+              "option_4": "Electron microscope"
+            }
+          ],
+          "question": "Which of the following types of microscopes has a single lens?",
+          "question_id": 2,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A coverslip is gently placed on the mounted material to avoid the formation of air bubbles.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "To avoid oozing of water.",
+              "option_2": "To avoid oozing of stain.",
+              "option_3": "To avoid formation of air bubbles.",
+              "option_4": "To avoid crushing of mounting materials."
+            }
+          ],
+          "question": "Why is the coverslip put on the mounted material on a slide very gently?",
+          "question_id": 3,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Diffusion is also known as passive transport.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Active transport",
+              "option_2": "Simple transport",
+              "option_3": "Passive transport",
+              "option_4": "Complex transport"
+            }
+          ],
+          "question": "Diffusion is also known as __________.",
+          "question_id": 4,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "When an egg is placed in dilute hydrochloric acid, the egg shell made of calcium carbonate breaks, leaving behind a naked egg (with only a cell membrane). This de&minus;shelled egg is used for performing osmosis experiments to enable a better under understanding of movement of substances into and out of the egg.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Dilute hydrochloric acid deshells the egg.",
+              "option_2": "Dilute hydrochloric acid softens the egg.",
+              "option_3": "Dilute hydrochloric acid hardens the egg.",
+              "option_4": "Dilute hydrochloric acid divides the egg into halves."
+            }
+          ],
+          "question": "What is the importance of placing the egg in dilute hydrochloric acid while experimenting with osmosis?",
+          "question_id": 5,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Nucleoplasm is the fibrous, transparent, semi&minus;solid granular liquid present inside the nucleus.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Outer covering of the nucleus.",
+              "option_2": "Fibrous, transparent, semi&minus;solid granular liquid inside the nucleus.",
+              "option_3": "Dense body found inside the nucleus.",
+              "option_4": "Globular structure involved in protein synthesis."
+            }
+          ],
+          "question": "Nucleoplasm is the __________.",
+          "question_id": 6,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Plant and animal cells are examples of eukaryotic cells.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Prokaryotic",
+              "option_2": "Eukaryotic",
+              "option_3": "Heterokaryotic",
+              "option_4": "Akaryotic"
+            }
+          ],
+          "question": "Plant and animal cells are examples of _________ cells.",
+          "question_id": 7,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Ectoplasm is also known as the cell cortex.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Endoplasm",
+              "option_2": "Cytoplasm",
+              "option_3": "Protoplasm",
+              "option_4": "Ectoplasm"
+            }
+          ],
+          "question": "Cell cortex is also known as _________.",
+          "question_id": 8,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Golgi complex was discovered by Camillo Golgi.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Camillo Golgi",
+              "option_2": "Santiago Cajal",
+              "option_3": "W. Flemming",
+              "option_4": "Ramon Golgi"
+            }
+          ],
+          "question": "Golgi complex was discovered by __________.",
+          "question_id": 9,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "All lipases, proteases, and nucleases are types of digestive or hydrolytic enzymes.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Proteases",
+              "option_2": "Nucleases",
+              "option_3": "Lipases",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "_________ are the hydrolytic enzymes.",
+          "question_id": 10,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The ATP or the Adenosine Triphosphate is referred to as the energy currency of the cell.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Mitochondria",
+              "option_2": "Adenosine Triphosphate",
+              "option_3": "Chloroplast",
+              "option_4": "Lysosome"
+            }
+          ],
+          "question": "The energy currency of the cell is the _________.",
+          "question_id": 11,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The third phase of mitosis is anaphase.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Metaphase",
+              "option_2": "Anaphase",
+              "option_3": "Prophase",
+              "option_4": "Telophase"
+            }
+          ],
+          "question": "The third phase of mitosis is known as __________.",
+          "question_id": 12,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>Robert Hooke lived in the 16th century.<\/p><p>He observed dead cork cells under a microscope.<\/p><p>Zacharia Janssen and Hans Zanssen invented microscope using lenses.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Robert Hooke lived in the 18th century.",
+              "option_2": "Robert Hooke observed cork cells under a microscope.",
+              "option_3": "Robert Hooke invented a microscope using lenses.",
+              "option_4": "Both A and B"
+            }
+          ],
+          "question": "Choose the correct statement related to Robert Hooke.",
+          "question_id": 13,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Prokaryotes are organisms which lack a distinct nucleus and membrane&minus;bound cell organelles.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Eukaryotes",
+              "option_2": "Prokaryotes",
+              "option_3": "Diploids",
+              "option_4": "True organisms"
+            }
+          ],
+          "question": "Organisms lacking a distinct nucleus and membrane&minus;bound cell organelles are called  __________.",
+          "question_id": 14,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A concentrated solution is a solution with a greater concentration of solutes.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Solution A",
+              "option_2": "Solution B",
+              "option_3": "Solution C",
+              "option_4": "All the above"
+            }
+          ],
+          "question": "There are three 200 ml sugar solutions, A, B, and C. However, the quantity of the solute in each solution varies. Solution A has 30 gm of sugar, solution B has 45gms of sugar, and solution C has 55 gm of sugar dissolved in 200 ml of water, respectively. Which of these solutions has a high concentration?",
+          "question_id": 15,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>Nucleolus acts as a site for ribosome formation, and is hence known as the factory of ribosomes.<\/p><p>Nucleolus is rich in proteins and ribonucleic acid(RNA).<\/p><p>Nucleolus is embedded within the nucleoplasm.<\/p><p>Nucleolus is a non&minus;membrane bound organelle.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "True&rarr; 3, 4; False&rarr; 1, 2",
+              "option_2": "True&rarr; 1, 2; False&rarr; 3, 4",
+              "option_3": "True&rarr; 1, 3; False&rarr; 2, 4",
+              "option_4": "True&rarr; 2, 4; False&rarr; 1, 3"
+            }
+          ],
+          "question": "State true or false:<p>1. Nucleolus acts as a site for ribosome formation.<\/p><p>2. Nucleolus is rich in proteins and ribonucleic acid(RNA).<\/p><p>3. Nucleolus is embedded within the cytoplasm.<\/p><p>4. Nucleolus is surrounded by a single membrane.<\/p>",
+          "question_id": 16,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>Chromosomes are found inside a nucleus during cell division.<\/p><p>DNA is a dense coded structure elaborately known as Deoxyribonucleic acid.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "1 and 3",
+              "option_2": "2 and 3",
+              "option_3": "1 and 2",
+              "option_4": "All are incorrect"
+            }
+          ],
+          "question": "Identify the incorrect statements from the following:<p>1. Chromosomes are found suspended in the cytoplasm of a cell.<\/p><p>2. During fertilisation, the haploid male and female gametes unite to form diploid cells.<\/p><p>3. DNA is a dense coded structure elaborately known as Ribonucleic acid.<\/p>",
+          "question_id": 17,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Vacuoles help in expelling excess water and waste materials from the bacterial cells, digest food in protozoans, and also provide turgidity and a rigid support to the plant.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Expelling excess water and waste materials from the bacterial cells.",
+              "option_2": "Digesting food in protozoans.",
+              "option_3": "Providing turgidity and a rigid support to the plant.",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "Which of these are the functions of a vacuole?",
+          "question_id": 18,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Chromoplasts store certain pigments in the roots, fruits, and flowers of a plant which give a distinctive colour. These bright colours help in attracting the insects towards the plants for pollination or seed dispersal.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both the statements 1 and 2 are correct, and 2 is the correct explanation of 1.",
+              "option_2": "Both the statements 1 and 2 are correct, and 2 is not related to 1.",
+              "option_3": "Statement 1 is correct, and statement 2 is incorrect.",
+              "option_4": "Statement 1 is incorrect, and statement 2 is correct."
+            }
+          ],
+          "question": "Statement 1: Chromoplasts help in attracting insects for pollination.<p>Statement 2: Chromoplast helps in giving distinctive colour to the fruits, roots, and flowers of a plant.<\/p>",
+          "question_id": 19,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "In osmosis, the water molecules are free to move in both directions across the plasma membrane. However, osmosis is the net movement of water molecules that takes place from the lower concentrated region (dilute) to the higher concentrated region.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are correct, and R is the correct explanation of A.",
+              "option_2": "Both A and R are correct, and R is the incorrect explanation of A.",
+              "option_3": "A is correct, R is incorrect.",
+              "option_4": "A is incorrect, R is correct."
+            }
+          ],
+          "question": "Assertion(A): Osmosis is a one&minus;sided movement of solvent particles.<p>Reason(R): In osmosis, the net movement of water molecules takes place from the dilute solution to the concentrated one.<\/p>",
+          "question_id": 20,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Cheek cells divide approximately every 24 hours and constantly shed from the body. The rod&minus;shaped chromosomes appear only during the division of a cell. As the observation clearly states the visibility of chromosomes, cheek cells are undergoing cell divisions.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Cheek cells are shedding.",
+              "option_2": "Cheek cells are in the process of intaking nutrients.",
+              "option_3": "Transport of substances is taking place inside the cheek cells.",
+              "option_4": "Cheek cells are undergoing cell division."
+            }
+          ],
+          "question": "Jack prepares a sample of human cheek cells and places them under a powerful microscope to capture the live image of these cells. He observes a distinct nucleus with rod&minus;shaped chromosomes in each cell. What can be inferred from these results?",
+          "question_id": 21,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Plant cells contain an outer protective layer known as the cell wall, which is made up of a complex polysaccharide, cellulose. In contrast, animal cells do not have a cell wall. Hence, this particular function of the Golgi complex is seen only in plant cells and not in the animal cells.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Animal cells",
+              "option_2": "Plant cells",
+              "option_3": "Both A and B",
+              "option_4": "Insufficient information"
+            }
+          ],
+          "question": "While learning about the Golgi complex, Jack comes across a statement &#34;The Golgi apparatus serves as the site for the synthesis of complex polysaccharides of the cell wall.&#34; This function of the Golgi complex is seen in which type of cell?",
+          "question_id": 22,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The branch of science that deals with identification, nomenclature, and classification of organisms is called taxonomy.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Biodiversity",
+              "option_2": "Taxonomy",
+              "option_3": "Classification",
+              "option_4": "Ecology"
+            }
+          ],
+          "question": "The branch of science that deals with identification, nomenclature, and classification of organisms is called __________.",
+          "question_id": 23,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "All prokaryotes, i.e. organisms which lack a true nucleus are placed under kingdom Monera. All the other kingdoms consist of eukaryotic organisms, i.e. organisms with a true nucleus.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Kingdom Animalia",
+              "option_2": "Kingdom Fungi",
+              "option_3": "Kingdom Monera",
+              "option_4": "Kingdom Plantae"
+            }
+          ],
+          "question": "Pick the odd one based on the presence of a true nucleus.",
+          "question_id": 24,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<i>Marchantia<\/i> is a bryophyte, while all others are thallophytes.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Chara",
+              "option_2": "Ulothrix",
+              "option_3": "Marchantia",
+              "option_4": "Laminaria"
+            }
+          ],
+          "question": "Pick the odd one out.",
+          "question_id": 25,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Dicots have pentamerous flowers, i.e. flowers have five or multiples of 5 petals.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Monocots",
+              "option_2": "Gymnosperms",
+              "option_3": "Dicots",
+              "option_4": "Thallophytes"
+            }
+          ],
+          "question": "Pentamerous flowers is a characteristic feature of _________.",
+          "question_id": 26,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A triploblastic animal has three germ layers&minus; ectoderm, mesoderm, and endoderm.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Two",
+              "option_2": "Four",
+              "option_3": "Three",
+              "option_4": "One"
+            }
+          ],
+          "question": "How many germ layers does a triploblastic animal have?",
+          "question_id": 27,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Gastrozooids are the feeding individuals, while dactylozooids are the protective individuals.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Gonozooids, Dactylozooids",
+              "option_2": "Dactylozooids, Gastrozooids",
+              "option_3": "Gastrozooids, Gonozooids",
+              "option_4": "Gastrozooids, Dactylozooids"
+            }
+          ],
+          "question": "Feeding individuals: ____________; Protective individuals: __________",
+          "question_id": 28,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Annelids are also known as ringed worms or segmented worms.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Unsegmented worms",
+              "option_2": "Threadworms",
+              "option_3": "Flatworms",
+              "option_4": "Ringed worms"
+            }
+          ],
+          "question": "Annelids are also known as __________.",
+          "question_id": 29,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Molluscs form the second largest group of animals.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Arthropods",
+              "option_2": "Annelids",
+              "option_3": "Molluscs",
+              "option_4": "Echinoderms"
+            }
+          ],
+          "question": "Which of these is the second largest group of animals?",
+          "question_id": 30,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A feature of reproduction that is common to amoeba, spirogyra and yeast is that they all reproduce asexually.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "They reproduce asexually.",
+              "option_2": "They are all unicellular.",
+              "option_3": "They reproduce only sexually.",
+              "option_4": "They are all multicellular."
+            }
+          ],
+          "question": "Which among the following is a feature of reproduction that is common in amoeba, spirogyra, and yeast?",
+          "question_id": 31,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The nucleus of a cell contains chromosomes which are made up of DNA molecules.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "RNA",
+              "option_2": "DNA",
+              "option_3": "Nucleus",
+              "option_4": "Mitochondria"
+            }
+          ],
+          "question": "The nucleus of a cell contains chromosomes which are made up of __________ molecules.",
+          "question_id": 32,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The process of replication of DNA is a biochemical process which takes place inside the cell. This process is not a perfect process as DNA molecules are really big in size and some changes can happen while DNA is being copied. These changes make the daughter DNA different from the parent one, which further causes variation.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "DNA change",
+              "option_2": "Environmental change",
+              "option_3": "Cell malfunction",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "Variation in the offspring&#39;s occurs due to ___________.",
+          "question_id": 33,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Cloning is the only way by which sexually reproducing animals can produce identical offsprings.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Sexually reproduction",
+              "option_2": "Asexual reproduction",
+              "option_3": "Cloning",
+              "option_4": "Replication"
+            }
+          ],
+          "question": "Which is the only way by which larger animals by sexual reproduction can have identical offspring?",
+          "question_id": 34,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "DNA copying is necessary during reproduction because it leads to the transmission of characters from one generation to the next generation and brings about variation.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are true.",
+              "option_2": "Both A and R are true, but R is not the right explanation of A.",
+              "option_3": "Assertion A is true, but R is false.",
+              "option_4": "Assertion A is false, but R is true."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer:<p>Assertion(A): DNA copying is necessary during reproduction.<\/p><p>Reason (R): DNA copying leads to the transmission of characteristics from parents to offspring.<\/p>",
+          "question_id": 35,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Advantages of multiple fission are single individual can produce large numbers, can occur in unfavourable conditions also and progenies are identical to parents.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i and ii",
+              "option_2": "i and iii",
+              "option_3": "ii and iii",
+              "option_4": "i, ii and iii"
+            }
+          ],
+          "question": "Malarial parasite divides into many daughter individuals simultaneously through multiple fission. Which statement justify the advantage of this type of reproduction in this malarial parasite?<p>i. A single individual can produce large number<\/p><p>ii. Can occur in unfavourable conditions also.<\/p><p>iii. Progenies are identical to parents.<\/p>",
+          "question_id": 36,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "During unfavourable conditions, a protective wall, known as Cyst is formed around the cell of plasmodium.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Plasma membrane",
+              "option_2": "Cell membrane",
+              "option_3": "Cyst",
+              "option_4": "Protective layer"
+            }
+          ],
+          "question": "During unfavourable conditions, a protective wall, known as ..... is formed around the cell of plasmodium.",
+          "question_id": 37,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Bread mould prefers damp and warm substratum with ample supply of nutrients on which its air-borne spore lands and germinate to produce mycelium.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i and iii",
+              "option_2": "ii and iv",
+              "option_3": "i and ii",
+              "option_4": "iii and iv"
+            }
+          ],
+          "question": "Factors responsible for the rapid spread of bread mould on slice of bread are:<p>i. large number of spores<\/p><p>ii. availability of moisture and nutrients in bread<\/p><p>iii. presence of tubular branched hyphae<\/p><p>iv. formation of round shaped sporangia<\/p>",
+          "question_id": 38,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The spores can be of varied types in the varied individuals like Bacteria, fungi and Algae. But spores are not formed in paramecium.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Bacteria",
+              "option_2": "Paramecium",
+              "option_3": "Fungi",
+              "option_4": "Algae"
+            }
+          ],
+          "question": "Among the following unicellular organisms, choose the organism which does not reproduce through spore formation.",
+          "question_id": 39,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "If the head of planaria is cut in half down its centre, and each side is retained on the organism, it is possible for the planaria to regenerate two heads and continue to live.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "It will die.",
+              "option_2": "Each head will develop into a new organism.",
+              "option_3": "Head will stick again.",
+              "option_4": "Without any problem, each head will continue to live."
+            }
+          ],
+          "question": "What will happen if the head of the planaria is cut into two halves?",
+          "question_id": 40,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "When the body of the planaria is cut into a number of pieces, then each piece can regenerate into a completely new organism by growing its lost parts.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Paramecium",
+              "option_2": "Spirogyra",
+              "option_3": "Planaria",
+              "option_4": "Amoeba"
+            }
+          ],
+          "question": "Among the following organisms, which organism is capable of regeneration?",
+          "question_id": 41,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Vegetative propagation is a kind of asexual reproduction in which new plants are produced from parts of the parent plant such as root, stem or leaves without the help of any reproductive organ.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Stem, roots and flowers",
+              "option_2": "Stem, roots and leaves",
+              "option_3": "Stem, flower and fruits",
+              "option_4": "Stem, leaves and flowers"
+            }
+          ],
+          "question": "Vegetative propagation refers to the formation of new plants from ____________.",
+          "question_id": 42,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Bryophyllum reproduces through leaf by vegetative propagation.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Bryophyllum",
+              "option_2": "Rose",
+              "option_3": "Potato",
+              "option_4": "Ginger"
+            }
+          ],
+          "question": "Which of the following plants reproduces vegetatively by leaf?",
+          "question_id": 43,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>All disadvantages are correct, except Option A.<\/p><p>We can produce any number of plants through vegetative propagation.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "It cannot produce large number of plants. If a diseased parent plant is used, then it may cause disease to the daughter plant too.",
+              "option_2": "As time passes, the plants produced by propagation lose vigour or their good health.",
+              "option_3": "Sometimes, due to lack of variations, plants cannot adapt to the changes in the environment. ",
+              "option_4": ""
+            }
+          ],
+          "question": "Which of the following is NOT a disadvantage of vegetative propagation?",
+          "question_id": 44,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The organs which are producing sperms and ova respectively in the human body are testis and ovary.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Ovary and testis",
+              "option_2": "Fallopian and scrotum",
+              "option_3": "Testis and ovary",
+              "option_4": "Uterus and epididymis"
+            }
+          ],
+          "question": "The organs which are producing sperms and ova, respectively, in the human body are ___________.",
+          "question_id": 45,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "<p>The basic requirement of sexual reproduction are:<\/p><p>Presence of male and female<\/p><p>formation of male and female gametes<\/p><p>Fusion of gametes<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Presence of male and female individuals",
+              "option_2": "formation of male and female gametes",
+              "option_3": "Fusion of gametes",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "What is the basic requirement of sexual reproduction?",
+          "question_id": 46,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Unisexual flower either carry female reproductive part or male reproductive part. They exhibit cross-pollination. They cannot produce fruits.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i and ii",
+              "option_2": "i and iii",
+              "option_3": "ii and iii",
+              "option_4": "i, ii and iii"
+            }
+          ],
+          "question": "Which of the following statements are true about unisexual flowers?<p>I. They possess both stamen and pistil.<\/p><p>II. They possess either stamen or pistil.<\/p><p>III. They exhibit cross-pollination.<\/p><p>IV. Unisexual flowers possessing the only stamen cannot produce fruits.<\/p>",
+          "question_id": 47,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Pollination by birds is known as ornithophily.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Hydrophily",
+              "option_2": "Entomophily",
+              "option_3": "Ornithophily",
+              "option_4": "chiropterophily."
+            }
+          ],
+          "question": "Pollination by birds is known as ____________.",
+          "question_id": 48,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Sexual reproduction involves fertilization of male and female gametes to produce zygote having genetic variations.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "1 and 4",
+              "option_2": "1, 2 and 4",
+              "option_3": "1, 2 and 3",
+              "option_4": "1, 2 and 4"
+            }
+          ],
+          "question": "Which of the following statements is&#47;are true about sexual reproduction in flowering plants?<p>1. It requires two types of gametes<\/p><p>2. Fertilization is compulsory event<\/p><p>3. It always results in formation of zygote<\/p><p>4. Offspring’s formed are clones.<\/p>",
+          "question_id": 49,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Vas deferens is long in human beings to carry sperm from testes, which enter penis for their release.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "For structural benefits",
+              "option_2": "Sperms live for long",
+              "option_3": "For collection of sperms",
+              "option_4": "To carry sperm from testes, which enter penis for their release"
+            }
+          ],
+          "question": "Why is vas deferens long in human beings?",
+          "question_id": 50,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "A coverslip is gently placed on the mounted material to avoid the formation of air bubbles.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "To avoid oozing of water.",
+              "option_2": "To avoid oozing of stain.",
+              "option_3": "To avoid formation of air bubbles.",
+              "option_4": "To avoid crushing of mounting materials."
+            }
+          ],
+          "question": "Why is the coverslip put on the mounted material on a slide very gently?",
+          "question_id": 51,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Formation of sperm needs lower temperature than the normal body temperature.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are true.",
+              "option_2": "Both A and R are true, but R is not the right explanation of A.",
+              "option_3": "A is true, but R is false.",
+              "option_4": "A is false, but R is true."
+            }
+          ],
+          "question": "Read the following statements and choose the correct answer:<p>Assertion (A): In human male, testes are extra-abdominal which are present inside the scrotum.<\/p><p>Reason (R): Scrotum has a relatively lower temperature needed for the production and storage of sperm.<\/p>",
+          "question_id": 52,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "First, the Zygote starts dividing then Implantation of zygote occurs in the inner uterine wall. Thereafter, the embryo starts growing with the help of placenta and the last stage is the stage of birth. Birth of a child occurs as a result of the rhythmic contraction of muscles in the uterus.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i &minus; ii &minus; iii &minus; iv",
+              "option_2": "iv &minus; ii &minus; i &minus; iii",
+              "option_3": "ii &minus; iii &minus; iv &minus; i",
+              "option_4": "iv &minus; iii &minus; i &minus; ii"
+            }
+          ],
+          "question": "Arrange the steps that take place in a fertilized egg till the birth of the child in the human reproductive system in series.<p>i. The embryo starts growing with the help of the placenta<\/p><p>ii. Implantation of the zygote in the inner uterine wall.<\/p><p>iii. Birth of a child as a result of rhythmic contraction of the muscles in the uterus.<\/p><p>iv. Zygote starts dividing<\/p>",
+          "question_id": 53,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The period before ovulation is the pre-ovulation phase and the period after the ovulation is the post-ovulation phase.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Ovulation and menstrual phase",
+              "option_2": "Post-ovulation and pre-ovulation phase",
+              "option_3": "Postmenstrual and pre-menstrual phase",
+              "option_4": "Pre-ovulation and post-ovulation phase"
+            }
+          ],
+          "question": "The period before ovulation is the __________ phase and the period after the ovulation is ___________ phase.",
+          "question_id": 54,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The virus doesn&#39;t spread in air or water, or through casual contact. HIV is transmitted through bodily fluids that include: blood, semen, vaginal fluids and breast milk.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Through casual contact",
+              "option_2": "Through blood semen",
+              "option_3": "Vaginal fluids",
+              "option_4": "Breast milk"
+            }
+          ],
+          "question": "HIV is NOT transmitted through ___________.",
+          "question_id": 55,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Banana, yeast, and amoeba reproduce asexually, while dogs reproduce sexually.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "ii and iv",
+              "option_2": "i, ii and iv",
+              "option_3": "i and iv",
+              "option_4": "ii, iii and iv"
+            }
+          ],
+          "question": "In the list of organisms given below, those that reproduce by the asexual method are:<p>A) Banana<\/p><p>B) Dog<\/p><p>C) Yeast<\/p><p>D) Amoeba<\/p>",
+          "question_id": 56,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Newly formed DNA copies may not be identical at times due to the error in the DNA copies.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Due to replication",
+              "option_2": "Due to asexual reproduction",
+              "option_3": "Due to error in DNA copies",
+              "option_4": "All of the above."
+            }
+          ],
+          "question": "Newly formed DNA copies may not be identical at times. Give one reason.",
+          "question_id": 57,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "The advantage of sexual reproduction over asexual reproduction is that sexual reproduction shows variation which further causes evolution.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Sexual reproduction produces large offspring",
+              "option_2": "Sexual reproduction can show variation",
+              "option_3": "Sexual reproduction occurs easily",
+              "option_4": "None off the above"
+            }
+          ],
+          "question": "What is the advantage of sexual reproduction over asexual reproduction?",
+          "question_id": 58,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Variation occurs  by this new combination of DNA&#39;s of parents, this variation makes the offspring more adapted for the environment.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "By creating new combination",
+              "option_2": "Suitable variation has more chances of survival",
+              "option_3": "By variation, there are more chances for adaptation in the environment.",
+              "option_4": "All of the above"
+            }
+          ],
+          "question": "How does the creation of variation in a species promote survival?",
+          "question_id": 59,
+          "status": 0,
+          "subject_id": 3
+        },
+        {
+          "explanation": "Leishmania reproduces through longitudinal binary fission not though multiple fission.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Leishmania",
+              "option_2": "Plasmodium",
+              "option_3": "Sporozoa",
+              "option_4": "Algae"
+            }
+          ],
+          "question": "Among the following unicellular organisms, which unicellular organism does not show the process of multiple fission?",
+          "question_id": 60,
+          "status": 0,
+          "subject_id": 3
+        }
+      ],
+      "total_marks": 60,
+      "total_questions": 60,
+      "wrong_answers": 0
+    },
+    "name": "Neet Test 1",
+    "physics": {
+      "attempted_questions": 4,
+      "correct_answers": 2,
+      "questions": [
+        {
+          "explanation": "The branch that deals with the cause of motion and the motion of an object is Dynamics.",
+          "option_right": 2,
+          "option_selected": 4,
+          "options": [
+            {
+              "option_1": "Kinematics",
+              "option_2": "Dynamics",
+              "option_3": "Both A and B",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "The branch that deals with the cause of motion and the motion of an object is _______.",
+          "question_id": 1,
+          "status": 2,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Temperature can be measured normally in either Celsius or Fahrenheit but the SI unit is Kelvin.",
+          "option_right": 3,
+          "option_selected": 3,
+          "options": [
+            {
+              "option_1": "Celsius, kelvin",
+              "option_2": "Fahrenheit, kelvin",
+              "option_3": "Both A and B",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "The normal and the SI units of temperature are ________ and _______ respectively.",
+          "question_id": 2,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "A 20 kg mass placed on the ground is a scalar quantity. If it starts moving then it will be a vector quantity.",
+          "option_right": 1,
+          "option_selected": 1,
+          "options": [
+            {
+              "option_1": "Is a scalar quantity.",
+              "option_2": "Is a vector quantity.",
+              "option_3": "Will have a direction",
+              "option_4": "Both B and C."
+            }
+          ],
+          "question": "A 20 kg mass placed on the ground _____.",
+          "question_id": 3,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Distance is greater than or equal to distance. But it cannot be less than displacement.",
+          "option_right": 4,
+          "option_selected": 1,
+          "options": [
+            {
+              "option_1": "Equal to",
+              "option_2": "Greater than",
+              "option_3": "Less than",
+              "option_4": "Both A and B"
+            }
+          ],
+          "question": "Distance is ________ displacement.",
+          "question_id": 4,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "When an object covers equal distances in equal intervals of time, it is said to be undergoing uniform motion.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Circular motion",
+              "option_2": "Non&minus;uniform motion",
+              "option_3": "Uniform motion",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "When an object covers equal distances in equal intervals of time, it is said to be undergoing ___________.",
+          "question_id": 5,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Let the total journey be x km.<\/p><p>Therefore, 20&percnt; of x = 20<\/p><p style='text-align:center;'>&#8658; x&#47;5 = 20<\/p><p style='text-align:center;'>&#8658; x = 100 km<\/p><p>We know that,<\/p><p style='text-align:center;'>Time = distance &#47; velocity<\/p><p style='text-align:center;'>&#8658; Time = 100&#47; 50<\/p><p style='text-align:center;'>&#8658; Time = 2 km&#47;h<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "1 km&#47;h",
+              "option_2": "2 km&#47;h",
+              "option_3": "3 km&#47;h",
+              "option_4": "4 km&#47;h"
+            }
+          ],
+          "question": "A train travelled 20 km such that it has completed only 20&percnt; of the journey. What is the total time taken if it has travelled total distance at a constant speed of 50 km&#47;h?",
+          "question_id": 6,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>We know that,<\/p><p style='text-align:center;'>distance = speed &times; time<\/p><p>Therefore,<\/p><p style='text-align:center;'>400 = 20 &times; t<\/p><p style='text-align:center;'>&#8658; t = 400&#47;20 = 20 seconds<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "20 s",
+              "option_2": "30 s",
+              "option_3": "40 s",
+              "option_4": "50 s"
+            }
+          ],
+          "question": "A person has travelled 400 metres with a uniform speed of 20 m&#47;s. What is the time taken for the journey?",
+          "question_id": 7,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "In a displacement&minus;time graph, the straight line motion indicates that the object is moving in uniform motion.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Uniform motion",
+              "option_2": "Non&minus;uniform motion",
+              "option_3": "At rest",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "In a displacement&minus;time graph, the straight line motion indicates that the object is moving in ________.",
+          "question_id": 8,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Given a = 30 m&#47;s<sup>2<\/sup> and t = 20 seconds<\/p><p>From the equation, v &minus; u = at<\/p><p>The difference between the final and initial velocities of the bus,<\/p><p style='text-align:center;'>= at = 30 &times; 20 = 600 m&#47;s.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "500 m&#47;s",
+              "option_2": "600 m&#47;s",
+              "option_3": "700 m&#47;s",
+              "option_4": "800 m&#47;s"
+            }
+          ],
+          "question": "What is the difference between the final and initial velocities of a bus that has travelled for 20 seconds with an acceleration of 30 m&#47;s<sup>2<\/sup>?",
+          "question_id": 9,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Average velocity is nothing but total displacement divided by total time. Since the bus returned to the starting point, the displacement is 0. Therefore, the average velocity is 0.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "2&pi;",
+              "option_2": "&pi;",
+              "option_3": "&pi;&#47;2",
+              "option_4": "0"
+            }
+          ],
+          "question": "A bus started from a point &#39;P&#39; on a circular path of radius 5 meters and returned to the same point after 5 seconds. What is the average velocity of the journey?",
+          "question_id": 10,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "The physical quantities force, velocity, and momentum have magnitude and direction, whereas temperature has only magnitude but no direction.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Force",
+              "option_2": "Velocity",
+              "option_3": "Temperature",
+              "option_4": "Momentum"
+            }
+          ],
+          "question": "Which of the following has only magnitude but no direction?",
+          "question_id": 11,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>a.The distance between the person and the mirror is 4.<\/p><p>b.The distance between him and this reflection is 4 &plus; 4 = 8.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "4, 0",
+              "option_2": "4, 8",
+              "option_3": "8,0",
+              "option_4": "8,8"
+            }
+          ],
+          "question": "A person is at a point (&minus;4,0) on a number line. There is a mirror at the point (0,0). Calculate the distance between the :<p>a. Person and the mirror<\/p><p>b. Person and his reflection in the mirror<\/p>",
+          "question_id": 12,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>We know that, speed = distance &#47; time<\/p><p>Distance is a scalar quantity. From this it can be concluded that speed is a scalar quantity. Only magnitude is required to represent speed.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both S1 and S2 are true",
+              "option_2": "Both S1 and S2 are false",
+              "option_3": "S1 is true and S2 is false",
+              "option_4": "S1 is false and S2 is true"
+            }
+          ],
+          "question": "Statement1(S1) : Speed is a vector quantity.<p>Statement2(S2) : Speed = displacement&#47;time<\/p>",
+          "question_id": 13,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>We know that, a = (v &minus; u) &#47; t<\/p><p>Here v = 15 m&#47;s, u = 5m&#47;s and t = 2 seconds<\/p><p>Therefore, a = (15 &minus; 5) &#47; 2 = 10 &#47;2 = &plus;5 m&#47;s<sup>2<\/sup><\/p><p>Therefore, the acceleration of the body is 5 m&#47;s<sup>2<\/sup> towards right.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "5 m&#47;s<sup>2<\/sup>",
+              "option_2": "6 m&#47;s<sup>2<\/sup>",
+              "option_3": "7 m&#47;s<sup>2<\/sup>",
+              "option_4": "8 m&#47;s<sup>2<\/sup>"
+            }
+          ],
+          "question": "A body has accelerated from a velocity of 5m&#47;s to 15m&#47;s in 2 seconds. Find its acceleration. (Assume that the body is travelling towards right)",
+          "question_id": 14,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>The difference between the squares of final and initial velocities is nothing but v<sup>2<\/sup> &minus; u<sup>2<\/sup> = 2as.<\/p><p>Given that difference between the squares of final and initial velocities is 400 m&#47;s<sup>2<\/sup> and distance travelled is 20 m.<\/p><p>Therefore, from v<sup>2<\/sup> &minus; u<sup>2<\/sup>= 2as,<\/p><p>&#8658; 400 = 2 &times; 20 &times; a<\/p><p>&#8658; a = 10 m&#47;s<sup>2<\/sup><\/p><p>Hence, the acceleration of the car is 10 m&#47;s<sup>2<\/sup><\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "5 m&#47;s<sup>2<\/sup>",
+              "option_2": "8 m&#47;s<sup>2<\/sup>",
+              "option_3": "10 m&#47;s<sup>2<\/sup>",
+              "option_4": "12 m&#47;s<sup>2<\/sup>"
+            }
+          ],
+          "question": "The difference between the squares of final and initial velocities of a car is 400 m&#47;s<sup>2<\/sup>. Find the acceleration if the distance travelled is 20 m.",
+          "question_id": 15,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "For a body traveling along a circular path, distance is always greater than the displacement. Since the direction of motion changes continuously, velocity is never constant.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Distance and displacement are the same",
+              "option_2": "Velocity is never constant",
+              "option_3": "Distance is always greater than displacement",
+              "option_4": "Both B and C"
+            }
+          ],
+          "question": "Which of the following statements are true regarding an object undergoing circular motion?",
+          "question_id": 16,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Given that the rotation is clock wise with respect to A. Since B is on opposite side of &#39;A&#39; and the wheel is in between them, the wheel rotation will be anti&minus;clockwise direction with respect to B.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Clockwise rotation",
+              "option_2": "Anti&minus;clockwise rotation",
+              "option_3": "No movement at all",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "Two people A and B are standing on the opposite sides of a rotating giant wheel facing it. If for A, the giant wheel looks rotating in the clockwise direction, what is the direction of its rotation as observed by B?",
+          "question_id": 17,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>When an object covers equal distances in equal intervals of time, it is said to be undergoing uniform motion.<\/p><p>When an object undergoes uniform motion, it can be observed that its instantaneous speed throughout the course of its motion would be equal to its average speed.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are true and R is the correct explanation of A",
+              "option_2": "Both A and R are true and R is incorrect explanation of A",
+              "option_3": "A is true and R is false",
+              "option_4": "A is false and R is true"
+            }
+          ],
+          "question": "Assertion (A) : In uniform motion the instantaneous speed of the object is equal to the average speed of the object throughout the course of its motion.<p>Reasoning (R) : Instantaneous speed is the speed that records on the speedometer. Since in uniform speed an object travels the same distance in equal intervals of time, the object travels with the same speed that record on the speedometer. Hence the instantaneous speed of the object is equal to the average speed.<\/p>",
+          "question_id": 18,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>We know that, a = (v &minus; u) &#47; t<\/p><p>When a body accelerates, its velocity increases and when a body decelerates, its velocity decreases. So, S1 is true.<\/p><p>Acceleration is nothing but the rate of change of velocity. Therefore, when the rate of change of velocity is zero, acceleration is zero. So, S2 is true. Hence, both the statements are true.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both S1 and S2 are true",
+              "option_2": "Both S1 and S2 are false",
+              "option_3": "S1 is true, and S2 is false",
+              "option_4": "S1 is false, and S2 is true"
+            }
+          ],
+          "question": "Statement (S1) : A body is said to be in deceleration, whenever its velocity decreases with respect to time.<p>Statement2 (S2) : Whenever change in velocity of a body is zero, its acceleration is zero.<\/p>",
+          "question_id": 19,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>The initial point and the final point are the same.<p><p>Therefore, displacement = 0<\/p><p style='text-align:center;'>Average Velocity = Displacement &#47; Time<\/p><p style='text-align:center;'>&#8658; Average velocity = 0 &#47; time = 0<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "80&pi; m, 16&pi; m&#47;s",
+              "option_2": "40&pi; m, 0 m&#47;s",
+              "option_3": "0 m, 0 m&#47;s",
+              "option_4": "40&pi; m, 8&pi; m&#47;s"
+            }
+          ],
+          "question": "A person walking around a circular park of radius 40 m can cover one revolution in 5 seconds. Find the displacement and average velocity after completing exactly 1 revolution.",
+          "question_id": 20,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "The Sound is measured in Decibels(dB).",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Hertz",
+              "option_2": "Decibels",
+              "option_3": "Wavelength",
+              "option_4": "None of these"
+            }
+          ],
+          "question": "Sound is measured in ________.",
+          "question_id": 21,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "When travelling in a medium, longitudinal waves change the density of that medium, thereby creating compressions and rarefactions.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Transverse waves",
+              "option_2": "Longitudinal waves",
+              "option_3": "Both A and B",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "While travelling, which of the following waves changes the density of the medium of travel?",
+          "question_id": 22,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>We know that time period = 1&#47; frequency<\/p><p>Therefore, time = 1&#47;50 = 0.02 seconds<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "0.1s",
+              "option_2": "0.01s",
+              "option_3": "0.2s",
+              "option_4": "0.02s"
+            }
+          ],
+          "question": "Calculate the time period of the sound wave whose frequency is 50 Hz.",
+          "question_id": 23,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "The sounds that are produced during a normal conversation are 60 dB.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "30 dB",
+              "option_2": "40 dB",
+              "option_3": "60 dB",
+              "option_4": "70 dB"
+            }
+          ],
+          "question": "The sounds that are produced during a normal conversation are __________.?",
+          "question_id": 24,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Both repeated reflections and reverberations are the causes of sound due to the rolling of thunder.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Repeated reflections",
+              "option_2": "Reverberations",
+              "option_3": "Both A and B",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "A rolling of thunder produces sound due to __________.",
+          "question_id": 25,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Glass is a fragile object. So ultrasound is used to punch holes.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Normal sound",
+              "option_2": "Ultrasound",
+              "option_3": "Hammer and nail",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "Which of the following is used to punch a hole in a glass?",
+          "question_id": 26,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "An imaging technique in which ultrasonic waves, reflected from various parts of the heart, form an image of the heart is Echocardiography.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Cardiogram",
+              "option_2": "Cardiography",
+              "option_3": "Echocardiography",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "An imaging technique in which ultrasonic waves, reflected from various parts of the heart, form an image of the heart is ________.",
+          "question_id": 27,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Stirrup vibrates more than eardrum and thus amplifies the signal.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "It amplifies the signal",
+              "option_2": "It reduces the signal",
+              "option_3": "It neutralises the signal",
+              "option_4": "None of the above"
+            }
+          ],
+          "question": "What is the use of stirrup in the human ear?",
+          "question_id": 28,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Longitudinal waves when travelling in a medium, change the density of that medium but not the shape.<\/p><p>Longitudinal waves consist of compressions and rarefactions.<\/p><p>Mechanical waves require a medium to travel whereas, non&minus;mechanical waves require no medium to travel.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "i, ii",
+              "option_2": "i, ii and iii",
+              "option_3": "ii, iii",
+              "option_4": "i, iii"
+            }
+          ],
+          "question": "Which of the following statement(s) is(are) true?<p>i)Longitudinal waves when travelling in a medium, change the shape of that medium.<\/p><p>ii)Longitudinal waves consist of compressions and rarefactions.<\/p><p>iii)Mechanical waves require a medium to travel.<\/p>",
+          "question_id": 29,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>We have, v = f &times; &#x3BB;<\/p><p>So, speed of the wave is the product of frequency and the wavelength.<\/p><p>We know that time period = 1 &#47; frequency<\/p><p>Therefore, time period is inversely proportional to frequency of the wave.<\/p><p>Therefore, S1 is true and S2 is false.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both S1 and S2 are true.",
+              "option_2": "Both S1 and S2 are false",
+              "option_3": "S1 is true and S2 is false",
+              "option_4": "S1 is false and S2 is true"
+            }
+          ],
+          "question": "Statement1(S1) : The speed of a wave is the product of the frequency and the wave length of the wave.<p>Statement2(S2) : Time period and frequency are directly proportional to each other.<\/p>",
+          "question_id": 30,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "The reflected sound will be accurate when the angle of incidence is equal to the angle of reflection.",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "angle of incidence &gt; angle of reflection",
+              "option_2": "angle of incidence = angle of reflection",
+              "option_3": "angle of incidence &gt; angle of reflection",
+              "option_4": "angle of incidence = 2 &times; angle of reflection"
+            }
+          ],
+          "question": "The reflected sound will be accurate when _________.",
+          "question_id": 31,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "To remove dirt from small parts and odd parts ultrasound is sent through the cleaning solution. Ultrasound produces high&minus;frequency vibrations in the solution, knocking dirt from the objects.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Normal sound waves",
+              "option_2": "Detergent",
+              "option_3": "Magnetic waves",
+              "option_4": "Ultrasound waves"
+            }
+          ],
+          "question": "To clean small parts and odd parts _______ is&#47;are sent through the cleaning solution that contains the part to be cleaned.",
+          "question_id": 32,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Stirrup is a bone that vibrates more than eardrum and thus amplifies the signal.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Cochlea",
+              "option_2": "Ear canal",
+              "option_3": "Eardrum",
+              "option_4": "Stirrup"
+            }
+          ],
+          "question": "Which of the following is a bone?",
+          "question_id": 33,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Radio waves are non&minus;mechanical waves. They don&#39;t require a medium to travel. Hence, they can travel in vacuum.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both A and R are true, and R is the correct explanation of A.",
+              "option_2": "Both A and R are true, but R is not the correct explanation of A.",
+              "option_3": "A is true, and R is false",
+              "option_4": "A is false, and R is true."
+            }
+          ],
+          "question": "Assertion (A) : Radio waves can travel in vacuum.<p>Reasoning (s) : Radio waves don&#39;t require any medium to travel.<\/p>",
+          "question_id": 34,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Bats emit ultrasonic waves to detect obstacles. When the ultrasound waves interact with any obstacle in front, they revert back. Bats recognise these echoes, and detect the obstacles.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "A and R are true, and R is correct explanation of A",
+              "option_2": "A and R are true, and R is not the correct explanation of A.",
+              "option_3": "A is true, and R is false",
+              "option_4": "A is false, and R is true"
+            }
+          ],
+          "question": "Assertion (A) : Bats use echolocation to travel at night.<p>Reasoning (R) : Echolocation is the use of sound waves and echoes to detect an object.<\/p>",
+          "question_id": 35,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Ultrasound is used to find defects in metals. It reflects back on collision with a cavity or fracture.<\/p><p>The energy of ultrasound is much higher as compared to normal sound.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Both S1 and S2 are true",
+              "option_2": "Both S1 and S2 are false",
+              "option_3": "S1 is true and S2 is false",
+              "option_4": "S1 is false and S2 is true"
+            }
+          ],
+          "question": "Statement(S1) : Normal sound is used to find defects in metals<p>statement(S2) : Normal sound has high energy as compared to the ultrasound<\/p>",
+          "question_id": 36,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Auditory nerve is present in the inner ear. It sends the electrical signals to brain.<\/p><p>Stirrup is present in the middle ear. Its function is to amplify the signal.<\/p><p>Penna is present in the outer ear. Its function is to guide the signal from ear to ear canal.<\/p>",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "1&minus;b, 2&minus;c, 3&minus;a",
+              "option_2": "1&minus;a, 2&minus;b, 3&minus;c",
+              "option_3": "1&minus;b, 2&minus;a, 3&minus;c",
+              "option_4": "1&minus;c, 2&minus;b, 3&minus;a"
+            }
+          ],
+          "question": "Match the following.<table class='quiz-table' cellspacing='0' cellpadding='0'><th>Part<\/th><th>Function<\/th><tr><td>1. Auditory nerve<\/td><td>a) Guides the signal from ear to ear canal.<\/td><\/tr><tr><td>2. Stirrup<\/td><td>b) Sends electrical signal to brain<\/td><\/tr><tr><td>3. Penna<\/td><td>c) Amplifies the electrical signal.<\/td><\/tr><\/table>",
+          "question_id": 37,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "The moving coil is made up of non&minus;conducting material. Hence, no current will be induced in the moving coil.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Current is induced in the moving coil.",
+              "option_2": "Current stops flowing in the stationary coil.",
+              "option_3": "Current is induced in the stationary coil.",
+              "option_4": "No current is induced in the moving coil."
+            }
+          ],
+          "question": "When a coil of non&minus;conducting material is moved near another stationary current&minus;carrying coil, _____________.",
+          "question_id": 38,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>When a conductor moves inside a magnetic field or the magnetic field itself changes around a fixed conductor, an electric current is generated. This current generation through changing magnetic field is called Electromagnetic Induction (EMI).<\/p><p>An electric generator is a device that works on the principle of EMI.<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Fleming&#39s left&minus;hand rule",
+              "option_2": "Fleming&#39s right&minus;hand rule",
+              "option_3": "Electromagnetism",
+              "option_4": "Electromagnetic induction"
+            }
+          ],
+          "question": "The working of an electric generator is based on the principle of __________.",
+          "question_id": 39,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "Galvanometer is a device that is used to measure the current. It is not a part of an AC generator. The generator can produce electricity as it is meant to, even without a galvanometer.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Coil",
+              "option_2": "Carbon brushes",
+              "option_3": "Slip ring",
+              "option_4": "Galvanometer"
+            }
+          ],
+          "question": "Which of the following is not a component of an AC generator?",
+          "question_id": 40,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "A current that changes its direction after equal intervals of time is called an alternating current (abbreviated as AC). Such type of current is produced by an AC generator.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Current that is unidirectional",
+              "option_2": "Current that can be in any direction in a wire",
+              "option_3": "Current that changes its direction abruptly after some time",
+              "option_4": "Current that changes direction after equal intervals of time"
+            }
+          ],
+          "question": "What is the meaning of AC current?",
+          "question_id": 41,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "If we connect the wires directly to the connecting outlets, then the wires will get tangled when the coil starts to rotate.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "It will increase the electrical resistance.",
+              "option_2": "It will reduce the induced current generated.",
+              "option_3": "It will lead to tangling of wires when the coil starts to rotate.",
+              "option_4": "It poses a threat to safety."
+            }
+          ],
+          "question": "Why cannot wires be connected directly to the connecting outlets of a coil in a generator?",
+          "question_id": 42,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>After every half&minus;rotation, the direction of current in the coil of the generator reverses. This is because the arm of the coil which was earlier moving vertically upwards, starts moving downwards. Also, the arm that was earlier moving vertically downwards, starts moving upwards.<\/p><p>The change in direction of motion of the conductor also changes the direction of induced current in the coil. The same can be understood by using Fleming&#39s right&minus;hand rule.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Rotation",
+              "option_2": "Quarter&minus;rotation",
+              "option_3": "Half&minus;rotation",
+              "option_4": "Two&minus;rotations"
+            }
+          ],
+          "question": "The direction of current in the coil of a generator reverses  after every __________ of the coil.",
+          "question_id": 43,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "A DC generator has a split ring. A slip ring is present in an AC generator.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Coil",
+              "option_2": "Carbon brushes",
+              "option_3": "Slip ring",
+              "option_4": "Axle"
+            }
+          ],
+          "question": "Which of the following is not a component of a DC generator?",
+          "question_id": 44,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "The type of current that is unidirectional is called direct current (DC current). Such type of current is produced by a DC generator.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Current that is unidirectional",
+              "option_2": "Current that can be in any direction in a wire",
+              "option_3": "Current that changes its direction abruptly after some time",
+              "option_4": "Current that changes direction after equal intervals of time"
+            }
+          ],
+          "question": "What is the meaning of DC current?",
+          "question_id": 45,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "In an AC generator, there are two rings. One is attached to the left brush and another is attached to the right brush.",
+          "option_right": 1,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "AC",
+              "option_2": "DC",
+              "option_3": "Both AC and DC",
+              "option_4": "Neither AC nor DC"
+            }
+          ],
+          "question": "In _________  generator, the carbon brushes remain in contact with the same ring, throughout the process of electricity generation.",
+          "question_id": 46,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>When the bar magnet is moved towards the end B, the needle of the galvanometer deflects on one side.<\/p><p>When the magnet is taken away (backwards), the needle deflects on the opposite side.<\/p><p>The case in which the magnet is kept stationary, no deflection occurs in the galvanometer.<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Deflects left, remains stationary, then deflects right",
+              "option_2": "Deflects right, deflects left, then remains stationary",
+              "option_3": "Deflects right, remains stationary, then deflects left",
+              "option_4": "Both A and C are possible"
+            }
+          ],
+          "question": "A coil connected to a galvanometer is kept stationary. A strong magnet is brought near the coil and then kept stationary for a while. After some time, the magnet is moved away from the coil. How does the galvanometer needle move during the whole process? Select possible option(s).",
+          "question_id": 47,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>The process by which a changing magnetic field in a conductor induces a current in another conductor is called electromagnetic induction. One can induce a current in a coil, either by moving it in a magnetic field or by changing the magnetic field around it.<\/p><p>A current is induced in B but for a moment only. When the current in A is switched on, the magnetic field due to coil A changes from 0 to some value. After that, it is constant and the induced current in B ceases to flow.<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "No current is observed in coil B.",
+              "option_2": "Current is induced in coil B and it is of the same magnitude as coil A.",
+              "option_3": "Current is induced in coil B and it continues to flow as long as there is current in A.",
+              "option_4": "None of the above."
+            }
+          ],
+          "question": "Two coils, A and B, made of conducting materials are placed near each other. After some time, a constant current is passed through coil A. Which of the following statements is correct about coil B?",
+          "question_id": 48,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>The process by which a changing magnetic field in a conductor induces a current in another conductor is called electromagnetic induction. One can induce a current in a coil, either by moving it in a magnetic field or by changing the magnetic field around it.<\/p><p>It is possible that none of the coils have a current passing through them and hence, no magnetic field is present.<\/p><p>It is also possible that one of the coils is made of some non&minus;conducting material.<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Coil B is made up of non-conducting material.",
+              "option_2": "Coil A is made up of conducting material.",
+              "option_3": "Neither coil A, nor coil B has a current passing through it.",
+              "option_4": "Both A and C are possible reasons."
+            }
+          ],
+          "question": "A coil &#39A&#39 is moved near another stationary coil &#39B&#39 and no current is observed in coil B. What can be the possible reasons?  ",
+          "question_id": 49,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>In order to produce induced current in the coil, we need to have a relative motion between the two coils.<\/p><p>That is, even if the one generating a magnetic field is kept stationary and the other coil is moved with respect to it, a current will be induced in the coil. <\/p><p>It does not matter which coil moves, but one of them should move with respect to the other.<\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "No current will be induced since the current&minus;carrying coil is stationary.",
+              "option_2": "Current will be induced due to relative motion between the two coils, out of which one coil is producing a magnetic field.",
+              "option_3": "No current will be induced because the moving coil is not connected to a galvanometer.",
+              "option_4": "Not enough information available to comment."
+            }
+          ],
+          "question": "A current&minus;carrying coil is kept on the table. Another coil of wire is pushed towards the current&minus;carrying coil. Select the correct statement.",
+          "question_id": 50,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>When coil B is moved towards coil A, the needle of the galvanometer deflects on one side.<\/p><p>When coil B is again moved towards coil A, the needle shall deflect on the same side as before.<\/p><p>The case in which coil B is kept stationary, no deflection occurs in the galvanometer.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Deflects left, remains stationary, then deflects right",
+              "option_2": "Deflects right, deflects left, then remains stationary",
+              "option_3": "Deflects right, remains stationary, then deflects right",
+              "option_4": "Both A and C are possible"
+            }
+          ],
+          "question": "Coil A connected to a galvanometer is kept stationary. A current&minus;carrying coil B is brought near coil A and then kept stationary for a while. After some time, coil B is again moved towards coil A. How does the galvanometer needle move during the whole process? Select possible option(s).",
+          "question_id": 51,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>When the north pole is moved towards the coil, deflection is towards the right. Let&#39s call it case I.<\/p><p>If the south pole of the magnet is moved towards the coil instead of the north pole, then the galvanometer will show deflection in the opposite direction of case I, i.e., left side. Let&#39s call it case II.<\/p><p>But if the south pole is moved away from the coil, then the deflection will be in the opposite direction of case II, i.e., right side. <\/p>",
+          "option_right": 2,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "No deflection will occur.",
+              "option_2": "Deflection will occur towards the right side.",
+              "option_3": "Deflection will occur towards the left side.",
+              "option_4": "No sufficient information available to comment."
+            }
+          ],
+          "question": "The north pole of a magnet is facing a coil. It is moved towards this coil which is connected to a galvanometer. The galvanometer shows deflection towards the right side. <p>If the magnet is now kept with its south pole facing the coil and is moved away from the coil, then, in which direction will the needle deflect?<\/p>",
+          "question_id": 52,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>The process by which a changing magnetic field in a conductor induces a current in another conductor is called electromagnetic induction. One can induce a current in a coil, either by moving it in a magnetic field or by changing the magnetic field around it.<\/p><p>A current is induced in B but for a moment only. When the current in A is switched off, the magnetic field due to coil A changes from some value to 0. After that, it is constantly 0 and the induced current in B ceases to flow.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "No current is observed in coil B even after current in A is switched off.",
+              "option_2": "The current of the same magnitude as A is induced in coil B, after current in A is switched off.",
+              "option_3": "A current is induced in coil B as soon as the current in A ceases to flow. It exists only for a moment.",
+              "option_4": "None of the above."
+            }
+          ],
+          "question": "Two coils, A and B, made of conducting materials are placed near each other. A current is passing through coil A, while there is no current in coil B. After some time, the current in coil A is switched off. Which of the following statements is correct about coil B?",
+          "question_id": 53,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Overloading in a circuit can occur due to the following 3 reasons:<\/p><p>When the live wire and the neutral wire come into direct contact.<\/p><p>Due to an accidental hike in the supply voltage.<\/p><p>By connecting too many appliances to a single socket.<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "An accidental hike in the supply voltage",
+              "option_2": "Connecting too many appliances to a single socket",
+              "option_3": "Both A and B",
+              "option_4": "When the live wire and the earth wire come into direct contact"
+            }
+          ],
+          "question": "Which of the following reasons can contribute to overloading?",
+          "question_id": 54,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>All domestic appliances are connected in one of the parallel branches. They are not connected in series because if one appliance stops working, it will break the circuit and none of the other appliances will work. This problem does not arise in parallel connection. Even if one appliance goes off, others keep functioning properly.<\/p><p>Moreover, each electrical appliance has its own switch due to which it can be turned off or on independently, without affecting other appliances.<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "To keep other appliances functional in case one appliance stops working",
+              "option_2": "To keep the potential difference across each appliance different",
+              "option_3": "Each electrical appliance has its own switch due to which it can be turned off or on independently, without affecting other appliances.",
+              "option_4": "Both A and C"
+            }
+          ],
+          "question": "What is the reason behind connecting different domestic appliances in separate parallel circuits in internal house connections?",
+          "question_id": 55,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Electric current is the rate of flow of charge through a particular cross&minus;section of a conductor.<\/p><p style='text-align:center;'>I = ${Q}\/{t}$<\/p>",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "I = Q &times; t",
+              "option_2": "Q = I &times; t",
+              "option_3": "Q = ${I}\/{t}$",
+              "option_4": "I = ${Q}\/{t}$"
+            }
+          ],
+          "question": "Identify the correct formula for electric current. &#39;Q&#39; stands for total charge flowing through a particular cross&minus;section, &#39;t&#39; stands for time and &#39;I&#39; stands for electric current.",
+          "question_id": 56,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "The S.I unit of electric current is ampere and the electric current is measured using an instrument called an ammeter.",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "Coulumb; ammeter",
+              "option_2": "Coulumb; voltmeter",
+              "option_3": "Ampere; ammeter",
+              "option_4": "Volts; voltmeter"
+            }
+          ],
+          "question": "The S.I unit of electric current is__________ and the electric current is measured using an instrument called ____________.",
+          "question_id": 57,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>I = ${Q}\/{t}$<\/p><p>I = ${1.8}\/{1000}$ = 1.8 &times; 10<sup>&minus;3<\/sup> A<\/p><p>I = 1.8 mA<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "1.8 A",
+              "option_2": "1800 A",
+              "option_3": "1.8 mA",
+              "option_4": "1800 mA"
+            }
+          ],
+          "question": "If a total charge of 1.8 coulomb passes through a cross&minus;section of wire in 1000 seconds, then what is the electric current passing through that wire?",
+          "question_id": 58,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "A cell is a single unit that stores chemical energy which gets converted into electricity, while a battery is a collection of cells.",
+          "option_right": 4,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "A cell is small in size as compared to a battery",
+              "option_2": "A cell is used in small devices like a torch while the battery is used in heavy machinery",
+              "option_3": "A cell once used up cannot be recharged but a battery is rechargeable",
+              "option_4": "A cell is a single unit while a battery is a collection of cells"
+            }
+          ],
+          "question": "What is the difference between a cell and a battery?",
+          "question_id": 59,
+          "status": 0,
+          "subject_id": 1
+        },
+        {
+          "explanation": "<p>Ohm found that there is a direct proportionality between the potential difference (voltage) applied across a conductor and the resultant electric current. This relationship is known as Ohm&#39;s law.<\/p><p style='text-align:center;'>V &prop; I<\/p><p style='text-align:center;'>V = IR<\/p>",
+          "option_right": 3,
+          "option_selected": -1,
+          "options": [
+            {
+              "option_1": "V &prop; I<sup>2<\/sup>",
+              "option_2": "V &prop; I<sup>1&#47;2<\/sup>",
+              "option_3": "V &prop; I",
+              "option_4": "V &prop;${1}\/{I}$"
+            }
+          ],
+          "question": "According to ohm&#39;s law, for a current&minus;carrying conductor:",
+          "question_id": 60,
+          "status": 0,
+          "subject_id": 1
+        }
+      ],
+      "total_marks": 60,
+      "total_questions": 60,
+      "wrong_answers": 2
+    },
+    "total_marks": "180",
+    "total_questions": "180"
+  }
+}

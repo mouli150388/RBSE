@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<item android:state_checked="true" android:drawable="@drawable/drawable_circle_selected">
+
+</item>
+
+    <item >
+
+        <shape
+            android:shape="rectangle">
+            <size android:height="55dp" android:width="55dp"/>
+            <corners android:radius="1000dp" />
+            <solid android:color="@color/chapter_text_color" />
+           <!-- <stroke
+                android:width="2dip"
+                android:color="#ff084a" />-->
+            <padding
+                android:bottom="4dp"
+                android:left="4dp"
+                android:right="4dp"
+                android:top="4dp" />
+        </shape>
+    </item>
+</selector>

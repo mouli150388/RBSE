@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+          <RelativeLayout
+              android:id="@+id/rel_path"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_marginStart="10dp">
+
+
+                    <ImageView
+                        android:id="@+id/crowImg"
+                        android:layout_width="@dimen/track_img_width"
+                        android:layout_height="@dimen/track_img_width"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/_10dp"
+
+
+                        />
+
+
+          </RelativeLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+
+              >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="@dimen/_5dp"
+
+                        android:padding="5dp">
+
+
+                              <TextView
+                                  android:id="@+id/crowTitle"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_below="@id/crowDate"
+                                  android:layout_centerVertical="true"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:text="Title"
+                                  android:textAppearance="?android:attr/textAppearanceListItem"
+                                  android:textColor="@color/title_text_color"
+                                  android:textSize="@dimen/track_title_size"
+                                  android:textStyle="bold" />
+
+                              <TextView
+                                  android:id="@+id/crowDesc"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_below="@id/crowTitle"
+                                  android:layout_centerVertical="true"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:text="Description"
+                                  android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+                                  android:textColor="@color/color_dashText"
+                                  android:textSize="@dimen/track_subtitle_size" />
+
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_marginTop="@dimen/_10dp">
+                                        <LinearLayout
+                                            android:id="@+id/lnr_performance"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="@dimen/_5dp"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            android:gravity="center"
+
+                                            android:background="@drawable/ic_bio_notes"
+                                            android:layout_height="@dimen/_30dp">
+                                                  <TextView
+
+                                                      android:layout_width="wrap_content"
+                                                      android:layout_height="wrap_content"
+
+                                                      android:fontFamily="@font/opensans_regular"
+                                                      android:gravity="center"
+
+                                                      android:text="Performance"
+                                                      android:textAlignment="center"
+                                                      android:textColor="#666666"
+                                                      android:textSize="10sp"
+
+                                                      />
+                                                  <!-- <ImageView
+                                                       android:layout_width="@dimen/_32dp"
+                                                       android:layout_height="@dimen/_32dp"
+                                                       android:src="@drawable/circle_all" />-->
+                                        </LinearLayout>
+                                        <LinearLayout
+                                            android:id="@+id/lnr_quiz"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="@dimen/_5dp"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            android:background="@drawable/ic_bio_notes"
+                                            android:layout_height="@dimen/_30dp">
+
+                                                  <TextView
+
+                                                      android:layout_width="wrap_content"
+                                                      android:layout_height="wrap_content"
+
+
+                                                      android:fontFamily="@font/opensans_regular"
+                                                      android:gravity="center"
+
+                                                      android:text="@string/quiz"
+                                                      android:textAlignment="center"
+                                                      android:textColor="#666666"
+                                                      android:textSize="10sp"
+
+                                                      />
+                                                 <!-- <ImageView
+                                                      android:layout_width="@dimen/_32dp"
+                                                      android:layout_height="@dimen/_32dp"
+                                                      android:src="@drawable/ic_video_quiz_bio" />-->
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:id="@+id/lnr_track"
+                                            android:layout_width="0dp"
+                                            android:layout_weight="1"
+                                            android:layout_marginLeft="@dimen/_5dp"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            android:gravity="center"
+                                            android:background="@drawable/ic_bio_notes"
+                                            android:layout_height="@dimen/_30dp">
+                                                  <TextView
+
+                                                      android:layout_width="wrap_content"
+                                                      android:layout_height="wrap_content"
+
+
+                                                      android:fontFamily="@font/opensans_regular"
+                                                      android:gravity="center"
+
+                                                      android:text="@string/track"
+                                                      android:textAlignment="center"
+                                                      android:textColor="#666666"
+                                                      android:textSize="10sp"
+
+                                                       />
+                                                <!--  <ImageView
+                                                      android:layout_width="@dimen/_32dp"
+                                                      android:layout_height="@dimen/_32dp"
+                                                      android:src="@drawable/ic_thumbtack" />-->
+                                        </LinearLayout>
+
+
+                              </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height=".5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="bottom"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/color_dashText"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text=""
+                        android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+                        android:textColor="@color/subtitle" />
+
+          </LinearLayout>
+
+
+</LinearLayout>

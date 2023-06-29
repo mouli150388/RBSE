@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".search.SearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_background_drawable"
+        android:padding="@dimen/_2dp">
+
+        <RelativeLayout
+            android:id="@+id/lnr_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:src="@android:drawable/ic_search_category_default"
+                android:tint="@color/subtitle" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/img_mic"
+                android:layout_toRightOf="@+id/img_search"
+                android:background="@color/white"
+                android:clickable="true"
+                android:theme="@style/SearchViewStyle"
+                android:tooltipText="Search Cource"
+                app:closeIcon="@null"
+                app:iconifiedByDefault="false"
+                app:queryBackground="@null"
+                app:searchIcon="@null"
+                app:voiceIcon="@drawable/ic_microphone" />
+
+            <ImageView
+                android:id="@+id/img_mic"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginRight="@dimen/_16dp"
+                android:src="@drawable/ic_microphone"
+                android:tint="@color/subtitle" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/activstion_background" />
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20dp"
+            android:src="@drawable/search_image_m" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_search"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/txt_nosearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/no_content_found"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/loading_progress"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/loading_drawable"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

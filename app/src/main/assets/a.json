@@ -1,0 +1,110 @@
+{
+   "quiz":{
+      "questions":[
+         {
+            "question_id":5,
+            "question_type":"O",
+            "question":"<p>$\\hat{244}$</p><p>$\\widehat{11311}$</p><p>testing...</p><p>do not answer</p>NEET 3 - Physics - 5Q - The motion of a particle is described by V = at<sup>2</sup>. Then find the distance travelled by the particle in first 2 second",
+            "options":[
+               {
+                  "option_1":"${89}/{3}$",
+                  "option_2":"${49}/{3}$",
+                  "option_3":"${89}/{2}$",
+                  "option_4":"89"
+               }
+            ],
+            "option_right":"1",
+            "explanation":"<p style = 'text-align:center;'>V = at<sup>2</sup></p><p style = 'text-align:center;'>$\frac{dx}{dt} = at^2$</p><p style = 'text-align:center;'>$\therefore \\int_{0}^{x} dx = \\int_{0}^{2} at^2dt$</p><p style = 'text-align:center;'>$\\Rightarrow x = a[\frac{t^3}{3}]_0^2$</p><p style = 'text-align:center;'>&there4; x = ${8a}/{3}$</p>",
+            "subject_id":2
+         },
+         {
+            "question_id":7,
+            "question_type":"O",
+            "question":"IIT JEE MAIN - Test Series 5 - Physics - 7Q - <div style='max-width:100%;text-align:center;'><img src = 'images/m5_7q_physics.jpg' alt='m5_7q_physics' style='max-width:100%;'/></div>Find the flux due to charge through curved surface of cylinder.",
+            "options":[
+               {
+                  "option_1":"$\frac{Q}{2\\varepsilon_{0}}(\frac{L}{\\sqrt{R^{2} &plus; L^{2}}})$",
+                  "option_2":"$\frac{Q}{2\\varepsilon_{0}}(\frac{L}{\\sqrt{(4R)^{2} &plus; L^{2}}} &plus; \frac{3L}{\\sqrt{(4R)^{2} &plus; (3L)^{2}}})$",
+                  "option_3":"$\frac{Q}{\\varepsilon_{0}}(\frac{\\Gamma_{1}\\Gamma_{2}}{L^{2}})$",
+                  "option_4":"$\frac{2Q}{\\varepsilon_{0}}(\frac{L}{\\sqrt{4R^{2} &plus; L^{2}}}) &plus; \frac{Q}{\\epsilon_{0}}$"
+               }
+            ],
+            "option_right":"2",
+            "explanation":"<div style='max-width:100%;text-align:center;'><img src = 'images/m5_7a_physics.jpg' alt='m5_7a_physics' style='max-width:100%;'/></div><p>Flux through curved surface = ${Q}/{&epsilon;_0}$ &minus; (flux through both disc)</p><p style='text-align:center;'>$\frac{Q}{\\epsilon_{0}} &minus; \frac{Q}{2\\epsilon_{0}}(1 &minus; \\cos \theta_{1}) &minus; \frac{Q}{2\\epsilon_{0}}(1 &minus; \\cos \theta_{2})$</p><p style='text-align:center;'>$\frac{Q}{2\\epsilon_{0}}(\\cos \theta_{1} &plus; \\cos \theta_{2})$</p><p style='text-align:center;'>$\frac{Q}{2\\epsilon_{0}}(\frac{L/4}{\\sqrt{R^{2} &plus; (\frac{L}{4})^{2}}} &plus; \frac{3L/4}{\\sqrt{R^{2} &plus; (\frac{3L}{4})^{2}}})$</p><p style='text-align:center;'>$\frac{Q}{2\\epsilon_{0}}(\frac{L}{\\sqrt{(4R)^{2} &plus; L^{2}}} &plus; \frac{3L}{\\sqrt{(4R)^{2} &plus; (3L)^{2}}})$</p>",
+            "subject_id":1
+         },
+         {
+            "question_id":2,
+            "question_type":"O",
+            "question":"IIT JEE MAIN - Test Series 5 - Maths - 2Q Solution - If in the Expansion of $(4^{x} &plus; \frac{1}{16^{x}})^{n}$, n&isin;N, ${T_3}/{T_2}$ = 7 and the sum of the coefficients of 2<sup>nd</sup> and 3<sup>rd</sup> terms is 36, then the value of x is equal to (T<sub>i</sub> denote the i<sup>th</sup> term of Expansion)",
+            "options":[
+               {
+                  "option_1":"${&minus; 1}/{3}$",
+                  "option_2":"${&minus; 1}/{6}$",
+                  "option_3":"${1}/{2}$",
+                  "option_4":"${1}/{6}$"
+               }
+            ],
+            "option_right":"2",
+            "explanation":"<p>Let 4<sup>x</sup> = t</p><p>$(t &plus; \frac{1}{t^{2}})^{n}$</p><p>$T_{3} = n_{c_{2}}(t)^{n &minus; 2}(\frac{1}{t^{2}})^{2}$</p><p>--- Test --- $\begin{equation}\boxed {(t &plus; \frac{1}{t^{2}})^{n}}\\end{equation}$</p><p>$T_{2} = n_{c_{1}}(t)^{n &minus; 1}(\frac{1}{t^{2}})^{1}$</p><p>$T_{2} = n_{c_{1}}t^{n &minus; 3}$</p><p>$\frac{T_{3}}{T_{2}} = 7$</p><p>$\\Rightarrow\\:\frac{n_{c_{2}}}{n_{c_{1}}t^{3}} = 7$</p><p>--- Box Testing --- $\begin{equation}\boxed{n_{c_{2}} = 7\times\\:n_{c_{1}}t^{3}} \\: &mdash; \\: (1)\\end{equation}$</p><p>$\begin{equation}\boxed{n_{c_{1}} &plus; n_{c_{2}} = 36} \\: &mdash; \\: (2)\\end{equation}$</p><p>$From (1) and (2)$</p><p>n = 8 and $t = (\frac{1}{2})^{\frac{1}{3}}$</p><p>$t = (\frac{1}{2})^{\frac{1}{3}}$</p><p>$4^{x} = (\frac{1}{2})^{\frac{1}{3}}$</p><p>$2^{2x} = ({2})^{\frac{ &minus; 1}{3}}$</p><p>2x = ${ &minus; 1}/{3}$</p><p>x = ${ &minus; 1}/{6}$</p>",
+            "subject_id":3
+         },
+         {
+            "question_id":5,
+            "question_type":"O",
+            "question":"IIT JEE MAIN - Test Series 5 - Maths - 5Q Solution - Let $f(x) = \frac{1 &minus; \\cos\\lbrace x \rbrace}{(x^{3} &minus; 6x^{2} &plus; 11x &minus; 6)^{2}}$. If $l = \\lim_{x \rightarrow 1^{ &plus; }}f(x)$, $m = \\lim_{x \rightarrow 2^{ &plus; }}f(x)$ and $n = \\lim_{x \rightarrow 3^{ &plus; }}f(x)$, Where {.} denotes fractional part function, then",
+            "options":[
+               {
+                  "option_1":"l &plus; m &plus; n = ${3}/{4}$",
+                  "option_2":"l &plus; m &plus; n = ${1}/{4}$",
+                  "option_3":"l = ${1}/{4}$",
+                  "option_4":"m = ${1}/{4}$"
+               }
+            ],
+            "option_right":"1",
+            "explanation":"<p>$f(x) = \frac{1 &minus; \\cos\\lbrace x \rbrace}{(x &minus; 1)^{2}(x &minus; 2)^{2}(x &minus; 3)^{2}}$</p><p>$l = \\lim_{x \rightarrow 1^{ &plus; }}f(x) = \\lim_{x \rightarrow 1^{ &plus; }}\frac{1 &minus; \\cos\\lbrace x &minus; 1 \rbrace}{(x &minus; 1)^{2}(x &minus; 2)^{2}(x &minus; 3)^{2}} = \frac{1}{2\times 1\times 4} = \frac{1}{8}$</p><p>$m = \\lim_{x \rightarrow 2^{ &plus; }}f(x) = \\lim_{x \rightarrow 2^{ &plus; }}\frac{1 &minus; \\cos\\lbrace x &minus; 2 \rbrace}{(x &minus; 1)^{2}(x &minus; 2)^{2}(x &minus; 3)^{2}} = \frac{1}{2}\times\frac{1}{1\times 1} = \frac{1}{2}$</p><p>$n = \\lim_{x \rightarrow 3^{ &plus; }}f(x) = \\lim_{x \rightarrow 3^{ &plus; }}\frac{1 &minus; \\cos\\lbrace x &minus; 3 \rbrace}{(x &minus; 1)^{2}(x &minus; 2)^{2}(x &minus; 3)^{2}} = \frac{1}{2}\times\frac{1}{4\times 1} = \frac{1}{8}$</p>",
+            "subject_id":3
+         },
+         {
+            "question_id":11,
+            "question_type":"O",
+            "question":"IIT JEE MAIN - Test Series 5 - Maths - 11Q Solution - If $\\vec{a}$, $\\vec{b}$ and \\vec{c} are non&minus;coplanar vectors and $\\vec{a}&times;\\vec{c}$ is perpendicular to $\\vec{a} &times; (\\vec{b} &times; \\vec{c})$ , then the angle between \\vec{a} and \\vec{c} is ",
+            "options":[
+               {
+                  "option_1":"60&deg;",
+                  "option_2":"90&deg;",
+                  "option_3":"30&deg;",
+                  "option_4":"0&deg;"
+               }
+            ],
+            "option_right":"2",
+            "explanation":"<p>--- Arrow Test ---$(\\vec{a}\times\\:\\vec{c})$ is perpendicular to $\\vec{a}\times(\\vec{b}\times\\:\\vec{c})$</p><p>So,</p><p>$(\\vec{a}\times\\:\\vec{c}).(\\vec{a}\times\\:(\\vec{b}\times\\vec{c})) = 0$</p><p>$(\\vec{a}\times\\:\\vec{c}).((\\vec{a}.\\vec{c})\\vec{b}&minus;(\\vec{a}.\\vec{b})\\vec{c}) = 0$</p><p>$(\\vec{a}.\\vec{c})((\\vec{a}\times\\vec{c}).\\vec{b})&minus;(\\vec{a}.\\:\\vec{b})((\\vec{a}\times\\vec{c}).\\vec{c}) = 0$</p><p>$(\\vec{a}.\\vec{c})((\\vec{a}\times\\vec{c}).\\vec{b}) = 0$</p><p>$(\because\\:(\\vec{a}\times\\vec{c}).\\vec{c} = 0)$</p><p>Since,$(\\vec{a},\\vec{b},\\vec{c})$ are coplanar vectors</p><p>So,$(\\vec{a}\times\\vec{c}).\\vec{b}\neq0$</p><p>$\\Rightarrow\\:\\vec{a}.\\vec{c} = 0$</p><p>angle between $\\vec{a}$ and $\\vec{c}$ is 90&deg;</p>",
+            "subject_id":3
+         },
+         {
+            "question_id":12,
+            "question_type":"O",
+            "question":"IIT JEE MAIN - Test Series 5 - Maths - 12Q Solution - If the straight line x &plus; y &plus; z &plus; 3 = 0 = ax &plus; by &plus; cz &plus; 2 is parallel to the plane a<sup>3</sup>x &plus; b<sup>3</sup>y &plus; c<sup>3</sup>z = 4 then (Where a,b,c are distinct numbers)",
+            "options":[
+               {
+                  "option_1":"a,b,c are in A.P",
+                  "option_2":"a,b,c are in G.P",
+                  "option_3":"a,b,c are in H.P",
+                  "option_4":"a &plus; b &plus; c = 0"
+               }
+            ],
+            "option_right":"4",
+            "explanation":"<p>--- Matrix Testing --- Equation of line is x &plus; y &plus; z &plus; 3 = 0 = ax &plus; by &plus; cz &plus; 2</p><p>Direction ration of the line is $\begin{bmatrix}\\hat{i} &amp; \\hat{j} &amp; \\hat{k} \\1 &amp; 1 &amp; 1 \\ a &amp; b &amp; c \\end{bmatrix}$</p><p>Lets say $\\vec{n_{1}} = \begin{bmatrix}\\hat{i} &amp; \\hat{j} &amp; \\hat{k} \\1 &amp; 1 &amp; 1 \\ a &amp; b &amp; c \\end{bmatrix}$</p><p>Line is parallel to plane $a^{3}x &plus; b^{3}x &plus; c^{3}x = 4$</p><p>Let direction ratios of normal to the plane is $\\vec{n_{2}}$</p><p>$\\vec{n_{2}} = (a^{3}\\hat{i} &plus; b^{3}\\hat{j} &plus; c^{3}\\hat{k})$</p><p>line is parallel to plane so, $\\vec{n_{1}}.\\vec{n_{2}} = 0$</p><p>$\\Rightarrow\begin{bmatrix}1 &amp; 1 &amp; 1 \\a &amp; b &amp; c \\ a^{3} &amp; b^{3} &amp; c^{3} \\end{bmatrix} = 0$</p><p>$(a &minus; b)(b &minus; c)(c &minus; a)(a &plus; b &plus; c) = 0$</p><p>Since a,b,c are distinct numbers</p><p>so, a &plus; b &plus; c &plus;  = 0</p>",
+            "subject_id":3
+         },
+         {
+            "question_id":23,
+            "question_type":"N",
+            "question":"IIT JEE MAIN - Test Series 5 - Maths - 23Q Solution - Let N be the number of 3&minus;digit numbers having atleast one 6 and atmost one 5 . Then N is equal to _____________",
+            "answer":"249",
+            "explanation":"<p>---Table Test---</p><table class='quiz-table' cellspacing='0' cellpadding='0'><tr><th>Number of times 6 appears</th><th>Number of 5 appears</th><th>Total Numbers of numbers</th></tr><tr><td>1</td><td>0</td><td>176</td></tr><tr><td>2</td><td>0</td><td>23</td></tr><tr><td>3</td><td>0</td><td>1</td></tr><tr><td>1</td><td>1</td><td>46</td></tr><tr><td>2</td><td>1</td><td>3</td></tr><tr><td></td><td></td><td>Total:249</td></tr></table>",
+            "subject_id":3
+         }
+      ]
+   }
+}

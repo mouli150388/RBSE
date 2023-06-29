@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/card_shadow_1"
+    android:orientation="vertical"
+    android:id="@+id/lnr_container"
+    tools:context=".activities.EditNotesActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/activstion_background"
+        android:scaleType="fitXY"
+        />
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/top_main_background_small"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+           <!-- <TextView
+                android:id="@+id/subjectnameTVID"
+                style="@style/MaterialAnimations"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="@dimen/_16dp"
+                android:drawablePadding="@dimen/_8dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+
+                android:transitionName="trans"
+                app:layout_collapseMode="parallax" />-->
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginRight="@dimen/_50dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            <LinearLayout
+                android:id="@+id/lnr_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/ripple_radius"
+                android:gravity="center"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+                    android:layout_margin="@dimen/_10dp"
+                    app:srcCompat="@drawable/ic_home_out"
+                    android:tint="@color/white" />
+            </LinearLayout>
+            <!-- <ImageView
+                 android:onClick="home"
+                 android:layout_width="32dp"
+                 app:srcCompat="@drawable/ic_home_out"
+                 android:tint="@color/white"
+                 android:background="@drawable/ripple_radius"
+                 android:layout_gravity="right|center_vertical"
+                 android:layout_marginRight="@dimen/_16dp"
+                 app:layout_collapseMode="pin"
+                 android:padding="5dp"
+                 android:layout_height="32dp" />-->
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appbar"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <TextView
+            android:id="@+id/subjectnameTVID"
+            style="@style/MaterialAnimations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/_16dp"
+            android:drawablePadding="@dimen/_8dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/header_text_size"
+
+            android:transitionName="trans"
+            app:layout_collapseMode="parallax" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/subject_margin"
+            android:layout_weight="1"
+            android:elevation="10dp"
+            android:padding="10dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:cardCornerRadius="@dimen/_15dp">
+
+            <EditText
+                android:id="@+id/quoteTextArea"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:editable="true"
+                android:ems="10"
+                android:enabled="true"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="top"
+                android:hint="Create your notes here"
+                android:inputType="textMultiLine"
+                android:isScrollContainer="true"
+                android:lineSpacingExtra="@dimen/_8dp"
+                android:padding="10dp"
+                android:textIsSelectable="true">
+            </EditText>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/txt_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_20dp"
+            android:background="@drawable/retake_button"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:minEms="6"
+            android:padding="@dimen/_5dp"
+            android:text="Save"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+</RelativeLayout>

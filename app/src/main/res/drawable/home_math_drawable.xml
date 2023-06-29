@@ -1,0 +1,14 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:state_pressed="true" >
+<shape>
+    <gradient android:endColor="#AE9AFC"
+        android:startColor="#59259C"
+        android:centerColor="#B9ABF1"
+        android:angle="270"
+        />
+    <corners android:radius="18dp"/>
+</shape>
+    </item>
+
+    <item android:drawable="@drawable/home_math_background" />
+</selector>

@@ -1,0 +1,545 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_header"
+            android:layout_width="match_parent"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/lnr_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rel_top_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/top_main_background_small"
+                >
+
+                <FrameLayout
+                    android:id="@+id/rel_headers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/txt_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center_horizontal|bottom"
+                        android:minHeight="18dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/header_text_size"
+                        android:visibility="invisible"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:id="@+id/lnr_back"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_10dp">
+
+                            <ImageView
+                                android:id="@+id/back"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_10dp"
+                                android:layout_marginLeft="16dp"
+                                android:fontFamily="@font/opensans_regular"
+                                android:text=""
+                                android:textColor="#fff"
+                                android:textSize="16sp"
+                                app:srcCompat="@drawable/ic_left_arrow" />
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:orientation="horizontal"
+                            android:gravity="center_vertical"
+                            android:layout_centerVertical="true"
+
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="16dp"
+
+
+                            android:layout_height="wrap_content">
+
+                            <cn.iwgang.countdownview.CountdownView
+                                android:id="@+id/cv_countdownViewTest1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="@dimen/_32dp"
+                                android:layout_marginLeft="16sp"
+                                 app:isHideTimeBackground="true"
+                                app:isShowMillisecond="false"
+                                app:isShowMinute="true"
+                                app:isShowSecond="true"
+                                app:isTimeTextBold="true"
+                                app:suffixGravity="bottom"
+                                app:suffixTextColor="#FFF"
+
+
+                                android:paddingRight="16sp"
+                                app:suffixTextSize="18sp"
+                                android:paddingLeft="24sp"
+                                app:timeTextColor="#FFF"
+                                app:timeTextSize="@dimen/header_text_size" />
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:layout_gravity="center_vertical"
+                                android:src="@drawable/ic_timericon"
+                                />
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="194dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/_10dp"
+                            android:gravity="center_vertical">
+
+                            <Button
+                                android:id="@+id/btn_pause_pay"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                               android:drawableStart="@drawable/exo_icon_pause"
+                                android:gravity="center"
+                                android:minHeight="@dimen/_32dp"
+                                android:padding="@dimen/_5dp"
+                                android:text="@string/pause"
+                                android:textColor="@color/white" />
+
+                        </LinearLayout>
+                        <ImageView
+                            android:id="@+id/img_review"
+                            android:layout_width="@dimen/_32dp"
+                            android:layout_height="@dimen/_32dp"
+                            android:src="@drawable/ic_grid_q"
+                            android:layout_marginRight="@dimen/_16sp"
+                            />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/rel_headers"
+
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radio_sub_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:gravity="center"
+
+                        android:visibility="visible"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/radio_phy"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:background="@drawable/test_series_deselect"
+                            android:text="@string/physics"
+                            android:button="@null"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:fontFamily="@font/opensans_regular"
+                            android:minHeight="30dp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                        <RadioButton
+                            android:id="@+id/radio_che"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/chemistry"
+                            android:background="@drawable/test_series_deselect"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:minHeight="30dp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textColor="@color/white"
+                            android:textSize="10sp"
+                            tools:ignore="ButtonStyle" />
+
+
+
+                        <RadioButton
+                            android:id="@+id/radio_bio"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="10dp"
+                            android:background="@drawable/test_series_deselect"
+                            android:fontFamily="@font/opensans_regular"
+                             android:button="@null"
+                            android:text="@string/biology"
+                            android:gravity="center"
+                            android:minHeight="30dp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+                        <RadioButton
+                            android:id="@+id/radio_math"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="@string/mathematics"
+                            android:background="@drawable/test_series_deselect"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:fontFamily="@font/opensans_regular"
+                            android:minHeight="30dp"
+                            android:textStyle="bold"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+                            android:textSize="10sp" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+
+                <!--<include layout="@layout/cloude_image_view" />-->
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/lnr_swipe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/lnr_main"
+            android:layout_below="@+id/lnr_top"
+            android:layout_marginTop="@dimen/quiz_top_minus"
+            android:elevation="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:id="@+id/license_agree_scrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/subject_margin"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/subject_margin"
+                android:background="@drawable/shadow_new"
+
+                android:fadeScrollbars="true"
+                android:padding="10dp"
+                android:scrollbarFadeDuration="1"
+                android:scrollbarSize="2dp"
+                android:scrollbarThumbVertical="@color/colorPrimaryDark">
+
+                <LinearLayout
+                    android:id="@+id/quiz"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    tools:ignore="WebViewLayout">
+                    <TextView
+                        android:id="@+id/txt_show_q_type"
+                        android:fontFamily="@font/opensans_regular"
+                        android:padding="@dimen/_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <com.tutorix.tutorialspoint.views.CustomWebview
+                        android:id="@+id/question"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/transparent" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:id="@+id/lnr_1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/webviewquiz"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+
+
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/radio_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/webviewquiz_select_one"
+                                android:button="@null" />
+
+                            <com.tutorix.tutorialspoint.views.CustomWebview
+                                android:id="@+id/a0"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5dp"
+                                android:background="@color/transparent"
+                                android:padding="15dp" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/lnr_2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/webviewquiz"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/radio_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/webviewquiz_select_one"
+                                android:button="@null" />
+
+                            <com.tutorix.tutorialspoint.views.CustomWebview
+                                android:id="@+id/a1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5dp"
+                                android:background="@color/transparent"
+                                android:padding="15dp" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/lnr_3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/webviewquiz"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/radio_3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/webviewquiz_select_one"
+                                android:button="@null" />
+
+                            <com.tutorix.tutorialspoint.views.CustomWebview
+                                android:id="@+id/a2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5dp"
+                                android:background="@color/transparent"
+                                android:padding="15dp" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/lnr_4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/webviewquiz"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/radio_4"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/webviewquiz_select_one"
+                                android:button="@null" />
+
+                            <com.tutorix.tutorialspoint.views.CustomWebview
+                                android:id="@+id/a3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="@dimen/_5dp"
+                                android:background="@color/transparent"
+                                android:padding="15dp" />
+
+
+                        </FrameLayout>
+
+                        <EditText
+                            android:id="@+id/edit_write"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/_40dp"
+                            android:hint="write your answer"
+                            android:paddingLeft="@dimen/_16sp"
+                            android:gravity="center_vertical"
+                            android:inputType="numberDecimal"
+                            android:visibility="gone"
+                            android:background="@drawable/edit_quiz_rectangle"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </ScrollView>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/lnr_touch_left"
+                android:layout_width="80dp"
+                android:layout_gravity="left"
+
+
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:id="@+id/lnr_touch_right"
+                android:layout_width="80dp"
+                android:layout_gravity="right"
+
+
+                android:layout_height="match_parent">
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/lnr_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginBottom="10dp"
+            android:elevation="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_15sp"
+                android:layout_marginRight="@dimen/_15sp"
+
+                >
+
+
+                <Button
+                    android:id="@+id/Prev"
+                    android:layout_width="@dimen/_48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@drawable/ic_left_arrow_test"
+                    android:background="@color/transparent"
+                    android:textAllCaps="false"
+                    android:gravity="left|center_vertical"
+
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Prev"
+                    android:layout_toLeftOf="@+id/Next"
+                    android:layout_weight="1"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                <Button
+                    android:id="@+id/btn_mark_review"
+                    android:layout_width="wrap_content"
+                    android:minWidth="@dimen/_125dp"
+                    android:minHeight="@dimen/_32dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_10sp"
+                    android:layout_margin="@dimen/_5dp"
+                    android:background="@drawable/webviewquiz_select_one"
+                    android:text="@string/markforreview"
+                    />
+                    <Button
+                        android:id="@+id/btn_clear_review"
+                        android:layout_width="wrap_content"
+                        android:minWidth="@dimen/_125dp"
+                        android:minHeight="@dimen/_32dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/_10sp"
+                        android:layout_margin="@dimen/_5dp"
+                        android:background="@drawable/webviewquiz_select_one"
+                        android:text="@string/clearresposne"
+                        />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/Next"
+                    android:layout_width="@dimen/_48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_right_arrow_test"
+                    android:layout_alignParentRight="true"
+                   android:background="@color/transparent"
+                    android:gravity="right|center_vertical"
+
+                    android:textAllCaps="false"
+                    android:textColor="@color/quiz_submit_btn_color"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

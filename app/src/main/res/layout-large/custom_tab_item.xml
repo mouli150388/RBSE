@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minHeight="?attr/actionBarSize"
+    android:gravity="center"
+    >
+    <com.tutorix.tutorialspoint.views.WebfontText
+        android:id="@+id/txt_iimage"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:text="@string/home_font"
+        android:gravity="center"
+        android:textSize="@dimen/_30sp"
+        android:textColor="@color/tab_default_text_color"
+        android:layout_above="@+id/txt_title"
+        android:layout_margin="@dimen/_5dp"/>
+    <com.tutorix.tutorialspoint.views.CustomTextview
+        android:id="@+id/txt_title"
+        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:textColor="@color/tab_default_text_color"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="@dimen/_12sp"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

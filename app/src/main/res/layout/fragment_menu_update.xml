@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/activstion_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:id="@+id/lnr_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+
+                android:padding="@dimen/_5dp">
+
+                <FrameLayout
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:background="@drawable/circle_white"
+
+                    android:padding="@dimen/_2dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/logo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:elevation="@dimen/_8dp"
+                        android:padding="3dp"
+                        android:transitionName="profile"
+                        app:srcCompat="@drawable/profile" />
+                </FrameLayout>
+
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text=""
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_18sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_student_dashboard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/profile" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/student_dashboard"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_student_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/profile" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/add_student"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_switch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_refresh_page_arrow_button" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/switch_class"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/lnr_buy"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/_10dp"-->
+            <!--                android:layout_marginRight="@dimen/_10dp"-->
+            <!--                android:background="@drawable/ripple"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:padding="@dimen/_5dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/menu_height_width"-->
+            <!--                    android:layout_height="@dimen/menu_height_width"-->
+            <!--                    app:srcCompat="@drawable/ic_key"-->
+            <!--                     />-->
+
+            <!--                <com.tutorix.tutorialspoint.views.CustomTextview-->
+            <!--                    android:id="@+id/txt_subscribe"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_margin="@dimen/_5dp"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:padding="@dimen/_5dp"-->
+            <!--                    android:text="@string/buy_activation"-->
+            <!--                    android:textColor="@color/menu_activity_text"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:textSize="@dimen/_16sp" />-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_gravity="center_vertical|right"-->
+            <!--                    app:srcCompat="@drawable/ic_right_back"-->
+            <!--                    android:rotation="180"-->
+            <!--                    android:layout_height="wrap_content" />-->
+            <!--            </LinearLayout>-->
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_2dp"-->
+            <!--                android:background="@color/new_color_background" />-->
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/lnr_view"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/_10dp"-->
+            <!--                android:layout_marginRight="@dimen/_10dp"-->
+            <!--                android:background="@drawable/ripple"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:padding="@dimen/_5dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/menu_height_width"-->
+            <!--                    android:layout_height="@dimen/menu_height_width"-->
+            <!--                    app:srcCompat="@drawable/ic_key"-->
+            <!--                    />-->
+
+            <!--                <com.tutorix.tutorialspoint.views.CustomTextview-->
+            <!--                    android:id="@+id/txt_act_details"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_margin="@dimen/_5dp"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:padding="@dimen/_5dp"-->
+            <!--                    android:text="@string/subscribed"-->
+            <!--                    android:textColor="@color/menu_activity_text"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:textSize="@dimen/_16sp" />-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_gravity="center_vertical|right"-->
+            <!--                    app:srcCompat="@drawable/ic_right_back"-->
+            <!--                    android:rotation="180"-->
+            <!--                    android:layout_height="wrap_content" />-->
+            <!--            </LinearLayout>-->
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_2dp"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:background="@color/new_color_background" />-->
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/lnr_sd_card"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/_10dp"-->
+            <!--                android:layout_marginRight="@dimen/_10dp"-->
+            <!--                android:background="@drawable/ripple"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:padding="@dimen/_5dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/menu_height_width"-->
+            <!--                    android:layout_height="@dimen/menu_height_width"-->
+            <!--                    app:srcCompat="@drawable/ic_key"-->
+            <!--                    />-->
+
+            <!--                <com.tutorix.tutorialspoint.views.CustomTextview-->
+            <!--                    android:id="@+id/txt_act_sd_card"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_margin="@dimen/_5dp"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:padding="@dimen/_5dp"-->
+            <!--                    android:text="@string/activate_sdcard"-->
+            <!--                    android:textColor="@color/menu_activity_text"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:textSize="@dimen/_16sp" />-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_gravity="center_vertical|right"-->
+            <!--                    app:srcCompat="@drawable/ic_right_back"-->
+            <!--                    android:rotation="180"-->
+            <!--                    android:layout_height="wrap_content" />-->
+            <!--            </LinearLayout>-->
+            <!-- <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_2dp"
+                 android:background="@color/new_color_background" />-->
+            <LinearLayout
+                android:id="@+id/lnr_dsw"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="gone">
+
+                <ImageView
+
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_dsw_logo" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:id="@+id/txt_dsw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/scolashipprogramm"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <!-- <LinearLayout
+                 android:id="@+id/lnr_orders"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="@dimen/_10dp"
+                 android:layout_marginRight="@dimen/_10dp"
+                 android:background="@drawable/ripple"
+                 android:clickable="true"
+                 android:focusable="true"
+                 android:gravity="center_vertical"
+                 android:padding="@dimen/_5dp">
+
+                 <ImageView
+                     android:layout_width="@dimen/menu_height_width"
+                     android:layout_height="@dimen/menu_height_width"
+                     app:srcCompat="@drawable/ic_delivery"
+                  />
+
+                 <com.tutorix.tutorialspoint.views.CustomTextview
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_margin="@dimen/_5dp"
+                     android:padding="@dimen/_5dp"
+                     android:text="@string/myorders"
+                     android:fontFamily="@font/opensans_regular"
+                     android:textColor="@color/menu_activity_text"
+                     android:layout_weight="1"
+                     android:textSize="@dimen/_16sp" />
+                 <ImageView
+                     android:layout_width="wrap_content"
+                     android:layout_gravity="center_vertical|right"
+                     app:srcCompat="@drawable/ic_right_back"
+                     android:rotation="180"
+                     android:layout_height="wrap_content" />
+             </LinearLayout>
+             <TextView
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/_2dp"
+                 android:background="@color/new_color_background" />-->
+            <LinearLayout
+                android:id="@+id/lnr_rewards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_trophy" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/myrewards"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/lnr_knowledge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_connect_us" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/connect_with_us"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_sounds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+
+                    app:srcCompat="@drawable/ic_settings" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/effects"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+            <!--     section-2   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="#81DDDBDB"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/_40dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:text="@string/tools"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="3dp"
+
+                    app:srcCompat="@drawable/ic_settings" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_complete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_completed" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/completed_tasks"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lnr_syllabus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_writing" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/syllabus"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background"
+                android:visibility="gone" />
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_2dp"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:background="@color/new_color_background" />-->
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/lnr_notification"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/_10dp"-->
+            <!--                android:layout_marginRight="@dimen/_10dp"-->
+            <!--                android:background="@drawable/ripple"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:visibility="visible"-->
+            <!--                android:padding="@dimen/_5dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/menu_height_width"-->
+            <!--                    android:layout_height="@dimen/menu_height_width"-->
+            <!--                    app:srcCompat="@drawable/ic_notification"-->
+            <!--                    />-->
+
+            <!--                <com.tutorix.tutorialspoint.views.CustomTextview-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_margin="@dimen/_5dp"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:padding="@dimen/_5dp"-->
+            <!--                    android:text="@string/notifictions"-->
+            <!--                    android:textColor="@color/menu_activity_text"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:textSize="@dimen/_16sp" />-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_gravity="center_vertical|right"-->
+            <!--                    app:srcCompat="@drawable/ic_right_back"-->
+            <!--                    android:rotation="180"-->
+            <!--                    android:layout_height="wrap_content" />-->
+            <!--            </LinearLayout>-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background"
+                android:visibility="gone" />
+
+            <!--     section-3 Support   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="#81DDDBDB">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/_40dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:text="@string/support"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="3dp"
+                    app:srcCompat="@drawable/ic_customer_support" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_support" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/get_in_touch"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/lnr_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="visible">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_feedback" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/feed_back"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+
+            <LinearLayout
+                android:id="@+id/lnr_faqs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_faqs"
+
+                    />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/faq"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_doubt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_faqs" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/asked_questions"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+            <!--     section-4 Aboutus   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="#81DDDBDB">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center_vertical"
+                    android:minHeight="@dimen/_40dp"
+                    android:paddingLeft="@dimen/_10dp"
+                    android:paddingTop="@dimen/_5dp"
+                    android:paddingBottom="@dimen/_5dp"
+                    android:text="@string/aboutus"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp"
+                    android:textStyle="normal" />
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_margin="3dp"
+                    app:srcCompat="@drawable/ic_speaker" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_about_company" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/aboutcompany"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_terms"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_verified_text_paper" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/terms_conditions"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/lnr_refund"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/_10dp"-->
+            <!--                android:layout_marginRight="@dimen/_10dp"-->
+            <!--                android:background="@drawable/ripple"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:padding="@dimen/_5dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/menu_height_width"-->
+            <!--                    android:layout_height="@dimen/menu_height_width"-->
+            <!--                    app:srcCompat="@drawable/ic_refound_policy"-->
+            <!--                   />-->
+
+            <!--                <com.tutorix.tutorialspoint.views.CustomTextview-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_margin="@dimen/_5dp"-->
+            <!--                    android:padding="@dimen/_5dp"-->
+            <!--                    android:text="@string/refund"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:textColor="@color/menu_activity_text"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:textSize="@dimen/_16sp" />-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_gravity="center_vertical|right"-->
+            <!--                    app:srcCompat="@drawable/ic_right_back"-->
+            <!--                    android:rotation="180"-->
+            <!--                    android:layout_height="wrap_content" />-->
+            <!--            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_privacy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_if_about" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/privacy"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_delete_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_logout" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/delete_account"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <LinearLayout
+                android:id="@+id/lnr_logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/ripple"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:padding="@dimen/_5dp">
+
+                <ImageView
+                    android:layout_width="@dimen/menu_height_width"
+                    android:layout_height="@dimen/menu_height_width"
+                    app:srcCompat="@drawable/ic_logout" />
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/logout"
+                    android:textColor="@color/menu_activity_text"
+                    android:textSize="@dimen/_16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:rotation="180"
+                    app:srcCompat="@drawable/ic_right_back" />
+            </LinearLayout>
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="@dimen/_2dp"-->
+            <!--                android:background="@color/new_color_background" />-->
+            <!--            <LinearLayout-->
+            <!--                android:id="@+id/lnr_rateapp"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="@dimen/_10dp"-->
+            <!--                android:layout_marginRight="@dimen/_10dp"-->
+            <!--                android:background="@drawable/ripple"-->
+            <!--                android:clickable="true"-->
+            <!--                android:focusable="true"-->
+            <!--                android:gravity="center_vertical"-->
+            <!--                android:padding="@dimen/_5dp">-->
+
+            <!--                <ImageView-->
+            <!--                    android:layout_width="@dimen/menu_height_width"-->
+            <!--                    android:layout_height="@dimen/menu_height_width"-->
+            <!--                    app:srcCompat="@drawable/ic_review"-->
+            <!--                    android:background="@color/colorPrimary"-->
+            <!--                    />-->
+
+            <!--                <com.tutorix.tutorialspoint.views.CustomTextview-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_margin="@dimen/_5dp"-->
+            <!--                    android:padding="@dimen/_5dp"-->
+            <!--                    android:text="@string/ratethisapp"-->
+            <!--                    android:fontFamily="@font/opensans_regular"-->
+            <!--                    android:textColor="@color/menu_activity_text"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:textSize="@dimen/_16sp" />-->
+            <!--                <ImageView-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_gravity="center_vertical|right"-->
+            <!--                    app:srcCompat="@drawable/ic_right_back"-->
+            <!--                    android:rotation="180"-->
+            <!--                    android:layout_height="wrap_content" />-->
+            <!--            </LinearLayout>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_2dp"
+                android:background="@color/new_color_background" />
+
+            <com.tutorix.tutorialspoint.views.CustomTextview
+                android:id="@+id/txt_appversion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5dp"
+                android:text=""
+                android:textColor="@color/menu_activity_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</FrameLayout>

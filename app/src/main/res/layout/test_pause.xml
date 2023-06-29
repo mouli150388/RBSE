@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Prev"
+        android:layout_toLeftOf="@+id/Next"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/img_pause"
+            android:layout_width="@dimen/_200dp"
+            android:layout_height="@dimen/_200dp"
+            android:layout_margin="@dimen/_20dp"
+            android:src="@drawable/ic_time_pused"
+            />
+        <com.tutorix.tutorialspoint.views.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10dp"
+            android:textSize="@dimen/_18sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textStyle="bold"
+
+            android:text="@string/testpaused"
+            />
+        <Button
+            android:id="@+id/btn_continue_test"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/_125dp"
+            android:minHeight="@dimen/_32dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sp"
+            android:layout_margin="@dimen/_10dp"
+            android:background="@drawable/button_selector_phy_p"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/resumetest"
+            />
+        <Button
+            android:id="@+id/btn_submit_test"
+            android:layout_width="wrap_content"
+            android:minWidth="@dimen/_125dp"
+            android:minHeight="@dimen/_32dp"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_10sp"
+            android:layout_margin="@dimen/_10dp"
+            android:background="@drawable/button_selector_phy_p"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/exittest"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

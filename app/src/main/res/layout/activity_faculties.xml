@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".anaylysis.AnalysisNewFragment">
+
+    <RelativeLayout
+        android:id="@+id/rel_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_quiz_height"
+        android:background="@drawable/top_main_background"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/notoserif_bold"
+            android:gravity="center_horizontal"
+            android:text="@string/our_subject_matter_experts"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20dp" />
+
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:background="@drawable/ripple"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:tint="@color/black"
+                app:srcCompat="@drawable/ic_left_arrow" />
+        </LinearLayout>
+
+        <include layout="@layout/cloude_image_view" />
+
+
+    </RelativeLayout>
+
+
+    <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/quiz_margin"
+            android:layout_marginRight="@dimen/quiz_margin"
+            android:layout_marginBottom="@dimen/quiz_margin"
+            android:elevation="20dp"
+            android:background="@drawable/shadow_new"
+            android:orientation="vertical"
+            >-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_analysis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="@dimen/_300dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <RadioGroup
+            android:id="@+id/radio_grp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        </RadioGroup>
+    </FrameLayout>
+    <!-- </LinearLayout>-->
+
+
+</LinearLayout>

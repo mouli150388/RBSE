@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_color_background"
+    android:orientation="vertical"
+    tools:context=".otp.OTPActivity">
+
+    <include layout="@layout/banner" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/sinuplogotop"
+    android:visibility="invisible"
+        app:srcCompat="@drawable/signup_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/_10dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:background="@drawable/button_rectangle_radius"
+
+            android:gravity="center_vertical"
+            android:minHeight="@dimen/minimum_hight_editfiled"
+            android:orientation="horizontal"
+            android:padding="@dimen/_3dp"
+            android:paddingLeft="@dimen/_20dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingRight="@dimen/_20dp"
+            android:paddingBottom="@dimen/_5dp"
+
+            >
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fontFamily="@font/opensans_regular"
+                android:hint="@string/otp"
+                android:minHeight="@dimen/minimum_hight_editfiled"
+                android:importantForAutofill="no|noExcludeDescendants"
+                android:inputType="number"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_5dp"
+                android:maxLength="@integer/otp_length"
+                android:textColor="@color/editfiled_color" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/txt_hint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_15dp"
+
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/please_enter_your_4_digit_otp_from_your_respective_mobile_number"
+            android:textColor="@color/editfiled_color" />
+        <TextView
+            android:id="@+id/txt_resend"
+            android:layout_width="wrap_content"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:onClick="resendotp"
+            android:fontFamily="@font/opensans_regular"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/resend" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/_8dp"
+            android:minEms="8"
+            android:layout_gravity="center"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:onClick="validateOTP"
+            android:text="@string/submit"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+
+    <include layout="@layout/bottom_banner"/>
+
+
+</LinearLayout>

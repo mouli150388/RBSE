@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:state_pressed="true">
+    <shape android:shape="rectangle">
+       <!-- <corners android:radius="5dp"/>-->
+        <solid android:color="@color/che_background"/>
+       <!-- <stroke android:color="@color/aaa" android:width="@dimen/_1dp"/>-->
+
+    </shape>
+</item>
+
+  <!--  <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+         &lt;!&ndash;   <corners android:radius="5dp"/>&ndash;&gt;
+            <solid android:color="@color/che_background_status_trns"/>
+           &lt;!&ndash; <stroke android:color="@color/aaa" android:width="@dimen/_1dp"/>&ndash;&gt;
+
+        </shape>
+    </item>-->
+
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <!--   <corners android:radius="5dp"/>-->
+            <solid android:color="@color/che_background"/>
+            <stroke android:color="@color/black" android:width="@dimen/_2dp"/>
+            <!-- <stroke android:color="@color/aaa" android:width="@dimen/_1dp"/>-->
+
+        </shape>
+    </item>
+
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <!--   <corners android:radius="5dp"/>-->
+            <solid android:color="@color/che_background"/>
+            <!-- <stroke android:color="@color/aaa" android:width="@dimen/_1dp"/>-->
+
+        </shape>
+    </item>
+
+
+    <item >
+        <shape android:shape="rectangle">
+           <!-- <corners android:radius="5dp"/>-->
+            <solid android:color="@color/che_background"/>
+            <!--<stroke android:color="@color/aaa" android:width="@dimen/_1dp"/>-->
+
+        </shape>
+    </item>
+</selector>

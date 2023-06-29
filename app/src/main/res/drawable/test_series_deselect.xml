@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_checked="true" >
+        <layer-list >
+            <!--The bottom layer is filled with underlined color-->
+            <item android:height="@dimen/_1dp" android:bottom="1dp" android:gravity="bottom">
+                <shape>
+                  <solid android:color="@color/white"/>
+                </shape>
+            </item>
+            <!--The upper layer is covered with a layer of 3dp from the bottom of the bottom layer, filled with white. The two layers are superimposed together to form an underline effect, the principle is self-repairing -->
+            <item >
+                <shape>
+
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+
+
+    <item
+        android:drawable="@android:color/transparent">
+    </item>
+
+</selector>

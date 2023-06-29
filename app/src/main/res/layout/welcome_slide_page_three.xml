@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="@dimen/img_width_height"
+                    android:layout_height="@dimen/img_width_height"
+                    android:layout_centerInParent="true"
+                    app:srcCompat="@drawable/logo" />
+            </RelativeLayout>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/txt_msg"
+        android:layout_weight="3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/wel_three" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="DONE"
+        android:textColor="#028b72"
+        android:padding="5dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+
+
+</RelativeLayout>

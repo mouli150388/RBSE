@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+
+    tools:context=".home.HomeTabActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_toolbar"
+        android:layout_width="match_parent"
+
+        android:background="@drawable/top_main_background"
+        android:layout_height="@dimen/banner_quiz_height">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/_20sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/performance_analysis"
+            />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-16dp"
+                app:srcCompat="@drawable/ic_cloud" />
+
+
+
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/_8dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/oneday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:text="1 Day"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/sevendays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7 Days"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/monthdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/_30_days"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/overall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:text="All"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager_analysis"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:elevation="20dp"
+
+        android:background="@drawable/shadow_new"
+        android:minHeight="@dimen/_300dp"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/lnr_reload"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="100dp"
+            android:visibility="gone">
+
+            <ImageView
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                app:srcCompat="@drawable/ic_no_data" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/no_data"
+
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"
+                android:orientation="vertical"
+
+                android:padding="5dp">
+                <LinearLayout
+                    android:id="@+id/lnr_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right|center_vertical"
+                    android:background="@drawable/layout_bg_aaa"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_days"
+                        android:layout_width="wrap_content"
+                       android:padding="@dimen/_5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:text="@string/physics"
+                        android:textColor="@color/colorPrimary"
+
+                        android:textSize="14dp" />
+                    <ImageView
+                        android:id="@+id/img_filter"
+                        android:layout_width="@dimen/back_icon_size"
+                        android:layout_height="@dimen/back_icon_size"
+                        android:layout_gravity="right|center"
+                        android:padding="@dimen/_5dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_marginRight="@dimen/_8dp"
+                        app:srcCompat="@drawable/ic_menu"
+                        android:tint="@color/colorPrimary"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/layout_bg_aaa"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Subject v/s Spent Time"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/minuts"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="12sp" />
+
+                <com.github.mikephil.charting.charts.BarChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+
+                    android:layout_marginBottom="15dp" />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:background="@color/aaa"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:gravity="center"
+                android:text="@string/quiz_analysis"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_16dp"
+                />
+            <RadioGroup
+                android:id="@+id/radio_sub_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_phy"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_phy_p"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:minHeight="30dp"
+                    android:text="@string/physics"
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_che"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_q"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:text="@string/chemistry"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp"
+                    tools:ignore="ButtonStyle" />
+
+                <RadioButton
+                    android:id="@+id/radio_math"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_selector_math_q"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:minHeight="30dp"
+                    android:text="@string/mathematics"
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_bio"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:background="@drawable/button_selector_bio_q"
+                    android:button="@null"
+
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:text="@string/biology"
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:id="@+id/lnr_filter_sub"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right|center_vertical"
+                android:background="@drawable/layout_bg_aaa"
+                android:layout_margin="@dimen/_5dp"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_subject"
+                    android:layout_width="wrap_content"
+                    android:padding="@dimen/_5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:text="@string/physics"
+                    android:textColor="@color/colorPrimary"
+
+                    android:textSize="14dp" />
+                <ImageView
+
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right|center"
+                    android:padding="@dimen/_5dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:layout_marginRight="@dimen/_8dp"
+                    app:srcCompat="@drawable/ic_menu"
+                    android:tint="@color/colorPrimary"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:background="@drawable/layout_bg_aaa"
+                android:orientation="vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+
+                    <CheckedTextView
+
+                        android:id="@+id/txt_performance"
+                        android:layout_width="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textAlignment="gravity"
+                        android:drawablePadding="@dimen/_5dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/performance_analysis"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_title_perform"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Marks Obtained in \nPercentage"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5dp"
+                    android:textSize="@dimen/_10dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+                    <com.github.mikephil.charting.charts.LineChart
+                        android:id="@+id/chart_quiz_line_avg"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+
+                        android:animateLayoutChanges="true"
+                        />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_attempted"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textSize="10dp"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnr_accuracy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/layout_bg_aaa"
+                android:layout_margin="@dimen/_5dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                <CheckedTextView
+
+                    android:id="@+id/txt_accuracy"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textAlignment="gravity"
+
+                    android:drawablePadding="@dimen/_5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/accuracy"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                </LinearLayout>
+
+
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_height="200dp"
+                        android:animateLayoutChanges="true"
+                        />
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:background="@drawable/layout_bg_aaa"
+
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+                <CheckedTextView
+
+                    android:id="@+id/txt_speed"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textAlignment="gravity"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:drawablePadding="@dimen/_5dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/speed"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18dp" />
+
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/txt_title_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/minuts"
+                    android:textSize="@dimen/_10dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/_5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/colorPrimary"
+                    />
+                <com.github.mikephil.charting.charts.LineChart
+                    android:id="@+id/chart_quiz_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:animateLayoutChanges="true"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/quiz_attempted"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/_5dp"
+                    android:textSize="10dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/colorPrimary"
+                    />
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

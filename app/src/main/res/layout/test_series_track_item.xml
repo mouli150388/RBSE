@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_5dp"
+        android:paddingTop="@dimen/_20dp"
+        android:layout_marginRight="@dimen/_2dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:elevation="@dimen/_8dp"
+
+
+        app:cardCornerRadius="@dimen/_13dp">
+
+
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/bodyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:paddingTop="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:layout_marginBottom="@dimen/_16dp"
+            android:background="@color/transparent">
+
+            <!-- Lecture name-->
+            <TextView
+                android:id="@+id/chapter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+
+                android:fontFamily="@font/opensans_regular"
+
+                android:text="Test Attempted on 7:15 PM 14-Mar-2021"
+                android:textColor="@color/black"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+ />
+
+            <!-- Duration -->
+            <TextView
+                android:id="@+id/durationTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chapter_name"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toStartOf="@+id/lnr_play"
+                android:fontFamily="@font/opensans_regular"
+                android:text="50% marks secured in 180 minutes"
+                android:textColor="@color/duration_color"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText,SmallSp" />
+            <TextView
+                android:id="@+id/txt_test_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chapter_name"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_toStartOf="@+id/lnr_play"
+                android:fontFamily="@font/opensans_regular"
+                android:text="English"
+                android:textColor="@color/duration_color"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText,SmallSp" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,616 @@
+{
+   "neet_test_1":{
+      "name": "Neet Test 1",
+      "total_questions": 30,
+      "total_marks": 30,
+      "biology":{
+         "total_marks":10,
+         "total_questions":10,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"Robert Hooke published his observations in a book called _______.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Macrograph",
+                  "option_2":"Nanographia",
+                  "option_3":"Mycographia",
+                  "option_4":"Micrographia"
+               }
+            ],
+               "option_right":"4",
+               "explanation":"Robert Hooke published his observations related to the discovery of cell in his scientific book called Micrographia.",
+               "subject_id":3
+            },
+            {
+               "question_id":2,
+               "question":"Which of the following types of microscopes has a single lens?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Compound microscope",
+                  "option_2":"Light microscope",
+                  "option_3":"Simple microscope",
+                  "option_4":"Electron microscope"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"A simple microscope is made up of a single lens.",
+               "subject_id":3
+            },
+            {
+               "question_id":3,
+               "question":"Why is the coverslip put on the mounted material on a slide very gently?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"To avoid oozing of water.",
+                  "option_2":"To avoid oozing of stain.",
+                  "option_3":"To avoid formation of air bubbles.",
+                  "option_4":"To avoid crushing of mounting materials."
+               }
+            ],
+               "option_right":"3",
+               "explanation":"A coverslip is gently placed on the mounted material to avoid the formation of air bubbles.",
+               "subject_id":3
+            },
+            {
+               "question_id":4,
+               "question":"Diffusion is also known as __________.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Active transport",
+                  "option_2":"Simple transport",
+                  "option_3":"Passive transport",
+                  "option_4":"Complex transport"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"Diffusion is also known as passive transport.",
+               "subject_id":3
+            },
+            {
+               "question_id":5,
+               "question":"What is the importance of placing the egg in dilute hydrochloric acid while experimenting with osmosis?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Dilute hydrochloric acid deshells the egg.",
+                  "option_2":"Dilute hydrochloric acid softens the egg.",
+                  "option_3":"Dilute hydrochloric acid hardens the egg.",
+                  "option_4":"Dilute hydrochloric acid divides the egg into halves."
+               }
+            ],
+               "option_right":"1",
+               "explanation":"When an egg is placed in dilute hydrochloric acid, the egg shell made of calcium carbonate breaks, leaving behind a naked egg (with only a cell membrane). This de&minus;shelled egg is used for performing osmosis experiments to enable a better under understanding of movement of substances into and out of the egg.",
+               "subject_id":3
+            },
+            {
+               "question_id":6,
+               "question":"Nucleoplasm is the __________.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Outer covering of the nucleus.",
+                  "option_2":"Fibrous, transparent, semi&minus;solid granular liquid inside the nucleus.",
+                  "option_3":"Dense body found inside the nucleus.",
+                  "option_4":"Globular structure involved in protein synthesis."
+               }
+            ],
+               "option_right":"2",
+               "explanation":"Nucleoplasm is the fibrous, transparent, semi&minus;solid granular liquid present inside the nucleus.",
+               "subject_id":3
+            },
+            {
+               "question_id":7,
+               "question":"Plant and animal cells are examples of _________ cells.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Prokaryotic",
+                  "option_2":"Eukaryotic",
+                  "option_3":"Heterokaryotic",
+                  "option_4":"Akaryotic"
+               }
+            ],
+               "option_right":"2",
+               "explanation":"Plant and animal cells are examples of eukaryotic cells.",
+               "subject_id":3
+            },
+            {
+               "question_id":8,
+               "question":"Cell cortex is also known as _________.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Endoplasm",
+                  "option_2":"Cytoplasm",
+                  "option_3":"Protoplasm",
+                  "option_4":"Ectoplasm"
+               }
+            ],
+               "option_right":"4",
+               "explanation":"Ectoplasm is also known as the cell cortex.",
+               "subject_id":3
+            },
+            {
+               "question_id":9,
+               "question":"Golgi complex was discovered by __________.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Camillo Golgi",
+                  "option_2":"Santiago Cajal",
+                  "option_3":"W. Flemming",
+                  "option_4":"Ramon Golgi"
+               }
+            ],
+               "option_right":"1",
+               "explanation":"Golgi complex was discovered by Camillo Golgi.",
+               "subject_id":3
+            },
+            {
+               "question_id":10,
+               "question":"_________ are the hydrolytic enzymes.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Proteases",
+                  "option_2":"Nucleases",
+                  "option_3":"Lipases",
+                  "option_4":"All of the above"
+               }
+            ],
+               "option_right":"4",
+               "explanation":"All lipases, proteases, and nucleases are types of digestive or hydrolytic enzymes.",
+               "subject_id":3
+            }
+
+         ]
+      },
+      "chemistry":{
+         "total_marks":10,
+         "total_questions":10,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"Which of the following is NOT relevant to boiling?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Bulk phenomenon",
+                  "option_2":"Fast process",
+                  "option_3":"Occurs at definite temperature",
+                  "option_4":"Surface phenomenon"
+               }
+            ],
+               "option_right":"4",
+               "explanation":"Boiling is not a surface phenomenon. It involves all the particles of a liquid and hence is a bulk phenomenon.",
+               "subject_id":2
+            },
+            {
+               "question_id":2,
+               "question":"The kinetic energy of the particles __________ with temperature.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Increases",
+                  "option_2":"Decreases",
+                  "option_3":"First decreases, later increases suddenly",
+                  "option_4":"No relation between temperature and kinetic energy"
+               }
+            ],
+               "option_right":"1",
+               "explanation":"When the temperature of the matter increases, it gets added up to the kinetic energy of its particles.",   "subject_id":2
+            },
+            {
+               "question_id":3,
+               "question":"Identify the CORRECT statement from among the following.<p>i. Liquids and gases are equally compressible.</p><p>ii. Liquids are more compressible than gases.</p><p>iii. Liquids are relatively less compressible than gases.</p><p>iv. Liquids can never be compressed while gases can be compressed.</p>",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Only statement (i) is correct",
+                  "option_2":"Only statement (ii) is correct",
+                  "option_3":"Only statement (iii) is correct",
+                  "option_4":"Only statement  (iv) is correct"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"<p>The inter-particle spaces in gases are larger compared to those in liquids. This makes gases highly compressible.</p><p>Liquids are relatively less compressible than gases. Only significantly high pressures can affect liquids in changing their states.</p>",
+               "subject_id":2
+            },
+            {
+               "question_id":4,
+               "question":"Consider the following two statements:<p style='padding-left:30px;'>&#34;The boiling point of water is 100&deg;C&#34;</p><p style='padding-left:30px;'>&#34;The boiling point of ether is 34&deg;C&#34;</p><p>Which of the following statements holds TRUE at room temperature?</p>",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Ether evaporates quicker than water.",
+                  "option_2":"Water evaporates quicker than ether.",
+                  "option_3":"The rate of evaporation is the same for both.",
+                  "option_4":"Data insufficient to arrive at a conclusion."
+               }
+            ],
+               "option_right":"1",
+               "explanation":"The lesser the boiling point, the higher is the rate of evaporation. Thus, at room temperature, ether evaporates faster than water.",
+               "subject_id":2
+            },
+            {
+               "question_id":5,
+               "question":"The state of the matter _________ when there is no change in temperature.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Changes",
+                  "option_2":"Does not change",
+                  "option_3":"Initially does not change, but changes after some time",
+                  "option_4":"Initially changes, but comes back to original state after some time"
+               }
+            ],
+               "option_right":"2",
+               "explanation":"The state of matter depends on the kinetic energy of its particles, which changes with temperature. Hence, when there is no change in the temperature, the state of the matter does not change.","subject_id":2
+            },
+            {
+               "question_id":6,
+               "question":"Which of the following statement(s) holds good during the change of state of a substance?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"The kinetic energy of particles decreases",
+                  "option_2":"The temperature of the substance increases",
+                  "option_3":"Temperature of substance remains constant ",
+                  "option_4":"Both A and C"
+               }
+            ],
+               "option_right":"4",
+               "explanation":"During the change of state of a substance, only the temperature remains constant.",
+               "subject_id":2
+            },
+            {
+               "question_id":7,
+               "question":"A _________ has definite shape and volume.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Solid ",
+                  "option_2":"Liquid",
+                  "option_3":"Gas",
+                  "option_4":"All the above"
+               }
+            ],
+               "option_right":"1",
+               "explanation":"The particles in solids are tightly packed rendering them a defined shape and volume.",
+               "subject_id":2
+            },
+            {
+               "question_id":8,
+               "question":"Which of the following states of matter has the highest compressibility?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Solid ",
+                  "option_2":"Liquid",
+                  "option_3":"Gas",
+                  "option_4":"All the above"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"The particles in gases have weak forces of attraction and hence gases are highly compressible.",   "subject_id":2
+            },
+            {
+               "question_id":9,
+               "question":"&#34;Matter is composed of tiny particles which are always in continuous motion.&#34; &minus; Which of the following theories of matter forms the basis for this inference?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Continuous theory of matter",
+                  "option_2":"Particulate theory of matter",
+                  "option_3":"Selective theory of matter",
+                  "option_4":"Empirical theory of matter"
+               }
+            ],
+               "option_right":"2",
+               "explanation":"According to particulate theory, matter is composed of tiny particles which are always in continuous motion. This conclusion was arrived based on the property of diffusion.",
+               "subject_id":2
+            },
+            {
+               "question_id":10,
+               "question":"Boiling point and evaporation of a liquid are :",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Directly proportional",
+                  "option_2":"Inversely proportional",
+                  "option_3":"Equal",
+                  "option_4":"Not related to each other"
+               }
+            ],
+               "option_right":"2",
+               "explanation":"<p>A liquid that has a higher boiling point has stronger interparticle forces of attraction. Hence its evaporation will be less.</p><p>Thus, boiling point and evaporation are inversely related.</p>",
+               "subject_id":2
+            }
+
+         ]
+      },
+      "physics":{
+         "total_marks":10,
+         "total_questions":10,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"The branch that deals with the cause of motion and the motion of an object is _______.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Kinematics",
+                  "option_2":"Dynamics",
+                  "option_3":"Both A and B",
+                  "option_4":"None of the above"
+               }
+            ],
+               "option_right":"2",
+               "explanation":"The branch that deals with the cause of motion and the motion of an object is Dynamics.",
+               "subject_id":1
+            },
+            {
+               "question_id":2,
+               "question":"The normal and the SI units of temperature are ________ and _______ respectively.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Celsius, kelvin",
+                  "option_2":"Fahrenheit, kelvin",
+                  "option_3":"Both A and B",
+                  "option_4":"None of the above"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"Temperature can be measured normally in either Celsius or Fahrenheit but the SI unit is Kelvin.",
+               "subject_id":1
+            },
+            {
+               "question_id":3,
+               "question":"A 20 kg mass placed on the ground _____.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Is a scalar quantity.",
+                  "option_2":"Is a vector quantity.",
+                  "option_3":"Will have a direction",
+                  "option_4":"Both B and C."
+               }
+            ],
+               "option_right":"1",
+               "explanation":"A 20 kg mass placed on the ground is a scalar quantity. If it starts moving then it will be a vector quantity.",
+               "subject_id":1
+            },
+            {
+               "question_id":4,
+               "question":"Distance is ________ displacement.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Equal to",
+                  "option_2":"Greater than",
+                  "option_3":"Less than",
+                  "option_4":"Both A and B"
+               }
+            ],
+               "option_right":"4",
+               "explanation":"Distance is greater than or equal to distance. But it cannot be less than displacement.",
+               "subject_id":1
+            },
+            {
+               "question_id":5,
+               "question":"When an object covers equal distances in equal intervals of time, it is said to be undergoing ___________.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Circular motion",
+                  "option_2":"Non&minus;uniform motion",
+                  "option_3":"Uniform motion",
+                  "option_4":"None of the above"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"When an object covers equal distances in equal intervals of time, it is said to be undergoing uniform motion.",
+               "subject_id":1
+            },
+            {
+               "question_id":6,
+               "question":"A train travelled 20 km such that it has completed only 20&percnt; of the journey. What is the total time taken if it has travelled total distance at a constant speed of 50 km&#47;h?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"1 km&#47;h",
+                  "option_2":"2 km&#47;h",
+                  "option_3":"3 km&#47;h",
+                  "option_4":"4 km&#47;h"
+               }
+            ],
+               "option_right":"2",
+               "explanation":"<p>Let the total journey be x km.</p><p>Therefore, 20&percnt; of x = 20</p><p style='text-align:center;'>&#8658; x&#47;5 = 20</p><p style='text-align:center;'>&#8658; x = 100 km</p><p>We know that,</p><p style='text-align:center;'>Time = distance &#47; velocity</p><p style='text-align:center;'>&#8658; Time = 100&#47; 50</p><p style='text-align:center;'>&#8658; Time = 2 km&#47;h</p>",
+               "subject_id":1
+            },
+            {
+               "question_id":7,
+               "question":"A person has travelled 400 metres with a uniform speed of 20 m&#47;s. What is the time taken for the journey?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"20 s",
+                  "option_2":"30 s",
+                  "option_3":"40 s",
+                  "option_4":"50 s"
+               }
+            ],
+               "option_right":"1",
+               "explanation":"<p>We know that,</p><p style='text-align:center;'>distance = speed &times; time</p><p>Therefore,</p><p style='text-align:center;'>400 = 20 &times; t</p><p style='text-align:center;'>&#8658; t = 400&#47;20 = 20 seconds</p>",
+               "subject_id":1
+            },
+            {
+               "question_id":8,
+               "question":"In a displacement&minus;time graph, the straight line motion indicates that the object is moving in ________.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Uniform motion",
+                  "option_2":"Non&minus;uniform motion",
+                  "option_3":"At rest",
+                  "option_4":"None of the above"
+               }
+            ],
+               "option_right":"1",
+               "explanation":"In a displacement&minus;time graph, the straight line motion indicates that the object is moving in uniform motion.",
+               "subject_id":1
+            },
+            {
+               "question_id":9,
+               "question":"What is the difference between the final and initial velocities of a bus that has travelled for 20 seconds with an acceleration of 30 m&#47;s<sup>2</sup>?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"500 m&#47;s",
+                  "option_2":"600 m&#47;s",
+                  "option_3":"700 m&#47;s",
+                  "option_4":"800 m&#47;s"
+               }
+            ],
+               "option_right":"2",
+               "explanation":"<p>Given a = 30 m&#47;s<sup>2</sup> and t = 20 seconds</p><p>From the equation, v &minus; u = at</p><p>The difference between the final and initial velocities of the bus,</p><p style='text-align:center;'>= at = 30 &times; 20 = 600 m&#47;s.</p>",
+               "subject_id":1
+            },
+            {
+               "question_id":10,
+               "question":"A bus started from a point &#39;P&#39; on a circular path of radius 5 meters and returned to the same point after 5 seconds. What is the average velocity of the journey?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"2&pi;",
+                  "option_2":"&pi;",
+                  "option_3":"&pi;&#47;2",
+                  "option_4":"0"
+               }
+            ],
+               "option_right":"4",
+               "explanation":"Average velocity is nothing but total displacement divided by total time. Since the bus returned to the starting point, the displacement is 0. Therefore, the average velocity is 0.",
+               "subject_id":1
+            }
+
+         ]
+      },
+      "mathematics":{
+         "total_marks":10,
+         "total_questions":10,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"Robert Hooke published his observations in a book called _______.",
+               "question_type": 1,
+               "options":[
+                  {
+                     "option_1":"Macrograph",
+                     "option_2":"Nanographia",
+                     "option_3":"Mycographia",
+                     "option_4":"Micrographia"
+                  }
+               ],
+               "option_right":"4",
+               "explanation":"Robert Hooke published his observations related to the discovery of cell in his scientific book called Micrographia.",
+               "subject_id":4
+            },
+            {
+               "question_id":2,
+               "question":"Which of the following types of microscopes has a single lens?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Compound microscope",
+                  "option_2":"Light microscope",
+                  "option_3":"Simple microscope",
+                  "option_4":"Electron microscope"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"A simple microscope is made up of a single lens.",
+               "subject_id":4
+            },
+            {
+               "question_id":3,
+               "question":"Why is the coverslip put on the mounted material on a slide very gently?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"To avoid oozing of water.",
+                  "option_2":"To avoid oozing of stain.",
+                  "option_3":"To avoid formation of air bubbles.",
+                  "option_4":"To avoid crushing of mounting materials."
+               }
+            ],
+               "option_right":"3",
+               "explanation":"A coverslip is gently placed on the mounted material to avoid the formation of air bubbles.",
+               "subject_id":4
+            },
+            {
+               "question_id":4,
+               "question":"Diffusion is also known as __________.",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Active transport",
+                  "option_2":"Simple transport",
+                  "option_3":"Passive transport",
+                  "option_4":"Complex transport"
+               }
+            ],
+               "option_right":"3",
+               "explanation":"Diffusion is also known as passive transport.",
+               "subject_id":4
+            },
+            {
+               "question_id":5,
+               "question":"What is the importance of placing the egg in dilute hydrochloric acid while experimenting with osmosis?",
+               "question_type": 1, "options":[
+               {
+                  "option_1":"Dilute hydrochloric acid deshells the egg.",
+                  "option_2":"Dilute hydrochloric acid softens the egg.",
+                  "option_3":"Dilute hydrochloric acid hardens the egg.",
+                  "option_4":"Dilute hydrochloric acid divides the egg into halves."
+               }
+            ],
+               "option_right":"1",
+               "explanation":"When an egg is placed in dilute hydrochloric acid, the egg shell made of calcium carbonate breaks, leaving behind a naked egg (with only a cell membrane). This de&minus;shelled egg is used for performing osmosis experiments to enable a better under understanding of movement of substances into and out of the egg.",
+               "subject_id":4
+            },
+            {
+               "question_id":6,
+               "question":"1+2=",
+               "question_type": 0,
+
+               "answer":"3",
+               "options":[
+
+               ],
+               "option_right":"5",
+               "explanation":"Nucleoplasm is the fibrous, transparent, semi&minus;solid granular liquid present inside the nucleus.",
+               "subject_id":4
+            },
+            {
+               "question_id":7,
+               "question":"8/2",
+               "question_type": 0, "options":[
+
+            ],
+               "option_right":"5",
+
+               "answer":"4",
+               "explanation":"Plant and animal cells are examples of eukaryotic cells.",
+               "subject_id":4
+            },
+            {
+               "question_id":8,
+               "question":"9x2",
+               "question_type": 0, "options":[
+
+            ],
+               "option_right":"5",
+               "explanation":"Ectoplasm is also known as the cell cortex.",
+               "subject_id":4,
+               "answer":"18"
+            },
+            {
+               "question_id":9,
+               "question":"7/2",
+               "question_type": 0, "options":[
+
+            ],
+               "option_right":"5",
+               "explanation":"Golgi complex was discovered by Camillo Golgi.",
+               "subject_id":4,
+               "answer":"3.5"
+            },
+            {
+               "question_id":10,
+               "question":"10X---- =5.5",
+               "question_type": 0, "options":[
+
+            ],
+               "option_right":"5",
+               "explanation":"All lipases, proteases, and nucleases are types of digestive or hydrolytic enzymes.",
+               "subject_id":4,
+               "answer":"5.5"
+            }
+
+         ]
+      }
+   }
+}

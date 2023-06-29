@@ -1,0 +1,163 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">2dp</dimen>
+    <dimen name="nav_header_height">180dp</dimen>
+    <dimen name="detail_backdrop_height">230dp</dimen>
+    <dimen name="design_navigation_icon_padding" tools:override="true">13dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="circle_size">30dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+    <!-- All Dimens in Dps-->
+    <dimen name="_minus_0dp">-0dp</dimen>
+    <dimen name="_minus_1dp">-1dp</dimen>
+    <dimen name="_minus_2dp">-2dp</dimen>
+    <dimen name="_minus_3dp">-3dp</dimen>
+    <dimen name="_minus_4dp">-4dp</dimen>
+    <dimen name="_minus_5dp">-5dp</dimen>
+    <dimen name="_minus_6dp">-6dp</dimen>
+    <dimen name="_minus_7dp">-7dp</dimen>
+    <dimen name="_minus_8dp">-8dp</dimen>
+    <dimen name="_minus_9dp">-9dp</dimen>
+    <dimen name="_minus_10dp">-10dp</dimen>
+
+
+    <dimen name="_0dp">0dp</dimen>
+
+    <dimen name="_1dp">1dp</dimen>
+    <dimen name="_2dp">2dp</dimen>
+    <dimen name="_3dp">3dp</dimen>
+    <dimen name="_4dp">4dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_6dp">6dp</dimen>
+    <dimen name="_7dp">7dp</dimen>
+    <dimen name="_8dp">12dp</dimen>
+    <dimen name="_9dp">9dp</dimen>
+    <dimen name="_10dp">20dp</dimen>
+
+    <dimen name="_11dp">11dp</dimen>
+    <dimen name="_12dp">12dp</dimen>
+    <dimen name="_13dp">13dp</dimen>
+    <dimen name="_14dp">14dp</dimen>
+    <dimen name="_15dp">15dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_17dp">17dp</dimen>
+    <dimen name="_18dp">18dp</dimen>
+    <dimen name="_19dp">19dp</dimen>
+    <dimen name="_20dp">24dp</dimen>
+
+    <dimen name="_30dp">30dp</dimen>
+    <dimen name="_40dp">40dp</dimen>
+    <dimen name="_50dp">90dp</dimen>
+    <dimen name="_60dp">60dp</dimen>
+    <dimen name="_70dp">70dp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_90dp">90dp</dimen>
+    <dimen name="_100dp">100dp</dimen>
+    <dimen name="_125dp">125dp</dimen>
+    <dimen name="_150dp">150dp</dimen>
+    <dimen name="_170dp">170dp</dimen>
+    <dimen name="_180dp">180dp</dimen>
+    <dimen name="_200dp">200dp</dimen>
+    <dimen name="_230dp">230dp</dimen>
+    <dimen name="_250dp">300dp</dimen>
+    <dimen name="_300dp">300dp</dimen>
+    <dimen name="_400dp">400dp</dimen>
+    <dimen name="_500dp">500dp</dimen>
+
+    <dimen name="_25dp">25dp</dimen>
+    <dimen name="_35dp">35dp</dimen>
+    <dimen name="_45dp">45dp</dimen>
+    <dimen name="_55dp">55dp</dimen>
+    <dimen name="_65dp">65dp</dimen>
+    <dimen name="_75dp">75dp</dimen>
+    <dimen name="_85dp">85dp</dimen>
+    <dimen name="_95dp">95dp</dimen>
+
+
+    <dimen name="_32dp">32dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
+    <dimen name="_64dp">64dp</dimen>
+
+    <!-- All Dimens in Sps-->
+    <dimen name="_8sp">8sp</dimen>
+    <dimen name="_10sp">10sp</dimen>
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_13sp">13sp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+    <dimen name="_15sp">15sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_17sp">17sp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+    <dimen name="_19sp">19sp</dimen>
+    <dimen name="_20sp">20sp</dimen>
+
+    <dimen name="_22sp">22sp</dimen>
+    <dimen name="_24sp">24sp</dimen>
+    <dimen name="_25sp">25sp</dimen>
+    <dimen name="_30sp">30sp</dimen>
+    <dimen name="_35sp">35sp</dimen>
+    <dimen name="_40sp">40sp</dimen>
+
+    <dimen name="margin_left">50dp</dimen>
+    <dimen name="device_width">400dp</dimen><!--
+    <dimen name="chapter_image_width">72dp</dimen>
+    <dimen name="chapter_item_height">90dp</dimen>-->
+
+
+    <dimen name="chapter_image_width">64dp</dimen>
+    <dimen name="chapter_item_height">64dp</dimen>
+    <dimen name="menu_height_width">24dp</dimen>
+    <dimen name="appbar_height">280dp</dimen>
+
+    <dimen name="layout_height">240dp</dimen>
+    <dimen name="img_height">190dp</dimen>
+    <dimen name="img_track_height">64dp</dimen>
+    <dimen name="margin_left_quiz">80dp</dimen>
+
+    <dimen name="activation_textsize">15sp</dimen>
+    <dimen name="activation_textsizebig">20sp</dimen>
+    <dimen name="quiz_title_size">16dp</dimen>
+    <dimen name="quiz_margin">40dp</dimen>
+    <dimen name="track_img_width">36dp</dimen>
+    <dimen name="banner_height">220dp</dimen>
+    <dimen name="subject_margin">30dp</dimen>
+    <dimen name="banner_quiz_height">220dp</dimen>
+    <dimen name="quiz_img_size">72dp</dimen>
+    <dimen name="sinuplogotop">-120dp</dimen>
+    <dimen name="quiz_top_minus">60dp</dimen>
+    <dimen name="minimum_hight_editfiled">50dp</dimen>
+    <dimen name="profile_height">160dp</dimen>
+
+    <dimen name="back_icon_size">24dp</dimen>
+    <dimen name="font_title_size">22sp</dimen>
+    <dimen name="font_sub_title_size">16sp</dimen>
+    <dimen name="progress_size">160dp</dimen>
+    <dimen name="smily_size">48dp</dimen>
+    <dimen name="mockbuttontxt_size">22sp</dimen>
+    <dimen name="footer_height">40dp</dimen>
+    <dimen name="attempted_size">16sp</dimen>
+    <dimen name="quiz_line_height">450dp</dimen>
+    <dimen name="graph_radio_bottom">15dp</dimen>
+    <dimen name="video_img_size">120dp</dimen>
+    <dimen name="header_text_size">22sp</dimen>
+    <dimen name="quiz_button_top">20dp</dimen>
+    <dimen name="track_title_size">18sp</dimen>
+    <dimen name="track_subtitle_size">14sp</dimen>
+    <dimen name="alert_dialog_width">400dp</dimen>
+    <dimen name="doubt_alert_height">600dp</dimen>
+    <dimen name="doubt_alert_logo">96dp</dimen>
+    <dimen name="password_hint_size">10sp</dimen>
+    <dimen name="gif_200">350dp</dimen>
+    <dimen name="baner_180dp">200dp</dimen>
+    <dimen name="mocktest_bottom_btn_height">80sp</dimen>
+    <dimen name="mocktest_bottom_btn_height_img">60sp</dimen>
+    <dimen name="mocktest_bottom_btn_width">250sp</dimen>
+    <dimen name="reward_height" >180dp</dimen>
+    <dimen name="reward_height_logo" >250dp</dimen>
+    <dimen name="reward__sparkle_height">380dp</dimen>
+    <dimen name="_rewar_bottom_100dp">120dp</dimen>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:id="@+id/lnr_top"
+    android:background="#FAFAFA"
+    tools:context=".subjects.SubjectActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_top_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_quiz_height"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:cropToPadding="true"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        app:expandedTitleTextAppearance="@android:color/transparent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/header_text_size"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            style="@style/ToolbarTheme"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:titleTextColor="@color/white"
+            app:title=""
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/ripple_radius"
+                android:layout_marginEnd="@dimen/_8dp"
+                app:srcCompat="@drawable/filter"
+                android:tint="@color/white"
+                android:visibility="gone"
+                app:layout_collapseMode="pin" />
+
+            <LinearLayout
+                android:id="@+id/lnr_gridlist"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:visibility="gone"
+                android:background="@drawable/ripple_radius"
+                app:layout_collapseMode="pin"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/list_grid"
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:background="@drawable/text_color_selector"
+                    android:backgroundTint="@color/white"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:gravity="center"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/ripple_radius"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/img_home"
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_8dp"
+
+                    app:srcCompat="@drawable/ic_home_out"
+                    android:tint="@color/white"
+
+                    />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+       <include layout="@layout/cloude_image_view"/>
+    </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/img_gif"
+            android:layout_width="@dimen/profile_height"
+            android:visibility="gone"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="@dimen/sinuplogotop"
+            android:elevation="@dimen/_10dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_white"
+            android:layout_height="@dimen/profile_height" />
+    <RelativeLayout
+    android:layout_width="match_parent"
+        android:layout_marginTop="-20dp"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+        />
+
+
+
+        <include
+            layout="@layout/content_chapters"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/subject_margin"
+            android:layout_marginRight="@dimen/subject_margin"
+            android:layout_marginTop="50dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_height="wrap_content"
+/>
+</RelativeLayout>
+
+
+
+
+</LinearLayout>

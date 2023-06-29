@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+
+    android:layout_marginRight="10dp"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_20dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_32dp"
+            android:layout_height="@dimen/_32dp"
+            android:layout_margin="@dimen/_5dp"
+            android:src="@drawable/ic_grid"
+            android:tint="@color/black"
+            />
+        <com.tutorix.tutorialspoint.views.CustomTextview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5dp"
+            android:text="@string/test_rule_marks"
+            android:textSize="16sp"  />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <com.tutorix.tutorialspoint.views.CustomWebview
+            android:id="@+id/webview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/_200dp"
+
+            >
+
+        </com.tutorix.tutorialspoint.views.CustomWebview>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_20dp"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <com.tutorix.tutorialspoint.views.CustomTextview
+            android:id="@+id/txt_rule_3_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_margin="@dimen/_5dp"
+            android:text="@string/test_rule_desc"
+            android:textSize="16sp"  />
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:background="@drawable/login_button"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:minEms="10"
+            android:layout_margin="@dimen/_20dp"
+            android:onClick="startQuiz"
+            android:layout_marginTop="@dimen/quiz_button_top"
+            android:text="@string/start"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/rel_path"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp">
+
+
+
+
+
+            <ImageView
+                android:id="@+id/crowImg"
+                android:layout_width="@dimen/track_img_width"
+                android:layout_height="@dimen/track_img_width"
+               android:layout_marginTop="@dimen/_10dp"
+                android:layout_gravity="center"
+
+
+                />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/crowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crowDate"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Title"
+                android:textAppearance="?android:attr/textAppearanceListItem"
+                android:textColor="@color/title_text_color"
+                android:textSize="@dimen/track_title_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/crowDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/crowTitle"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Description"
+                android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+                android:textColor="@color/color_dashText"
+                android:textSize="@dimen/track_subtitle_size" />
+
+            <TextView
+                android:id="@+id/crowDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginTop="@dimen/_5dp"
+                android:drawableLeft="@drawable/ic_clock_duration"
+                android:drawablePadding="@dimen/_5dp"
+
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/color_dashText"
+                android:textSize="@dimen/track_subtitle_size" />
+
+        </LinearLayout>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="10dp"
+            android:background="@color/color_dashText"
+            android:fontFamily="@font/opensans_regular"
+            android:text=""
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+            android:textColor="@color/subtitle" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

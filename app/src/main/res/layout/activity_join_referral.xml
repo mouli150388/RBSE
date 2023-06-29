@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activstion_background"
+    android:orientation="vertical"
+
+    tools:context=".activities.JoinReferralActivity">
+    <RelativeLayout
+        android:id="@+id/rel_toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/top_main_background"
+        android:layout_height="?attr/actionBarSize">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Referral Program"
+            android:layout_centerInParent="true"
+
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/white"
+            android:fontFamily="@font/opensans_regular"
+
+            />
+        <LinearLayout
+            android:id="@+id/img_back"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:background="@drawable/ripple"
+            android:padding="@dimen/_5dp"
+            >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/ic_left_arrow"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/img_home"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_16dp"
+            android:background="@drawable/ripple"
+            android:padding="@dimen/_5dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_18dp"
+                android:layout_height="@dimen/_18dp"
+                android:layout_alignParentLeft="true"
+                app:srcCompat="@drawable/ic_home"
+                />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_16dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:src="@drawable/ref_header"
+                android:layout_height="@dimen/_100dp" />
+            <com.tutorix.tutorialspoint.views.CustomTextview
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_20sp"
+                android:visibility="gone"
+                android:text="Referral Program"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_regular"
+
+                android:layout_height="wrap_content" />
+
+            <com.tutorix.tutorialspoint.views.CustomTextview
+                android:id="@+id/txt_ref_code"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/_5dp"
+                android:textColor="@color/color_dashText"
+                android:textSize="@dimen/_18sp"
+                android:text="@string/you_ref_code"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_regular"
+
+                android:layout_height="wrap_content" />
+            <com.tutorix.tutorialspoint.views.CustomTextview
+                android:id="@+id/txt_ref_numbers"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color_dashText"
+                android:textSize="@dimen/_14sp"
+                android:text="@string/so_far_ref_code"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_regular"
+
+                android:layout_height="wrap_content" />
+
+            <com.tutorix.tutorialspoint.views.CustomTextview
+                android:id="@+id/txt_ref_desc"
+                android:layout_width="wrap_content"
+                android:textColor="@color/color_dashText"
+                android:textSize="@dimen/_16sp"
+                android:text="@string/ref_desc"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/opensans_regular"
+
+                android:layout_height="wrap_content" />
+
+            <FrameLayout
+                android:id="@+id/share_buttons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:minHeight="@dimen/_40dp"
+
+                android:layout_marginTop="@dimen/_40dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                >
+                 <RadioGroup
+                android:checkedButton="@+id/share"
+                android:id="@+id/toggle"
+                android:layout_width="@dimen/_200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+
+                android:gravity="center"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/switch_shape"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:layout_marginLeft="1dp"
+                    android:id="@+id/ref_code"
+                    android:background="@drawable/toggle_widget_background"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:minHeight="@dimen/_40dp"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/black" />
+
+                <RadioButton
+                    android:layout_marginRight="1dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginBottom="1dp"
+                    android:minHeight="@dimen/_40dp"
+                    android:id="@+id/share"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/toggle_widget_background"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="SHARE"
+                    android:textColor="@color/white" />
+            </RadioGroup>
+                <LinearLayout
+                    android:onClick="shareCode"
+                    android:clickable="true"
+                    android:minHeight="@dimen/_40dp"
+                    android:minWidth="@dimen/_200dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

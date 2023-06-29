@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_footer"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/transparent"
+    android:layout_marginBottom="@dimen/_5dp"
+    android:layout_marginTop="@dimen/_10dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/lnr_mock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5dp"
+            android:clickable="false"
+            android:layout_centerHorizontal="true"
+
+            app:srcCompat="@drawable/ic_mock_section_icon" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5dp"
+            android:gravity="center_vertical"
+            >
+            <Button
+                android:id="@+id/fab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/footer_height"
+               android:layout_weight="1"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/mock_tests"
+                android:textSize="@dimen/mockbuttontxt_size"
+                android:clickable="false"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+            <LinearLayout
+                android:id="@+id/lnr_ncert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:visibility="visible"
+                >
+
+
+                <Button
+                    android:id="@+id/ncert"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/footer_height"
+
+
+                    android:layout_gravity="center"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/ncert_solutions"
+                    android:textSize="@dimen/mockbuttontxt_size"
+                    android:clickable="false"
+
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnr_footer_coming"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#0000"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:paddingRight="10dp"
+            android:layout_gravity="center_vertical|right"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_5dp"
+                android:clickable="false"
+                android:layout_centerHorizontal="true"
+android:visibility="gone"
+                app:srcCompat="@drawable/ic_mock_section_icon" />
+
+            <TextView
+android:id="@+id/txt_coming_footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/comingsoon"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:textSize="@dimen/_18sp"
+              />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

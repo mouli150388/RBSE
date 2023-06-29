@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".anaylysis.PerformanceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/quiz_margin"
+        android:layout_marginRight="@dimen/quiz_margin"
+        android:layout_marginBottom="@dimen/quiz_margin"
+        android:elevation="20dp"
+        android:background="@drawable/shadow_new"
+        android:orientation="vertical"
+        >
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:minHeight="@dimen/_300dp"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_margin="@dimen/_5dp"
+            android:background="#D2D2D2"
+            />
+        <RadioGroup
+            android:id="@+id/radio_sub_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="@dimen/graph_radio_bottom"
+            android:gravity="center"
+
+            android:visibility="visible"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/radio_all"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+
+                android:background="@drawable/circle_all"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:fontFamily="@font/opensans_regular"
+                android:minHeight="30dp"
+
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp" />
+            <RadioButton
+                android:id="@+id/radio_math"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/circle_math"
+                android:button="@null"
+                android:gravity="center"
+                android:fontFamily="@font/opensans_regular"
+                android:minHeight="30dp"
+
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp" />
+            <RadioButton
+                android:id="@+id/radio_phy"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+
+                android:background="@drawable/circle_phy"
+                android:button="@null"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:fontFamily="@font/opensans_regular"
+                android:minHeight="30dp"
+
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/radio_che"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/circle_che"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="30dp"
+
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp"
+                tools:ignore="ButtonStyle" />
+
+
+
+            <RadioButton
+                android:id="@+id/radio_bio"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+                android:layout_marginLeft="5dp"
+
+                android:fontFamily="@font/opensans_regular"
+                android:background="@drawable/circle_bio"
+                android:button="@null"
+
+                android:gravity="center"
+                android:minHeight="30dp"
+
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp" />
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</FrameLayout>

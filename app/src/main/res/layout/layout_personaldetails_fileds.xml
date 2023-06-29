@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_8dp"
+        android:orientation="vertical"
+
+        android:paddingStart="@dimen/_8dp"
+        android:paddingTop="@dimen/_8dp"
+        android:paddingEnd="@dimen/_8dp"
+        android:paddingBottom="24dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:fontFamily="@font/opensans_regular"
+                android:inputType="textPersonName|textCapWords"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/lnr_not_required"
+            >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etFatherName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_fathername"
+                android:fontFamily="@font/opensans_regular"
+                android:inputType="textPersonName|textCapWords"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etDOB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/hint_dob"
+                android:fontFamily="@font/opensans_regular"
+                android:inputType="textPersonName|textCapWords"
+                android:onClick="openDateDialog"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etMailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:fontFamily="@font/opensans_regular"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etMobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="Mobile Number"
+                android:fontFamily="@font/opensans_regular"
+                android:inputType="phone"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="textCapWords"
+                android:fontFamily="@font/opensans_regular"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:fontFamily="@font/opensans_regular"
+                android:inputType="textCapWords"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etState"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="State"
+                android:fontFamily="@font/opensans_regular"
+                android:inputType="textCapWords"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etZip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/zipcode"
+                android:inputType="number"
+                android:maxLength="@integer/zipcode_length"
+                android:fontFamily="@font/opensans_regular"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etCountry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/country"
+                android:inputType="textCapWords"
+                android:editable="false"
+                android:fontFamily="@font/opensans_regular"
+                android:onClick="countryselect"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txtInputtudyClass"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/etStudyClass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/studyClass"
+                android:inputType="textCapWords"
+                android:editable="false"
+                android:fontFamily="@font/opensans_regular"
+                android:onClick="classSelect"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/physics" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+                android:text="Female" />
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnr_bottom_btns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+            android:minEms="6"
+
+            android:background="@drawable/clear_drawable"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:onClick="goBack"
+            android:padding="10dp"
+            android:text="Back"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+            android:minEms="6"
+            android:background="@drawable/retake_button"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center"
+            android:onClick="updatePersonalDetails"
+            android:padding="10dp"
+            android:text="Update"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

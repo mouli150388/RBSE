@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_2dp"
+    >
+    <LinearLayout
+        android:id="@+id/lnr_gallery"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_36dp"
+            android:layout_height="@dimen/_36dp"
+            android:src="@drawable/ic_menu_gallery"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Gallery"
+            android:textSize="@dimen/_12sp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnr_camera"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_width="@dimen/_48dp"
+            android:layout_height="@dimen/_48dp"
+            android:layout_gravity="center"
+            android:padding="@dimen/_10dp"
+            android:foreground="?android:attr/selectableItemBackground"
+
+            android:src="@drawable/ic_instagram"
+            android:background="@drawable/bottomnavigation_doubt_buttonbg"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lnr_keyboard"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="@dimen/_36dp"
+            android:layout_height="@dimen/_36dp"
+            android:src="@drawable/ic_keyboard"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Type your doubt"
+            android:textSize="@dimen/_12sp"
+            />
+    </LinearLayout>
+</LinearLayout>

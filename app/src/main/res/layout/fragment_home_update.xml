@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".home.HomeTabActivity">
+
+    <!-- Action Bar & Profile-->
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/sample_background"
+            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20dp"
+
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <include layout="@layout/banner"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="-70dp"
+                    android:orientation="vertical"
+                    >
+
+
+                    <FrameLayout
+                        android:layout_width="@dimen/profile_height"
+                        android:layout_height="@dimen/profile_height"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/_8dp"
+                        android:background="@drawable/circle_white"
+                        android:elevation="@dimen/_8dp"
+                        android:padding="@dimen/_2dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/logo"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:contentDescription="@string/app_name"
+                            android:transitionName="profile"
+                            android:padding="3dp"
+                            app:srcCompat="@drawable/profile" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:padding="@dimen/_4dp"
+                        android:text="@string/name"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/color_dashText"
+                        android:textSize="@dimen/_18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/classname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:lineSpacingExtra="@dimen/_8dp"
+                        android:padding="@dimen/_4dp"
+                        android:text="@string/class_name"
+                        android:fontFamily="@font/opensans_regular"
+                        android:textAlignment="center"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16sp"
+                        android:textStyle="bold"
+                        android:visibility="gone" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+
+                    android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:orientation="horizontal">
+                        <!-- Maths Layout -->
+
+                        <LinearLayout
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/home_math_background"
+                            android:layout_weight="1"
+
+                            android:padding="5dp"
+                            >
+                            <ImageView
+                                android:id="@+id/txt_math"
+                                android:layout_width="50dp"
+                                android:layout_height="65dp"
+
+                                android:layout_margin="5dp"
+
+                                app:srcCompat="@drawable/ic_maths"
+                                android:transitionName="trans" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mathematics"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textAllCaps="true"
+                                />
+                        </LinearLayout>
+
+                        <!-- Physics Layout -->
+                        <LinearLayout
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            android:padding="5dp"
+                            android:background="@drawable/home_phy_background"
+                            android:layout_weight="1"
+                            >
+                        <ImageView
+                            android:id="@+id/txt_phy"
+                            style="@style/MaterialAnimations"
+                            android:layout_width="60dp"
+                            android:layout_height="65dp"
+                            android:layout_margin="5dp"
+                            app:srcCompat="@drawable/ic_physics"
+                            android:transitionName="trans" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/physics"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textAllCaps="true"
+
+                                android:textColor="@color/white"
+                                />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <!-- Maths & Biology -->
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:orientation="horizontal">
+                        <!-- Chemistry Layout-->
+                        <LinearLayout
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            android:padding="5dp"
+                            android:background="@drawable/home_che_background"
+                            android:layout_weight="1"
+                            >
+                        <ImageView
+                            android:id="@+id/txt_che"
+                            android:layout_width="60dp"
+                            android:layout_height="65dp"
+
+
+                            android:layout_margin="5dp"
+                            app:srcCompat="@drawable/ic_chemistry"
+
+                            android:transitionName="trans" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chemistry"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+
+                                />
+                        </LinearLayout>
+                        <!-- Biology Layout-->
+                        <LinearLayout
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            android:padding="5dp"
+                            android:background="@drawable/home_bio_background"
+                            android:layout_weight="1"
+                            >
+                        <ImageView
+                            android:id="@+id/txt_bio"
+                            android:layout_width="60dp"
+                            android:layout_height="65dp"
+
+                            android:layout_margin="5dp"
+                            app:srcCompat="@drawable/ic_biology"
+
+
+                            android:transitionName="trans" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/biology"
+                            android:fontFamily="@font/opensans_regular"
+                            android:textAllCaps="true"
+                            android:textColor="@color/white"
+
+                            />
+                    </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Experts Layout-->
+                    <LinearLayout
+                        android:id="@+id/expertsLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginBottom="@dimen/_8dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="15dp"
+                            android:gravity="bottom"
+
+                            android:fontFamily="@font/opensans_regular"
+
+
+                            android:text="@string/we_work_with_some_of_the_most_talented_and_passionate_professionals_in_the_industry"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/color_dashText"
+                            android:textSize="@dimen/_18sp" />
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_125dp"
+                            android:scaleType="centerCrop"
+                            android:contentDescription="@string/app_name"
+                            app:srcCompat="@drawable/expertise" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_5dp"
+                            android:padding="@dimen/_5dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:text="@string/our_subject_matter_experts"
+                            android:textAlignment="center"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/_18sp"
+                            android:visibility="gone"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Chemistry $ Physics-->
+
+            </LinearLayout>
+
+
+        </ScrollView>
+    </FrameLayout>
+
+</LinearLayout>

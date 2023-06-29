@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".anaylysis.QuizAccuracyFragment">
+    <LinearLayout
+        android:id="@+id/lnr_accuracy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        android:layout_margin="@dimen/_5dp"
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <CheckedTextView
+
+                android:id="@+id/txt_accuracy"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="gravity"
+
+                android:drawablePadding="@dimen/_5dp"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="@string/accuracy"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/piechart"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:animateLayoutChanges="true"
+            />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

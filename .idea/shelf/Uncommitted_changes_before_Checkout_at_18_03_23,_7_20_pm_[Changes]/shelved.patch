@@ -1,0 +1,19 @@
+Index: app/build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle b/app/build.gradle
+--- a/app/build.gradle	
++++ b/app/build.gradle	
+@@ -9,8 +9,8 @@
+         applicationId "com.tutorix.tv.tutorialspoint"
+         minSdkVersion 21
+         targetSdkVersion 30
+-        versionCode 17
+-        versionName "1.2.9"
++        versionCode 18
++        versionName "1.2.10"
+         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+ 
+         buildConfigField("String", "ENC_KEY", apikeyProperties["ENC_KEY"])

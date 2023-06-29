@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/activstion_background"
+
+        android:scaleType="fitXY"
+
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+
+            android:src="@drawable/premium_feature_icon"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:layout_height="120dp" />
+        <TextView
+android:id="@+id/txt_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:layout_margin="@dimen/_5dp"
+            android:layout_gravity="center"
+            android:text="@string/premium_feature"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_22sp" />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fc7243"
+            android:layout_gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:text="@string/tocontinuew_subscrib"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txt_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15dp"
+            android:drawableStart="@drawable/select_dot"
+            android:drawablePadding="18dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/getunlimitedaccess"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_ans"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15dp"
+            android:drawableStart="@drawable/select_dot"
+            android:drawablePadding="18dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/getnotes"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_15dp"
+            android:drawableStart="@drawable/select_dot"
+            android:drawablePadding="18dp"
+            android:fontFamily="@font/opensans_regular"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="@string/getyourdoubts"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/lnr_start"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:minEms="8"
+
+                android:background="@drawable/retake_button"
+                android:text="@string/buyactivationkey"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

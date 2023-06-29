@@ -1,0 +1,155 @@
+{
+   "neet_test_1":{
+      "name": "Neet Test 1",
+      "total_questions": 180,
+      "total_marks": 180,
+      "biology":{
+         "total_marks":2,
+         "total_questions":2,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"Robert Hooke published his observations in a book called _______.",
+               "options":[
+                  {
+                     "option_1":"Macrograph",
+                     "option_2":"Nanographia",
+                     "option_3":"Mycographia",
+                     "option_4":"Micrographia"
+                  }
+               ],
+               "option_right":"4",
+               "explanation":"Robert Hooke published his observations related to the discovery of cell in his scientific book called Micrographia.",
+               "subject_id":3
+            },
+            {
+               "question_id":2,
+               "question":"Which of the following types of microscopes has a single lens?",
+            "options":[
+               {
+                  "option_1":"Compound microscope",
+                  "option_2":"Light microscope",
+                  "option_3":"Simple microscope",
+                  "option_4":"Electron microscope"
+               }
+            ],
+            "option_right":"3",
+            "explanation":"A simple microscope is made up of a single lens.",
+               "subject_id":3
+            }
+
+         ]
+      },
+      "chemistry":{
+         "total_marks":2,
+         "total_questions":2,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"Which of the following is NOT relevant to boiling?",
+            "options":[
+               {
+                  "option_1":"Bulk phenomenon",
+                  "option_2":"Fast process",
+                  "option_3":"Occurs at definite temperature",
+                  "option_4":"Surface phenomenon"
+               }
+            ],
+            "option_right":"4",
+            "explanation":"Boiling is not a surface phenomenon. It involves all the particles of a liquid and hence is a bulk phenomenon.",
+               "subject_id":2
+            },
+            {
+               "question_id":2,
+               "question":"The kinetic energy of the particles __________ with temperature.",
+            "options":[
+               {
+                  "option_1":"Increases",
+                  "option_2":"Decreases",
+                  "option_3":"First decreases, later increases suddenly",
+                  "option_4":"No relation between temperature and kinetic energy"
+               }
+            ],
+            "option_right":"1",
+            "explanation":"When the temperature of the matter increases, it gets added up to the kinetic energy of its particles.",   "subject_id":2
+            }
+
+         ]
+      },
+      "physics":{
+         "total_marks":2,
+         "total_questions":2,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"The branch that deals with the cause of motion and the motion of an object is _______.",
+            "options":[
+               {
+                  "option_1":"Kinematics",
+                  "option_2":"Dynamics",
+                  "option_3":"Both A and B",
+                  "option_4":"None of the above"
+               }
+            ],
+            "option_right":"2",
+            "explanation":"The branch that deals with the cause of motion and the motion of an object is Dynamics.",
+               "subject_id":1
+            },
+            {
+               "question_id":2,
+               "question":"The normal and the SI units of temperature are ________ and _______ respectively.",
+            "options":[
+               {
+                  "option_1":"Celsius, kelvin",
+                  "option_2":"Fahrenheit, kelvin",
+                  "option_3":"Both A and B",
+                  "option_4":"None of the above"
+               }
+            ],
+            "option_right":"3",
+            "explanation":"Temperature can be measured normally in either Celsius or Fahrenheit but the SI unit is Kelvin.",
+               "subject_id":1
+            }
+
+
+         ]
+      },
+      "mathematics":{
+         "total_marks":2,
+         "total_questions":2,
+         "questions":[
+            {
+               "question_id":1,
+               "question":"Robert Hooke published his observations in a book called _______.",
+               "options":[
+                  {
+                     "option_1":"Macrograph",
+                     "option_2":"Nanographia",
+                     "option_3":"Mycographia",
+                     "option_4":"Micrographia"
+                  }
+               ],
+               "option_right":"4",
+               "explanation":"Robert Hooke published his observations related to the discovery of cell in his scientific book called Micrographia.",
+               "subject_id":3
+            },
+            {
+               "question_id":2,
+               "question":"Which of the following types of microscopes has a single lens?",
+               "options":[
+                  {
+                     "option_1":"Compound microscope",
+                     "option_2":"Light microscope",
+                     "option_3":"Simple microscope",
+                     "option_4":"Electron microscope"
+                  }
+               ],
+               "option_right":"3",
+               "explanation":"A simple microscope is made up of a single lens.",
+               "subject_id":3
+            }
+
+         ]
+      }
+   }
+}

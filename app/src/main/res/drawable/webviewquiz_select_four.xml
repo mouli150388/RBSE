@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape
+    android:shape="rectangle">
+
+   <!-- <gradient
+        android:angle="45"
+        android:centerColor="@color/math_background_card"
+        android:centerX="35%"
+        android:endColor="@color/math_background_card"
+        android:startColor="@color/math_background_card"
+        android:type="linear" />-->
+    <stroke
+        android:width="2dp"
+        android:color="@color/math_background_card" />
+    <corners android:radius="10dp"/>
+
+</shape>
+    </item>
+<item android:state_checked="false">
+<shape
+    android:shape="rectangle">
+
+    <gradient
+        android:angle="45"
+        android:centerColor="#FFFFFF"
+        android:centerX="35%"
+        android:endColor="#FFFFFF"
+        android:startColor="#FFFFFF"
+        android:type="linear" />
+    <stroke
+        android:width="1dp"
+        android:color="#aaa" />
+    <corners android:radius="10dp"/>
+
+</shape>
+</item>
+    </selector>

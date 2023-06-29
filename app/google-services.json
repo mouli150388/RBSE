@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "126489670261",
+    "firebase_url": "https://tutorix-829f1.firebaseio.com",
+    "project_id": "tutorix-829f1",
+    "storage_bucket": "tutorix-829f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126489670261:android:59a6118f65fd2f15",
+        "android_client_info": {
+          "package_name": "com.bser.tutorialspoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126489670261-jgkete2lvtjuio5llhan76ev722gm1on.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlHQVCcA7qMAcKhZgmb85GGm27hQ3rrlI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126489670261-jgkete2lvtjuio5llhan76ev722gm1on.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "126489670261-7kjpkqkoo0c350lor0silhef3t646r9n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.TutorialsPoint.Tutorix.tutorials",
+                "app_store_id": "1453509482"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

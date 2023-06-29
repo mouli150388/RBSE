@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/new_color_background"
+    android:orientation="vertical"
+    tools:context=".activities.OTPForgotPasswordActivity">
+
+          <include layout="@layout/banner" />
+
+
+
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_weight="1"
+              android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
+
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:layout_marginTop="10dp"
+
+                        android:orientation="vertical"
+                        android:padding="@dimen/_10dp">
+
+
+
+
+                           <LinearLayout
+                               android:id="@+id/lnr_reson"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:orientation="vertical"
+                               >
+
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginTop="@dimen/_10dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:layout_marginBottom="@dimen/_5dp"
+                                  android:background="@drawable/button_rectangle_radius"
+
+                                  android:gravity="center_vertical"
+                                  android:minHeight="40dp"
+                                  android:orientation="horizontal"
+                                  android:padding="@dimen/_3dp"
+                                  android:paddingLeft="@dimen/_20dp"
+                                  android:paddingTop="@dimen/_5dp"
+                                  android:paddingRight="@dimen/_20dp"
+                                  android:paddingBottom="@dimen/_5dp"
+
+                                  >
+
+                                        <androidx.appcompat.widget.AppCompatEditText
+                                            android:id="@+id/etMailId"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="@string/email"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            android:minHeight="@dimen/minimum_hight_editfiled"
+                                            android:importantForAutofill="no|noExcludeDescendants"
+                                            android:textColor="@color/login_filed_color"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:background="@color/white"
+                                            android:inputType="text" />
+                              </LinearLayout>
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginTop="@dimen/_10dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:layout_marginBottom="@dimen/_5dp"
+                                  android:background="@drawable/button_rectangle_radius"
+
+                                  android:gravity="center_vertical"
+                                  android:minHeight="40dp"
+                                  android:orientation="horizontal"
+                                  android:padding="@dimen/_3dp"
+                                  android:paddingLeft="@dimen/_20dp"
+                                  android:paddingTop="@dimen/_5dp"
+                                  android:paddingRight="@dimen/_20dp"
+                                  android:paddingBottom="@dimen/_5dp"
+
+                                  >
+
+                                        <androidx.appcompat.widget.AppCompatEditText
+                                            android:id="@+id/etMobileNumber"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:hint="@string/phone_number"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            android:minHeight="@dimen/minimum_hight_editfiled"
+                                            android:importantForAutofill="no|noExcludeDescendants"
+                                            android:textColor="@color/login_filed_color"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:background="@color/white"
+                                            android:maxLength="15"
+                                            android:inputType="phone" />
+                              </LinearLayout>
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginTop="@dimen/_10dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:layout_marginBottom="@dimen/_5dp"
+                                  android:background="@drawable/button_rectangle_radius"
+
+                                  android:gravity="center_vertical"
+                                  android:minHeight="40dp"
+                                  android:orientation="horizontal"
+                                  android:padding="@dimen/_3dp"
+                                  android:paddingLeft="@dimen/_20dp"
+                                  android:paddingTop="@dimen/_5dp"
+                                  android:paddingRight="@dimen/_20dp"
+                                  android:paddingBottom="@dimen/_5dp"
+
+                                  >
+
+                                        <androidx.appcompat.widget.AppCompatEditText
+                                            android:id="@+id/etReason"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+
+                                            android:minLines="4"
+                                            android:hint="@string/reason_delete_account"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            android:minHeight="@dimen/_100dp"
+                                            android:importantForAutofill="no|noExcludeDescendants"
+                                            android:textColor="@color/login_filed_color"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:background="@color/white"
+                                            android:inputType="text" />
+                              </LinearLayout>
+                                     <TextView
+                                         android:layout_width="wrap_content"
+                                         android:layout_height="40dp"
+                                         android:layout_gravity="center"
+                                         android:minEms="8"
+                                         android:text="@string/getotp"
+                                         android:textAllCaps="true"
+                                         android:textColor="@color/white"
+                                         android:textStyle="bold"
+                                         android:gravity="center"
+                                         android:fontFamily="@font/opensans_regular"
+                                         android:onClick="getOtp"
+                                         android:layout_marginTop="@dimen/_20dp"
+                                         android:layout_marginLeft="@dimen/_8dp"
+                                         android:layout_marginRight="@dimen/_8dp"
+                                         android:background="@drawable/login_button"
+                                         />
+                           </LinearLayout>
+
+                              <LinearLayout
+                                  android:id="@+id/lnr_otp"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:orientation="vertical"
+                                  android:visibility="gone"
+                                  >
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:layout_marginLeft="@dimen/_5dp"
+                                            android:layout_marginTop="@dimen/_10dp"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            android:layout_marginBottom="@dimen/_5dp"
+                                            android:background="@drawable/button_rectangle_radius"
+
+                                            android:gravity="center_vertical"
+                                            android:minHeight="40dp"
+                                            android:orientation="horizontal"
+                                            android:padding="@dimen/_3dp"
+                                            android:paddingLeft="@dimen/_20dp"
+                                            android:paddingTop="@dimen/_5dp"
+                                            android:paddingRight="@dimen/_20dp"
+                                            android:paddingBottom="@dimen/_5dp"
+
+                                            >
+                                                  <androidx.appcompat.widget.AppCompatEditText
+                                                      android:id="@+id/otp"
+                                                      android:layout_width="match_parent"
+                                                      android:fontFamily="@font/opensans_regular"
+                                                      android:layout_height="wrap_content"
+                                                      android:hint="@string/otp"
+                                                      android:layout_marginLeft="@dimen/_15dp"
+                                                      android:layout_marginRight="@dimen/_5dp"
+                                                      android:minHeight="@dimen/minimum_hight_editfiled"
+                                                      android:background="@color/white"
+                                                      android:importantForAutofill="no|noExcludeDescendants"
+                                                      android:textColor="@color/login_filed_color"
+                                                      android:maxLength="@integer/otp_length"
+                                                      android:inputType="number" />
+                                        </LinearLayout>
+
+
+
+
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            android:textSize="@dimen/password_hint_size"
+                                            android:textColor="@color/color_dashText"
+                                            android:text="@string/please_enter_your_4_digit_otp_from_your_respective_mobile_number_email" />
+                                        <TextView
+                                            android:id="@+id/txt_resend"
+                                            android:layout_width="wrap_content"
+                                            android:layout_gravity="right"
+                                            android:layout_height="wrap_content"
+                                            android:padding="10dp"
+                                            android:onClick="resendotp"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:layout_marginBottom="@dimen/_20dp"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            android:textStyle="bold"
+                                            android:textColor="@color/colorPrimary"
+                                            android:text="@string/resend" />
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="40dp"
+                                            android:layout_gravity="center"
+                                            android:minEms="8"
+                                            android:text="@string/submit"
+                                            android:textAllCaps="true"
+                                            android:textColor="@color/white"
+                                            android:textStyle="bold"
+                                            android:gravity="center"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:onClick="deleteAccount"
+                                            android:layout_margin="@dimen/_8dp"
+                                            android:background="@drawable/login_button"
+                                            />
+                              </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+          </ScrollView>
+
+
+          <!--  <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:maxHeight="@dimen/_200dp"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/login_bottom" />-->
+
+          <include layout="@layout/bottom_banner"/>
+
+
+
+</LinearLayout>

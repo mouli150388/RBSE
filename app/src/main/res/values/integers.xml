@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="otp_length">4</integer>
+    <integer name="zipcode_length">6</integer>
+    <integer name="card_flip_time_half">500</integer>
+    <integer name="card_flip_time_full">1000</integer>
+    <integer name="gride_count">2</integer>
+    <integer name="image_width_height">150</integer>
+    <integer name="appbar_height">220</integer>
+</resources>

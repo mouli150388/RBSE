@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_margin="@dimen/_5dp"
+    android:padding="20dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txt_reply"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:minHeight="35dp"
+            android:minEms="8"
+
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            android:text="@string/havemoredoubts"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/colorPrimary"
+            android:background="@drawable/retake_button"
+            android:paddingLeft="@dimen/_12sp"
+            android:paddingRight="@dimen/_12sp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/txt_close"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:minHeight="35dp"
+            android:minEms="8"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:text="@string/close"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/white"
+            android:background="@drawable/clear_drawable"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>

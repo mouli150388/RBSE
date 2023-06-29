@@ -1,0 +1,524 @@
+<resources>
+<string name="app_name">BSER</string>
+<string name="title_activity_select_subject">selectSubject</string>
+
+<string name="action_settings">Settings</string>
+<string name="title_activity_login">login</string>
+<string name="title_activity_internal_chapters">internalChapters</string>
+<string name="title_activity_profile">profile</string>
+<string name="todo">TODO</string>
+<string name="email">Email</string>
+<string name="account_details">Account Details</string>
+<string name="Physics">Physics</string>
+
+<string name="rupee_symbol">\u20B9</string>
+<string name="dollar_symbol">$</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+<string name="hello_blank_fragment">Hello blank fragment</string>
+<string name="personal_details">Personal Details</string>
+<string name="edit">EDIT</string>
+<string name="title_activity_doubts">DoubtsActivity</string>
+<string name="section_format">Hello World from section: %1$d</string>
+<string name="no_answer">No Answer</string>
+<string name="answered">Answered</string>
+
+<string name="simply_easy_learning">Your Virtual Guru</string>
+<string name="don_t_have_an_account_register">New to Tutorix? <font color='#65ADFF'>Sign Up</font></string>
+<string name="mobile_not_registered_msg">Mobile Number <font color='#ca8827'>%s</font> is not registered with us.</string>
+<string name="would_you_like_to_register">Would you like to register this mobile number?</string>
+<string name="would_you_like_to_generatepassword">Would you like to use forgot password option?</string>
+<string name="wrong_password_msg">You entered a wrong password for the given mobile number.</string>
+<string name="forgot_password">Forgot Password?</string>
+<string name="generate_password">Generate Password</string>
+<string name="phone_number">Phone Number</string>
+<string name="password">Password</string>
+<string name="enter_new_password">Enter New Password</string>
+<string name="copyright">© Copyright 2022. All Rights Reserved.</string>
+<string name="copyright_update">© Copyright %s. All Rights Reserved.</string>
+<string name="do_you_have_go_back_click">Do you have go back?<u><font color='#65ADFF'>Click</font></u></string>
+<string name="please_enter_your_registered_mobile_number">Please enter your registered Mobile Number</string>
+
+<string name="no_internet_message">There is no internet connection.</string>
+<string name="fields_mandatory">Oops! Please Enter all fields</string>
+<string name="invalid_phone_number">Invalid Phone Number.</string>
+<string name="server_error">There is something error, Please Try Again</string>
+<string name="_6th_class">6th Class</string>
+<string name="_7th_class">7th Class</string>
+<string name="_8th_class">8th Class</string>
+<string name="_9th_class">9th Class</string>
+<string name="_class">Class</string>
+<string name="back">Back</string>
+<string name="proceed">Proceed</string>
+<string name="_th_class">th Class</string>
+<string name="name">Enter Your Name</string>
+<string name="do_you_have_an_account_login"><u>Do you have an account? Login</u></string>
+<string name="otp">Enter OTP</string>
+<string name="please_enter_your_4_digit_otp_from_your_respective_mobile_number">Please enter your 4-digit OTP from your respective Mobile Number</string>
+<string name="please_enter_your_4_digit_otp_from_your_respective_mobile_number_email">Please enter your 4-digit OTP from your respective Mobile Number/Email</string>
+<string name="please_enter_your_4_digit_otp_from_your_respective_email">Please enter your 4-digit OTP from your respective email account</string>
+<string name="do_you_wanna_go_back_click">Do you want to go back?<u><font color='#65ADFF'> Click </font></u></string>
+<string name="switch_class">Switch Class</string>
+<string name="refer_a_friend">Refer a Friend</string>
+<string name="call_us">Call us</string>
+<!--<string name="subscribe_now">Activate now</string>-->
+<string name="subscribe_now">Subscribe Activation</string>
+
+<string name="subscribed">View Activation</string>
+<string name="terms_conditions"><![CDATA[Terms Of Use]]></string>
+<string name="register_a_complaint">Register a complaint</string>
+<string name="logout">Logout</string>
+<string name="class_name">Class Name</string>
+<string name="physics">Physics</string>
+<string name="chemistry">Chemistry</string>
+<string name="mathematics">Mathematics</string>
+<string name="biology">Biology</string>
+<string name="activity_timeline">Activity Timeline</string>
+<string name="performance_analysis">Performance Analysis</string>
+<string name="bookmark">Bookmarks</string>
+<string name="completed_tasks">Completed Tasks</string>
+<string name="completed_tasks_t">Completed\nTasks</string>
+<!--<string name="our_subject_matter_experts">Our Subject Matter Experts</string>-->
+<string name="our_subject_matter_experts">Vocational Courses</string>
+<string name="click_here">Click Here</string>
+<string name="we_work_with_some_of_the_most_talented_and_passionate_professionals_in_the_industry">Our Expert Faculty</string>
+<string name="our_expert">Our Expert Faculty</string>
+<string name="welcome_to_tutorix_school">Welcome To Tutorix School</string>
+<string name="welcome_to_tutorix">Welcome To Tutorix</string>
+<string name="lean_concepts_through_interactive_text_and_rich_videos_on_our_brand_new_app_from_6th_standard_to_12th_standard">Lean concepts through interactive text and rich videos on our brand new app from 6th standard to 12th standard</string>
+<string name="feed_back">Contact us</string>
+
+<string name="_6th">6th Class</string>
+<string name="_7th">7th Class</string>
+<string name="_8th">8th Class</string>
+<string name="locked">Locked</string>
+
+<string name="pls_subscribe">Please Subscribe</string>
+<string name="asked_questions">Got a Doubt</string>
+<string name="start">Start</string>
+<string name="no_internet">No Internet Connection</string>
+<string name="no_sdcard">No SD Card available for current class</string>
+<string name="there_is_error">There is something error</string>
+<string name="json_error">Json error : </string>
+<string name="comming_soon">Coming Soon…</string>
+<string name="invalid_coupon_code">Coupon code is not valid</string>
+<string name="content">Content</string>
+<string name="notes_saved">Notes Saved</string>
+<string name="title_activity_web_view_test">WebViewTestActivity</string>
+<string name="freshchat_file_provider_authority">com.example.rbse.provider</string>
+<string name="succuess">Success</string>
+<string name="failure">Failure</string>
+<string name="title_activity_webview_payment">WebviewPaymentActivity</string>
+<string name="paymentprocess">Payment Process</string>
+<string name="activation_ended">Your Activation date ended\n please subscribe again</string>
+<string name="Ok">Ok</string>
+<string name="cancel">Cancel</string>
+<string name="subscribe">Subscribe</string>
+<string name="no_data">No Data available</string>
+<string name="zipcode">Zipcode</string>
+<string name="country">Country</string>
+<string name="all">All</string>
+<string name="hint_question_details">Details of the doubt...</string>
+<string name="typeyourdoubt">Type your doubt here...</string>
+<string name="buy_activation">Buy Activation</string>
+<string name="sales_support">Support</string>
+<string name="aboutus">About Us</string>
+<string name="pick_country">Select Country</string>
+<string name="notes">Notes</string>
+<string name="more">More</string>
+<string name="billingdetails"><u>Billing Details</u></string>
+<string name="deactivate">Disable SD Card</string>
+<string name="renual">Renewal</string>
+<string name="ok">Ok</string>
+<string name="activation_success">Activation successfully</string>
+
+<string name="contin">Continue</string>
+<string name="sub_online_string">You can stream the video lessons online. You would need a stable Internet connection for this option.</string>
+<string name="sub_sdcard_string">We will send you a memory card (SD Card) with the required study material.
+You need to insert the SD Card into a compatible device and activate this subscription by the activation key that you will receive.</string>
+<string name="sub_tab_string">You will get all the study material bundled in a Lenovo tablet.
+You need to activate this subscription by the activation key that you will receive.</string>
+<string name="shippingdetails"><u>Shipping Details</u></string>
+<string name="billingshiping">Shipping details are same as billing details</string>
+
+<string name="q">Q. </string>
+<string name="raiseyourdbts">Raise Your Doubt</string>
+<string name="myorders">Order History</string>
+<string name="trackinfo"><u>Track Information</u></string>
+<string name="syllabus">Syllabus</string>
+<string name="signin">Sign In</string>
+<string name="signup">Sign Up</string>
+<string name="alreadyhaveacnt">Already have account?<font color='#65ADFF'> Login</font></string>
+<string name="submit">Submit</string>
+<string name="service_availabile">This feature  is available only for Active users. Activate your account now using the activation code!</string>
+
+
+<string name="error_1">Slow Internet connection, Try again</string>
+<!--  <string name="error_2">Server Not responded, Try again</string>-->
+<string name="error_2">Please Try again</string>
+<string name="error_3">Please check network and  Try again</string>
+<string name="error_4">Internal error, Try again</string>
+<string name="over_all_tracking">Overall Tracking</string>
+<string name="over_all_activity">Activity</string>
+
+
+<string name="home"> Home </string>
+<string name="perform">Analysis</string>
+<string name="bookmarks"> Bookmarks </string>
+<string name="activity"> Activities </string>
+<string name="menu"> More </string>
+<!--FontAswesom-->
+<string name="home_font"> &#xf015; </string>
+<string name="perform_font"> &#xf201; </string>
+<string name="perform_font_2"> &#xf080; </string>
+<string name="bookmark_font"> &#xf02e; </string>
+<string name="tools_font"> &#xf013; </string>
+<string name="activity_font"> &#xf08d; </string>
+<string name="doubt_font"> &#xf086; </string>
+<string name="search_font"> &#xf002; </string>
+<string name="menu_font"> &#xf0c9; </string>
+<string name="dount_font"> &#xf059; </string>
+<string name="grid_font"> &#xf58e; </string>
+<string name="list_font"> &#xf03a; </string>
+<string name="faq">FAQs</string>
+<string name="refund">Refund Policy</string>
+<string name="privacy">Privacy Policy</string>
+<string name="personaldetails">Personal Details</string>
+<string name="tools">Tools</string>
+<string name="support">Support</string>
+<string name="aboutcompany">About Company</string>
+<string name="newpass">New Password</string>
+<string name="accuracy">Quiz Accuracy</string>
+<string name="speed">Quiz Speed Analysis</string>
+<string name="read_terms">I have read and agree to the </string>
+<string name="read_terms_2"> <u><font color='#65ADFF'>Terms of Use</font></u> </string>
+<string name="hint_fathername">Father Name</string>
+<string name="hint_dob">Date of Birth</string>
+<string name="passwordrestrict">Password should allow alphanumeric and length should be 4 characters</string>
+<string name="go">Go</string>
+<string name="recentactivity">Activities Tracker</string>
+<string name="ScoreCard">Score</string>
+<string name="TimeSpent">Time</string>
+<string name="minuts">Minutes</string>
+<string name="previous">Previous Report</string>
+<string name="recomanded">Key Improvement Areas</string>
+<string name="zero_percent">Oh geez! Was that your first attempt? You really need to buckle up!</string>
+<string name="twenty_percent">That surely wasn’t your best. Watching the video again can work wonders!</string>
+<string name="fourty_percent">Good attempt, but just passing isn’t enough. You really can do much better!</string>
+<string name="sixty_percent">Bravo...great performance. You are just one try away from doing better!</string>
+<string name="eight_percent">Wow, a near miss from a perfect score. Let’s tackle the next concept better!</string>
+<string name="nighty_percent">Brilliant, you nailed it! Let’s go master the next concept!</string>
+<string name="watchvideo">Watch Video</string>
+<string name="click_here_previous"><u>Click here </u>to see the previous performances</string>
+<string name="buyactivationkey">Buy Activation Key</string>
+<string name="activation_key">Activation Key</string>
+<string name="whytobuyactivation">We Have Much More \n To Offer...</string>
+<string name="fullaccess"><ul><li>Gain  access to all high-quality videos</li></ul></string>
+<string name="fullaccessnotes"><ul><li>Receive a set of quizzes, text notes, and mock tests</li></ul></string>
+<string name="fullaccesssmes"><ul><li>Get your doubts clarified by our  SMEs!</li></ul></string>
+<string name="notifictions">Notifications</string>
+<string name="easy">Easy</string>
+<string name="medium">Medium</string>
+<string name="hard">Hard</string>
+<string name="gotadoubt">Ask Doubts</string>
+<string name="doubt">Doubts</string>
+<string name="search">Search</string>
+<string name="keyimpreovementarea">Key Improvement Areas</string>
+<string name="mocktestattended">Mock Test Attended</string>
+<string name="yournotes">My Notes</string>
+<string name="Marks">Marks</string>
+<string name="title_activity_webview">Webview</string>
+<string name="writeyourquestion">Post your doubt</string>
+<string name="noofquestionsasked">Number of questions you have asked</string>
+<string name="doubt_alert_1">You have already asked %d questions out of 30</string>
+<string name="doubt_alert_2">You have used 20 questions out of your pool of 30 questions for this month!</string>
+<string name="doubt_alert_3">You have asked 25 questions for this month. Your remaining balance is 5!</string>
+<string name="doubts_limited_policy">However, you still got to do your homework yourself, right? Therefore, for now, we are limiting the number of questions per month to thirty (30).</string>
+<string name="reply">Reply</string>
+<string name="close">Close</string>
+<string name="taptoseeimg">Tap to view image</string>
+
+
+<!--Smile RatingBar-->
+
+<string name="smile_rating_terrible">Terrible</string>
+<string name="smile_rating_bad">Bad</string>
+<string name="smile_rating_okay">Okay</string>
+<string name="smile_rating_good">Good</string>
+<string name="smile_rating_great">Great</string>
+<string name="writeyourfeedbaconthisvideo">Write your feedback about this video</string>
+<string name="youractivationsucc">Your activation process is completed.\n Thank you for using Tutorix app.</string>
+<string name="havemoredoubts">Have More Doubts?</string>
+<string name="havemoreanswer">Answer</string>
+<string name="tryagain">Try Again</string>
+
+<string-array name="names">
+<item>@string/smile_rating_terrible</item>
+<item>@string/smile_rating_bad</item>
+<item>@string/smile_rating_okay</item>
+<item>@string/smile_rating_good</item>
+<item>@string/smile_rating_great</item>
+</string-array>
+
+<string name="phone_code" translatable="false">+%s</string>
+<string name="country_name_and_code" translatable="false">%1$s (%2$s)</string>
+<string name="search_hint">Search&#8230;</string>
+<string name="search_content">Search Content</string>
+<string name="no_result_found">No result found</string>
+<string name="select_country">Select Country</string>
+<string name="country_code_and_phone_code" translatable="false">(%1$s) +%2$s</string>
+<string name="country_full_name_and_phone_code" translatable="false">%1$s +%2$s</string>
+<string name="error_unregister_carrier_number" translatable="false">EditText for carrier number is not registered. Register it using registerPhoneNumberTextView() before getFullNumber() or setFullNumber().</string>
+<string name="track_selection_title">Select Video Quality</string>
+<string name="effects">Effects</string>
+<string name="button_effects">Button Effects</string>
+<string name="quiz_effects">Quiz effects</string>
+<string name="settings">Settings</string>
+<string name="previous_arrow"><![CDATA[< Previous]]></string>
+<string name="next_arraow"><![CDATA[Next >]]></string>
+<string name="resend">ReSend</string>
+<string name="explanation">View Explanation</string>
+<string name="expiredactivation">Your activation is expired, \nplease renewal it.</string>
+<string name="Activate">Activate</string>
+<string name="dsw_str1">Discover\nScience\nWizard</string>
+<string name="dsw_str2"><![CDATA[<font color="#A3A3A5">Discover Science Wizard</font> is india\'s biggest national level scholarship programme for middle school students.]]></string>
+<string name="checkyourresult">Check Your Result</string>
+<string name="downloadyourdsw">Download your DSW certificate</string>
+<string name="taketheonlinetest">Take the Online Test</string>
+<string name="gotadoubtclick"><![CDATA[Got doubts? Check our FAQ section to find your answers <font color="#1EB9BE">Click Here</font>]]></string>
+<string name="scolashipprogramm">Scholarship Program</string>
+<string name="enterdws_key">Enter DWS Sheet no</string>
+<string name="checkresult">Check Result</string>
+<string name="ascolorshipprgm">A Scholarship Program</string>
+
+<string name="youareselected"><![CDATA[<b><font color=#FA8E0A>You are selected for</font> <font color=#1A7EA4>Tutorix 1 lac contest</font></b>]]></string>
+<string name="congratulations">Congratulations!</string>
+<string name="youscored">You scored %s</string>
+<string name="discountsctring">You are Eligible for %s Discount</string>
+<string name="call_on"> Please contact at %s</string>
+<string name="activate_sdcard">Activate SD Card</string>
+<string name="onlinractivation_key">Online Activation key</string>
+<string name="enter_sdcard_activation">Enter SD Card Activation Key to access both online and offline videos</string>
+<string name="reward_text1">Oh Yeah, Well Done!</string>
+<string name="reward_text2">Look like you\'re on\n the right path! </string>
+<string name="reward_text3">Keep going </string>
+
+<string name="reward_text4">Oops, Really?</string>
+<string name="reward_text5">This can\'t be good. \nYou have to do more hardwork!</string>
+<string name="reward_text6">Try again </string>
+<string name="use_sdcard">To Run application offline please enable SD Card Activation by press below button</string>
+
+
+<string name="preference_days_notification">NOTIFICATION_DAYS</string>
+<string name="howtowinrewards">How to win Rewards?</string>
+<string name="goldcointext">If you secure 100% marks in any of the mock tests, you will be rewarded a virtual Gold Coin.</string>
+<string name="silverdata">If you secure 100% in any of the quizzes, you will be rewarded a virtual Silver Coin</string>
+<string name="howtoredeemrewards">How to redeem Rewards?</string>
+<string name="howtoreemtext"><![CDATA[You can redeem your rewards any time. Evrey gold coin will be converted into <font color=#FA8E0A>Rs 5</font> and every silver coin will be converted into <font color=#FA8E0A>Rs 1</font> and the amount will be credited to you Tutorix Wallet from where you can use it while buying next subscription.\n\nFor a further detail you can talk to Tutorix Support.]]></string>
+<string name="ratethisapp">Rate this App</string>
+<string name="keeperaning">Keep earning more and more coins. These coins will not only help you to compare your performance with other Tutorix users but also they will be considered for great discount on your next Tutorix Subscription purchase</string>
+<string name="myrewards">My Rewards</string>
+<string name="mydoubts">My Doubts</string>
+<string name="latestdoubts">Latest Doubts</string>
+<string name="no_doubtaskedyet">No doubt asked yet</string>
+<string name="ididnotfindasolution">I did not find a solution</string>
+<string name="submitdoubt">Submit Doubt</string>
+<string name="no_similardoubts">No Related doubts found</string>
+<string name="uploadingtoserver">Please wait, posting to server</string>
+<string name="pleasewait">Please wait...</string>
+<string name="studyClass">Current Studying Class</string>
+
+
+<!-- **************** Image Crope *************** -->
+<string name="crop_image_activity_title"></string>
+<string name="crop_image_menu_rotate_left">Rotate counter clockwise</string>
+<string name="crop_image_menu_rotate_right">Rotate</string>
+<string name="crop_image_menu_crop">Crop</string>
+<string name="crop_image_menu_flip">Flip</string>
+<string name="crop_image_menu_flip_horizontally">Flip horizontally</string>
+<string name="crop_image_menu_flip_vertically">Flip vertically</string>
+
+<string name="pick_image_intent_chooser_title">Select source</string>
+
+<string name="crop_image_activity_no_permissions">Cancelling, required permissions are not granted</string>
+<string name="crop_image_menu_reset">Reset</string>
+<string name="premium_feature">This is a premium feature</string>
+<string name="renew_feature">Renew Activation</string>
+<string name="tocontinuew_subscrib">To continue please activate your subscription</string>
+<string name="getunlimitedaccess">Get unlimited access to all the classes for next 365 days.</string>
+<string name="getnotes">Access to all the quizzes, text notes and mock tests.</string>
+<string name="getyourdoubts">Get your doubts clarified by our SMEs</string>
+<string name="submitasnewdoubt">Submit as a New Doubt</string>
+<string name="next">Next</string>
+<string name="whocansubmitdoubts">Who can submit a doubt?</string>
+<string name="activated_user">Activated Users</string>
+<string name="activated_string_for_doubts">If you are an activated user then you can submit unlimited number of doubts and get them clarified on priority.</string>
+<string name="rewardpoints">Reward Coins</string>
+<string name="use_rewardpoints">Either use your reward coins to get great discount on your next subscription or use them to submit a new doubt.</string>
+<string name="one_gold">1 Gold Coin</string>
+<string name="one_gold_value">= 2 Doubts</string>
+<string name="one_siver">1 Silver Coin </string>
+<string name="one_siver_value">= 1 Doubt</string>
+<!--  <string name="use_rewardpoints">Use your reward points to submit a new doubt.\n\n 1 Gold Coin = 2 Doubts\n1 Silver Coin = 1 Doubt</string>-->
+<string name="currently_you_have">Currently you are eligibility to ask %s doubt(s).</string>
+<string name="shareknowledge">Education For All</string>
+<string name="official_website">Official Website</string>
+<string name="facebook">Facebook</string>
+<string name="twitter">Twitter</string>
+<string name="linkedin">LinkedIn</string>
+<string name="instagram">Instagram</string>
+<string name="connect_with_us">Connect With Us</string>
+<string name="youtube">Youtube</string>
+<string name="no">No</string>
+<string name="yes">Yes</string>
+<string name="morevideoscome">More videos will add soon...</string>
+<string name="getotp">Get OTP</string>
+<string name="apply">Apply</string>
+<string name="enter_ref_code">Enter the referral code</string>
+<string name="have_ref_code">Do you have a referral code?</string>
+<string name="join_referral_program">Join Referral Program</string>
+<string name="refer_frinds">Refer tutorix to your 15 friends\nEnjoy One Year Subscription Absolutely Free</string>
+<string name="you_ref_code">Referral code - %s</string>
+<string name="so_far_ref_code" formatted="false">(So far you have referred %s/%s)</string>
+<string name="ref_desc" formatted="false">Distribute the referral code %s to your friends and ask them to register with tutorix using this referral code. \n\nOnce we get %s subscriptions with your referral code, we will activate your one year subscription absolutely free. \n\nYour subscribed friend will also get  one month subscription absolutely free.</string>
+<string name="test_series">Test Series</string>
+<string name="english">English</string>
+<string name="hindi">Hindi</string>
+<string name="neet_test_series">NEET TEST SERIES</string>
+<string name="attemptes_tracker">Attempts Tracker</string>
+<string name="no_test_Attempted">No Test Attempt Yet</string>
+<string name="test_rule_1">This mock test comprises of 180 Multiple Choice Questions (MCQs) from Biology, Physics and Chemistry</string>
+<string name="test_rule_2">Every question is followed by different options. Just Tab on the correct option to select your answer for the question.</string>
+<string name="test_rule_3">Total duration of this mock test is 180 minutes. You also have option to pause and resume the test anytime. During pause, your test time will not be calculated.</string>
+<string name="test_rule_4">Every attempted correct answer will reward you 4 marks whereas every attempted wrong answer will penalize you for -1 Mark.</string>
+<string name="test_rule_status">The given question palette will show the status of each question using one of the following symbols.</string>
+<string name="test_rule_status_1">You have answered the question</string>
+<string name="test_rule_status_2">Question is visited but not answered yet.</string>
+<string name="test_rule_status_3">Question is not answered but marked for review</string>
+<string name="test_rule_status_4">Question is answered and marked for review</string>
+<string name="test_rule_status_5">Question is not yet visited</string>
+<string name="test_rule_marks">Following is the detail about distribution of questions and associated marks</string>
+<string name="test_rule_desc">I have read and understood the instructions. i declare I am not in possession of/not wearing/not carrying any prohobited itesm such as mobile phones, Bluetooth etc. I agree that in case of not adhering to the instructions, I shall be liable to be debarred from this Test and/or to disiplinary actions, which may include ban from future trends/examinations. \n\nThis is just a mock test provided for parcticing and preparing for the actual exams, which may differ in its pattern, instructions and questions provided.\n\nBy starting this mock test exams, I agree to accept all the above mentioned terms and conditions.</string>
+<string name="pause">Pause</string>
+<string name="play">Play</string>
+<string name="markforreview">Mark for Review</string>
+<string name="clearresposne">Clear Answer</string>
+<string name="continuetest">Continue Test</string>
+<string name="submittest">Submit Test</string>
+<string name="resumetest">Resume Test</string>
+<string name="exittest">Exit Test</string>
+<string name="testpaused">Test Paused</string>
+<string name="comingsoon">More Chapters Coming Soon!</string>
+<string name="delete_account">Delete Account</string>
+<string name="reason_delete_account">Write your reason</string>
+<string name="student_dashboard">Student Details</string>
+<string name="student_list">Students List</string>
+<string name="student_performance">Student Performance</string>
+<string name="add_student">Add Student</string>
+<string name="welcome">Welcome </string>
+<string name="select_language">Select Language</string>
+<string name="ask_your_doubt">ASK YOUR DOUBT</string>
+<string name="before_attempting">Before attempting this quiz, please make sure you have watched the associated video.</string>
+<string name="every_quetion_is">Every question is followed by options. Tap on the correct option.</string>
+<string name="the_time_you">The time you spend on each question is calculated.</string>
+<string name="quiz_attempted">Quiz Attempted</string>
+<string name="quiz">Quiz</string>
+<string name="quiz_analysis">Quiz Analysis</string>
+<string name="track">Track</string>
+<string name="mock_tests">Mock Tests</string>
+<string name="mock_test_performance">Mock Test Performance</string>
+<string name="ncert_solutions">NCERT Solutions</string>
+<string name="are_you_sure">Are you sure</string>
+<string name="areyou_sure_deactivate">Are you sure, Do you want to De-Activate Your Account ?</string>
+<string name="aryou_sure_renuwal">Are you sure, Do you want to Renuwal Your Account ?</string>
+<string name="you_want_go_back">Are you sure you want to go back?</string>
+<string name="you_want_exit">Are you sure you want to Exit Test?</string>
+<string name="activate">Activate</string>
+<string name="activate_now">Activate Now</string>
+<string name="upgrade_now">Upgrade Now</string>
+<string name="view_status">View Status</string>
+<string name="view_answer">Not Answered yet</string>
+<string name="closed">Closed</string>
+<string name="view_explanation">View Explanation</string>
+<string name="hide_explanation">Hide Explanation</string>
+<string name="marks_obtained_in_percentage">Marks Obtained in \nPercentage</string>
+<string name="marks">Marks</string>
+<string name="retake">Retake</string>
+<string name="review_text">Review Test</string>
+<string name="review_quiz">Review Quiz</string>
+<string name="mock_test_review">Mock Test Review</string>
+<string name="review">Review</string>
+<string name="quite">Quit</string>
+<string name="correct_answeres"> Correct Answers </string>
+<string name="wrong_answers"> Wrong Answers </string>
+<string name="attempted_on">Attempted On </string>
+<string name="attemped">Attempted</string>
+<string name="correct"> Correct</string>
+<string name="wrong"> Wrong</string>
+<string name="skip">Skip</string>
+<string name="get_started">Get Started</string>
+<string name="lectures">Lectures</string>
+<string name="duration">Duration</string>
+<string name="timup">Timeup!</string>
+<string name="do_you_realy_close_mocktest">Do you really want to finish the mock test?</string>
+<string name="do_you_realy_close_quiz">Do you really want to finish the quiz?</string>
+<string name="video_quality">Video Quality</string>
+<string name="languages">Languages</string>
+<string name="subtitles">Subtitles</string>
+<string name="Best">Best</string>
+<string name="Basic">Basic</string>
+<string name="average">Average</string>
+<string name="progress">Progress</string>
+<string name="Performance">Performance</string>
+<string name="days">Day(s)</string>
+<string name="months">Months</string>
+<string name="overall">Over All</string>
+<string name="chapter_performance">Chapter Performance</string>
+<string name="not_attempted">Not attempted</string>
+<string name="avaerage_marks">Average marks</string>
+<string name="in">in</string>
+<string name="attempts">attempts</string>
+<string name="no_tests_attempted_yet">Not Attempted Mock Test Yet!</string>
+<string name="your_anser">Your Answer</string>
+<string name="is_correct">is correct</string>
+<string name="you_have_select_correct_option">You have selected the correct option</string>
+<string name="you_did_not_attempt_this_question">You did not attempt this question.</string>
+<string name="you_have_selected_the_correct_option">You have selected the correct option</string>
+<string name="you_didnot_attempt_the_correct_option">You have selected the wrong option. The correct option is</string>
+<string name="the_answer_is">The answer is</string>
+<string name="min_marks">* Min Marks</string>
+<string name="max_marks">" * Max Marks"</string>
+<string name="whic_is_wrong_">Which is wrong. Correct Answer is</string>
+<string name="you_have_selected_the_option_as">You have selected the option as</string>
+<string name="wchic_is_absolute_right">Which is absolutely right</string>
+<string name="no_quiz_attempted">No Quiz Attempted</string>
+<string name="enter_school_code">Enter School Code</string>
+<string name="get_school_details">Get Details</string>
+<string name="school_name">School Name</string>
+<string name="school_village">School Village</string>
+<string name="school_district">School District</string>
+<string name="save">Save</string>
+<string name="select_class">Select Class</string>
+<string name="information_of_schoole">Information Of School</string>
+    <string name="no_content_found">No Content found with given search input</string>
+    <string name="talk_to_us">Talk to us\n1800-833-6464</string>
+    <string name="get_in_touch">Get in touch</string>
+    <string name="latest_doubts">Latest Doubts</string>
+    <string name="before_attempting_this_mock">Before attempting this mock test, please make sure you have watched all videos from the chapter.</string>
+    <string name="before_attempting_this_mock_test_please_make_sure_you_have_watched">"Before attempting this mock test, please make sure you have watched "</string>
+    <string name="chapter_videos">" chapter videos."</string>
+    <string name="write_your_message_here">Write your message here...</string>
+    <string name="send">Send</string>
+    <string name="_30_days">30 days</string>
+    <string name="minutes">" Minutes"</string>
+    <string name="clear_player_settings">Clear Player settings</string>
+    <string name="filters">Filters</string>
+    <string name="father_name">Father name</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pin_code">Pin code</string>
+    <string name="current_study_class">Current Study Class</string>
+    <string name="change_password">Change Password</string>
+    <!--<string name="currently_you_have">Currently you have %s Gold Coins and %s Silver Coins</string>-->
+</resources>

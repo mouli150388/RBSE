@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".quiz.ReviewQuiz">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_0dp"
+        android:layout_margin="@dimen/_0dp"
+        android:background="@color/transparent"
+        >
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:fitsSystemWindows="true">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:visibility="visible"
+                android:layout_height="?attr/actionBarSize"
+                app:popupTheme="@style/ToolbarTheme" >
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/header_text_size"
+                    android:layout_marginLeft="@dimen/_24dp"
+                    android:text="@string/review_text"
+                    />
+                <LinearLayout
+                    android:id="@+id/lnr_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5dp"
+                    android:gravity="center"
+                    android:layout_gravity="end|center_vertical"
+                    android:background="@drawable/ripple_radius"
+                    app:layout_collapseMode="pin">
+
+
+                    <ImageView
+                        android:id="@+id/img_home"
+                        android:layout_width="@dimen/back_icon_size"
+                        android:layout_height="@dimen/back_icon_size"
+
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:layout_marginStart="@dimen/_8dp"
+
+                        app:srcCompat="@drawable/ic_home_out"
+                        android:tint="@color/white"
+
+                        />
+                </LinearLayout>
+            </androidx.appcompat.widget.Toolbar>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="?attr/actionBarSize"
+
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/banner_quiz_height"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/review_quiz_top"
+                    />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:paddingTop="40dp"
+                    android:orientation="horizontal"
+                    android:background="#0DF5BCF5"
+                    android:paddingRight="10dp"
+
+                    >
+
+
+                    <FrameLayout
+                        android:layout_width="@dimen/progress_size"
+                        android:layout_height="@dimen/progress_size"
+                        android:layout_marginRight="3dp"
+                        android:orientation="vertical">
+                        <!--<ProgressBar
+                            android:id="@+id/progress_score"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+
+                            android:layout_height="match_parent"
+
+                            android:indeterminate="false"
+
+                            android:max="100"
+
+                            android:progress="75"
+
+                            android:progressDrawable="@drawable/circular_progress_one"
+
+                            android:secondaryProgress="100" />-->
+                        <com.tutorix.tutorialspoint.views.CircularProgressBarThumb
+                            android:id="@+id/holoCircularProgressBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            app:progress_background_color="@color/progress_circle_default"
+                            />
+                        <Button
+                            android:id="@+id/marks"
+                            android:layout_width="@dimen/progress_size"
+                            android:layout_height="@dimen/progress_size"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:background="@color/transparent"
+                            android:text=""
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="22sp" />
+
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical|right"
+
+                            android:orientation="vertical">
+
+
+
+
+                            <TextView
+                                android:id="@+id/correct"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/opensans_regular"
+                                android:gravity="center_vertical|right"
+                                android:padding="@dimen/_5dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textAllCaps="false"
+
+                                android:textColor="@color/correct_ans_color"
+                                android:textSize="@dimen/attempted_size"
+                                android:textStyle="bold" />
+
+
+
+
+
+                            <TextView
+                                android:id="@+id/notattempt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/opensans_regular"
+                                android:gravity="center_vertical|right"
+                                android:padding="@dimen/_5dp"
+
+                                android:singleLine="true"
+                                android:text=""
+                                android:textAllCaps="false"
+                                android:textColor="@color/wrong_ans_color"
+                                android:textSize="@dimen/attempted_size"
+                                android:textStyle="bold" />
+
+
+
+
+
+                            <TextView
+                                android:id="@+id/attempt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/opensans_regular"
+                                android:gravity="center_vertical|right"
+                                android:padding="@dimen/_5dp"
+                                android:singleLine="true"
+                                android:text=""
+                                android:textAllCaps="false"
+                                android:textColor="@color/attempted_color"
+                                android:textSize="@dimen/attempted_size"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+
+
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rel_headers"
+
+
+            android:layout_height="wrap_content">
+
+            <RadioGroup
+                android:id="@+id/radio_sub_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+
+                android:gravity="center"
+
+                android:visibility="visible"
+                android:orientation="horizontal">
+
+
+                <RadioButton
+                    android:id="@+id/radio_phy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:text="@string/physics"
+                    android:button="@null"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:minHeight="30dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:background="@drawable/test_series_radio_selector"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_che"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/chemistry"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:background="@drawable/test_series_radio_selector"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    tools:ignore="ButtonStyle" />
+
+
+
+                <RadioButton
+                    android:id="@+id/radio_bio"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:button="@null"
+                    android:text="@string/biology"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+                    android:background="@drawable/test_series_radio_selector"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+                    android:visibility="gone"
+                    />
+                <RadioButton
+                    android:id="@+id/radio_math"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/mathematics"
+
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:minHeight="30dp"
+                    android:background="@drawable/test_series_radio_selector"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="10sp"
+
+                    android:visibility="gone"
+                    />
+
+            </RadioGroup>
+
+        </RelativeLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+    <include
+        layout="@layout/content_chapters"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="match_parent"
+        />
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

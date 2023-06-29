@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- used to need this custom namespace with 'app compatibility' libraries -->
+    <!--xmlns:myapp="http://schemas.android.com/apk/res-auto">-->
+
+    <!-- from the docs: to request that an item appear directly in the action bar as an action button, include showAsAction="ifRoom" -->
+    <!-- menu resources: http://developer.android.com/guide/topics/resources/menu-resource.html -->
+
+    <!-- add quote -->
+    <item
+        android:id="@+id/record"
+        android:icon="@drawable/ic_microphone"
+        android:title="menu_new_quote"
+        app:showAsAction="ifRoom" />
+   <!-- <item
+        android:id="@+id/menu_item_new_quote"
+        android:icon="@drawable/ic_keyboard_white_24dp"
+        android:title="menu_new_quote"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_save"
+        android:icon="@drawable/ic_save_small"
+        android:title="menu_new_quote"
+        app:showAsAction="always" />-->
+
+
+</menu>

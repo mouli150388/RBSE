@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".activities.ConnectusActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/activstion_background"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="@dimen/_5dp"
+                android:gravity="top|center_horizontal"
+                android:fontFamily="@font/opensans_regular"
+                android:padding="10dp"
+                android:text="@string/connect_with_us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size" />
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_16dp"
+        android:layout_marginRight="@dimen/_16dp"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/lnr_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+
+                android:layout_width="@dimen/_48dp"
+                app:srcCompat="@drawable/ic_launcher_round_place"
+                android:layout_height="@dimen/_48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:orientation="vertical"
+                >
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/official_website"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_16sp" />
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://www.tutorix.com/"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_10sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:srcCompat="@drawable/ic_right_back"
+                android:rotation="180"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:visibility="visible"
+            android:background="@color/new_color_background" />
+        <LinearLayout
+            android:id="@+id/lnr_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+                android:id="@+id/img_facebook"
+                android:layout_width="@dimen/_48dp"
+                app:srcCompat="@drawable/ic_facebook"
+                android:layout_height="@dimen/_48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:orientation="vertical"
+                >
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/facebook"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_16sp" />
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://m.facebook.com/tutorixind/"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:srcCompat="@drawable/ic_right_back"
+                android:rotation="180"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:visibility="visible"
+            android:background="@color/new_color_background" />
+
+
+        <LinearLayout
+            android:id="@+id/lnr_linkedin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+
+                android:layout_width="@dimen/_48dp"
+                app:srcCompat="@drawable/ic_linkedin"
+                android:layout_height="@dimen/_48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:orientation="vertical"
+                >
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/linkedin"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_16sp" />
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://www.linkedin.com/mwlite/company/tutorix"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:srcCompat="@drawable/ic_right_back"
+                android:rotation="180"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:visibility="visible"
+            android:background="@color/new_color_background" />
+        <LinearLayout
+            android:id="@+id/lnr_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+                android:id="@+id/img_twitter"
+                android:layout_width="@dimen/_48dp"
+                app:srcCompat="@drawable/ic_twitter"
+                android:layout_height="@dimen/_48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:orientation="vertical"
+                >
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/twitter"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_16sp" />
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://twitter.com/TutorixIndia"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:srcCompat="@drawable/ic_right_back"
+                android:rotation="180"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:visibility="visible"
+            android:background="@color/new_color_background" />
+
+        <LinearLayout
+            android:id="@+id/lnr_instagram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+
+                android:layout_width="@dimen/_48dp"
+                app:srcCompat="@drawable/ic_instagram"
+                android:layout_height="@dimen/_48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:orientation="vertical"
+                >
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/instagram"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_16sp" />
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://www.instagram.com/tutorixindia/"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:srcCompat="@drawable/ic_right_back"
+                android:rotation="180"
+                android:layout_height="wrap_content" />
+        </LinearLayout> <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2dp"
+            android:visibility="visible"
+            android:background="@color/new_color_background" />
+
+        <LinearLayout
+            android:id="@+id/lnr_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+            android:background="@drawable/ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/_5dp">
+
+            <ImageView
+
+                android:layout_width="@dimen/_48dp"
+                app:srcCompat="@drawable/ic_youtube"
+                android:layout_height="@dimen/_48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/_5dp"
+                android:padding="@dimen/_5dp"
+                android:orientation="vertical"
+                >
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="@string/youtube"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_16sp" />
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://www.youtube.com/c/Tutorixindia"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/menu_activity_text"
+
+                    android:textSize="@dimen/_10sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                app:srcCompat="@drawable/ic_right_back"
+                android:rotation="180"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    
+   
+
+
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

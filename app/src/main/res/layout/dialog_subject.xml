@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/new_color_background"
+    android:orientation="vertical"
+    android:elevation="@dimen/_20dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/app_background"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/top_main_background"
+        android:layout_height="@dimen/banner_quiz_height">
+        <LinearLayout
+            android:id="@+id/lnr_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:padding="@dimen/_5dp"
+            >
+            <ImageView
+
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+                app:srcCompat="@drawable/ic_left_arrow"
+                />
+
+
+        </LinearLayout>
+        <include layout="@layout/cloude_image_view"
+
+            />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/img_logo_subj"
+        android:layout_width="@dimen/profile_height"
+        android:background="@drawable/circle_white"
+        android:layout_height="@dimen/profile_height"
+        android:layout_marginTop="@dimen/sinuplogotop"
+        android:padding="@dimen/_1dp"
+        android:elevation="10dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/quiz_top_icon"
+
+        />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:scrollbars="none"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:gravity="center"
+
+                android:padding="@dimen/_8dp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:orientation="horizontal">
+
+                        <!-- Physics Layout -->
+                        <LinearLayout
+                            android:id="@+id/lnr_math"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:background="@drawable/home_math_background"
+                            android:layout_weight="1"
+
+                            android:padding="5dp"
+                            >
+                            <ImageView
+                                android:id="@+id/txt_math"
+                                android:layout_width="50dp"
+                                android:layout_height="65dp"
+
+                                android:layout_margin="5dp"
+
+                                app:srcCompat="@drawable/ic_maths"
+                                android:transitionName="trans" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/mathematics"
+                                android:textColor="@color/white"
+                                android:clickable="false"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textAllCaps="true"
+                                />
+                        </LinearLayout>
+                     <!--   <ImageView
+                            android:id="@+id/txt_phy"
+                            style="@style/MaterialAnimations"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            app:srcCompat="@drawable/ic_physics"
+                            android:scaleType="centerCrop"
+                            android:transitionName="trans" />-->
+
+                        <!-- Chemistry Layout-->
+                       <!-- <ImageView
+                            android:id="@+id/txt_che"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            app:srcCompat="@drawable/ic_chemistry"
+                            android:scaleType="centerCrop"
+                            android:transitionName="trans" />-->
+                        <LinearLayout
+                            android:id="@+id/lnr_phy"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            android:padding="5dp"
+                            android:background="@drawable/home_phy_background"
+                            android:layout_weight="1"
+                            >
+                            <ImageView
+                                android:id="@+id/txt_phy"
+                                style="@style/MaterialAnimations"
+                                android:layout_width="60dp"
+                                android:layout_height="65dp"
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_physics"
+                                android:transitionName="trans" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/physics"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textAllCaps="true"
+                                android:clickable="false"
+                                android:textColor="@color/white"
+                                />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Maths & Biology -->
+                    <LinearLayout
+                        android:layout_width="280dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:layout_gravity="center_horizontal"
+
+                        android:orientation="horizontal">
+
+                        <!-- Maths Layout -->
+                      <!--  <ImageView
+                            android:id="@+id/txt_math"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            android:scaleType="centerCrop"
+                            app:srcCompat="@drawable/ic_maths"
+                            android:transitionName="trans" />-->
+                        <!-- Biology Layout-->
+                       <!-- <ImageView
+                            android:id="@+id/txt_bio"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_margin="2dp"
+                            app:srcCompat="@drawable/ic_biology"
+
+                            android:scaleType="centerCrop"
+                            android:transitionName="trans" />-->
+                        <!-- Chemistry Layout-->
+                        <LinearLayout
+                            android:id="@+id/lnr_che"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            android:padding="5dp"
+                            android:background="@drawable/home_che_background"
+                            android:layout_weight="1"
+                            >
+                            <ImageView
+                                android:id="@+id/txt_che"
+                                android:layout_width="60dp"
+                                android:layout_height="65dp"
+
+
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_chemistry"
+
+                                android:transitionName="trans" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/chemistry"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:clickable="false"
+                                />
+                        </LinearLayout>
+                        <!-- Biology Layout-->
+                        <LinearLayout
+                            android:id="@+id/lnr_bio"
+                            android:layout_width="@dimen/_0dp"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:gravity="center"
+
+                            android:padding="5dp"
+                            android:background="@drawable/home_bio_background"
+                            android:layout_weight="1"
+                            >
+                            <ImageView
+                                android:id="@+id/txt_bio"
+                                android:layout_width="60dp"
+                                android:layout_height="65dp"
+
+                                android:layout_margin="5dp"
+                                app:srcCompat="@drawable/ic_biology"
+
+
+                                android:transitionName="trans" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/biology"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:clickable="false"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Experts Layout-->
+
+                </LinearLayout>
+                <Button
+                    android:layout_below="@+id/card"
+                    android:id="@+id/tvCancel"
+                    android:layout_width="wrap_content"
+                    android:minEms="6"
+                    android:layout_height="35dp"
+                    android:layout_margin="@dimen/_16dp"
+android:visibility="gone"
+                    android:background="@drawable/login_button"
+                    android:fontFamily="@font/allerta_stencil"
+                    android:gravity="center"
+                    android:text="@string/cancel"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/profile_height"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/app_name"
+        app:srcCompat="@drawable/expertise" />
+    </LinearLayout>
+</FrameLayout>

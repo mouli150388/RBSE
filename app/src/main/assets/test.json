@@ -1,0 +1,1025 @@
+{
+  "mathematics": {
+    "sections": [
+      {
+        "section_id": 1,
+        "section_name": "हमारे नंबरों को जानना",
+        "section_image": "knowing-our-numbers.png",
+        "section_status": "P",
+        "lecture_count": 8,
+        "question_count": 82,
+        "total_duration": "45:02",
+        "section_demo_flag": "Y",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 1,
+            "lecture_name": "हमारे नंबरों को जानना",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:05",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 2,
+            "lecture_name": "संख्याओं की तुलना करना",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:43",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 3,
+            "lecture_name": "शिफ्टिंग डिजिट्स",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:11",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 4,
+            "lecture_name": "पठन संख्याएं",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:02",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 5,
+            "lecture_name": "न्यूमेरेशन के सिस्टम",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:16",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 6,
+            "lecture_name": "माप की इकाइयां",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:20",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 7,
+            "lecture_name": "अनुमान को समझना",
+            "lecture_status": "P",
+            "lecture_duration": "00:08:43",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 8,
+            "lecture_name": "रोमन नंबर",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:52",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 2,
+        "section_name": "पूरे नंबर",
+        "section_image": "whole-numbers.png",
+        "section_status": "P",
+        "lecture_count": 6,
+        "question_count": 67,
+        "total_duration": "37:26",
+        "section_demo_flag": "Y",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 9,
+            "lecture_name": "संपूर्ण संख्याओं का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:55",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 10,
+            "lecture_name": "नंबर लाइन पर संचालन",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:25",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 11,
+            "lecture_name": "संपूर्ण संख्याओं के गुण",
+            "lecture_status": "P",
+            "lecture_duration": "00:08:16",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 12,
+            "lecture_name": "एसोसिएटिव और डिस्ट्रीब्यूटिव प्रॉपर्टीज़",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:07",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 13,
+            "lecture_name": "संपूर्ण संख्याओं का उपयोग करने वाले पैटर्न",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:41",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 14,
+            "lecture_name": "क्या आप BODMAS के बारे में जानते हैं?",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:28",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 3,
+        "section_name": "नंबरों के साथ खेलना",
+        "section_image": "playing-with-numbers.png",
+        "section_status": "P",
+        "lecture_count": 10,
+        "question_count": 108,
+        "total_duration": "62:08",
+        "section_demo_flag": "Y",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 15,
+            "lecture_name": "संख्याओं के साथ खेलना (परिचय)",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:11",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 16,
+            "lecture_name": "गुणक और गुणक",
+            "lecture_status": "P",
+            "lecture_duration": "00:10:10",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 17,
+            "lecture_name": "प्राइम नंबर और कम्पोजिट नंबर",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:23",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 18,
+            "lecture_name": "सम संख्याएं और विषम संख्याएं",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:07",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 19,
+            "lecture_name": "संख्याओं की विभाज्यता के लिए परीक्षण",
+            "lecture_status": "P",
+            "lecture_duration": "00:09:28",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 20,
+            "lecture_name": "सामान्य कारक और सामान्य गुणक",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:55",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 21,
+            "lecture_name": "प्राइम फैक्टराइजेशन",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:11",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 22,
+            "lecture_name": "प्राइम फैक्टराइजेशन द्वारा एचसीएफ",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:08",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 23,
+            "lecture_name": "विभाजन विधि द्वारा HCF",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:30",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 24,
+            "lecture_name": "LCM को समझना",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:02",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 4,
+        "section_name": "बुनियादी ज्यामितीय विचार",
+        "section_image": "basic-geometrical-ideas.png",
+        "section_status": "P",
+        "lecture_count": 7,
+        "question_count": 74,
+        "total_duration": "44:58",
+        "section_demo_flag": "Y",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 25,
+            "lecture_name": "ज्यामितीय आकृतियों का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:29",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 26,
+            "lecture_name": "बिंदु, रेखा खंड, किरणें और रेखाएँ",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:42",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 27,
+            "lecture_name": "वक्र और बहुभुज",
+            "lecture_status": "P",
+            "lecture_duration": "00:09:27",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 28,
+            "lecture_name": "कोण",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:39",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 29,
+            "lecture_name": "त्रिभुज",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:03",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 30,
+            "lecture_name": "चतुर्भुज",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:00",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 31,
+            "lecture_name": "सर्कल्स",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:15",
+            "lecture_demo_flag": "Y",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 5,
+        "section_name": "प्राथमिक आकृतियों को समझना",
+        "section_image": "understanding-elementary-shape.png",
+        "section_status": "P",
+        "lecture_count": 9,
+        "question_count": 75,
+        "total_duration": "65:28",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 32,
+            "lecture_name": "प्राथमिक आकृतियों को समझना",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:40",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 33,
+            "lecture_name": "लाइन सेगमेंट को मापना",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:44",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 34,
+            "lecture_name": "कोणों के प्रकार",
+            "lecture_status": "P",
+            "lecture_duration": "00:09:04",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 35,
+            "lecture_name": "मापने के कोण",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:26",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 36,
+            "lecture_name": "लंबवत द्विभाजक",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:18",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 37,
+            "lecture_name": "त्रिभुजों के प्रकार",
+            "lecture_status": "P",
+            "lecture_duration": "00:08:55",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 38,
+            "lecture_name": "चतुर्भुजों के प्रकार",
+            "lecture_status": "P",
+            "lecture_duration": "00:08:41",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 39,
+            "lecture_name": "बहुभुज के प्रकार",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:35",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 40,
+            "lecture_name": "त्रि-आयामी आकृतियाँ",
+            "lecture_status": "P",
+            "lecture_duration": "00:10:30",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 6,
+        "section_name": "इंटीजर्स",
+        "section_image": "integers.png",
+        "section_status": "P",
+        "lecture_count": 6,
+        "question_count": 60,
+        "total_duration": "40:13",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 41,
+            "lecture_name": "पूर्णांकों का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:45",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 42,
+            "lecture_name": "नंबर लाइन पर पूर्णांकों का प्रतिनिधित्व",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:10",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 43,
+            "lecture_name": "पूर्णांकों की तुलना करना",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:58",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 44,
+            "lecture_name": "पूर्णांकों का योग",
+            "lecture_status": "P",
+            "lecture_duration": "00:10:22",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 45,
+            "lecture_name": "पूर्णांकों का घटाव",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:52",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 46,
+            "lecture_name": "पूर्णांकों का गुणन और विभाजन",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:37",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 7,
+        "section_name": "अंश",
+        "section_image": "fractions.png",
+        "section_status": "P",
+        "lecture_count": 9,
+        "question_count": 88,
+        "total_duration": "49:38",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 47,
+            "lecture_name": "अंशों का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:59",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 48,
+            "lecture_name": "अंशों के प्रकार",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:53",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 49,
+            "lecture_name": "अंशों का रूपांतरण",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:34",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 50,
+            "lecture_name": "नंबर लाइन पर अंशों का प्रतिनिधित्व",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:54",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 51,
+            "lecture_name": "समतुल्य अंश",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:24",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 52,
+            "lecture_name": "अंशों का सरलीकरण",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:54",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 53,
+            "lecture_name": "फ्रैक्शंस की तरह और असमान फ्रैक्शंस",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:28",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 54,
+            "lecture_name": "अंशों की तुलना",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:15",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 55,
+            "lecture_name": "अंशों का जोड़ और घटाव",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:13",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 56,
+            "lecture_name": "जोड़ और घटाव के विशेष मामले",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:49",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 8,
+        "section_name": "दशमलव",
+        "section_image": "decimals.png",
+        "section_status": "P",
+        "lecture_count": 8,
+        "question_count": 86,
+        "total_duration": "60:11",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 57,
+            "lecture_name": "दशमलव संख्याओं का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:37",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 58,
+            "lecture_name": "दशमलव का स्थानीय मान",
+            "lecture_status": "P",
+            "lecture_duration": "00:09:52",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 59,
+            "lecture_name": "दशमलव की तुलना करना",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:02",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 61,
+            "lecture_name": "अंशों को दशमलव में परिवर्तित करना",
+            "lecture_status": "P",
+            "lecture_duration": "00:10:41",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 60,
+            "lecture_name": "संख्या रेखा पर दशमलव का प्रतिनिधित्व",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:03",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 62,
+            "lecture_name": "दशमलव के वास्तविक जीवन के अनुप्रयोग",
+            "lecture_status": "P",
+            "lecture_duration": "00:08:44",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 63,
+            "lecture_name": "दशमलव का योग",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:11",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 64,
+            "lecture_name": "दशमलव का घटाव",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:57",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 9,
+        "section_name": "डेटा हैंडलिंग",
+        "section_image": "data-handling.png",
+        "section_status": "P",
+        "lecture_count": 4,
+        "question_count": 38,
+        "total_duration": "23:16",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 65,
+            "lecture_name": "डेटा हैंडलिंग का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:32",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 66,
+            "lecture_name": "डेटा रिकॉर्ड करना और व्यवस्थित करना",
+            "lecture_status": "P",
+            "lecture_duration": "00:08:09",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 67,
+            "lecture_name": "पिक्टोग्राफ",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:19",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 68,
+            "lecture_name": "बार ग्राफ़",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:10",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 10,
+        "section_name": "क्षेत्रमिति",
+        "section_image": "mensuration.png",
+        "section_status": "P",
+        "lecture_count": 4,
+        "question_count": 46,
+        "total_duration": "15:31",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 69,
+            "lecture_name": "क्षेत्रमिति का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:02:57",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 70,
+            "lecture_name": "पेरीमीटर",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:55",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 72,
+            "lecture_name": "अनियमित आकृतियों का क्षेत्रफल",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:23",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 71,
+            "lecture_name": "आयतों और चौकों का क्षेत्रफल",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:04",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 11,
+        "section_name": "बीजगणित",
+        "section_image": "algebra.png",
+        "section_status": "P",
+        "lecture_count": 7,
+        "question_count": 87,
+        "total_duration": "49:56",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 73,
+            "lecture_name": "बीजगणित का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:53",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 74,
+            "lecture_name": "वेरिएबल्स की खोज",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:09",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 75,
+            "lecture_name": "ज्यामिति में वेरिएबल्स का उपयोग करना",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:32",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 76,
+            "lecture_name": "अंकगणित के साथ वेरिएबल्स का उपयोग करना",
+            "lecture_status": "P",
+            "lecture_duration": "00:08:21",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 77,
+            "lecture_name": "वेरिएबल्स के साथ बीजगणितीय अभिव्यक्तियां",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:56",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 78,
+            "lecture_name": "नंबर गेम का अनुमान लगाएं",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:34",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 79,
+            "lecture_name": "एक समीकरण क्या है?",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:09",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 12,
+        "section_name": "अनुपात और समानुपात",
+        "section_image": "ratio-and-proportion.png",
+        "section_status": "P",
+        "lecture_count": 3,
+        "question_count": 36,
+        "total_duration": "18:23",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 80,
+            "lecture_name": "अनुपात का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:36",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 81,
+            "lecture_name": "समानुपात को समझना",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:48",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 82,
+            "lecture_name": "एकात्मक विधि",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:26",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 13,
+        "section_name": "समरूपता",
+        "section_image": "symmetry.png",
+        "section_status": "P",
+        "lecture_count": 5,
+        "question_count": 38,
+        "total_duration": "22:75",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 83,
+            "lecture_name": "समरूपता का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:43",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 84,
+            "lecture_name": "समरूपता की रेखा",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:29",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 85,
+            "lecture_name": "परावर्तन और समरूपता",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:12",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 86,
+            "lecture_name": "समरूपता के अनुप्रयोग",
+            "lecture_status": "P",
+            "lecture_duration": "00:03:02",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 87,
+            "lecture_name": "समरूपता बनाना",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:19",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      },
+      {
+        "section_id": 14,
+        "section_name": "प्रैक्टिकल ज्योमेट्री",
+        "section_image": "practical-geometry.png",
+        "section_status": "P",
+        "lecture_count": 6,
+        "question_count": 46,
+        "total_duration": "33:33",
+        "section_demo_flag": "N",
+        "section_quiz": "quiz.json",
+        "lectures": [
+          {
+            "lecture_id": 88,
+            "lecture_name": "प्रैक्टिकल ज्योमेट्री का परिचय",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:54",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 89,
+            "lecture_name": "लाइन सेगमेंट और सर्कल्स का निर्माण",
+            "lecture_status": "P",
+            "lecture_duration": "00:05:55",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 90,
+            "lecture_name": "लंबवत रेखाओं का निर्माण",
+            "lecture_status": "P",
+            "lecture_duration": "00:07:03",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 91,
+            "lecture_name": "लंबवत द्विभाजक का निर्माण",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:30",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 92,
+            "lecture_name": "एंगल्स का निर्माण",
+            "lecture_status": "P",
+            "lecture_duration": "00:06:17",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          },
+          {
+            "lecture_id": 93,
+            "lecture_name": "एंगल बायसेक्टर्स का निर्माण",
+            "lecture_status": "P",
+            "lecture_duration": "00:04:17",
+            "lecture_demo_flag": "N",
+            "lecture_notes": "notes.html",
+            "lecture_quiz": "quiz.json"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".anaylysis.TimeVsSubFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:fontFamily="@font/opensans_regular"
+                android:text="@string/minuts"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_days"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:text="Subject v/s Spent Time"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/lnr_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+
+                android:gravity="right|center_vertical">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/physics"
+
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="14dp"
+
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/img_filter"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:clickable="false"
+                    android:padding="@dimen/_5dp"
+                    android:tint="@color/colorPrimary"
+                    app:srcCompat="@drawable/ic_three_dots_fill" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:text="@string/minuts"
+                android:textColor="@color/colorPrimary" />
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:minHeight="@dimen/quiz_line_height"
+                />
+
+            <TextView
+                android:id="@+id/txt_timespent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_margin="@dimen/_5dp"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

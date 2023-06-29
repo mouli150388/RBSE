@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".testseries.TestSeriesTrack">
+
+    <RelativeLayout
+        android:id="@+id/rel_top_main"
+        android:layout_width="match_parent"
+        android:background="@drawable/top_main_background"
+        android:layout_height="@dimen/banner_quiz_height"
+        android:adjustViewBounds="true"
+
+        android:contentDescription="@string/app_name"
+        android:cropToPadding="true"
+        app:expandedTitleMarginEnd="64dp"
+        app:expandedTitleMarginStart="48dp"
+        app:expandedTitleTextAppearance="@android:color/transparent"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/txt_header"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/header_text_size"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/white"
+            />
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_collapseMode="pin"
+            style="@style/ToolbarTheme"
+            android:textAlignment="center"
+            android:gravity="center"
+            app:titleTextColor="@color/white"
+            app:title=""
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/ripple_radius"
+                android:layout_marginEnd="@dimen/_8dp"
+                app:srcCompat="@drawable/filter"
+                android:tint="@color/white"
+                android:visibility="gone"
+                app:layout_collapseMode="pin" />
+
+            <LinearLayout
+                android:id="@+id/lnr_gridlist"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="end|center"
+                android:gravity="center"
+                android:paddingLeft="@dimen/_10dp"
+                android:paddingRight="@dimen/_10dp"
+                android:visibility="gone"
+                android:background="@drawable/ripple_radius"
+                app:layout_collapseMode="pin"
+
+                >
+
+                <CheckBox
+                    android:id="@+id/list_grid"
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:background="@drawable/text_color_selector"
+                    android:backgroundTint="@color/white"
+                    android:button="@null"
+                    android:checked="false"
+                    android:clickable="false"
+                    android:enabled="false"
+                    android:focusableInTouchMode="false"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lnr_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:gravity="center"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/ripple_radius"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/img_home"
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_8dp"
+
+                    app:srcCompat="@drawable/ic_home_out"
+                    android:tint="@color/white"
+
+                    />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <include layout="@layout/cloude_image_view"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_gif"
+        android:layout_width="@dimen/profile_height"
+        android:visibility="visible"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="@dimen/sinuplogotop"
+        android:elevation="@dimen/_10dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/circle_white"
+        android:layout_height="@dimen/profile_height" />
+
+   <!-- <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/top_main_background_small"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_marginRight="@dimen/_50dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_22sp"
+                    android:gravity="center"
+                    android:id="@+id/txt_header" />
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:id="@+id/lnr_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="right|center_vertical"
+                android:background="@drawable/ripple_radius"
+                android:gravity="center"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+                    android:layout_margin="@dimen/_10dp"
+                    app:srcCompat="@drawable/ic_home_out"
+                    android:tint="@color/white" />
+            </LinearLayout>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="220dp"
+            android:layout_height="140dp"
+
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_above="@+id/rel_bottom"
+            app:srcCompat="@drawable/mockup_test" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_above="@+id/rel_bottom"
+            android:layout_alignParentTop="true"
+            >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/lnr_ruls_1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <include layout="@layout/test_rule_one"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_ruls_2"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+                <include layout="@layout/test_rule_two"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_ruls_3"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent">
+                <include layout="@layout/test_rule_three"/>
+
+            </LinearLayout>
+</LinearLayout>
+        </ScrollView>
+
+            <RelativeLayout
+                android:id="@+id/rel_bottom"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_prev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_gravity="left"
+                android:visibility="invisible"
+                android:layout_alignParentLeft="true"
+                android:shadowColor="#A8A8A8"
+                android:background="@color/transparent"
+                android:text="@string/previous"
+                android:drawableLeft="@drawable/ic_left_arrow_black"
+                android:drawablePadding="@dimen/_5dp"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/defaultTextColor"
+                android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_button"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:minEms="10"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_20dp"
+
+                    android:layout_marginTop="@dimen/quiz_button_top"
+                    android:text="@string/next"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:textColor="#FFF" />
+
+
+</RelativeLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>

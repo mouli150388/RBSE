@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".activities.OrderDetailsActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/activstion_background"
+        android:scaleType="fitXY"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_16dp"
+        android:elevation="@dimen/_10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_15dp"
+            android:elevation="10dp"
+
+            android:layout_marginRight="@dimen/subject_margin"
+            android:layout_marginLeft="@dimen/subject_margin"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+android:layout_margin="@dimen/_5dp"
+          >
+            <TextView
+                android:id="@+id/txt_orderid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_title"
+                android:layout_margin="@dimen/_2dp"
+                android:layout_toLeftOf="@+id/img_item"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:text="" />
+            <TextView
+                android:id="@+id/txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2dp"
+                android:layout_toLeftOf="@+id/img_item"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:text="" />
+            <TextView
+                android:id="@+id/txt_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2dp"
+                android:layout_toLeftOf="@+id/img_item"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_below="@+id/txt_orderid"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:text="" />
+            <TextView
+                android:id="@+id/txt_amnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2dp"
+                android:layout_toLeftOf="@+id/img_item"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_below="@+id/txt_desc"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:text="" />
+
+
+
+            <ImageView
+                android:id="@+id/img_item"
+                android:layout_width="@dimen/_50dp"
+                android:layout_height="80dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/_5dp" />
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_2dp"
+                android:layout_alignParentRight="true"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_below="@+id/img_item"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_16sp"
+                android:text="" />
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/subject_margin"
+            android:layout_marginLeft="@dimen/subject_margin"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/trackinfo"
+            android:textSize="@dimen/_18dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_15dp"
+            android:elevation="10dp"
+            android:padding="@dimen/_10dp"
+
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/subject_margin"
+            android:layout_marginLeft="@dimen/subject_margin"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:weightSum="3"
+                android:padding="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_15dp"
+                android:layout_marginRight="@dimen/_15dp"
+                android:gravity="center_vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_one"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/drawable_track_status"
+                    android:button="@null"
+                    android:enabled="false"
+
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/txt_one"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:background="@color/track_order_c_color"
+                    android:layout_height="4dp" />
+                <RadioButton
+                    android:id="@+id/radio_two"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:enabled="false"
+                    android:background="@drawable/drawable_track_status"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/txt_two"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:background="@color/track_order_c_color"
+                    android:layout_height="4dp" />
+                <RadioButton
+                    android:id="@+id/radio_three"
+                    android:layout_width="20dp"
+                    android:enabled="false"
+                    android:layout_height="20dp"
+                    android:background="@drawable/drawable_track_status"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <TextView
+                    android:id="@+id/txt_three"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/opensans_regular"
+                    android:background="@color/track_order_c_color"
+                    android:layout_height="4dp" />
+                <RadioButton
+                    android:id="@+id/radio_four"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:enabled="false"
+                    android:background="@drawable/drawable_track_status"
+                    android:button="@null"
+                    android:checked="false" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/lnr_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="4"
+                android:paddingLeft="@dimen/_5dp"
+                android:paddingRight="@dimen/_5dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:gravity="center_vertical"
+                >
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                   android:text="Placed"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Preparing"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Dispatched"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Delivered"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+       <!-- <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:text="@string/billingdetails"
+            android:textSize="@dimen/_18dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5dp"
+        android:orientation="vertical"
+        android:background="@drawable/shadow"
+        android:padding="@dimen/_10dp">
+        <TextView
+            android:id="@+id/txt_billing"
+            android:layout_width="match_parent"
+
+            android:textColor="@color/black"
+
+            android:text="Name:\n city\nState\nConuntry"
+            android:layout_height="wrap_content" />
+    </LinearLayout>-->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="@dimen/_15dp"
+            android:elevation="10dp"
+            android:padding="@dimen/_10dp"
+
+            android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/subject_margin"
+            android:layout_marginLeft="@dimen/subject_margin"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/lnr_shipping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/shippingdetails"
+            android:textSize="@dimen/_18dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_5dp"
+            android:layout_marginBottom="@dimen/_20dp"
+            android:orientation="vertical"
+
+            android:padding="@dimen/_10dp">
+            <TextView
+                android:id="@+id/txt_shipping"
+                android:layout_width="match_parent"
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@color/black"
+                android:text=""
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

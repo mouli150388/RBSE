@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnr_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rel_top_main"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_quiz_height">
+
+            <TextView
+                android:id="@+id/txt_header"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:text="Score Board"
+                android:textColor="@color/white"
+                android:textSize="@dimen/header_text_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginStart="10sp"
+                android:background="@drawable/ripple_radius"
+                android:onClick="goBack"
+                android:padding="@dimen/_8dp"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_10dp"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:background="@drawable/ripple_radius"
+                android:onClick="home"
+                android:padding="@dimen/_8dp"
+                app:layout_collapseMode="pin">
+
+
+                <ImageView
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+                    android:layout_margin="@dimen/_10dp"
+                    android:tint="@color/white"
+                    app:srcCompat="@drawable/ic_home_out" />
+            </LinearLayout>
+
+            <include layout="@layout/cloude_image_view" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/sinuplogotop"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/img_logo_subj"
+                android:layout_width="@dimen/profile_height"
+                android:layout_height="@dimen/profile_height"
+                android:background="@drawable/circle_white"
+                android:contentDescription="@string/app_name"
+                android:elevation="10dp"
+                app:srcCompat="@drawable/ic_score_bord"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--<include layout="@layout/quiz_top_layout"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/img_bottom"
+            android:layout_width="220dp"
+            android:layout_height="180dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/mockup_test" />
+
+        <ScrollView
+            android:id="@+id/scroll_ruls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--  <TextView
+                    android:id="@+id/txt_sectionname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    />
+                <TextView
+                    android:id="@+id/txt_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@color/black"
+                    android:gravity="center|right"
+                    />-->
+                <include layout="@layout/layout_quiz_ruls_list" />
+            </LinearLayout>
+
+        </ScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_mocktest"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="180dp"
+            android:scrollbars="vertical" />
+    </RelativeLayout>
+
+</LinearLayout>

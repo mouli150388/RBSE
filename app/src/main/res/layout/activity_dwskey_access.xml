@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".dsw.DSWActivity">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_margin="1dp"
+        android:scaleType="centerCrop"
+
+        app:srcCompat="@drawable/dsw_test" />
+
+    <!-- <androidx.cardview.widget.CardView
+         android:layout_width="match_parent"
+         app:cardBackgroundColor="@color/transparent"
+         android:layout_height="match_parent">-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent"
+
+        >
+        <!-- <androidx.cardview.widget.CardView
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="24dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="@dimen/_16dp"
+                android:layout_marginTop="@dimen/_16dp"
+                android:src="@drawable/ic_left_arrow"
+                android:tint="@color/dsw_color"></ImageView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_16sp"
+                android:layout_marginRight="@dimen/_16sp"
+                android:elevation="@dimen/_40dp"
+                android:gravity="center">
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/_10dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center_vertical"
+                    android:lineSpacingExtra="2dp"
+
+                    android:padding="@dimen/_5dp"
+                    android:text="@string/dsw_str1"
+                    android:textColor="@color/dsw_color"
+                    android:textSize="@dimen/_32dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="180dp"
+                    android:elevation="@dimen/_32dp"
+                    android:src="@drawable/ic_dsw_logo" />
+
+            </LinearLayout>
+
+            <com.tutorix.tutorialspoint.views.CustomTextview
+                android:id="@+id/txt_dsw_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/_16sp"
+                android:layout_marginRight="@dimen/_16sp"
+                android:fontFamily="@font/opensans_regular"
+
+                android:text="@string/dsw_str2"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sp"
+                android:hint="@string/enterdws_key">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edit_key"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:minHeight="@dimen/_40dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/btn_viewrsult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_shadow"
+                android:gravity="center"
+                android:minHeight="@dimen/_35dp"
+                android:layout_margin="@dimen/_16sp"
+                android:text="@string/checkresult"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16sp" />
+
+
+        </LinearLayout>
+        <!--  </androidx.cardview.widget.CardView>-->
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

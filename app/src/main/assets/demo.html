@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+
+</head>
+<body>
+<h2>Get URL for the Current web page/window</h2>
+<p id="id_url"></p>
+
+<input type="button" value="Load new page" onclick="newPage()">
+
+<script>
+
+var data="The full URL of this page is:<br>" + window.location.href;
+data=data+ "<br> <br> Host name of the Page : " +window.location.hostname;
+data=data+ "<br> <br>Path of the Page : " +window.location.pathname;
+data=data+ "<br> <br>Port of the page : " +window.location.port;
+document.getElementById("id_url").innerHTML =data;
+
+console.log( window.location.href);
+function newPage() {
+  window.location.assign("https://rrtutors.com")
+}
+</script>
+</body>
+</html>

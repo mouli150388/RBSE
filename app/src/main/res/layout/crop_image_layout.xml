@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA2E2D2D"
+
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ImageView_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="centerInside"
+        tools:ignore="contentDescription" />
+
+    <View android:layout_width="match_parent" android:layout_height=".8dp"
+        android:background="@color/white"
+        android:layout_marginBottom="@dimen/_5dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingTop="@dimen/_5dp"
+
+        android:paddingRight="@dimen/_16dp">
+
+        <LinearLayout
+            android:id="@+id/img_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_next"
+
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submit"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/img_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:rotation="180"
+
+                android:src="@drawable/ic_next"
+
+                android:tint="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

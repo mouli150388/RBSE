@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/alert_dialog_width"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="@dimen/_20dp"
+    android:layout_margin="@dimen/_10dp"
+    android:background="@drawable/shadow_new"
+    android:layout_gravity="center">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:orientation="vertical"
+            android:padding="@dimen/_8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/_48dp"
+                    android:maxHeight="32dp"
+                    android:maxWidth="32dp"
+                   android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+
+                    android:layout_height="@dimen/_48dp"
+                    android:padding="@dimen/_5dp"
+                    android:visibility="visible"
+                    android:layout_gravity="center"
+                   android:src="@mipmap/ic_launcher"
+                    />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/txt_msg"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/are_you_sure"
+                android:textSize="@dimen/_14sp"
+                android:layout_margin="15dp"
+
+                android:fontFamily="@font/opensans_regular"
+
+                android:textColor="@color/chapter_text_color"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+
+                android:orientation="horizontal"
+                android:gravity="center"
+
+                android:layout_marginBottom="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:layout_gravity="center"
+                >
+
+                <TextView
+                    android:id="@+id/txt_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/clear_drawable"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+
+                    android:minEms="4"
+                    android:padding="@dimen/_5dp"
+
+                    android:text="@string/cancel"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minEms="4"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_5dp"
+                    android:onClick="deActivate"
+
+                    android:layout_marginLeft="10dp"
+                    android:visibility="visible"
+                    android:background="@drawable/retake_button"
+                    android:text="@string/ok"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+</RelativeLayout>

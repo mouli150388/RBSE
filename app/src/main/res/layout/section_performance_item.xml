@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:background="@drawable/round_rectangle"
+
+
+
+        >
+    <LinearLayout
+        android:id="@+id/lnr_card"
+
+        android:layout_width="match_parent"
+android:layout_marginTop="@dimen/_5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+
+            android:layout_gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:focusableInTouchMode="false"
+                android:layout_marginTop="@dimen/_3dp"
+                android:layout_marginEnd="@dimen/_3dp"
+
+                android:layout_marginBottom="@dimen/_3dp"
+                android:adjustViewBounds="true"
+                android:clickable="false"
+                android:contentDescription="@string/app_name" /><!--
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="@dimen/_1dp"/>-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_toEndOf="@+id/logo"
+
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/chapter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:layout_toEndOf="@+id/logo"
+
+                    android:text="Chapter Name"
+                    android:textColor="@color/che_background"
+
+                    android:textIsSelectable="true"
+                    android:textSize="14sp" />
+
+
+             <!--   <ProgressBar
+                    android:id="@+id/progressbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="false"
+                    android:layout_marginRight="10dp"
+                    android:progress="5"
+                    android:progressDrawable="@drawable/line_progress_one"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    />-->
+                <TextView
+                    android:id="@+id/txt_percentage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chapter_name"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text=""
+                    android:textColor="@color/duration_color"
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

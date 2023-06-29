@@ -1,0 +1,48 @@
+[
+  {
+    "name":"6th Class",
+    "id":"1",
+    "img":"6"
+  },
+  {
+    "name":"7th Class",
+    "id":"2",
+    "img":"7"
+  },
+  {
+    "name":"8th Class",
+    "id":"3",
+    "img":"8"
+  },
+  {
+    "name":"9th Class",
+    "id":"4",
+    "img":"9"
+  },
+  {
+    "name":"10th Class",
+    "id":"5",
+    "img":"10"
+  }
+  ,{
+  "name":"11th Class",
+  "id":"6",
+  "img":"11"
+},
+  {
+    "name":"12th Class",
+    "id":"7",
+    "img":"12"
+  },
+  {
+    "name":"IIT-JEE",
+    "id":"8",
+    "img":"IIT"
+  }
+,
+  {
+    "name":"NEET",
+    "id":"9",
+    "img":"NEET"
+  }
+]

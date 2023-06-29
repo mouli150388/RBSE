@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+
+        android:layout_width="72dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp">
+
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/crowImg"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@color/physics" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/crowImg"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:background="@color/physics" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/crowImg"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="-12.5dp"
+            android:layout_marginTop="-12.5dp"
+
+            app:civ_border_color="@color/physics"
+            app:civ_border_width="2dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-25dp"
+        android:padding="40dp">
+
+        <TextView
+            android:id="@+id/crowDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Date"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/crowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crowDate"
+            android:layout_centerVertical="true"
+            android:text="Title"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/crowDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/crowTitle"
+            android:layout_centerVertical="true"
+            android:text="Description"
+            android:textAppearance="?android:attr/textAppearanceSearchResultSubtitle"
+            android:textColor="@color/physics" />
+
+    </RelativeLayout>
+
+</LinearLayout>

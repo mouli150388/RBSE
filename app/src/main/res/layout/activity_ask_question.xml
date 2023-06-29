@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".doubts.AskQuestionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/activstion_background" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/banner_quiz_height"
+        android:background="@drawable/top_main_background">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/ripple_radius"
+            android:onClick="goBack"
+            android:padding="@dimen/_8dp"
+            app:layout_collapseMode="pin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_6dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_left_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/ripple_radius"
+            android:onClick="home"
+            android:padding="@dimen/_8dp"
+            app:layout_collapseMode="pin">
+
+
+            <ImageView
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+
+
+                android:layout_margin="@dimen/_10dp"
+
+
+                app:srcCompat="@drawable/ic_home_out"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+        <include layout="@layout/cloude_image_view" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/sinuplogotop"
+        android:elevation="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_logo_subj"
+            android:layout_width="@dimen/profile_height"
+            android:layout_height="@dimen/profile_height"
+            android:background="@drawable/circle_white"
+            android:contentDescription="@string/app_name"
+            android:padding="@dimen/_1dp"
+            android:scaleType="centerCrop"
+
+
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="@dimen/subject_margin"
+            android:layout_marginRight="@dimen/subject_margin"
+            android:layout_weight="1"
+            android:elevation="@dimen/_10dp"
+            app:cardCornerRadius="15dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_8dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingBottom="@dimen/_10dp">
+
+
+                <EditText
+                    android:id="@+id/etQuestionDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="top"
+                    android:hint="@string/typeyourdoubt"
+                    android:inputType="text|textMultiLine|textCapSentences|textAutoCorrect"
+                    android:maxLength="500"
+                    android:minHeight="@dimen/_100dp"
+                    android:padding="@dimen/_8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="HardcodedText" />
+
+                <RelativeLayout
+                    android:id="@+id/questionPicLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivQuestionPic"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="12dp"
+                        android:padding="@dimen/_3dp"
+                        android:background="@drawable/rectangle_otp_filed"
+                        android:layout_marginBottom="@dimen/_8dp"
+                        android:contentDescription="@string/app_name"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+
+                        android:contentDescription="@string/app_name"
+                        android:gravity="center"
+                        android:onClick="removeQuestionPic"
+
+                        app:srcCompat="@drawable/ic_remove"
+                        />
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="@dimen/quiz_margin"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_cam"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/_5dp"
+                    android:onClick="captureImage"
+                    android:padding="@dimen/_5dp"
+
+                    app:srcCompat="@drawable/ic_instagram"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/img_gallery"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:padding="@dimen/_5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_toRightOf="@+id/img_cam"
+                    android:onClick="pickImage"
+                    app:srcCompat="@drawable/ic_image_default"
+                    android:visibility="visible" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right|center_vertical">
+
+                    <TextView
+                        android:id="@+id/tvPostQuestion"
+                        android:layout_width="120dp"
+                        android:layout_height="35dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_margin="@dimen/_10dp"
+                        android:background="@drawable/ask_doubt_button"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/submit"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+            <RadioGroup
+                android:id="@+id/radio_sub_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/shadow_new"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/quiz_margin"
+
+                android:gravity="center"
+
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_math"
+                    android:layout_width="@dimen/quiz_img_size"
+                    android:layout_height="@dimen/quiz_img_size"
+                    android:layout_marginLeft="5dp"
+
+                    android:background="@drawable/circle_math"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:minHeight="30dp"
+
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp" />
+                <RadioButton
+                    android:id="@+id/radio_phy"
+                    android:layout_width="@dimen/quiz_img_size"
+                    android:layout_height="@dimen/quiz_img_size"
+
+                    android:background="@drawable/circle_phy"
+                    android:button="@null"
+                    android:layout_marginLeft="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:minHeight="30dp"
+
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_che"
+                    android:layout_width="@dimen/quiz_img_size"
+                    android:layout_height="@dimen/quiz_img_size"
+                    android:layout_marginLeft="5dp"
+
+                    android:background="@drawable/circle_che"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:minHeight="30dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp"
+                    tools:ignore="ButtonStyle" />
+
+
+
+                <RadioButton
+                    android:id="@+id/radio_bio"
+                    android:layout_width="@dimen/quiz_img_size"
+                    android:layout_height="@dimen/quiz_img_size"
+                    android:layout_marginLeft="5dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:background="@drawable/circle_bio"
+                    android:button="@null"
+
+                    android:gravity="center"
+                    android:minHeight="30dp"
+
+                    android:textColor="@drawable/color_selector"
+                    android:textSize="10sp" />
+
+            </RadioGroup>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <!--   <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/profile_height"
+
+           android:contentDescription="@string/app_name"
+          />-->
+
+
+
+</RelativeLayout>

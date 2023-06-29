@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".doubts.AskQuestionActivity">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:text="Select a Subject"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_gravity="right"
+            android:layout_marginStart="10sp"
+            android:background="@drawable/ripple_radius"
+            android:onClick="goBack"
+            android:padding="@dimen/_8dp"
+            app:layout_collapseMode="pin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_6dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:tint="@color/colorPrimary"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_left_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/ripple_radius"
+            android:onClick="home"
+            android:padding="@dimen/_8dp"
+            app:layout_collapseMode="pin">
+
+
+            <ImageView
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+
+
+                android:layout_margin="@dimen/_10dp"
+
+
+                app:srcCompat="@drawable/ic_home_out"
+                android:tint="@color/white" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_below="@+id/rel_top"
+        android:layout_width="match_parent"
+        android:layout_height=".8dp" android:background="@color/colorPrimary"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel_top"
+
+        android:layout_above="@+id/card_bottom"
+        android:orientation="vertical">
+
+
+       <!-- <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:layout_marginLeft="@dimen/subject_margin"
+            android:layout_marginRight="@dimen/subject_margin"
+            android:layout_weight="1"
+            android:elevation="@dimen/_10dp"
+            app:cardCornerRadius="15dp"
+
+            >-->
+
+
+
+                <LinearLayout
+                    android:id="@+id/radio_sub_group"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                        android:gravity="center"
+                    android:layout_gravity="center"
+
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/lnr_math"
+                        android:layout_marginLeft="@dimen/_16dp"
+                         android:layout_marginTop="@dimen/_5dp"
+                        android:layout_marginBottom="@dimen/_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:gravity="center"
+                        >
+                        <ImageView
+                            android:id="@+id/radio_math"
+                            android:layout_width="@dimen/quiz_img_size"
+
+                            android:layout_height="@dimen/quiz_img_size"
+
+
+                            android:background="@drawable/circle_math_doubt"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:fontFamily="@font/opensans_regular"
+                            android:minHeight="30dp"
+
+                            android:textColor="@drawable/color_selector"
+                            android:textSize="10sp" />
+                        <TextView
+                            android:id="@+id/txt_math"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/mathematics"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:padding="@dimen/_5dp"
+
+                            android:textColor="@color/black"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnr_phy"
+                         android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:layout_marginBottom="@dimen/_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:gravity="center"
+                        >
+                    <ImageView
+                        android:id="@+id/radio_phy"
+                        android:layout_width="@dimen/quiz_img_size"
+                        android:layout_height="@dimen/quiz_img_size"
+
+                        android:background="@drawable/circle_phy_doubt"
+                        android:button="@null"
+                        android:layout_marginLeft="2dp"
+                        android:gravity="center"
+
+                        android:fontFamily="@font/opensans_regular"
+                        android:minHeight="30dp"
+
+                        android:textColor="@drawable/color_selector"
+                       />
+                    <TextView
+                        android:id="@+id/txt_phy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/physics"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:padding="@dimen/_5dp"
+
+                        android:textColor="@color/black"
+                        />
+                </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnr_che"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:layout_marginBottom="@dimen/_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:gravity="center"
+                        >
+                    <ImageView
+                        android:id="@+id/radio_che"
+                        android:layout_width="@dimen/quiz_img_size"
+                        android:layout_height="@dimen/quiz_img_size"
+
+                        android:background="@drawable/circle_che_doubt"
+                        android:button="@null"
+                        android:gravity="center"
+                        android:minHeight="30dp"
+
+                        android:fontFamily="@font/opensans_regular"
+                        android:textColor="@drawable/color_selector"
+
+                        tools:ignore="ButtonStyle" />
+
+                <TextView
+                    android:id="@+id/txt_che"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chemistry"
+                    android:textSize="12sp"
+                    android:gravity="center"
+
+                    android:padding="@dimen/_5dp"
+                    android:textColor="@color/black"
+                    />
+            </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lnr_bio"
+                        android:layout_marginLeft="@dimen/_16dp"
+                        android:layout_marginTop="@dimen/_5dp"
+                        android:layout_marginBottom="@dimen/_5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+
+                        android:gravity="center"
+                        >
+                    <ImageView
+                        android:id="@+id/radio_bio"
+                        android:layout_width="@dimen/quiz_img_size"
+                        android:layout_height="@dimen/quiz_img_size"
+                        android:layout_marginLeft="2dp"
+
+                        android:fontFamily="@font/opensans_regular"
+                        android:background="@drawable/circle_bio_doubt"
+                        android:button="@null"
+
+                        android:gravity="center"
+                        android:minHeight="30dp"
+
+                        android:textColor="@drawable/color_selector"
+                         />
+        <TextView
+            android:id="@+id/txt_bio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/biology"
+            android:textSize="12sp"
+
+            android:gravity="center"
+            android:padding="@dimen/_5dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+                </LinearLayout>
+
+
+
+
+
+      <!--  </androidx.cardview.widget.CardView>-->
+
+
+
+
+
+    </LinearLayout>
+
+    <!--   <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/profile_height"
+
+           android:contentDescription="@string/app_name"
+          />-->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="@dimen/_4dp"
+        app:cardElevation="@dimen/_5dp"
+        >
+        <TextView
+            android:id="@+id/txt_dinot_find"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:clickable="false"
+            android:background="@drawable/search_background_drawable"
+
+            android:fontFamily="@font/opensans_regular"
+            android:padding="12dp"
+            android:gravity="center"
+
+            android:text="@string/submitdoubt"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_18sp" />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

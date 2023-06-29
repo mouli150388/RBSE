@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    >
+    <item android:drawable="@drawable/quiz_che_selector" android:state_checked="true"/>
+    <item android:drawable="@drawable/chemistry_quiz" android:state_checked="false"/>
+    <item android:drawable="@drawable/chemistry_quiz" />
+
+
+</selector>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".activities.ActivationDetailsActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/activstion_background"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/subject_margin"
+            android:elevation="10dp"
+            android:background="@drawable/shadow_new"
+            android:orientation="vertical"
+            android:padding="@dimen/_8dp">
+
+
+
+            <TextView
+                android:id="@+id/txt_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/opensans_regular"
+                android:padding="@dimen/_8dp"
+
+                android:text="Class name"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/physics"
+                android:padding="@dimen/_8dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginTop="@dimen/_10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Key"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/txt_activation_key"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:ellipsize="marquee"
+                    android:textIsSelectable="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Date"
+                    android:padding="@dimen/_8dp"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginTop="@dimen/_10dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Date"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/txt_activation_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Date"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/_5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Start Date"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/txt_start_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Date"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginTop="@dimen/_5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Expiry Date"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/txt_expiry_date"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Date"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/box"
+                android:layout_marginTop="@dimen/_5dp"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Type"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+                <TextView
+                    android:id="@+id/txt_activation_type"
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="@font/opensans_regular"
+                    android:hint="Activation Date"
+                    android:padding="@dimen/_8dp"
+                    android:singleLine="true"
+                    android:textAllCaps="false"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_gravity="right"
+                >
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_5dp"
+                    android:layout_margin="3dp"
+                    android:onClick="Renewal"
+                    android:background="@drawable/button_selector_bio"
+                    android:text="@string/renual"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+                <TextView
+                    android:id="@+id/txt_deactivate"
+                    android:layout_width="wrap_content"
+                    android:minWidth="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="center"
+                    android:padding="@dimen/_5dp"
+                    android:onClick="deActivate"
+                    android:layout_margin="3dp"
+                    android:visibility="gone"
+                    android:background="@drawable/button_selector"
+                    android:text="@string/deactivate"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lnr_expired"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/txt_expierymsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_16sp"
+                android:layout_marginRight="@dimen/_16sp"
+                android:fontFamily="@font/opensans_regular"
+                android:clickable="false"
+                android:textColor="@color/red"
+                android:text="@string/activation_ended"
+                />
+            <TextView
+                android:id="@+id/txt_renewal"
+                android:layout_width="wrap_content"
+                android:minWidth="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/opensans_regular"
+                android:gravity="center"
+                android:padding="@dimen/_5dp"
+                android:clickable="false"
+                android:layout_margin="10dp"
+                android:layout_gravity="center"
+                android:visibility="visible"
+                android:background="@drawable/login_button"
+                android:text="@string/subscribe_now"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

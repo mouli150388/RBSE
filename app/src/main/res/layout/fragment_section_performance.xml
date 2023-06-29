@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".anaylysis.SectionPerformanceFragment">
+  <TextView
+      android:layout_width="match_parent"
+
+      android:fontFamily="@font/opensans_regular"
+      android:text="@string/chapter_performance"
+      android:textColor="@color/colorPrimary"
+      android:gravity="center"
+      android:layout_margin="10dp"
+
+      android:textSize="@dimen/header_text_size"
+
+      android:textStyle="bold"
+      android:layout_height="wrap_content" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recycler_sections"
+
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

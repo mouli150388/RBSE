@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/chemistry_quiz_check">
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:color="@color/quiz_selecct_color_cirlce" android:width="3dp"/>
+        </shape>
+    </item>
+
+</layer-list>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10dp"
+    android:layout_gravity="center"
+    android:background="@drawable/activstion_background"
+    android:elevation="@dimen/_10dp"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/layout_success"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+
+        >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:layout_marginTop="20dp"
+    android:gravity="bottom"
+    android:layout_weight="1">
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/ic_pay_payment_success"
+        android:layout_height="200dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/header_text_size"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/opensans_regular"
+        android:layout_marginBottom="40dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:text="Payment Done Sucessfully"
+        />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txt_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/header_text_size"
+            android:padding="@dimen/_5dp"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@color/duration_color"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:text="Thank you for placing order."
+            />
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/clear_drawable"
+            android:layout_centerHorizontal="true"
+            android:minEms="8"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/contin"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_failure"
+        android:layout_width="match_parent"
+        android:visibility="visible"
+        android:layout_height="wrap_content"
+
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_20dp"
+
+        >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="top|center_horizontal"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="@dimen/header_text_size"
+            android:textColor="@color/colorPrimary"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:text="Payment Failed"
+            android:fontFamily="@font/opensans_regular"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/header_text_size"
+            android:padding="@dimen/_5dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/duration_color"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Unfortunately payment was rejected."
+            />
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ic_pay_payment_fail"
+            android:layout_height="200dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+
+        <Button
+            android:id="@+id/btn_tryagain"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/ask_doubt_button"
+            android:layout_centerHorizontal="true"
+            android:minEms="8"
+
+            android:layout_marginBottom="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:paddingEnd="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/tryagain"
+            android:textColor="@color/white"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    </LinearLayout>
+    <!--417bE0-->
+</RelativeLayout>

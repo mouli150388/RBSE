@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="2dp"
+    app:cardBackgroundColor="@color/white"
+
+    android:padding="@dimen/_8dp"
+   app:cardCornerRadius="2dp"
+
+
+
+    >
+    <ImageView
+        android:id="@+id/img_next"
+        android:layout_weight="1"
+        android:layout_width="@dimen/_18dp"
+        android:layout_height="@dimen/_18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical|end"
+        android:contentDescription="@string/app_name"
+        android:rotation="180"
+        android:layout_marginRight="@dimen/_5dp"
+        app:srcCompat="@drawable/left" />
+    <LinearLayout
+        android:id="@+id/lnr_card"
+        android:clickable="false"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_margin="@dimen/_5dp"
+        android:orientation="vertical"
+
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="@dimen/_3dp"
+                android:layout_marginEnd="@dimen/_3dp"
+                android:layout_marginBottom="@dimen/_3dp"
+                android:clickable="false"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_book_write_notes" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/logo"
+                android:clickable="false"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_toEndOf="@+id/logo"
+                    android:clickable="false"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="Chapter Name"
+                    android:textColor="@color/che_background"
+                    android:textIsSelectable="true"
+                    android:textSize="@dimen/_14sp" />
+
+                <TextView
+                    android:id="@+id/chapter_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chapter_name"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8dp"
+
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:clickable="false"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="dsfsdffsdfsdfsdfsd"
+
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    />
+                <TextView
+                    android:id="@+id/txt_notes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="@dimen/_10dp"
+                    android:clickable="false"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text=""
+                    android:textColor="@color/color_dashText"
+                    android:textSize="12sp"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</androidx.cardview.widget.CardView>

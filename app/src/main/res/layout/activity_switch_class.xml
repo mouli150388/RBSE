@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".activities.SwitchClassActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include layout="@layout/banner" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10dp"
+            android:layout_marginEnd="@dimen/_10dp"
+            android:layout_marginBottom="@dimen/_10dp"
+
+
+            android:orientation="vertical"
+            android:padding="@dimen/_10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_classes"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <LinearLayout
+                android:id="@+id/lnr_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:gravity="center"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/ripple_radius"
+                >
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:id="@+id/txt_continue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_10dp"
+                    android:minEms="8"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_8dp"
+                android:background="@drawable/drawable_class_selection"
+                    android:text="@string/contin"
+
+                    />
+            </LinearLayout>
+            <!--<ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scrollbarSize="2dp"
+                android:visibility="gone"
+                android:scrollbarThumbVertical="@color/colorPrimary"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lnr_classes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="5dp">
+
+                    <Button
+                        android:id="@+id/btn_sixth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/drawable_class_selection"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:foreground="@drawable/ripple"
+                        android:onClick="sixthClass"
+                        android:padding="15dp"
+                        android:text="@string/_6th_class"
+                        android:textColor="#000"
+                        android:theme="?attr/actionBarPopupTheme" />
+
+                    <Button
+                        android:id="@+id/btn_seventh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/drawable_class_selection"
+                        android:buttonTint="@color/colorBlack"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:foreground="@drawable/ripple"
+                        android:onClick="seventhClass"
+                        android:padding="15dp"
+                        android:text="@string/_7th_class"
+                        android:textColor="#000"
+                        android:theme="?attr/actionBarPopupTheme" />
+
+
+                    <Button
+                        android:id="@+id/btn_eigth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/drawable_class_selection"
+                        android:buttonTint="@color/colorBlack"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:foreground="@drawable/ripple"
+                        android:onClick="eightClass"
+                        android:padding="15dp"
+                        android:text="@string/_8th_class"
+                        android:textColor="#000"
+                        android:theme="?attr/actionBarPopupTheme" />
+
+                    <Button
+                        android:id="@+id/btn_more"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_2dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight=".5"
+                        android:background="@drawable/drawable_class_selection"
+                        android:buttonTint="@color/colorBlack"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:fontFamily="@font/opensans_regular"
+                        android:foreground="@drawable/ripple"
+                        android:onClick="eightClass"
+                        android:padding="15dp"
+                        android:text="@string/more"
+                        android:textColor="#000"
+                        android:theme="?attr/actionBarPopupTheme" />
+
+                </LinearLayout>
+            </ScrollView>-->
+           <!-- <include layout="@layout/bottom_banner"/>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        style="@style/ToolbarTheme"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:titleTextColor="@color/white"
+        app:title=""
+        android:visibility="gone"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+
+
+
+
+
+
+        <LinearLayout
+            android:id="@+id/lnr_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:gravity="center"
+            android:layout_gravity="end|center_vertical"
+            android:background="@drawable/ripple_radius"
+            >
+
+            <ImageView
+                android:id="@+id/img_home"
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+
+                android:layout_marginEnd="@dimen/_8dp"
+                android:layout_marginStart="@dimen/_8dp"
+
+                app:srcCompat="@drawable/ic_home_out"
+                android:tint="@color/white"
+
+                />
+        </LinearLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+    </RelativeLayout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".doubts.QuestionDetailActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/activstion_background"
+        />
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/top_main_background_small"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="goBack"
+                    app:srcCompat="@drawable/ic_left_arrow" />
+
+                <TextView
+                    android:id="@+id/activity_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_8dp"
+                    android:layout_toEndOf="@+id/img_back"
+                    android:gravity="center"
+                    android:text="Doubt Details"
+                    android:inputType="textCapSentences"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20sp" />
+                <LinearLayout
+                    android:id="@+id/lnr_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5dp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ripple_radius"
+                    app:layout_collapseMode="pin">
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+
+                    android:layout_marginRight="@dimen/_8dp"
+                    android:contentDescription="@string/app_name"
+
+                    app:srcCompat="@drawable/ic_home_out"
+                    android:tint="@color/white"
+                    />
+                </LinearLayout>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/appbar"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_left_quiz"
+            android:orientation="vertical"
+            android:padding="@dimen/_8dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="vertical"
+                    android:padding="@dimen/_8dp">
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:fontFamily="@font/opensans_regular"
+                      android:layout_marginBottom="@dimen/_5dp"
+                        android:inputType="textCapSentences"
+                        android:text="Question"
+                        android:textColor="@color/red"
+                        android:textSize="14sp" />
+                    <TextView
+                        android:id="@+id/tvQuestionTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Title"
+                        android:inputType="textCapSentences"
+                        android:textColor="@color/chapter_text_color"
+                        android:textSize="@dimen/_16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:layout_marginBottom="@dimen/_4dp"
+                        android:background="@color/colorDivider" />
+
+                    <TextView
+                        android:id="@+id/tvQuestionDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:padding="@dimen/_8dp"
+                        android:inputType="textCapSentences"
+                        android:text="Description"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_1dp"
+                        android:layout_marginTop="@dimen/_4dp"
+                        android:layout_marginBottom="@dimen/_4dp"
+                        android:background="@color/colorDivider" />
+
+                    <ImageView
+                        android:id="@+id/ivQuestionImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_150dp"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/_8dp"
+                        android:contentDescription="@string/app_name"
+                        android:onClick="questionImagePreview"
+                        android:scaleType="centerCrop" />
+
+
+
+                    <TextView
+                        android:id="@+id/tvQuestionTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="12:00"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="@dimen/_12sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5dp"
+                android:elevation="10dp"
+                app:cardCornerRadius="15dp"
+                >
+
+            <LinearLayout
+                android:id="@+id/answerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="@dimen/_8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorPrimary"
+                    android:text="Answer"
+                    android:fontFamily="@font/opensans_regular"
+                    />
+
+                <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                    android:id="@+id/epAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_8dp"
+                    android:focusable="true"
+                    android:keepScreenOn="true"
+                    android:visibility="gone"
+                    app:resize_mode="fill" />
+
+                <ImageView
+                    android:id="@+id/ivAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_150dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/_8dp"
+                    android:contentDescription="@string/app_name"
+                    android:onClick="answerImagePreview"
+                    android:scaleType="centerInside"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_4dp"
+                    android:layout_marginBottom="@dimen/_4dp"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:id="@+id/tvAnswer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="@dimen/_8dp"
+                    android:text="@string/app_name"
+                    android:textColor="@color/color_dashText"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1dp"
+                    android:layout_marginTop="@dimen/_4dp"
+                    android:layout_marginBottom="@dimen/_4dp"
+                    android:background="@color/colorDivider" />
+
+                <TextView
+                    android:id="@+id/tvAnsweredBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="rr"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_12sp"
+                    android:textStyle="italic" />
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

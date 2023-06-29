@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/activstion_background"
+    android:fitsSystemWindows="true">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:background="@color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="@color/transparent"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+
+                app:layout_scrollFlags="scroll|enterAlways"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+                <RelativeLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <ImageView
+                        android:id="@+id/img_back"
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@drawable/ripple_radius"
+                        android:layout_marginEnd="@dimen/_8dp"
+                        android:layout_marginLeft="@dimen/_6dp"
+                        android:padding="@dimen/_5dp"
+                        android:tint="@color/colorPrimary"
+                        android:layout_centerVertical="true"
+                        android:contentDescription="@string/app_name"
+                        android:onClick="goBack"
+                        app:srcCompat="@drawable/ic_left_arrow" />
+
+                    <TextView
+                        android:id="@+id/activity_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="@dimen/_8dp"
+                        android:layout_toEndOf="@+id/img_back"
+                        android:gravity="center"
+                        android:fontFamily="@font/opensans_regular"
+                        android:text="Doubts"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_20sp" />
+                    <LinearLayout
+                        android:id="@+id/img_filter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+
+                        android:layout_marginRight="5dp"
+                        android:layout_toStartOf="@+id/home"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end"
+                        app:layout_collapseMode="pin"
+                        >
+                        <ImageView
+
+                            android:layout_width="@dimen/back_icon_size"
+                            android:layout_height="@dimen/back_icon_size"
+
+                            android:contentDescription="@string/app_name"
+
+                            android:background="@drawable/ripple_radius"
+                            android:tint="@color/colorPrimary"
+                            app:srcCompat="@drawable/filter" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end"
+                        app:layout_collapseMode="pin"
+                        >
+                        <ImageView
+
+                            android:layout_width="@dimen/back_icon_size"
+                            android:layout_height="@dimen/back_icon_size"
+                            android:contentDescription="@string/app_name"
+
+                            android:tint="@color/colorPrimary"
+                            android:background="@drawable/ripple_radius"
+                            app:srcCompat="@drawable/ic_home_out"
+
+                            />
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center"
+
+                android:padding="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/subject_margin"
+                android:layout_marginRight="@dimen/subject_margin"
+
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/lnr_top_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                    app:layout_collapseMode="parallax"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_doubt_top"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+
+                        android:clickable="false"
+                        app:srcCompat="@drawable/ic_tool_doubts" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:background="@drawable/rectangle_gradient"
+                        android:clickable="false"
+                        android:fontFamily="@font/opensans_regular"
+                        android:padding="10dp"
+                        android:onClick="askQuestion"
+                        android:minEms="10"
+                        app:layout_collapseMode="pin"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/writeyourquestion"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvQuestions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/subject_margin"
+        android:layout_marginRight="@dimen/subject_margin"
+        android:layout_marginBottom="?attr/actionBarSize"
+        android:layoutAnimation="@anim/layout_animation_fall_down"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

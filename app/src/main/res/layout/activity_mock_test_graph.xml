@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".anaylysis.MockTestGraphActivity">
+
+    <ImageView
+        android:id="@+id/img_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/activstion_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/top_main_background_small">
+
+                <com.google.android.material.appbar.AppBarLayout
+                    android:id="@+id/appbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorPrimary"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                        app:titleTextAppearance="@style/Base.TextAppearance.AppCompat.Medium">
+
+                        <TextView
+                            android:id="@+id/txt_header"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/opensans_regular"
+
+                            android:gravity="center_vertical"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/white" />
+                    </androidx.appcompat.widget.Toolbar>
+                </com.google.android.material.appbar.AppBarLayout>
+                <!-- <LinearLayout
+                     android:id="@+id/lnr_back"
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent">
+                     <ImageView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_gravity="center"
+                         android:layout_marginLeft="16dp"
+                         android:layout_marginRight="16dp"
+                         app:srcCompat="@drawable/ic_left_arrow"
+                         />
+                 </LinearLayout>-->
+
+
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/subject_margin"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/subject_margin"
+
+                android:elevation="@dimen/_8dp"
+                android:padding="@dimen/_8dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_title_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/_5dp"
+                        android:text="@string/mock_test_performance"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:padding="@dimen/_5dp"
+                        android:text="@string/marks"
+                        android:textSize="12sp" />
+
+                    <com.github.mikephil.charting.charts.BarChart
+                        android:id="@+id/chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="15dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="center"
+                            android:text="@string/min_marks"
+                            android:textColor="@color/LOW_BAR_COLOR" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/_5dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:gravity="center"
+                            android:text="@string/max_marks"
+                            android:textColor="@color/ANS_BAR_COLOR" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/subject_margin"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/subject_margin"
+
+                android:elevation="@dimen/_8dp"
+                android:padding="@dimen/_8dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_title_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:minEms="6"
+                        android:padding="@dimen/_5dp"
+                        android:text="@string/keyimpreovementarea"
+                        android:textColor="@color/colorPrimary"
+
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lnr_recommand_items"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5dp"
+                        android:layout_marginBottom="@dimen/_10dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/subject_margin"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="@dimen/subject_margin"
+                android:layout_marginBottom="@dimen/subject_margin"
+
+                android:elevation="@dimen/_8dp"
+                android:padding="@dimen/_8dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txt_title_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/opensans_regular"
+                        android:gravity="center"
+                        android:minEms="6"
+                        android:padding="@dimen/_5dp"
+                        android:text="@string/mocktestattended"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18sp" />
+
+                    <LinearLayout
+                        android:id="@+id/lnr_mock_tests"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5dp"
+                        android:orientation="vertical">
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <!--<TextView
+                android:id="@+id/txt_previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_16dp"
+
+                android:padding="@dimen/_5dp"
+                android:minEms="6"
+                android:text="Reports"
+                />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

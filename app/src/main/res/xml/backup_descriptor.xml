@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- TODO Remove the following "exclude" elements to make them a part of the auto backup -->
+    <exclude
+        domain="database"
+        path="Physics3.db" />
+    <exclude
+        domain="database"
+        path="chemestry.db" />
+    <exclude
+        domain="database"
+        path="maths.db" />
+    <!-- Exclude the shared preferences file that contains the GCM registrationId -->
+    <exclude
+        domain="sharedpref"
+        path="MyPref.xml" />
+    <exclude
+        domain="sharedpref"
+        path="information.xml" />
+    <exclude
+        domain="sharedpref"
+        path="Tutorix.xml" />
+</full-backup-content>

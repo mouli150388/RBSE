@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:orientation="vertical"
+    android:background="@color/new_color_background"
+   >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srcCompat="@drawable/app_background"
+        android:scaleType="centerCrop"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:background="@drawable/top_main_background"
+    android:layout_height="@dimen/banner_quiz_height">
+    <include layout="@layout/cloude_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="?attr/actionBarSize"
+        android:text="Bookmarks"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:fontFamily="@font/opensans_regular"
+        android:textSize="@dimen/header_text_size"
+        />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        style="@style/ToolbarTheme"
+        android:gravity="center"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|center_vertical"
+            >
+            <ImageView
+                android:id="@+id/img_filter"
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+                android:layout_gravity="center_vertical"
+
+                android:background="@drawable/ripple_radius"
+                android:visibility="gone"
+                app:srcCompat="@drawable/filter"
+                android:tint="@color/white"
+                app:layout_collapseMode="pin" />
+            <LinearLayout
+                android:id="@+id/lnr_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5dp"
+                android:gravity="center"
+                android:layout_gravity="end|center_vertical"
+                android:background="@drawable/ripple_radius"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/img_home"
+                    android:layout_width="@dimen/back_icon_size"
+                    android:layout_height="@dimen/back_icon_size"
+
+                    android:layout_marginEnd="@dimen/_8dp"
+                    android:layout_marginStart="@dimen/_8dp"
+
+                    app:srcCompat="@drawable/ic_home_out"
+                    android:tint="@color/white"
+
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+</RelativeLayout>
+    <ImageView
+        android:id="@+id/img_logo_subj"
+        android:layout_width="@dimen/profile_height"
+        android:background="@drawable/circle_white"
+        android:layout_height="@dimen/profile_height"
+        android:elevation="20dp"
+        android:layout_marginTop="@dimen/sinuplogotop"
+        android:layout_gravity="center"
+        android:padding="@dimen/_1dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/ic_bookmark_middle"
+
+        />
+    <include
+        layout="@layout/content_chapters"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/subject_margin"
+        android:layout_marginRight="@dimen/subject_margin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+
+    tools:context=".classes.StudentsDashBoardActivity">
+          <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/banner_quiz_height"
+              android:background="@drawable/top_main_background">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                              <TextView
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="match_parent"
+                                  android:layout_centerHorizontal="true"
+                                  android:layout_margin="@dimen/_5dp"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:gravity="top|center_horizontal"
+                                  android:padding="10dp"
+                                  android:text="@string/add_student"
+                                  android:textColor="@color/white"
+                                  android:textSize="@dimen/header_text_size" />
+                    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+          </RelativeLayout>
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/_16dp"
+                        android:paddingRight="@dimen/_16dp"
+                        >
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:layout_marginBottom="@dimen/_5dp"
+                                  android:padding="@dimen/_3dp"
+                                  android:layout_marginTop="@dimen/_10dp"
+
+                                  android:minHeight="40dp"
+                                  android:gravity="center_vertical"
+                                  android:orientation="horizontal"
+                                  android:background="@drawable/button_rectangle_radius"
+                                  android:paddingLeft="@dimen/_20dp"
+                                  android:paddingTop="@dimen/_5dp"
+
+                                  android:paddingRight="@dimen/_20dp"
+                                  android:paddingBottom="@dimen/_5dp">
+
+                                        <androidx.appcompat.widget.AppCompatEditText
+                                            android:id="@+id/input_name"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:background="@color/transparent"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:hint="@string/name"
+                                            android:inputType="textCapWords"
+                                            android:minHeight="@dimen/minimum_hight_editfiled"
+                                            android:importantForAutofill="no|noExcludeDescendants"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            android:textColor="@color/editfiled_color" />
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            app:srcCompat="@drawable/user" />
+                              </LinearLayout>
+
+
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:layout_marginBottom="@dimen/_5dp"
+                                  android:padding="@dimen/_3dp"
+                                  android:layout_marginTop="@dimen/_10dp"
+
+                                  android:minHeight="40dp"
+                                  android:gravity="center_vertical"
+                                  android:orientation="horizontal"
+                                  android:background="@drawable/button_rectangle_radius"
+                                  android:paddingLeft="@dimen/_20dp"
+                                  android:paddingTop="@dimen/_5dp"
+                                  android:paddingRight="@dimen/_20dp"
+                                  android:paddingBottom="@dimen/_5dp">
+
+                                        <com.tutorix.tutorialspoint.views.countrycode.CountryCodePicker
+                                            android:id="@+id/ccp"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:background="@color/transparent"
+                                            android:gravity="center"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            app:ccp_defaultNameCode="@string/country_india_code"
+                                            app:ccp_hideNameCode="true"
+                                            android:minHeight="@dimen/minimum_hight_editfiled"
+                                            app:ccp_showFlag="false"
+                                            app:ccp_textColor="#636262" />
+
+
+                                        <androidx.appcompat.widget.AppCompatEditText
+                                            android:id="@+id/input_phone"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_weight="1"
+                                            android:background="@color/transparent"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:hint="@string/phone_number"
+                                            android:inputType="phone"
+                                            android:minHeight="@dimen/minimum_hight_editfiled"
+                                            android:importantForAutofill="no|noExcludeDescendants"
+                                            android:textColor="#636262" />
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            app:srcCompat="@drawable/mobile" />
+
+                              </LinearLayout>
+
+                              <LinearLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_height="wrap_content"
+                                  android:layout_gravity="center"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:layout_marginBottom="@dimen/_5dp"
+                                  android:padding="@dimen/_3dp"
+                                  android:layout_marginTop="@dimen/_10dp"
+
+                                  android:minHeight="40dp"
+                                  android:gravity="center_vertical"
+                                  android:orientation="horizontal"
+                                  android:background="@drawable/button_rectangle_radius"
+                                  android:paddingLeft="@dimen/_20dp"
+                                  android:paddingTop="@dimen/_5dp"
+                                  android:paddingRight="@dimen/_20dp"
+                                  android:paddingBottom="@dimen/_5dp"
+                                  android:weightSum="1">
+
+                                        <androidx.appcompat.widget.AppCompatEditText
+                                            android:id="@+id/input_email"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:minHeight="@dimen/minimum_hight_editfiled"
+                                            android:layout_marginLeft="@dimen/_15dp"
+                                            android:background="@color/transparent"
+                                            android:fontFamily="@font/opensans_regular"
+                                            android:hint="@string/email"
+                                            android:importantForAutofill="no|noExcludeDescendants"
+                                            android:inputType="textEmailAddress"
+                                            android:textColor="@color/editfiled_color" />
+
+                                        <ImageView
+                                            android:layout_width="24dp"
+                                            android:layout_height="24dp"
+                                            android:layout_gravity="center_vertical"
+                                            android:tint="#D2D2D2"
+                                            android:layout_marginRight="@dimen/_5dp"
+                                            app:srcCompat="@android:drawable/ic_dialog_email" />
+                              </LinearLayout>
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:minHeight="40dp"
+                                  android:padding="@dimen/_3dp"
+                                  android:background="@drawable/login_editbackground"
+                                  android:layout_marginTop="10dp"
+                                  android:layout_height="wrap_content">
+
+                                        <Spinner
+                                            android:id="@+id/spinner_city"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:minHeight="40dp"
+
+                                            />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_12dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_margin="@dimen/_5dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_height="@dimen/_12dp" />
+                              </RelativeLayout>
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:minHeight="40dp"
+                                  android:padding="@dimen/_3dp"
+                                  android:background="@drawable/login_editbackground"
+                                  android:layout_marginTop="10dp"
+                                  android:layout_height="wrap_content">
+                                        <Spinner
+                                            android:id="@+id/spinner_branch"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:minHeight="40dp"
+                                            android:layout_centerVertical="true"
+
+                                            />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_12dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_margin="@dimen/_5dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_height="@dimen/_12dp" />
+                              </RelativeLayout>
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:minHeight="40dp"
+                                  android:padding="@dimen/_3dp"
+                                  android:visibility="visible"
+                                  android:background="@drawable/login_editbackground"
+                                  android:layout_marginTop="30dp"
+                                  android:layout_height="wrap_content">
+                                        <Spinner
+                                            android:id="@+id/spinner_class"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:minHeight="40dp"
+                                            android:layout_centerVertical="true"
+
+                                            />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_12dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_margin="@dimen/_5dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_height="@dimen/_12dp" />
+                              </RelativeLayout>
+
+
+
+                              <RelativeLayout
+                                  android:layout_width="match_parent"
+                                  android:layout_marginLeft="@dimen/_5dp"
+                                  android:layout_marginRight="@dimen/_5dp"
+                                  android:minHeight="40dp"
+                                  android:padding="@dimen/_3dp"
+                                  android:background="@drawable/login_editbackground"
+                                  android:layout_marginTop="10dp"
+                                  android:layout_height="wrap_content">
+                                        <Spinner
+                                            android:id="@+id/spinner_batch"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:minHeight="40dp"
+                                            android:layout_centerVertical="true"
+
+                                            />
+
+                                        <ImageView
+                                            android:layout_width="@dimen/_12dp"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_margin="@dimen/_5dp"
+                                            android:layout_centerVertical="true"
+                                            android:layout_height="@dimen/_12dp" />
+                              </RelativeLayout>
+
+
+                              <TextView
+                                  android:id="@+id/txt_continue"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:minHeight="@dimen/_40dp"
+                                  android:layout_gravity="center"
+                                  android:layout_marginTop="@dimen/_30dp"
+                                  android:background="@drawable/login_button"
+                                  android:clickable="true"
+                                  android:focusable="true"
+                                  android:fontFamily="@font/opensans_regular"
+                                  android:foreground="@drawable/ripple_radius"
+                                  android:gravity="center"
+
+                                  android:minEms="8"
+                                  android:text="@string/contin"
+                                  android:textAllCaps="true"
+                                  android:textColor="@color/white"
+                                  android:textStyle="bold" />
+
+                    </LinearLayout>
+          </ScrollView>
+</LinearLayout>

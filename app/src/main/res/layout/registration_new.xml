@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    tools:context=".registration.RegistrationActivity">
+
+    <include layout="@layout/banner" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="-75dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="#EEEEEE"
+            android:layout_marginTop="75dp"
+            android:layout_height="match_parent">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginEnd="@dimen/_10dp"
+                    android:layout_marginBottom="@dimen/_10dp"
+
+                    android:elevation="@dimen/_5dp"
+                    android:background="@drawable/shadow"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:layout_gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical"
+                            >
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/input_name"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/editfiled_color"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:background="@color/white"
+                                    android:hint="@string/name"
+                                    android:inputType="text" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <!-- Password Label -->
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#b9b8b8"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:layout_marginBottom="@dimen/_8dp"
+                                android:layout_height="@dimen/_1dp" />
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+
+                                android:orientation="horizontal"
+                                android:weightSum="1">
+
+                                <com.tutorix.tutorialspoint.views.countrycode.CountryCodePicker
+                                    android:id="@+id/ccp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    app:ccp_textColor="#636262"
+                                    android:padding="@dimen/_5dp"
+                                    app:ccp_defaultNameCode="@string/country_india_code" />
+
+                                <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    >
+
+                                    <androidx.appcompat.widget.AppCompatEditText
+                                        android:id="@+id/input_phone"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:hint="@string/phone_number"
+                                        android:background="@color/white"
+                                        android:textColor="#636262"
+                                        android:inputType="phone"
+                                        android:fontFamily="@font/opensans_regular"
+                                        />
+                                </com.google.android.material.textfield.TextInputLayout>
+
+
+                            </LinearLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#b9b8b8"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:layout_marginBottom="@dimen/_8dp"
+                                android:layout_height="@dimen/_1dp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                >
+
+                                <androidx.appcompat.widget.AppCompatEditText
+                                    android:id="@+id/input_password"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/opensans_regular"
+                                    android:hint="@string/password"
+                                    android:background="@color/white"
+                                    android:textColor="@color/editfiled_color"
+                                    android:inputType="textPassword" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:background="#b9b8b8"
+                                android:layout_marginTop="@dimen/_5dp"
+                                android:layout_marginBottom="@dimen/_8dp"
+                                android:layout_height="@dimen/_1dp" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="@dimen/_8dp"
+                                android:textColor="@color/aaa"
+                                android:padding="@dimen/_3dp"
+                                android:text="@string/passwordrestrict"
+                                />
+
+
+                        </LinearLayout>
+
+                        <CheckBox
+                            android:id="@+id/checkbox"
+                            android:layout_width="wrap_content"
+                            android:text="@string/read_terms"
+                            android:textSize="@dimen/_10dp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:text="@string/signup"
+                            android:textAllCaps="true"
+                            android:textColor="#65ADFF"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:onClick="signUp"
+                            android:fontFamily="@font/opensans_regular"
+                            android:layout_margin="@dimen/_8dp"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:foreground="@drawable/ripple_radius"
+                            android:background="@drawable/button_rectangle_radius"
+                            />
+                        <LinearLayout
+                            android:id="@+id/lnr_alreay_account"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom|center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="login"
+                                android:padding="@dimen/_10dp"
+                                android:clickable="true"
+                                android:fontFamily="@font/opensans_regular"
+                                android:focusable="true"
+                                android:foreground="?android:attr/selectableItemBackgroundBorderless"
+                                android:textColor="@color/bottomtext_color"
+                                android:text="@string/alreadyhaveacnt"
+                                android:textSize="@dimen/_14sp"
+                                android:textStyle="bold"
+                                android:typeface="sans" />
+                        </LinearLayout>
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+
+                            android:layout_marginBottom="@dimen/_5dp"
+                            android:scaleType="centerInside"/>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="bottom|center_horizontal"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:onClick="signUp"
+                                android:padding="@dimen/_10dp"
+                                android:fontFamily="@font/opensans_regular"
+                                android:textColor="#b9b8b8"
+                                android:text="@string/don_t_have_an_account_register"
+                                android:textSize="@dimen/_14sp"
+                                android:textStyle="bold"
+                                android:typeface="sans" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

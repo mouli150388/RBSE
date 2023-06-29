@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingLeft="@dimen/_16dp"
+        android:paddingRight="@dimen/_16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/_5dp"
+        android:paddingBottom="@dimen/_5dp"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_back_filter"
+            android:layout_width="wrap_content"
+            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:tint="@color/colorPrimary"
+            android:paddingRight="@dimen/_8dp"
+            android:layout_height="wrap_content" />
+        <com.tutorix.tutorialspoint.views.CustomTextview
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="Filters"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_20sp"
+
+            android:paddingLeft="@dimen/_20dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+        <com.tutorix.tutorialspoint.views.CustomTextview
+            android:id="@+id/txt_apply"
+            android:layout_width="wrap_content"
+            android:text="@string/apply"
+            android:textAllCaps="true"
+            android:textSize="@dimen/_20sp"
+            android:background="@drawable/round_rectangle"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="@dimen/_5dp"
+            android:paddingBottom="@dimen/_5dp"
+
+            android:textColor="@color/colorPrimary"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1dp"
+        android:background="@color/colorPrimary"
+        />
+
+
+<com.tutorix.tutorialspoint.views.CustomScrollview
+
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_marginTop="@dimen/_2dp"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/lnr_filters"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    </LinearLayout>
+</com.tutorix.tutorialspoint.views.CustomScrollview>
+
+
+</LinearLayout>

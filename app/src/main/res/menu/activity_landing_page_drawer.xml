@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/switchClass"
+            android:icon="@drawable/ic_refresh_page_arrow_button"
+            android:title="@string/switch_class" />
+
+        <item
+            android:id="@+id/subscribe"
+            android:icon="@drawable/ic_subscrip"
+            android:title="@string/buy_activation" />
+    <item
+        android:id="@+id/syllabus"
+        android:icon="@drawable/ic_writing"
+        android:title="@string/syllabus" />
+    <item
+        android:id="@+id/orders"
+        android:icon="@drawable/ic_delivery"
+        android:title="@string/myorders" />
+        <item
+            android:id="@+id/complaints"
+            android:icon="@drawable/ic_support"
+            android:title="@string/sales_support" />
+
+      <!--<group android:id="@+id/group2">
+            <item
+                android:id="@+id/refer"
+                android:icon="@drawable/ic_share"
+                android:title="@string/refer_a_friend" />
+        </group>-->
+
+        <item
+            android:id="@+id/terms"
+            android:icon="@drawable/ic_verified_text_paper"
+            android:title="@string/terms_conditions" />
+
+
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_if_about"
+            android:title="@string/aboutus" />
+
+    <!--<group android:id="@+id/group7">
+        <item
+            android:id="@+id/deactivate"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/deactivate" />
+    </group>-->
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+
+</menu>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+
+    tools:showIn="@layout/activity_web_view_test">
+    <com.tutorix.tutorialspoint.views.CustomWebview
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.tutorix.tutorialspoint.views.CustomWebview>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

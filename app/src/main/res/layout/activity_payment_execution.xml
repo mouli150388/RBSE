@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#84e4e2e4"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    app:cardCornerRadius="@dimen/_10dp"
+    android:layout_gravity="center"
+    android:layout_margin="@dimen/_10dp"
+    android:elevation="@dimen/_10dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_gravity="center"
+        android:elevation="@dimen/_20dp"
+
+        >
+
+        <RelativeLayout
+            android:id="@+id/dialog_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/dialog_round">
+
+            <TextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/app_name"
+                android:fontFamily="@font/opensans_regular"
+                android:visibility="invisible"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_title"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="@dimen/_20dp"
+                android:text="@string/app_name" />
+
+            <Button
+                android:id="@+id/btDialogYes"
+                style="@style/RoundedDialog"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/dialog_message"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:text="@string/succuess"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btDialogNo"
+                style="@style/RoundedDialog_failure"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/dialog_message"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingStart="10dp"
+                android:text="@string/failure"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btDialogDone"
+                style="@style/RoundedDialog"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btDialogNo"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:fontFamily="@font/opensans_regular"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/circle_background">
+
+            <RelativeLayout
+                android:id="@+id/colored_circle"
+                style="@style/AlertDialog.AppCompat.CircleBackground"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/dialog_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/ic_success"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/colored_circle_failure"
+                style="@style/AlertDialog.AppCompat.CircleBackground_filure"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/dialog_icon_failure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/ic_failure" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <!--417bE0-->
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:orientation="vertical"
+    tools:context=".activities.SwitchClassActivity">
+
+    <include layout="@layout/banner" />
+
+    <ImageView
+        android:layout_width="97dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="-100dp"
+        app:srcCompat="@drawable/signup_logo" />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="#FAFAFA"
+       >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_15dp"
+            android:layout_marginRight="@dimen/_15dp"
+            android:layout_gravity="center"
+
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/margin_left"
+                android:layout_marginRight="@dimen/margin_left"
+                android:background="@drawable/login_editbackground"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content">
+                <Spinner
+                    android:id="@+id/spinner_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                   android:layout_centerVertical="true"
+
+                    />
+
+                <ImageView
+                    android:layout_width="@dimen/_12dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="@dimen/_5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/_12dp" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txt_go"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="40dp"
+                android:text="@string/go"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:minEms="6"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:fontFamily="@font/opensans_regular"
+
+
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="@drawable/ripple_radius"
+                android:background="@drawable/login_button"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_margin="@dimen/_10dp"
+                app:srcCompat="@drawable/login_background"
+                />
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

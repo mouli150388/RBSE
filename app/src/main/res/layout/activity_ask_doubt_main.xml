@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".doubts.AskDoubtMainActivity">
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ripple_radius"
+            android:layout_marginEnd="@dimen/_8dp"
+            android:layout_marginLeft="@dimen/_6dp"
+            android:padding="@dimen/_5dp"
+            android:tint="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+
+            app:srcCompat="@drawable/ic_left_arrow" />
+
+        <TextView
+            android:id="@+id/activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_8dp"
+            android:layout_centerInParent="true"
+
+            android:gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:text="Scan your doubt"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_20sp" />
+
+
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:visibility="invisible"
+            app:layout_collapseMode="pin"
+            >
+            <ImageView
+
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+                android:contentDescription="@string/app_name"
+
+                android:tint="@color/colorPrimary"
+                android:background="@drawable/ripple_radius"
+                app:srcCompat="@drawable/ic_home_out"
+
+                />
+        </LinearLayout>
+        <View android:layout_height=".8dp" android:layout_width="match_parent" android:layout_alignParentBottom="true" android:background="@color/colorPrimary"/>
+    </RelativeLayout>
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/view_finder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:importantForAccessibility="no"
+        android:layout_below="@+id/appbar"
+        android:layout_above="@+id/card_buttons"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"
+        app:contentPadding="@dimen/_5dp"
+        app:cardCornerRadius="@dimen/_4dp"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+            android:gravity="center_vertical"
+           android:layout_height="wrap_content">
+           <LinearLayout
+               android:id="@+id/lnr_gallery"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="@dimen/_36dp"
+                   android:layout_height="@dimen/_36dp"
+                   android:src="@drawable/ic_menu_gallery"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/opensans_regular"
+                   android:text="Gallery"
+                   android:textSize="@dimen/_12sp"
+                   />
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/lnr_camera"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+
+
+               <ImageView
+                   android:layout_width="@dimen/_48dp"
+                   android:layout_height="@dimen/_48dp"
+                   android:layout_gravity="center"
+                   android:padding="@dimen/_10dp"
+                   android:foreground="?android:attr/selectableItemBackground"
+
+                   android:src="@drawable/ic_instagram"
+                   android:background="@drawable/bottomnavigation_doubt_buttonbg"
+                   />
+
+
+           </LinearLayout>
+           <LinearLayout
+               android:id="@+id/lnr_keyboard"
+               android:layout_width="0dp"
+               android:layout_weight="1"
+               android:gravity="center"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+               <ImageView
+                   android:layout_width="@dimen/_36dp"
+                   android:layout_height="@dimen/_36dp"
+                   android:src="@drawable/ic_keyboard"
+                   />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:fontFamily="@font/opensans_regular"
+                   android:text="Type your doubt"
+                   android:textSize="@dimen/_12sp"
+                   />
+           </LinearLayout>
+       </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/lnr_loading"
+        android:elevation="@dimen/_10dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/black"
+        android:gravity="center">
+
+
+        <ImageView
+            android:id="@+id/img_scanning"
+            android:layout_width="@dimen/_200dp"
+            android:src="@drawable/scanning_gif"
+            android:layout_height="@dimen/_200dp" />
+        <com.tutorix.tutorialspoint.views.CustomTextview
+            android:layout_width="wrap_content"
+            android:layout_margin="@dimen/_5dp"
+            android:textSize="@dimen/_18sp"
+            android:textColor="@color/white"
+            android:text="@string/pleasewait"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

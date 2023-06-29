@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel_toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/top_main_background"
+        android:layout_height="@dimen/banner_quiz_height">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/_20sp"
+            android:layout_marginTop="@dimen/_20dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/opensans_regular"
+            android:text="@string/performance_analysis"
+            />
+       <include layout="@layout/cloude_image_view"/>
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:padding="@dimen/_4dp"
+        android:gravity="center"
+
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/oneday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:text="1 Day"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/sevendays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="7 Days"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp"
+            tools:ignore="ButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/monthdata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/_30_days"
+            android:fontFamily="@font/opensans_regular"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp" />
+
+        <RadioButton
+            android:id="@+id/overall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:padding="@dimen/_5dp"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:fontFamily="@font/opensans_regular"
+            android:text="All"
+            android:textColor="@drawable/color_selector"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/quiz_margin"
+        android:layout_marginRight="@dimen/quiz_margin"
+        android:layout_marginBottom="@dimen/quiz_margin"
+        android:elevation="20dp"
+        android:background="@drawable/shadow_new"
+        android:orientation="vertical"
+        >
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_analysis"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+
+            android:minHeight="@dimen/_300dp"
+            android:layout_height="wrap_content">
+
+        </androidx.viewpager.widget.ViewPager>
+        <RadioGroup
+            android:id="@+id/radio_sub_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_phy"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+
+                android:background="@drawable/circle_phy"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:fontFamily="@font/opensans_regular"
+                android:minHeight="30dp"
+
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/radio_che"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/circle_che"
+                android:button="@null"
+                android:gravity="center"
+                android:minHeight="30dp"
+
+                android:fontFamily="@font/opensans_regular"
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp"
+                tools:ignore="ButtonStyle" />
+
+            <RadioButton
+                android:id="@+id/radio_math"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+                android:layout_marginLeft="5dp"
+
+                android:background="@drawable/circle_math"
+                android:button="@null"
+                android:gravity="center"
+                android:fontFamily="@font/opensans_regular"
+                android:minHeight="30dp"
+
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp" />
+
+            <RadioButton
+                android:id="@+id/radio_bio"
+                android:layout_width="@dimen/quiz_img_size"
+                android:layout_height="@dimen/quiz_img_size"
+                android:layout_marginLeft="5dp"
+
+                android:fontFamily="@font/opensans_regular"
+                android:background="@drawable/circle_bio"
+                android:button="@null"
+
+                android:gravity="center"
+                android:minHeight="30dp"
+
+                android:textColor="@drawable/color_selector"
+                android:textSize="10sp" />
+
+        </RadioGroup>
+        <RadioGroup
+            android:id="@+id/radio_grp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radio_one"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="@dimen/_2dp"
+                android:button="@drawable/welcome_selector"
+                android:checked="true"
+                android:editable="false"
+                android:focusableInTouchMode="false" />
+
+            <RadioButton
+                android:id="@+id/radio_two"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="@dimen/_2dp"
+                android:button="@drawable/welcome_selector"
+                android:editable="false"
+                android:focusableInTouchMode="false" />
+
+            <RadioButton
+                android:id="@+id/radio_three"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="@dimen/_2dp"
+                android:button="@drawable/welcome_selector"
+                android:editable="false"
+                android:focusableInTouchMode="false" />
+
+            <RadioButton
+                android:id="@+id/radio_four"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="@dimen/_2dp"
+                android:button="@drawable/welcome_selector"
+                android:editable="false"
+                android:focusableInTouchMode="false" />
+
+            <RadioButton
+                android:id="@+id/radio_five"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_margin="@dimen/_2dp"
+                android:button="@drawable/welcome_selector"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:visibility="gone" />
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</LinearLayout>

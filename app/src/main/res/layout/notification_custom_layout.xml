@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="140dp">
+
+    <ImageView
+            android:id="@+id/notifAddDriverIcon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+            android:id="@+id/notifAddDriverTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/notifAddDriverIcon"
+            android:layout_marginStart="16dp"
+            android:textColor="#C60DE6"
+            android:layout_toEndOf="@+id/notifAddDriverIcon"
+            android:text="Tutorix"
+            android:textSize="14sp" />
+
+    <TextView
+            android:id="@+id/notifAddDriverSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:layout_alignStart="@+id/notifAddDriverTitle"
+            android:layout_below="@+id/notifAddDriverTitle"
+            android:layout_marginTop="2dp"
+            android:text="Dear Student, Looks like you stopped your learning with Tutorix. We are really missing you, come back and start your Simply Easy Learning" />
+<ImageView
+    android:layout_below="@+id/notifAddDriverSubtitle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80dp"
+
+    android:src="@drawable/expertise"
+    />
+    <!--<View-->
+    <!--android:id="@+id/separator"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_alignStart="@+id/notifAddDriverSubtitle"-->
+    <!--android:layout_below="@+id/notifAddDriverSubtitle"-->
+    <!--android:layout_marginStart="12dp"-->
+    <!--android:layout_marginTop="19dp"-->
+    <!--android:background="@color/chat_view_call_stroke" />-->
+
+
+</RelativeLayout>

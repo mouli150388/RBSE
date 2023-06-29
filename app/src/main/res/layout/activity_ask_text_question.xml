@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".doubts.AskQuestionActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/activstion_background" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_5dp"
+       >
+
+        <LinearLayout
+            android:id="@+id/lnr_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+
+            android:layout_marginStart="10sp"
+            android:background="@drawable/ripple_radius"
+
+            android:padding="@dimen/_8dp"
+            app:layout_collapseMode="pin">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_6dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:tint="@color/colorPrimary"
+                android:contentDescription="@string/app_name"
+                app:srcCompat="@drawable/ic_left_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            android:layout_gravity="right|center"
+            app:layout_collapseMode="pin"
+            >
+            <ImageView
+
+                android:layout_width="@dimen/back_icon_size"
+                android:layout_height="@dimen/back_icon_size"
+                android:contentDescription="@string/app_name"
+
+                android:tint="@color/colorPrimary"
+                android:background="@drawable/ripple_radius"
+                app:srcCompat="@drawable/ic_home_out"
+
+                />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+    <LinearLayout
+        android:layout_above="@+id/lnr_submit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+
+            android:layout_weight="1"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/_8dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/_8dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingEnd="@dimen/_8dp"
+                android:paddingBottom="@dimen/_10dp">
+
+
+                <EditText
+                    android:id="@+id/etQuestionDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_8dp"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/opensans_regular"
+                    android:gravity="top"
+                    android:hint="@string/typeyourdoubt"
+                    android:inputType="text|textMultiLine|textCapSentences|textAutoCorrect"
+                    android:maxLength="500"
+                    android:minHeight="@dimen/_100dp"
+                    android:padding="@dimen/_8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/colorPrimary"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/lnr_submit"
+        android:layout_width="match_parent"
+
+        android:background="@drawable/search_background_drawable"
+       android:elevation="@dimen/_5dp"
+        android:layout_height="wrap_content"
+        android:gravity="right|center_vertical">
+
+        <TextView
+            android:id="@+id/tvPostQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:clickable="false"
+
+            android:fontFamily="@font/opensans_regular"
+            android:padding="12dp"
+
+            android:gravity="center"
+
+            android:text="@string/next"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_18sp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

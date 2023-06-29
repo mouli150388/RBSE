@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5dp"
+
+
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_15dp"
+        android:elevation="@dimen/_8dp"
+       android:paddingTop="16dp"
+        android:layout_marginBottom="@dimen/_5dp"
+        android:layout_marginLeft="@dimen/_2dp"
+        android:layout_marginRight="@dimen/_2dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/bodyLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_32dp"
+           android:paddingTop="40dp"
+            android:background="@color/transparent">
+
+            <!-- Lecture name-->
+            <TextView
+                android:id="@+id/chapter_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+
+                android:layout_gravity="center"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:textStyle="bold"
+                android:ellipsize="middle"
+                android:layout_toLeftOf="@+id/lnr_play"
+                android:text="Lecture Name"
+                android:textColor="@color/chapter_text_color"
+                android:fontFamily="@font/opensans_regular"
+                android:textIsSelectable="true"
+                android:textSize="14sp"
+
+
+                tools:ignore="HardcodedText" />
+
+            <!-- Duration -->
+            <TextView
+                android:id="@+id/durationTVID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chapter_name"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/opensans_regular"
+                android:layout_toStartOf="@+id/lnr_play"
+                android:text="Duration - 00:05:23"
+                android:textColor="@color/duration_color"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText,SmallSp" />
+
+            <!--Bottom -->
+            <LinearLayout
+                android:id="@+id/bottomComponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/durationTVID"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="5dp"
+
+                android:orientation="horizontal"
+
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/lectureNotes"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/notes"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:minEms="5"
+                    android:text="@string/notes"
+                    android:fontFamily="@font/opensans_regular"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/quiz"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/notes"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="5dp"
+                    android:minEms="5"
+                    android:text="@string/quiz"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/Quit"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/notes"
+                    android:gravity="center"
+                    android:fontFamily="@font/opensans_regular"
+                    android:padding="5dp"
+                    android:minEms="5"
+                    android:text="@string/track"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lnr_play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="10dp"
+                >
+                <ImageView
+                    android:id="@+id/playButton"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:padding="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_play_white" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lnr_demo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="#0000"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+android:paddingRight="10dp"
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical|right"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/img_lock"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:visibility="visible"
+                    android:background="@color/white"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="@dimen/_5dp"
+                    android:layout_marginTop="@dimen/_5dp"
+                    android:padding="@dimen/_5dp"
+                    android:layout_marginBottom="@dimen/_5dp"
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/locked" />
+
+                <TextView
+                    android:id="@+id/txt_subscribe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:visibility="gone"
+                    android:fontFamily="@font/opensans_regular"
+                    android:text="@string/subscribe_now"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_14sp"  />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:id="@+id/lnr_bookmark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10dp"
+        android:orientation="horizontal">
+
+        <!-- lecture status-->
+
+        <LinearLayout
+            android:id="@+id/lnr_options"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            >
+
+            <!-- Show layout-->
+            <RelativeLayout
+                android:id="@+id/showLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+
+                android:elevation="@dimen/_5dp"
+                android:clipChildren="false"
+                >
+
+
+                <ImageView
+                    android:id="@+id/completed"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_toRightOf="@+id/lectureStatus"
+                    android:animateLayoutChanges="true"
+                    android:scaleType="centerCrop"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ic_completed_active_bg"
+                    android:contentDescription="@string/app_name"
+                    android:padding="7dp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/favourite"
+                    android:layout_width="36dp"
+                    android:layout_toRightOf="@+id/completed"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/ic_bookmark_active"
+                    android:contentDescription="@string/app_name"
+                    android:padding="7dp"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/notes"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:layout_toRightOf="@+id/favourite"
+                    android:layout_marginStart="12dp"
+                    android:animateLayoutChanges="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="3dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_notes" />
+
+                <ImageView
+                    android:id="@+id/doubts"
+                    android:layout_width="36dp"
+                    android:layout_toRightOf="@+id/notes"
+                    android:layout_height="36dp"
+                    android:layout_marginStart="12dp"
+                    android:animateLayoutChanges="true"
+                    android:contentDescription="@string/app_name"
+                    android:padding="3dp"
+                    android:visibility="invisible"
+                    android:background="@drawable/ic_help_round_button" />
+                <ImageView
+                    android:id="@+id/lectureStatus"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+
+
+                    android:contentDescription="@string/app_name"
+                    app:srcCompat="@drawable/ic_default_bg" />
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/notes_availe"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_toRightOf="@+id/lectureStatus"
+            android:animateLayoutChanges="true"
+            android:scaleType="centerCrop"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/ic_book_write_notes"
+            android:contentDescription="@string/app_name"
+            android:visibility="gone"
+            android:padding="3dp"
+            />
+    </LinearLayout>
+</RelativeLayout>

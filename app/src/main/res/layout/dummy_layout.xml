@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="0dp"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_margin="@dimen/_16dp"
+           android:layout_height="wrap_content">
+           <ImageView
+               android:id="@+id/img_back"
+               android:layout_width="wrap_content"
+               android:src="@drawable/ic_left_arrow"
+               android:tint="@color/colorPrimary"
+               android:paddingRight="@dimen/_8dp"
+               android:layout_height="wrap_content" />
+       </LinearLayout>
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="match_parent"
+                    android:text="Select Subjects"
+                    android:textSize="@dimen/_20sp"
+                    android:background="@color/aaa"
+                    android:textColor="@color/black"
+                    android:paddingLeft="@dimen/_20dp"
+
+                    android:layout_height="wrap_content" />
+
+                <RadioGroup
+                    android:id="@+id/radio_sub_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="?attr/actionBarSize"
+                    android:layout_marginBottom="@dimen/graph_radio_bottom"
+                    android:gravity="center"
+
+                    android:visibility="visible"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_math"
+                        style="@style/radio_subject_buttons"
+
+                        android:background="@drawable/circle_math"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_phy"
+                        style="@style/radio_subject_buttons"
+                        android:background="@drawable/circle_phy"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/radio_che"
+                        style="@style/radio_subject_buttons"
+                        android:background="@drawable/circle_che"
+                        />
+
+
+
+                    <RadioButton
+                        android:id="@+id/radio_bio"
+                        style="@style/radio_subject_buttons"
+                        android:background="@drawable/circle_bio"
+                        />
+                    <RadioButton
+                        android:id="@+id/radio_all"
+                        style="@style/radio_subject_buttons"
+                        android:background="@drawable/circle_all"
+
+                        />
+                </RadioGroup>
+
+                <com.tutorix.tutorialspoint.views.CustomTextview
+                    android:layout_width="match_parent"
+                    android:text="Select Class"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:textSize="@dimen/_20sp"
+                    android:paddingLeft="@dimen/_20dp"
+                    android:background="@color/aaa"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content" />
+                <RadioGroup
+                    android:id="@+id/radio_classes"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/radio_1"
+                        style="@style/radio_buttons"
+                        android:text="6th " />
+
+                    <RadioButton
+                        android:id="@+id/radio_2"
+                        style="@style/radio_buttons"
+                        android:text="7th " />
+
+                    <RadioButton
+                        android:id="@+id/radio_3"
+                        style="@style/radio_buttons"
+                        android:text="8th " />
+
+                    <RadioButton
+                        android:id="@+id/radio_4"
+                        style="@style/radio_buttons"
+                        android:text="9th " />
+
+
+
+
+                </RadioGroup>
+
+        <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/_20dp"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/radio_5"
+                        style="@style/radio_buttons"
+                        android:text="10th " />
+                    <RadioButton
+                        android:id="@+id/radio_6"
+                        style="@style/radio_buttons"
+                        android:text="11th " />
+
+                    <RadioButton
+                        android:id="@+id/radio_7"
+                        style="@style/radio_buttons"
+                        android:text="12th " />
+
+                    <RadioButton
+                        android:id="@+id/radio_8"
+                        style="@style/radio_buttons"
+                        android:text="IIT-JEE" />
+
+
+                </RadioGroup>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/_20dp"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/radio_9"
+                style="@style/radio_buttons"
+                android:text="NEET" />
+
+            <RadioButton
+                android:id="@+id/radio_10"
+                style="@style/radio_buttons"
+                android:checked="true"
+                android:text="@string/all" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_apply"
+            android:layout_width="wrap_content"
+            android:background="@drawable/retake_button"
+            android:text="@string/submit"
+            android:minHeight="@dimen/_35dp"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+
+            android:layout_marginTop="@dimen/_20dp"
+            android:minEms="8"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/math_quiz_check" android:top="@dimen/_1dp" android:bottom="@dimen/_1dp" android:left="@dimen/_1dp" android:right="@dimen/_1dp">
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <stroke android:color="@color/quiz_selecct_color_cirlce" android:width="3dp"/>
+        </shape>
+    </item>
+
+</layer-list>
