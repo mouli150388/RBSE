@@ -17,7 +17,22 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="111cee8f-5774-4e45-9a74-cbbc5252970f" name="Changes" comment="" />
+    <list default="true" id="111cee8f-5774-4e45-9a74-cbbc5252970f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_login_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_login_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_15_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_15_0_1_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_2_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_2_3_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_chat_2_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_chat_2_3_2_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,7 +41,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[CATOGAXWNJIVF6WG]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/biyyalac/.android/avd/Resizable_Experimental_API_34.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -123,41 +138,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ApkExportedModule&quot;: &quot;tutorix-android-main.app&quot;,
-    &quot;BundleExportedModule&quot;: &quot;tutorix-android-main.app&quot;,
-    &quot;ExportApk.ApkPath&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app&quot;,
-    &quot;ExportApk.ApkPathFortutorix-android-main.app&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/app&quot;,
-    &quot;ExportApk.ApkPathFortutorix_room.app&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app&quot;,
-    &quot;ExportApk.ApkPathFortutorix_room_board.app&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room_board/app&quot;,
-    &quot;ExportBundle.BundlePathFortutorix-android-main.app&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/app&quot;,
-    &quot;ExportBundle.BundlePathFortutorix_room.app&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app&quot;,
-    &quot;Git.Branch.Popup.ShowAllRemotes&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ScreenshotViewer.SavePath&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/RBSE-Sreenshots&quot;,
-    &quot;android-custom-view/Users/apple/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.3/38251ee74b9d9c16a5b707c7b924d84d352cce0a/MPAndroidChart-v3.0.3-sources.jar!/com/github/mikephil/charting/charts/LineChart.java_SELECTED&quot;: &quot;LineChart&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main&quot;,
-    &quot;memory.settings.postsync.last.time.stamp&quot;: &quot;1687868611243&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;emulator&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
-    &quot;two.files.diff.last.used.file&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app/src/main/AndroidManifest.xml&quot;,
-    &quot;two.files.diff.last.used.folder&quot;: &quot;/Users/biyyalac/Documents/Workspace/OtherWorkSpace/Tutorix-School/app/src/main/java/com/tutorix/tutorialspoint/login&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ApkExportedModule": "tutorix-android-main.app",
+    "BundleExportedModule": "tutorix-android-main.app",
+    "ExportApk.ApkPath": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app",
+    "ExportApk.ApkPathFortutorix-android-main.app": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/app",
+    "ExportApk.ApkPathFortutorix_room.app": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app",
+    "ExportApk.ApkPathFortutorix_room_board.app": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room_board/app",
+    "ExportBundle.BundlePathFortutorix-android-main.app": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/app",
+    "ExportBundle.BundlePathFortutorix_room.app": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app",
+    "Git.Branch.Popup.ShowAllRemotes": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ScreenshotViewer.SavePath": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/RBSE-Sreenshots",
+    "android-custom-view/Users/apple/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.3/38251ee74b9d9c16a5b707c7b924d84d352cce0a/MPAndroidChart-v3.0.3-sources.jar!/com/github/mikephil/charting/charts/LineChart.java_SELECTED": "LineChart",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main",
+    "memory.settings.postsync.last.time.stamp": "1688297038759",
+    "project.structure.last.edited": "SDK Location",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "emulator",
+    "show.migrate.to.gradle.popup": "false",
+    "two.files.diff.last.used.file": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app/src/main/AndroidManifest.xml",
+    "two.files.diff.last.used.folder": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/Tutorix-School/app/src/main/java/com/tutorix/tutorialspoint/login"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ExportApk.BuildVariants&quot;: [
-      &quot;release&quot;
+  "keyToStringList": {
+    "ExportApk.BuildVariants": [
+      "release"
     ]
   }
-}</component>
+}]]></component>
   <component name="PsdUISettings">
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
