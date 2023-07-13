@@ -18,7 +18,9 @@ import android.hardware.display.DisplayManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -85,8 +87,10 @@ import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.snackbar.Snackbar;
 import com.tutorix.tutorialspoint.AppConfig;
 import com.tutorix.tutorialspoint.AppController;
+import com.tutorix.tutorialspoint.BuildConfig;
 import com.tutorix.tutorialspoint.R;
 import com.tutorix.tutorialspoint.Security;
 import com.tutorix.tutorialspoint.SessionManager;
@@ -286,7 +290,37 @@ public class VideoPlayerActivity extends AppCompatActivity implements VideoRende
     }
 
     private void proceedData() {
-        if (lecture_video_url.toString().length() > 6) {
+
+        if (/*AppConfig.checkSDCardEnabled(_this, userid, classid) &&*/ AppConfig.checkSdcard(classid,getApplicationContext())) {
+            lnrSettings.setVisibility(View.VISIBLE);
+            if (checkPermissionforstorage()) {
+                String sdCardpath = "";
+                if ((sdCardpath = AppConfig.getSdCardPath(classid,getApplicationContext())) != null) {
+                    lecture_video_url = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_NAME;
+                    lecture_audio_url = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" + audio_language + "/" + audio_language + ".m3u8";
+                    lecture_video_srt = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_SRT;
+
+                    loadData(false);
+                } else {
+                    finish();
+                    CommonUtils.showToast(getApplicationContext(), getString(R.string.no_sdcard));
+
+                }
+            } else {
+                requestPermissionforstorage();
+            }
+        }else {
+            if(lecture_video_url.toString().length() > 6) {
+                loadData(true);
+                lnrSettings.setVisibility(View.GONE);
+            } else if (selected_user_id != null && selected_user_id != userid) {
+                lecture_video_url = AppConfig.getOnlineURL(selected_class_id, false) + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_NAME;
+                lecture_video_srt = AppConfig.getOnlineURL(selected_class_id, false) + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_SRT;
+                loadData(true);
+                lnrSettings.setVisibility(View.GONE);
+            }
+        }
+        /*if (lecture_video_url.toString().length() > 6) {
             loadData(true);
             lnrSettings.setVisibility(View.GONE);
         } else if (selected_user_id != null && selected_user_id != userid) {
@@ -355,39 +389,9 @@ public class VideoPlayerActivity extends AppCompatActivity implements VideoRende
             } else {
                 requestPermissionforstorage();
             }
-        }
-
-        /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(_this).isOnline()) {
-                lecture_video_url = AppConfig.getOnlineURL(classid) + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_NAME;
-                lecture_video_srt = AppConfig.getOnlineURL(classid) + subjectId + "/" + section_id + "/" + lecture_id + "/" +  Constants.VIDEO_SRT;
-                loadData(true);
-                lnrSettings.setVisibility(View.GONE);
-            } else {
-                finish();
-                CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet));
-
-            }
-
-        } else {
-            lnrSettings.setVisibility(View.VISIBLE);
-            if (checkPermissionforstorage()) {
-                String sdCardpath="";
-                if ((sdCardpath=AppConfig.getSdCardPath(classid) )!= null) {
-                    lecture_video_url = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" +  Constants.VIDEO_NAME;
-                    lecture_audio_url = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" +  audio_language+"/"+audio_language+".m3u8";
-                    lecture_video_srt = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_SRT;
-
-                    loadData(false);
-                } else {
-                    finish();
-                    CommonUtils.showToast(getApplicationContext(), getString(R.string.no_sdcard));
-
-                }
-            } else {
-                requestPermissionforstorage();
-            }
         }*/
+
+
     }
 
     TextView txt_audio_track;
@@ -716,8 +720,31 @@ public class VideoPlayerActivity extends AppCompatActivity implements VideoRende
     }
 
     private boolean checkPermissionforstorage() {
-        int result = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        return result == PackageManager.PERMISSION_GRANTED;
+        if(Build.VERSION.SDK_INT >= 30) {
+            if (!Environment.isExternalStorageManager()) {
+                Snackbar.make(findViewById(android.R.id.content), "Permission needed!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Settings", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+
+                                try {
+                                    Uri uri = Uri.parse("package:" + BuildConfig.APPLICATION_ID);
+                                    Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, uri);
+                                    startActivity(intent);
+                                } catch (Exception ex) {
+                                    Intent intent = new Intent();
+                                    intent.setAction(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
+                                    startActivity(intent);
+                                }
+                            }
+                        })
+                        .show();
+                return  false;
+            } else return true;
+        }else {
+            int  result = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            return result == PackageManager.PERMISSION_GRANTED;
+        }
     }
 
     private void requestPermissionforstorage() {

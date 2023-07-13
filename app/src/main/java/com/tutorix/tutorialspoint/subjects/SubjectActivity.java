@@ -229,7 +229,7 @@ public class SubjectActivity extends AppCompatActivity implements SubjectView{
 
     @Override
     public void requestPermissionForStorage() {
-        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 300);
+        ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE,Manifest.permission.MANAGE_EXTERNAL_STORAGE}, 300);
     }
 
     @Override

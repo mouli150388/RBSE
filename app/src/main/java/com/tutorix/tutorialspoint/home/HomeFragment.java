@@ -435,6 +435,12 @@ public class HomeFragment extends Fragment {
     }
 
     private boolean checkActivation() {
+
+        //FOr RBSE we removed this feature
+        if(true)
+        {
+            return true;
+        }
         if(loginType==null)
         {
             return false;

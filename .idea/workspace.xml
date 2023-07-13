@@ -32,6 +32,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_chat_2_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_chat_2_3_2_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/NotesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/NotesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/SectionPerformanceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/SectionPerformanceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeTabActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeTabActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/MockTestPreviousActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/MockTestPreviousActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizMockExamActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizMockExamActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizQuestionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizQuestionActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizRulesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizRulesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/sdcardactivation/SDCardActivation.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/sdcardactivation/SDCardActivation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/toc/TOCPlayerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/toc/TOCPlayerActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoPlayerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoPlayerActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +56,7 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/biyyalac/.android/avd/Resizable_Experimental_API_34.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[CATOGAXWNJIVF6WG]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -142,6 +157,9 @@
   "keyToString": {
     "ApkExportedModule": "tutorix-android-main.app",
     "BundleExportedModule": "tutorix-android-main.app",
+    "DEBUGGABLE_DEVICE": "lenovo_tb_j607z-HA1THP1Q",
+    "DEBUGGABLE_PROCESS": "com.bser.tutorialspoint",
+    "DEBUGGER_ID": "Auto",
     "ExportApk.ApkPath": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app",
     "ExportApk.ApkPathFortutorix-android-main.app": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/app",
     "ExportApk.ApkPathFortutorix_room.app": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/tutorix_room/app",
@@ -153,12 +171,13 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SHOW_ALL_PROCESSES": "false",
     "ScreenshotViewer.SavePath": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main/RBSE-Sreenshots",
     "android-custom-view/Users/apple/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v3.0.3/38251ee74b9d9c16a5b707c7b924d84d352cce0a/MPAndroidChart-v3.0.3-sources.jar!/com/github/mikephil/charting/charts/LineChart.java_SELECTED": "LineChart",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
     "last_opened_file_path": "/Users/biyyalac/Documents/Workspace/OtherWorkSpace/RBSE-Update/tutorix-android-main",
-    "memory.settings.postsync.last.time.stamp": "1688297038759",
+    "memory.settings.postsync.last.time.stamp": "1689095420301",
     "project.structure.last.edited": "SDK Location",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.2",
@@ -390,6 +409,111 @@
           <line>23</line>
           <option name="timeStamp" value="101" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/AppConfig.java</url>
+          <line>625</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/AppConfig.java</url>
+          <line>633</line>
+          <option name="timeStamp" value="117" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/AppConfig.java</url>
+          <line>651</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/AppConfig.java</url>
+          <line>658</line>
+          <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="120" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>134</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>136</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>156</line>
+          <option name="timeStamp" value="128" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="129" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java</url>
+          <line>160</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectActivity.java</url>
+          <line>243</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectActivity.java</url>
+          <line>240</line>
+          <option name="timeStamp" value="132" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java</url>
+          <line>1009</line>
+          <option name="timeStamp" value="133" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java</url>
+          <line>1011</line>
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/NotesActivity.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/NotesActivity.java</url>
+          <line>249</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/NotesActivity.java</url>
+          <line>251</line>
+          <option name="timeStamp" value="137" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/NotesActivity.java</url>
+          <line>250</line>
+          <option name="timeStamp" value="138" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/LineGraphFragment.java</url>
           <line>756</line>
@@ -403,7 +527,6 @@
           <url>file://$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/players/TrackSelectionDialog.java</url>
           <line>292</line>
           <properties class="com.tutorix.tutorialspoint.players.TrackSelectionDialog" method="getTrackTypeString">
-            <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="95" />

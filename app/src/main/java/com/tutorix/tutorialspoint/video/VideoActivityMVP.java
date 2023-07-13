@@ -1,5 +1,8 @@
 package com.tutorix.tutorialspoint.video;
 
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+import static com.tutorix.tutorialspoint.utility.Constants.LANG_VIDEO_SUPPORT;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
@@ -18,7 +21,9 @@ import android.hardware.display.DisplayManager;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Menu;
@@ -41,6 +46,16 @@ import android.widget.ProgressBar;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.LinearSmoothScroller;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -81,9 +96,11 @@ import com.google.android.exoplayer2.upstream.FileDataSourceFactory;
 import com.google.android.exoplayer2.util.MimeTypes;
 import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.video.VideoRendererEventListener;
+import com.google.android.material.snackbar.Snackbar;
 import com.squareup.picasso.Picasso;
 import com.tutorix.tutorialspoint.AppConfig;
 import com.tutorix.tutorialspoint.AppController;
+import com.tutorix.tutorialspoint.BuildConfig;
 import com.tutorix.tutorialspoint.R;
 import com.tutorix.tutorialspoint.Security;
 import com.tutorix.tutorialspoint.SessionManager;
@@ -113,21 +130,9 @@ import java.util.Map;
 import java.util.Objects;
 import java.util.Random;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.LinearSmoothScroller;
-import androidx.recyclerview.widget.RecyclerView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
-
-import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
-import static com.tutorix.tutorialspoint.utility.Constants.LANG_VIDEO_SUPPORT;
 
 public class VideoActivityMVP extends AppCompatActivity implements VideoRendererEventListener, Player.EventListener, VideoView {
 
@@ -372,7 +377,18 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
             int img_height = (int) convertDpToPixel(90, getApplicationContext());
             String BaseURL = "";
 
-            if(selected_user_id!=null&&selected_user_id!=userid)
+
+            if(AppConfig.checkSdcard(classid,getApplicationContext()))
+            {
+                BaseURL = AppConfig.getSdCardPath(classid,getApplicationContext());
+            }else
+            {
+                BaseURL = AppConfig.getOnlineURLImage(classid);
+            }
+
+
+
+           /* if(selected_user_id!=null&&selected_user_id!=userid)
             {
                 BaseURL = AppConfig.getOnlineURLImage(selected_class_id);
             }
@@ -392,7 +408,7 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
             }else
             {
                 BaseURL = AppConfig.getSdCardPath(classid,getApplicationContext());
-            }
+            }*/
 
 
             String imageUrl = BaseURL;
@@ -500,6 +516,42 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
     }
 
     private void proceedData() {
+
+        if(AppConfig.checkSdcard(classid,getApplicationContext()))
+        {
+            //lnrSettings.setVisibility(View.VISIBLE);
+            if (checkPermissionforstorage()) {
+                String sdCardpath="";
+                if ((sdCardpath=AppConfig.getSdCardPath(classid,getApplicationContext()) )!= null) {
+                    lecture_video_url = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_NAME;
+                    lecture_audio_url = sdCardpath + subjectId + "/" + section_id + "/" + lecture_id + "/" + audio_language + "/" + audio_language + ".m3u8";
+                    lecture_video_srt = sdCardpath+ subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_SRT;
+
+                    loadData(false);
+                } else {
+                    finish();
+                    CommonUtils.showToast(getApplicationContext(), getString(R.string.no_sdcard));
+
+                }
+            } else {
+                requestPermissionforstorage();
+            }
+        }else
+        {
+            if (AppStatus.getInstance(_this).isOnline()) {
+                lecture_video_url = AppConfig.getOnlineURLVideo(classid) + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_NAME;
+                lecture_video_srt = AppConfig.getOnlineURLVideo(classid) + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_SRT;
+                loadData(true);
+                lnrSettings.setVisibility(View.GONE);
+            } else {
+                finish();
+                CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet));
+
+            }
+        }
+
+
+     /*
         if(selected_user_id!=null&&selected_user_id!=userid)
         {
             lecture_video_url = AppConfig.getOnlineURLVideo(selected_class_id) + subjectId + "/" + section_id + "/" + lecture_id + "/" + Constants.VIDEO_NAME;
@@ -572,7 +624,7 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
             } else {
                 requestPermissionforstorage();
             }
-        }
+        }*/
 
 
        /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
@@ -841,8 +893,31 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
     }
 
     private boolean checkPermissionforstorage() {
-        int result = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
-        return result == PackageManager.PERMISSION_GRANTED;
+        if(Build.VERSION.SDK_INT >= 30) {
+            if (!Environment.isExternalStorageManager()) {
+                Snackbar.make(findViewById(android.R.id.content), "Permission needed!", Snackbar.LENGTH_INDEFINITE)
+                        .setAction("Settings", new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+
+                                try {
+                                    Uri uri = Uri.parse("package:" + BuildConfig.APPLICATION_ID);
+                                    Intent intent = new Intent(Settings.ACTION_MANAGE_APP_ALL_FILES_ACCESS_PERMISSION, uri);
+                                    startActivity(intent);
+                                } catch (Exception ex) {
+                                    Intent intent = new Intent();
+                                    intent.setAction(Settings.ACTION_MANAGE_ALL_FILES_ACCESS_PERMISSION);
+                                    startActivity(intent);
+                                }
+                            }
+                        })
+                        .show();
+                return  false;
+            } else return true;
+        }else {
+            int  result = ContextCompat.checkSelfPermission(getApplicationContext(), Manifest.permission.WRITE_EXTERNAL_STORAGE);
+            return result == PackageManager.PERMISSION_GRANTED;
+        }
     }
 
     private void requestPermissionforstorage() {

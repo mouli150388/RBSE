@@ -1678,7 +1678,20 @@ public class QuizQuestionActivity extends AppCompatActivity implements OnChartVa
         ;
         loginType = userInfo[2];
 
-        if (loginType.isEmpty()) {
+        if (/*AppConfig.checkSDCardEnabled(_this, userid, classid) &&*/ AppConfig.checkSdcard(classid,getApplicationContext())) {
+            if (lectureId.equalsIgnoreCase("0"))
+                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) /*+ subjectId + "/" + section_id*/;
+            else
+                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext())/* + subjectId + "/" + section_id + "/" + lectureId*/;
+
+        } else {
+            if (lectureId.equalsIgnoreCase("0"))
+                basePath = AppConfig.getOnlineURLImage(classid);
+            else
+                basePath = AppConfig.getOnlineURLImage(classid);
+        }
+
+        /*if (loginType.isEmpty()) {
             if (lectureId.equalsIgnoreCase("0"))
                 basePath = AppConfig.getOnlineURLImage(classid);
             else
@@ -1687,9 +1700,9 @@ public class QuizQuestionActivity extends AppCompatActivity implements OnChartVa
 
             if (AppConfig.checkSDCardEnabled(_this, userid, classid) && AppConfig.checkSdcard(classid,getApplicationContext())) {
                 if (lectureId.equalsIgnoreCase("0"))
-                    basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) /*+ subjectId + "/" + section_id*/;
+                    basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) *//*+ subjectId + "/" + section_id*//*;
                 else
-                    basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext())/* + subjectId + "/" + section_id + "/" + lectureId*/;
+                    basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext())*//* + subjectId + "/" + section_id + "/" + lectureId*//*;
 
             } else {
                 if (lectureId.equalsIgnoreCase("0"))
@@ -1699,11 +1712,11 @@ public class QuizQuestionActivity extends AppCompatActivity implements OnChartVa
             }
         } else {
             if (lectureId.equalsIgnoreCase("0"))
-                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) /*+ subjectId + "/" + section_id*/;
+                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) *//*+ subjectId + "/" + section_id*//*;
             else
-                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext())/* + subjectId + "/" + section_id + "/" + lectureId*/;
+                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext())*//* + subjectId + "/" + section_id + "/" + lectureId*//*;
 
-        }
+        }*/
 
 
       /*  if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {

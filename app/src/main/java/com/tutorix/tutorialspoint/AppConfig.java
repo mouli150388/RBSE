@@ -8,6 +8,7 @@ import android.os.Build;
 import android.os.Environment;
 import android.os.storage.StorageManager;
 import android.os.storage.StorageVolume;
+import android.util.Log;
 
 import com.tutorix.tutorialspoint.database.MyDatabase;
 import com.tutorix.tutorialspoint.models.SDActivationDetails;
@@ -603,6 +604,15 @@ public class AppConfig {
                 }
             }
         }*/
+        Log.d("Hindi File Path","class path1 "+className);
+
+        if(AppController.getInstance().childQaulityAudio==1)
+        {
+            className="hindi/"+className;
+        }
+
+        Log.d("Hiindi File Path","class path2 "+className);
+
         if (Build.VERSION.SDK_INT >= 30) {
 
             List<StorageVolume> volumes = ((StorageManager) ctx.getSystemService(STORAGE_SERVICE)).getStorageVolumes();
@@ -693,6 +703,15 @@ public class AppConfig {
         }*/
 
         File fileListall[];
+        Log.d("Hindi File Path","class path1 "+className);
+
+        if(AppController.getInstance().childQaulityAudio==1)
+        {
+            className="hindi/"+className;
+        }
+
+        Log.d("Hiindi File Path","class path2 "+className);
+
         if (Build.VERSION.SDK_INT >= 30) {
 
             List<StorageVolume> volumes = ((StorageManager) ctx.getSystemService(STORAGE_SERVICE)).getStorageVolumes();
