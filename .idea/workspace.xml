@@ -18,42 +18,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="111cee8f-5774-4e45-9a74-cbbc5252970f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_android_installreferrer_installreferrer_1_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_applinks_5_15_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_common_5_15_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_core_5_15_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_login_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_login_5_15_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_facebook_android_facebook_share_5_15_3_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_gifdecoder_4_9_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_github_bumptech_glide_glide_4_9_0_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_location_15_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_15_0_1_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_gms_play_services_maps_15_0_1_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_2_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_2_3_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_chat_2_3_2_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__com_zoho_salesiq_mobilisten_chat_2_3_2_aar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__de_hdodenhof_circleimageview_2_2_0_aar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/AllNotesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/AllNotesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/BookMarkActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/BookMarkActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/CompletedTaskActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/CompletedTaskActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/LecturesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/LecturesActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/TrackMainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/TrackMainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/adapters/SubAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/adapters/SubAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/LineGraphFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/LineGraphFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/MockTestGraphActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/MockTestGraphActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/SectionPerformanceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/SectionPerformanceFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/TimeVsSubFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/TimeVsSubFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/TotalPerformFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/TotalPerformFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/fragments/ToolsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/fragments/ToolsFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeTabActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeTabActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/MockTestPreviousActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/MockTestPreviousActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizMockExamActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizMockExamActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizQuestionActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/QuizQuestionActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/ReviewQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/ReviewQuiz.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/subjects/SubjectPresentorImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoPlayerActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoPlayerActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +86,7 @@
     <option name="EXPORT_PRIVATE_KEY" value="false" />
     <option name="KEY_STORE_PATH" value="$PROJECT_DIR$/app/tutorix.jks" />
     <option name="KEY_ALIAS" value="tutorix" />
+    <option name="BUILD_TARGET_KEY" value="apk" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
