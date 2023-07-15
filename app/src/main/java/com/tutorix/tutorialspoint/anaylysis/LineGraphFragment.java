@@ -164,7 +164,15 @@ public class LineGraphFragment extends Fragment {
         {
             return;
         }
-        if(loginType.isEmpty())
+
+        if(/*AppConfig.checkSDCardEnabled(getActivity(),userid,class_id)&&*/AppConfig.checkSdcard(class_id,getContext()))
+        {
+            callOffline();
+        }else
+        {
+            callOnline();
+        }
+        /*if(loginType.isEmpty())
         {
             callOnline();
         }else if (loginType.equalsIgnoreCase("O")){
@@ -180,12 +188,7 @@ public class LineGraphFragment extends Fragment {
         {
             callOffline();
         }
-
-       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            callOnline();
-        }else{
-            callOffline();
-        }*/
+*/
 
 
         /*users/progress/graph*/

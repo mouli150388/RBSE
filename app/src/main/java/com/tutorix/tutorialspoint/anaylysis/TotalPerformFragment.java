@@ -292,7 +292,17 @@ public class TotalPerformFragment extends Fragment {
 
         if(loginType==null)
             return;
-        if(loginType.isEmpty())
+
+
+        if(/*AppConfig.checkSDCardEnabled(getActivity(),userid,class_id)&&*/AppConfig.checkSdcard(class_id,getContext()))
+        {
+            callOfflline();
+        }else
+        {
+            callOnline();
+        }
+
+       /* if(loginType.isEmpty())
         {
             callOnline();
         }else if (loginType.equalsIgnoreCase("O")){
@@ -307,14 +317,9 @@ public class TotalPerformFragment extends Fragment {
         }else
         {
             callOfflline();
-        }
-
-      /*  if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            callOnline();
-        } else {
-            callOfflline();
-
         }*/
+
+
 
     }
 

@@ -161,7 +161,7 @@ public class ReviewQuiz extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-      else  if(loginType.isEmpty())
+      else  /*if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(_this).isOnline()) {
                 try {
@@ -173,7 +173,7 @@ public class ReviewQuiz extends AppCompatActivity {
                     e.printStackTrace();
                 }
             } else {
-                CommonUtils.showToast(_this,"There is no internet");
+                CommonUtils.showToast(_this,getResources().getString(R.string.no_internet));
 
             }
         }else if (loginType.equalsIgnoreCase("O")){
@@ -193,124 +193,33 @@ public class ReviewQuiz extends AppCompatActivity {
                         e.printStackTrace();
                     }
                 } else {
-                    CommonUtils.showToast(_this,"There is no internet");
+                    CommonUtils.showToast(_this,getResources().getString(R.string.no_internet));
 
                 }
             }
         }else
         {
             SDData();
-        }
-
-       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(_this).isOnline()) {
-                try {
-                    basePath = AppConfig.getOnlineURLImage(classid);
-                    chaptersAdapter = new QuizReviewAdapter(listQuiz, ReviewQuiz.this,basePath,subject_id);
-                    recyclerView.setAdapter(chaptersAdapter);
-                    fillWithData();
-                } catch (UnsupportedEncodingException e) {
-                    e.printStackTrace();
-                }
-            } else {
-                CommonUtils.showToast(_this,"There is no internet");
-
-            }
-        } else {
-            basePath="file://"+ AppConfig.getSdCardPath(classid);
-
-            chaptersAdapter = new QuizReviewAdapter(listQuiz, ReviewQuiz.this,basePath,subject_id);
-            recyclerView.setAdapter(chaptersAdapter);
-            final List<QuizModel> data = new ArrayList<>();
-            MyDatabase dbHelper = MyDatabase.getDatabase(_this);
-
-
-            QuizModel QuizResult = dbHelper.quizModelDAO().getQuizDetails(getIntent().getStringExtra("lecture_time"));
-
-            String total_marks = QuizResult.total_marks;
-            String total_correct = QuizResult.total_correct;
-            String total_wrong = QuizResult.total_wrong;
-            String subjectId = QuizResult.subject_id;
-            String section_id = QuizResult.section_id;
-            String lectureId = QuizResult.lectur_id;
-            String section_name = QuizResult.section_name;
-            String lecture_name =QuizResult.lecture_name;
-            String mock_test = QuizResult.mock_test;
-            String subject_id = QuizResult.subject_id;
-            String attempted_questions = QuizResult.attempted_questions;
-
-            String lecture_id = QuizResult.lectur_id;
-            loadDataBaseURL(subjectId,section_id,lectureId);
-            JSONObject jsonobj;
-            try {
-                //Log.d(AppConfig.JSON_DATA, QuizResult.question);
-                jsonobj = new JSONObject(QuizResult.question);
-
-
-                JSONArray answers = jsonobj.getJSONObject("quiz").getJSONArray("questions");
-
-                for (int i = 0; i < answers.length(); i++) {
-                    JSONObject json_data = answers.getJSONObject(i);
-
-                    QuizModel chapters = new QuizModel();
-                    chapters.question = json_data.getString("question");
-                    chapters.total_marks = total_marks;
-                    chapters.total_correct = total_correct;
-                    chapters.total_wrong = total_wrong;
-                    chapters.total = answers.length();
-                    chapters.attempted_questions = attempted_questions;
-                    JSONArray ansList = json_data.getJSONArray("options");
-                    if(ansList.getJSONObject(0).has("option_1"))
-                    chapters.option_1 = ansList.getJSONObject(0).getString("option_1");
-                    if(ansList.getJSONObject(0).has("option_2"))
-                    chapters.option_2 = ansList.getJSONObject(0).getString("option_2");
-                    if(ansList.getJSONObject(0).has("option_3"))
-                    chapters.option_3 = ansList.getJSONObject(0).getString("option_3");
-                    if(ansList.getJSONObject(0).has("option_4"))
-                    chapters.option_4 = ansList.getJSONObject(0).getString("option_4");
-                    chapters.option_selected = json_data.getString("option_selected");
-                    chapters.option_right = json_data.getString("option_right");
-                    chapters.explanation = json_data.getString("explanation");
-                    if(json_data.has("question_type"))
-                    chapters.question_type = json_data.getString("question_type");
-
-                    if(json_data.has("section_title"))
-                    chapters.section_name=json_data.getString("section_title");;
-                    if(json_data.has("lecture_title"))
-                    chapters.lecture_name=json_data.getString("lecture_title");;
-                    if(json_data.has("subject_id"))
-                    chapters.subject_id=json_data.getString("subject_id");;
-                    if(json_data.has("section_id"))
-                    chapters.section_id=json_data.getString("section_id");;
-                    if(json_data.has("lecture_id"))
-                    chapters.lectur_id=json_data.getString("lecture_id");;
-                    if(json_data.has("mock_test"))
-                        chapters.mock_test=json_data.getString("mock_test");;
-                    chapters.classId=classid;
-                    chapters.userId=userId;
-                    chaptersAdapter.addData(chapters);
-                    //data.add(chapters);
-                }
-
-               *//* RecyclerView recyclerView = findViewById(R.id.recycler_view);
-                recyclerView.setLayoutManager(new LinearLayoutManager(_this, RecyclerView.VERTICAL, false));
-                ReviewAdapter chaptersAdapter = new ReviewAdapter(data, getApplication(),basePath);
-                recyclerView.setAdapter(chaptersAdapter);
-                recyclerView.setHasFixedSize(true);
-                chaptersAdapter.notifyDataSetChanged();
-                recyclerView.setItemViewCacheSize(20);
-                recyclerView.setDrawingCacheEnabled(true);
-                recyclerView.setDrawingCacheQuality(View.DRAWING_CACHE_QUALITY_HIGH);
-                RecyclerView.ItemAnimator animator = recyclerView.getItemAnimator();
-
-                if (animator instanceof SimpleItemAnimator) {
-                    ((SimpleItemAnimator) animator).setSupportsChangeAnimations(false);
-                }*//*
-
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }*/
+            if(/*AppConfig.checkSDCardEnabled(_this,userId,classid)&&*/AppConfig.checkSdcard(classid,getApplicationContext()))
+            {
+                SDData();
+            }else
+            {
+                if (AppStatus.getInstance(_this).isOnline()) {
+                    try {
+                        basePath = AppConfig.getOnlineURLImage(classid);
+                        chaptersAdapter = new QuizReviewAdapter(listQuiz, ReviewQuiz.this,basePath,subject_id);
+                        recyclerView.setAdapter(chaptersAdapter);
+                        fillWithData();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    CommonUtils.showToast(_this,getResources().getString(R.string.no_internet));
+
+                }
+            }
         lnr_home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -158,7 +158,7 @@ public class SubjectPresentorImpl implements SubjectPresentor{
                     //Toasty.info(SubjectActivity.this, "No SDCard Found", Toast.LENGTH_SHORT, true).show();
                 }
             } else {
-                subjectView.requestPermissionForStorage();
+               // subjectView.requestPermissionForStorage();
             }
         } else {
             String sdCardPath="";

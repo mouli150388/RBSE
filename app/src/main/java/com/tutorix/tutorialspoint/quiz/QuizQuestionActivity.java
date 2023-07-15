@@ -864,15 +864,112 @@ public class QuizQuestionActivity extends AppCompatActivity implements OnChartVa
             e.printStackTrace();
         }
 
-        if (loginType.isEmpty() || !(AppConfig.checkSDCardEnabled(_this, userid, classid) && AppConfig.checkSdcard(classid,getApplicationContext()))) {
+       /* if (loginType.isEmpty() || !(AppConfig.checkSDCardEnabled(_this, userid, classid) && AppConfig.checkSdcard(classid,getApplicationContext()))) {
             if (!AppStatus.getInstance(getApplicationContext()).isOnline()) {
 
                 CommonUtils.showToast(getApplicationContext(), getResources().getString(R.string.no_internet));
                 return;
             }
-        }
+        }*/
         //if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-        if (AppStatus.getInstance(getApplicationContext()).isOnline()) {
+
+
+        if(AppConfig.checkSdcard(classid,getApplicationContext())) {
+
+
+            MyDatabase database = MyDatabase.getDatabase(_this);
+            QuizModel quizModel = new QuizModel();
+            quizModel.userId = userid;
+            quizModel.classId = classid;
+            quizModel.subject_id = subjectId;
+            quizModel.section_id = section_id;
+            quizModel.lectur_id = lectureId;
+            quizModel.QuizDuration = timeTaken;
+            quizModel.total_wrong = wrongAnswers + "";
+            quizModel.total_correct = score + "";
+            quizModel.total = quizJson.length();
+            quizModel.attempted_questions = map.size() + "";
+            quizModel.QuizCreatedDtm = getDateTime();
+            quizModel.quiz_id = "";
+            quizModel.question = quizObj + "";
+            quizModel.mock_test = mock_test;
+            quizModel.sync = "N";
+            if (!ismock)
+                quizModel.lecture_name = lecture_name;
+            else
+                quizModel.lecture_name = section_name;
+
+            quizModel.section_name = section_name;
+            database.quizModelDAO().addQuiz(quizModel);
+
+
+            TrackModel chapters = new TrackModel();
+            if (!ismock)
+                chapters.activity_type = "Q";
+            else
+                chapters.activity_type = "M";
+            chapters.activity_duration = timeTaken;
+            chapters.activity_date = getDateTime();
+            chapters.quiz_id = "";
+            chapters.subject_id = subjectId;
+            chapters.section_id = section_id;
+            chapters.lecture_id = lectureId;
+            chapters.class_id = classid;
+            chapters.user_id = userid;
+
+            if (!ismock)
+                chapters.lecture_name = lecture_name;
+            else
+                chapters.lecture_name = section_name;
+
+
+            chapters.is_sync = false;
+            chapters.duration_insec = CommonUtils.getSeconds(chapters.activity_duration);
+            database.trackDAO().insertTrack(chapters);
+
+
+            if (ismock) {
+
+                MockTestModelTable mockTestModelTable = database.mockTestDAO().getMockTest(userid, classid, subjectId, section_id, mock_test);
+
+                if (mockTestModelTable == null) {
+                    mockTestModelTable = new MockTestModelTable();
+                    mockTestModelTable.user_id = userid;
+                    mockTestModelTable.class_id = classid;
+                    mockTestModelTable.subject_id = subjectId;
+                    mockTestModelTable.section_id = section_id;
+                    mockTestModelTable.mocktest_type = mock_test;
+                    mockTestModelTable.total_attempts = 1;
+                    mockTestModelTable.total_marks = score;
+                    mockTestModelTable.total_questions = quizJson.length();
+                    mockTestModelTable.low_marks = score;
+                    mockTestModelTable.high_marks = score;
+                    mockTestModelTable.created_dtm = currentTime;
+                    mockTestModelTable.sync = "N";
+                    database.mockTestDAO().insertRecomanded(mockTestModelTable);
+                } else {
+
+                    mockTestModelTable.total_attempts = mockTestModelTable.total_attempts + 1;
+                    mockTestModelTable.total_marks = mockTestModelTable.total_marks + score;
+
+                    if (score <= mockTestModelTable.low_marks)
+                        mockTestModelTable.low_marks = score;
+
+                    mockTestModelTable.total_questions = mockTestModelTable.total_questions + quizJson.length();
+
+                    if (score >= mockTestModelTable.high_marks)
+                        mockTestModelTable.high_marks = score;
+
+                    database.mockTestDAO().updateMockTest(userid, classid, subjectId, section_id, mock_test, mockTestModelTable.total_marks, mockTestModelTable.total_attempts, mockTestModelTable.low_marks, mockTestModelTable.high_marks);
+
+                }
+
+
+            }
+            if (showResult)
+                showResult(score, map.size());
+        }
+        else if (AppStatus.getInstance(getApplicationContext()).isOnline()) {
             String tag_string_req = Constants.reqRegister;
 
             StringRequest strReq = new StringRequest(Request.Method.POST,
@@ -1091,100 +1188,9 @@ public class QuizQuestionActivity extends AppCompatActivity implements OnChartVa
 
             AppController.getInstance().addToRequestQueue(strReq, tag_string_req);
 
-        } else {
-
-
-            MyDatabase database = MyDatabase.getDatabase(_this);
-            QuizModel quizModel = new QuizModel();
-            quizModel.userId = userid;
-            quizModel.classId = classid;
-            quizModel.subject_id = subjectId;
-            quizModel.section_id = section_id;
-            quizModel.lectur_id = lectureId;
-            quizModel.QuizDuration = timeTaken;
-            quizModel.total_wrong = wrongAnswers + "";
-            quizModel.total_correct = score + "";
-            quizModel.total = quizJson.length();
-            quizModel.attempted_questions = map.size() + "";
-            quizModel.QuizCreatedDtm = getDateTime();
-            quizModel.quiz_id = "";
-            quizModel.question = quizObj + "";
-            quizModel.mock_test = mock_test;
-            quizModel.sync = "N";
-            if (!ismock)
-                quizModel.lecture_name = lecture_name;
-            else
-                quizModel.lecture_name = section_name;
-
-            quizModel.section_name = section_name;
-            database.quizModelDAO().addQuiz(quizModel);
-
-
-            TrackModel chapters = new TrackModel();
-            if (!ismock)
-                chapters.activity_type = "Q";
-            else
-                chapters.activity_type = "M";
-            chapters.activity_duration = timeTaken;
-            chapters.activity_date = getDateTime();
-            chapters.quiz_id = "";
-            chapters.subject_id = subjectId;
-            chapters.section_id = section_id;
-            chapters.lecture_id = lectureId;
-            chapters.class_id = classid;
-            chapters.user_id = userid;
-
-            if (!ismock)
-                chapters.lecture_name = lecture_name;
-            else
-                chapters.lecture_name = section_name;
-
-
-            chapters.is_sync = false;
-            chapters.duration_insec = CommonUtils.getSeconds(chapters.activity_duration);
-            database.trackDAO().insertTrack(chapters);
-
-
-            if (ismock) {
-
-                MockTestModelTable mockTestModelTable = database.mockTestDAO().getMockTest(userid, classid, subjectId, section_id, mock_test);
-
-                if (mockTestModelTable == null) {
-                    mockTestModelTable = new MockTestModelTable();
-                    mockTestModelTable.user_id = userid;
-                    mockTestModelTable.class_id = classid;
-                    mockTestModelTable.subject_id = subjectId;
-                    mockTestModelTable.section_id = section_id;
-                    mockTestModelTable.mocktest_type = mock_test;
-                    mockTestModelTable.total_attempts = 1;
-                    mockTestModelTable.total_marks = score;
-                    mockTestModelTable.total_questions = quizJson.length();
-                    mockTestModelTable.low_marks = score;
-                    mockTestModelTable.high_marks = score;
-                    mockTestModelTable.created_dtm = currentTime;
-                    mockTestModelTable.sync = "N";
-                    database.mockTestDAO().insertRecomanded(mockTestModelTable);
-                } else {
-
-                    mockTestModelTable.total_attempts = mockTestModelTable.total_attempts + 1;
-                    mockTestModelTable.total_marks = mockTestModelTable.total_marks + score;
-
-                    if (score <= mockTestModelTable.low_marks)
-                        mockTestModelTable.low_marks = score;
-
-                    mockTestModelTable.total_questions = mockTestModelTable.total_questions + quizJson.length();
-
-                    if (score >= mockTestModelTable.high_marks)
-                        mockTestModelTable.high_marks = score;
-
-                    database.mockTestDAO().updateMockTest(userid, classid, subjectId, section_id, mock_test, mockTestModelTable.total_marks, mockTestModelTable.total_attempts, mockTestModelTable.low_marks, mockTestModelTable.high_marks);
-
-                }
-
-
-            }
-            if (showResult)
-                showResult(score, map.size());
+        }
+        else {
+            CommonUtils.showToast(getApplicationContext(), getResources().getString(R.string.no_internet));
         }
 
     }

@@ -114,8 +114,23 @@ public class BookMarkActivity extends AppCompatActivity {
 
 
         initUI();
-
-        if(loginType.isEmpty())
+        if(/*AppConfig.checkSDCardEnabled(_this,userId,classId)&&*/AppConfig.checkSdcard(classId,getApplicationContext()))
+        {
+            LoadData();
+        }else
+        {
+            if (AppStatus.getInstance(_this).isOnline()) {
+                try {
+                    fillWithData();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                CommonUtils.showToast(_this,getString(R.string.no_internet));
+                // Toasty.info(BookmarkActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+        /*if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(_this).isOnline()) {
                 try {
@@ -149,21 +164,7 @@ public class BookMarkActivity extends AppCompatActivity {
         {
             LoadData();
         }
-        /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(_this).isOnline()) {
-                try {
-                    fillWithData();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } else {
-                CommonUtils.showToast(_this,getString(R.string.no_internet));
-                // Toasty.info(BookmarkActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-            }
-        } else {
-            LoadData();
-
-        }*/
+        */
 
         lnr_home.setOnClickListener(new View.OnClickListener() {
             @Override

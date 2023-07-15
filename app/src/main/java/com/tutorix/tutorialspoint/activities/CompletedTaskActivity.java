@@ -100,8 +100,24 @@ public class CompletedTaskActivity extends AppCompatActivity {
 
         initUI();
 
+        if(/*AppConfig.checkSDCardEnabled(_this,userId,classId)&&*/AppConfig.checkSdcard(classId,getApplicationContext()))
+        {
+            LoadData();
 
-        if(loginType.isEmpty())
+        }else
+        {
+            if (AppStatus.getInstance(CompletedTaskActivity.this).isOnline()) {
+                try {
+                    fillWithData();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                CommonUtils.showToast(getApplicationContext(),getString(R.string.no_internet));
+                // Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+       /* if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(CompletedTaskActivity.this).isOnline()) {
                 try {
@@ -136,21 +152,7 @@ public class CompletedTaskActivity extends AppCompatActivity {
         {
             LoadData();
         }
-       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(CompletedTaskActivity.this).isOnline()) {
-                try {
-                    fillWithData();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } else {
-                CommonUtils.showToast(getApplicationContext(),getString(R.string.no_internet));
-                // Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-            }
-        } else {
-            LoadData();
-
-        }*/
+      */
 
         img_filter.setOnClickListener(new View.OnClickListener() {
             @Override

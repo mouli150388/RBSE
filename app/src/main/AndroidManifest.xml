@@ -206,6 +206,7 @@
         <activity
             android:name=".video.VideoPlayerActivity"
             android:configChanges="orientation|screenSize|layoutDirection"
+            android:screenOrientation="landscape"
             android:theme="@style/SubjectTheme" />
         <activity
             android:name=".quiz.MockTestPreviousActivity"

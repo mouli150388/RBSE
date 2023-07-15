@@ -311,8 +311,53 @@ public class TrackMainActivity extends AppCompatActivity {
 
     private void loginType() {
 
+        if(/*AppConfig.checkSDCardEnabled(_this,userid,classid)&&*/AppConfig.checkSdcard(classid,getApplicationContext()))
+        {
 
-        if(loginType.isEmpty())
+
+            MyDatabase dbhelper =MyDatabase.getDatabase(_this);
+            List<TrackModel> trackList;
+            if (getIntent().getStringExtra(Constants.intentType).equalsIgnoreCase(Constants.global)) {
+                trackList = dbhelper.trackDAO().getTrackingDetailsAll(userid,  0, 20,classid);
+            } else {
+                trackList = dbhelper.trackDAO().getTrackingDetailsLecture(userid,subjectId,section_id, lectureId,  0, 20,classid);
+            }
+
+            if (trackList != null && trackList.size() > 0) {
+                if (trackList.size() < 20) {
+
+                } else {
+                    TOTAL_PAGES = TOTAL_PAGES + 1;
+                }
+
+                mAdapter.addAll(trackList);
+                mAdapter.notifyDataSetChanged();
+
+                if (currentPage == TOTAL_PAGES) {
+                    isLastPage = true;
+                } else if (currentPage < TOTAL_PAGES) {
+                    mAdapter.addLoadingFooter();
+                }
+            } else {
+                // CommonUtils.showToast(getApplicationContext(),"No Tracking Data");
+                //  Toasty.warning(_this, "No Tracking Data", Toast.LENGTH_SHORT, true).show();
+            }
+            nodata();
+        }else
+        {
+            if (AppStatus.getInstance(_this).isOnline()) {
+                try {
+                    prepareTrackData("0",true);
+                } catch (UnsupportedEncodingException e) {
+                    e.printStackTrace();
+                }
+            } else {
+                nodata();
+                CommonUtils.showToast(getApplicationContext(),getString(R.string.no_internet_message));
+                //Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+      /*  if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(_this).isOnline()) {
                 try {
@@ -405,7 +450,7 @@ public class TrackMainActivity extends AppCompatActivity {
                 //  Toasty.warning(_this, "No Tracking Data", Toast.LENGTH_SHORT, true).show();
             }
             nodata();
-        }
+        }*/
 
 
     }

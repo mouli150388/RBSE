@@ -375,8 +375,13 @@ public class TimeVsSubFragment extends Fragment {
 
         String tag_string_req = Constants.reqRegister;
 
+        if (/*AppConfig.checkSDCardEnabled(getActivity(), userid, class_id) &&*/ AppConfig.checkSdcard(class_id,getContext())) {
+            callOffline();
+        } else {
+            callOnline(tag_string_req, encryption3);
+        }
 
-        if (loginType.isEmpty()) {
+        /*if (loginType.isEmpty()) {
             callOnline(tag_string_req, encryption3);
         } else if (loginType.equalsIgnoreCase("O")) {
 
@@ -387,7 +392,7 @@ public class TimeVsSubFragment extends Fragment {
             }
         } else {
             callOffline();
-        }
+        }*/
 
   /*      if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
             callOnline(tag_string_req);

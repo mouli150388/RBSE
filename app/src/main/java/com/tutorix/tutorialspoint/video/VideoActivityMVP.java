@@ -1071,7 +1071,7 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
         player.setPlayWhenReady(true);
 
 
-        isConnected(getApplicationContext());
+      //  isConnected(getApplicationContext());
     }
 
     boolean isCheckedUSb;

@@ -678,7 +678,7 @@ public class HomeFragment extends Fragment {
     }
     private void startActivity(View view, String subjectName, String subjectId) {
 
-        if ((AppConfig.checkSDCardEnabled(_this,userid,classId)&&AppConfig.checkSdcard(classId,getContext())) || AppStatus.getInstance(getActivity()).isOnline()) {
+        if ((/*AppConfig.checkSDCardEnabled(_this,userid,classId)&&*/AppConfig.checkSdcard(classId,getContext())) || AppStatus.getInstance(getActivity()).isOnline()) {
             Intent i = new Intent(getActivity(), SubjectActivity.class);
             i.putExtra(Constants.subjectName, subjectName);
             i.putExtra(Constants.subjectId, subjectId);

@@ -24,8 +24,6 @@ import com.tutorix.tutorialspoint.activities.BookMarkActivity;
 import com.tutorix.tutorialspoint.activities.CompletedTaskActivity;
 import com.tutorix.tutorialspoint.activities.SubscribePrePage;
 import com.tutorix.tutorialspoint.activities.TrackMainActivity;
-import com.tutorix.tutorialspoint.utility.AppStatus;
-import com.tutorix.tutorialspoint.utility.CommonUtils;
 import com.tutorix.tutorialspoint.utility.Constants;
 
 import butterknife.BindView;
@@ -117,10 +115,10 @@ public class ToolsFragment extends Fragment {
                     return;
                 }
 
-                if (!AppConfig.checkSDCardEnabled(_this,userid,class_id)&& !AppStatus.getInstance(_this).isOnline()) {
+               /* if (!AppConfig.checkSDCardEnabled(_this,userid,class_id)&& !AppStatus.getInstance(_this).isOnline()) {
                     CommonUtils.showToast(_this, getString(R.string.no_internet));
                     return;
-                }
+                }*/
 
                 startActivity(new Intent(_this, CompletedTaskActivity.class));
                 _this.overridePendingTransition(R.anim.right_in, R.anim.left_out);
@@ -136,10 +134,10 @@ public class ToolsFragment extends Fragment {
                     startActivity(i);
                     return;
                 }
-                if (!(AppConfig.checkSDCardEnabled(_this,userid,class_id)&&AppConfig.checkSdcard(class_id,getContext())) && !AppStatus.getInstance(_this).isOnline()) {
+               /* if (!(AppConfig.checkSDCardEnabled(_this,userid,class_id)&&AppConfig.checkSdcard(class_id,getContext())) && !AppStatus.getInstance(_this).isOnline()) {
                     CommonUtils.showToast(_this, getString(R.string.no_internet));
                     return;
-                }
+                }*/
 
                 startActivity(new Intent(_this, BookMarkActivity.class));
                 _this.overridePendingTransition(R.anim.right_in, R.anim.left_out);

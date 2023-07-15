@@ -12,6 +12,14 @@ import android.widget.LinearLayout;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.coordinatorlayout.widget.CoordinatorLayout;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.android.volley.AuthFailureError;
 import com.android.volley.Cache;
 import com.android.volley.NetworkError;
@@ -48,14 +56,6 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.Objects;
-
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.recyclerview.widget.DefaultItemAnimator;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 public class AllNotesActivity extends AppCompatActivity {
     Activity _this;
@@ -115,8 +115,23 @@ public class AllNotesActivity extends AppCompatActivity {
 
 
         initUI();
-
-        if(loginType.isEmpty())
+        if(/*AppConfig.checkSDCardEnabled(_this,userId,classId)&&*/AppConfig.checkSdcard(classId,getApplicationContext()))
+        {
+            LoadData();
+        }else
+        {
+            if (AppStatus.getInstance(_this).isOnline()) {
+                try {
+                    fillWithData();
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            } else {
+                CommonUtils.showToast(_this,getString(R.string.no_internet));
+                // Toasty.info(BookmarkActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+        /*if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(_this).isOnline()) {
                 try {
@@ -149,23 +164,9 @@ public class AllNotesActivity extends AppCompatActivity {
         }else
         {
             LoadData();
-        }
-
-        /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(_this).isOnline()) {
-                try {
-                    fillWithData();
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            } else {
-                CommonUtils.showToast(_this,getString(R.string.no_internet));
-                // Toasty.info(BookmarkActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-            }
-        } else {
-            LoadData();
-
         }*/
+
+
 
         lnr_home.setOnClickListener(new View.OnClickListener() {
             @Override

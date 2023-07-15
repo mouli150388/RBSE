@@ -234,8 +234,68 @@ public class MockTestPreviousActivity extends AppCompatActivity {
     }
 
     private void cheklLogin() {
+        if(/*AppConfig.checkSDCardEnabled(_this,userid,classid)&&*/AppConfig.checkSdcard(classid,getApplicationContext()))
+        {
 
-        if(loginType.isEmpty())
+
+            MyDatabase dbHelper = MyDatabase.getDatabase(_this);
+
+
+            List<QuizModel> QuizResult = dbHelper.quizModelDAO().getMoCkPrevious(userid, classid, subjectId, section_id, mock_test);
+            MockTestReviewModel model;
+            QuizModel quizModel;
+            for (int k = 0; k < QuizResult.size(); k++) {
+
+
+                quizModel = QuizResult.get(k);
+                model = new MockTestReviewModel();
+                model.attempted_questions = Integer.parseInt(quizModel.attempted_questions);
+                try {
+                    model.total_marks = Integer.parseInt(quizModel.total_correct);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                try {
+                    model.total_correct = Integer.parseInt(quizModel.total_correct);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                model.total_questions = quizModel.total;
+                try {
+                    model.total_wrong = Integer.parseInt(quizModel.total_wrong);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+                model.quiz_id = quizModel.quiz_id;
+                model.lecture_id = quizModel.lectur_id;
+                model.section_id = quizModel.section_id;
+                model.subject_id = quizModel.subject_id;
+                model.class_id = quizModel.classId;
+                model.quiz_duration = quizModel.QuizDuration;
+                model.lecture_name = quizModel.lecture_name;
+                model.section_name = quizModel.section_name;
+                model.mock_test = quizModel.mock_test;
+                model.created_dtm = quizModel.QuizCreatedDtm;
+
+
+                adapter.addMockReview(model);
+
+
+            }
+            nodata();
+
+
+        }else
+        {
+            if (AppStatus.getInstance(_this).isOnline()) {
+                // checkCookieThenPlay();
+                loadServerData();
+            } else {
+                CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet));
+                // Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+       /* if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(_this).isOnline()) {
                 // checkCookieThenPlay();
@@ -358,7 +418,7 @@ public class MockTestPreviousActivity extends AppCompatActivity {
             nodata();
 
 
-        }
+        }*/
 
 
     }

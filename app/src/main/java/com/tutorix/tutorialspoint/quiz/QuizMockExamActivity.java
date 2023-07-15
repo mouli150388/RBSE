@@ -270,9 +270,54 @@ public class QuizMockExamActivity extends AppCompatActivity {
         adapter = new MockTestListAdapter(_this, background_drawable, text_color);
         recyclerMocktest.setLayoutManager(new LinearLayoutManager(getApplicationContext(), RecyclerView.VERTICAL, false));
         recyclerMocktest.setAdapter(adapter);
+        if (/*AppConfig.checkSDCardEnabled(_this, userid, classid) &&*/ AppConfig.checkSdcard(classid,getApplicationContext())) {
+            if (checkPermissionForStorage()) {
+                String filepath;
+
+                //UrlForInsideQuizImage = "file://" + AppConfig.getSdCardPath(classid) + subjectId + "/" + section_id + "/" + lectureId + "/";
+                filepath = AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id + "/mock_test_main.json";
+
+                byte[] encryptData = AppConfig.readFromFileBytes(filepath);
+
+                String jsonString = Security.getDecryptKeyNotes(encryptData, AppConfig.ENC_KEY);
+
+                //String jsonString = AppConfig.readFromFile(filepath);
+                try {
+                    JSONObject json = new JSONObject(jsonString);
 
 
-        if (loginType.isEmpty()) {
+                    JSONObject tests = json.getJSONObject("mock_tests");
+                    Iterator<String> it = tests.keys();
+                    MockTestModel model;
+                    while (((Iterator) it).hasNext()) {
+                        String key = it.next();
+                        model = new MockTestModel();
+
+                        model.questioNo = Integer.parseInt(tests.getString(key));
+                        model.title = key;
+                        adapter.addMock(model);
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    CommonUtils.showToast(getApplicationContext(), getString(R.string.json_error) + e.getMessage());
+                    //Toasty.warning(_this, "Json error: " + e.getMessage(), Toast.LENGTH_SHORT, true).show();
+                }
+
+            }
+
+        } else {
+            if (AppStatus.getInstance(_this).isOnline()) {
+                // checkCookieThenPlay();
+
+                getMockTest();
+            } else {
+                CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet));
+                // Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+
+       /* if (loginType.isEmpty()) {
             if (AppStatus.getInstance(_this).isOnline()) {
                 // checkCookieThenPlay();
 
@@ -365,7 +410,7 @@ public class QuizMockExamActivity extends AppCompatActivity {
 
             }
 
-        }
+        }*/
 
 
         /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
@@ -454,9 +499,27 @@ public class QuizMockExamActivity extends AppCompatActivity {
     }
 
     private void loadQuizQuestions(String filename) {
+        if (/*AppConfig.checkSDCardEnabled(_this, userid, classid) &&*/ AppConfig.checkSdcard(classid,getApplicationContext())) {
+
+            if (checkPermissionForStorage()) {
+                String filepath;
+
+                filepath = AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id + "/" + filename + ".json";
 
 
-        if (loginType.isEmpty()) {
+                new LoadFileAsyn().execute(filepath);
+            }
+        } else {
+            if (AppStatus.getInstance(_this).isOnline()) {
+                // checkCookieThenPlay();
+                fillWithData();
+            } else {
+                CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet));
+                // Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+
+      /*  if (loginType.isEmpty()) {
             if (AppStatus.getInstance(_this).isOnline()) {
                 // checkCookieThenPlay();
                 fillWithData();
@@ -495,27 +558,9 @@ public class QuizMockExamActivity extends AppCompatActivity {
 
                 new LoadFileAsyn().execute(filepath);
             }
-        }
-
-       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(_this).isOnline()) {
-                // checkCookieThenPlay();
-                fillWithData();
-            } else {
-                CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet));
-                // Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-            }
-        } else {
-            if (checkPermissionForStorage()) {
-                String filepath;
-
-                filepath = AppConfig.getSdCardPath(classid) + subjectId + "/" + section_id + "/" + filename + ".json";
-
-
-
-                new LoadFileAsyn().execute(filepath);
-            }
         }*/
+
+
     }
 
     private void fillWithData() {

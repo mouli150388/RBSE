@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: com.zoho.salesiq:mobilisten-chat:2.3.2@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/9b462cdf1588b41e8cbd7337ffd00357/transformed/jetified-mobilisten-chat-2.3.2/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b462cdf1588b41e8cbd7337ffd00357/transformed/jetified-mobilisten-chat-2.3.2/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/9b462cdf1588b41e8cbd7337ffd00357/transformed/jetified-mobilisten-chat-2.3.2/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/3bacc51cda48f1410570d16bda906da3/transformed/jetified-mobilisten-chat-2.3.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bacc51cda48f1410570d16bda906da3/transformed/jetified-mobilisten-chat-2.3.2/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/3bacc51cda48f1410570d16bda906da3/transformed/jetified-mobilisten-chat-2.3.2/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

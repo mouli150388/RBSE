@@ -148,12 +148,29 @@ public class SectionPerformanceFragment extends Fragment {
     }
 
     public void fetchData() {
-        if(selected_user_id==userId)
+       /* if(selected_user_id==userId)
         {
             callOnline();
             return;
-        }
+        }*/
+        if(/*AppConfig.checkSDCardEnabled(activity,userId,classId)&&*/AppConfig.checkSdcard(classId,getContext()))
+        {
+            BASE_URL = AppConfig.getSdCardPath(classId,getContext());
+            fetchMockPerformnce();
+        }else
+        {
+            if (AppStatus.getInstance(getActivity()).isOnline()) {
+                BASE_URL = AppConfig.getOnlineURLImage(classId);
+                // checkCookieThenPlay();
+                chartData();
 
+            } else {
+
+                CommonUtils.showToast(getActivity(),getActivity().getString(R.string.no_internet_message));
+                //Toasty.info(SubjectActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+            }
+        }
+/*
         if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(getActivity()).isOnline()) {
@@ -189,25 +206,9 @@ public class SectionPerformanceFragment extends Fragment {
         {
             BASE_URL = AppConfig.getSdCardPath(classId,getContext());
             fetchMockPerformnce();
-        }
-
-      /*  if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(getActivity()).isOnline()) {
-                BASE_URL = AppConfig.getOnlineURLImage(classId);
-               // checkCookieThenPlay();
-                chartData();
-
-            } else {
-
-                CommonUtils.showToast(getActivity(),getActivity().getString(R.string.no_internet_message));
-                //Toasty.info(SubjectActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-            }
-
-        } else {
-            BASE_URL = AppConfig.getSdCardPath(classId);
-            fetchMockPerformnce();
-
         }*/
+
+
 
     }
 

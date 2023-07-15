@@ -206,8 +206,55 @@ public class LecturesActivity extends AppCompatActivity {
             }
 
             //loadingPanelID.hide();
+            if(/*AppConfig.checkSDCardEnabled(_this,userInfo[0],userInfo[4])&&*/AppConfig.checkSdcard(userInfo[4],getApplicationContext()))
+            {
+                if (chapters.subchapters != null) {
+                    for (int i = 0; i < chapters.subchapters.size(); i++) {
 
-            if (loginType.isEmpty()){
+                        SubChapters subChapter = dbhelper.subjectChapterDAO().getBookmarkorData(
+                                chapters.userid, chapters.classid,
+                                chapters.section_id, chapters.subchapters.get(i).lecture_id
+                                , chapters.subjectid
+                        );
+                        if (subChapter != null) {
+                            chapters.subchapters.get(i).lecture_completed = subChapter.lecture_completed;
+                            chapters.subchapters.get(i).lecture_bookmark = subChapter.lecture_bookmark;
+                            chapters.subchapters.get(i).is_notes = subChapter.is_notes;
+
+                            //chapters.subchapters.get(i).is_notes = subChapter.is_notes;
+                        }
+
+                    }
+                }
+
+                SubAdapter subchaptersAdapter = new SubAdapter(chapters.subchapters,chapters.txt, _this, true, false,chapters.availableAllVideos);
+
+
+                //recyclerView.setItemAnimator(new DefaultItemAnimator());
+                recyclerView.setAdapter(subchaptersAdapter);
+                subchaptersAdapter.notifyDataSetChanged();
+
+
+                int resId = R.anim.layout_animation_slide;
+                LayoutAnimationController animation = AnimationUtils.loadLayoutAnimation(getApplicationContext(), resId);
+                recyclerView.setLayoutAnimation(animation);
+                subchaptersAdapter.notifyDataSetChanged();
+                recyclerView.scheduleLayoutAnimation();
+
+            }else
+            {
+                if (AppStatus.getInstance(_this).isOnline()) {
+                    try {
+                        fillWithData();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet_message));
+                    // Toasty.info(_this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+                }
+            }
+           /* if (loginType.isEmpty()){
                 if (AppStatus.getInstance(_this).isOnline()) {
                     try {
                         fillWithData();
@@ -303,7 +350,7 @@ public class LecturesActivity extends AppCompatActivity {
                 recyclerView.setLayoutAnimation(animation);
                 subchaptersAdapter.notifyDataSetChanged();
                 recyclerView.scheduleLayoutAnimation();
-            }
+            }*/
 
 
 

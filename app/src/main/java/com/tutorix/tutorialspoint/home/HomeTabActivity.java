@@ -304,7 +304,19 @@ public class HomeTabActivity extends AppCompatActivity implements HomeView, View
         loadFragment(0);
 
 
-        if (loginType.isEmpty()) {
+        if (/*AppConfig.checkSDCardEnabled(this, userid, classId) && */AppConfig.checkSdcard(classId,getApplicationContext())) {
+            homePresenter.checkValidation();
+            readAudioFiles();
+        } else {
+            if (AppStatus.getInstance(getApplicationContext()).isOnline()) {
+                homePresenter.setCookie();
+                homePresenter.checkAccesToken();
+
+
+            }
+        }
+
+       /* if (loginType.isEmpty()) {
             if (AppStatus.getInstance(getApplicationContext()).isOnline()) {
                 homePresenter.setCookie();
                 homePresenter.checkAccesToken();
@@ -326,7 +338,7 @@ public class HomeTabActivity extends AppCompatActivity implements HomeView, View
         } else {
             homePresenter.checkValidation();
             readAudioFiles();
-        }
+        }*/
 
        /* if (AppStatus.getInstance(getApplicationContext()).isOnline())
         {
@@ -1106,6 +1118,9 @@ public class HomeTabActivity extends AppCompatActivity implements HomeView, View
                     e.printStackTrace();
                 }
             } else {
+                if(Build.VERSION.SDK_INT >= 30) {
+                    return;
+                }
                 ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 300);
             }
         } else {
@@ -1131,7 +1146,23 @@ public class HomeTabActivity extends AppCompatActivity implements HomeView, View
                 if (grantResults.length > 0) {
                     boolean galleryaccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
                     if (galleryaccepted) {
-                        readAudioFiles();
+                        //readAudioFiles();
+                        if (checkPermissionForStorage()) {
+                            try {
+                                JSONArray array = new JSONArray(getAudiLanguageString());
+                                if (array.length() > 0) {
+                                    Constants.LANG_VIDEO_SUPPORT = new String[array.length()];
+                                }
+                                for (int k = 0; k < array.length(); k++) {
+                                    Constants.LANG_VIDEO_SUPPORT[k] = array.getString(k);
+                                    //Log.v("Language","Language "+array.getString(k));
+                                }
+                            } catch (JSONException e) {
+                                e.printStackTrace();
+                            }
+                        }else {
+                            CommonUtils.showToast(getApplicationContext(), "Give Permissions in Permission llist from Settings");
+                        }
                     } else {
                         CommonUtils.showToast(getApplicationContext(), "Give Permissions in Permission llist from Settings");
                         //Toast.makeText(SubjectActivity.this, "Access Required", Toast.LENGTH_SHORT).show();

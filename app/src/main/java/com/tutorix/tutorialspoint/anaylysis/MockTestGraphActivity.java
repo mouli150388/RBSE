@@ -189,7 +189,15 @@ public class MockTestGraphActivity extends AppCompatActivity {
         }
        // txtPrevious.setTextColor(getResources().getColor(color_theme));
 
-        if(loginType.isEmpty())
+        if(/*AppConfig.checkSDCardEnabled(this,userId,classId)&&*/AppConfig.checkSdcard(classId,getApplicationContext()))
+        {
+            fetchLocalMockTests();
+        }else
+        {
+            fetchData();
+        }
+
+        /*if(loginType.isEmpty())
         {
             fetchData();
         }else if (loginType.equalsIgnoreCase("O")){
@@ -204,13 +212,8 @@ public class MockTestGraphActivity extends AppCompatActivity {
         }else
         {
             fetchLocalMockTests();
-        }
-       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            fetchData();
-        }else
-        {
-            fetchLocalMockTests();
         }*/
+
     }
 
     @Override

@@ -707,7 +707,7 @@ public class VideoPlayerActivity extends AppCompatActivity implements VideoRende
         player.setPlayWhenReady(true);
 
 
-        isConnected(getApplicationContext());
+      //  isConnected(getApplicationContext());
     }
 
     MediaSource concatenatedSource;
@@ -1016,6 +1016,10 @@ public class VideoPlayerActivity extends AppCompatActivity implements VideoRende
         String end = dateFormat.format(date);
         Date date1 = null;
         Date date2 = null;
+        if(start==null)
+        {
+            return;
+        }
         try {
             date1 = dateFormat.parse(start);
             date2 = dateFormat.parse(end);

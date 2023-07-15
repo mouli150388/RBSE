@@ -732,7 +732,69 @@ public class SubAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
 
         SubChapters d=data.get(holder.getAdapterPosition());
-        if(loginType.isEmpty())
+        if(/*AppConfig.checkSDCardEnabled(context,d.userid,d.classid)&&*/AppConfig.checkSdcard(d.classid,context))
+        {
+
+            boolean completed = data.get(holder.getAdapterPosition()).lecture_bookmark;
+
+            data.get(holder.getAdapterPosition()).lecture_bookmark = !completed;
+            dbHelper = MyDatabase.getDatabase(context);
+            data.get(holder.getAdapterPosition()).createdDtm = getDateTime();
+            if (AppStatus.getInstance(context).isOnline()) {
+
+                action(data.get(holder.getAdapterPosition()));
+                data.get(holder.getAdapterPosition()).is_sync = true;
+                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed&&!data.get(holder.getAdapterPosition()).is_notes) {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
+                } else {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
+                            subChapters.userid, subChapters.classid,
+                            subChapters.section_id, subChapters.lecture_id
+                            , subChapters.subjectid
+                    );
+                    if(subChapter==null) {
+                        data.get(holder.getAdapterPosition()).lecture_notes="";
+                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
+                    }
+                    else
+                        dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
+
+                }
+            } else {
+                data.get(holder.getAdapterPosition()).is_sync = false;
+                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed) {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
+                } else {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
+                            subChapters.userid, subChapters.classid,
+                            subChapters.section_id, subChapters.lecture_id
+                            , subChapters.subjectid
+                    );
+                    if(subChapter==null) {
+                        data.get(holder.getAdapterPosition()).lecture_notes="";
+                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
+                    }
+                    else
+                        dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
+
+                }
+            }
+        }else
+        {
+            if (AppStatus.getInstance(context).isOnline()) {
+                data.get(holder.getAdapterPosition()).lecture_bookmark = !data.get(holder.getAdapterPosition()).lecture_bookmark;
+                action(data.get(holder.getAdapterPosition()));
+            } else {
+                CommonUtils.showToast(context, context.getString(R.string.no_internet));
+                // Toasty.info(context, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+                return;
+            }
+        }
+       /* if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(context).isOnline()) {
                 data.get(holder.getAdapterPosition()).lecture_bookmark = !data.get(holder.getAdapterPosition()).lecture_bookmark;
@@ -857,74 +919,9 @@ public class SubAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
                 }
             }
-        }
-
-        /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(context).isOnline()) {
-                data.get(holder.getAdapterPosition()).lecture_bookmark = !data.get(holder.getAdapterPosition()).lecture_bookmark;
-                action(data.get(holder.getAdapterPosition()));
-            } else {
-                CommonUtils.showToast(context, context.getString(R.string.no_internet));
-                // Toasty.info(context, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-                return;
-            }
-        } else {
-            boolean completed = data.get(holder.getAdapterPosition()).lecture_bookmark;
-
-            data.get(holder.getAdapterPosition()).lecture_bookmark = !completed;
-            dbHelper = MyDatabase.getDatabase(context);
-            data.get(holder.getAdapterPosition()).createdDtm = getDateTime();
-            if (AppStatus.getInstance(context).isOnline()) {
-
-                action(data.get(holder.getAdapterPosition()));
-                data.get(holder.getAdapterPosition()).is_sync = true;
-                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed&&!data.get(holder.getAdapterPosition()).is_notes) {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
-                } else {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
-                            subChapters.userid, subChapters.classid,
-                            subChapters.section_id, subChapters.lecture_id
-                            , subChapters.subjectid
-                    );
-                    if(subChapter==null) {
-                        data.get(holder.getAdapterPosition()).lecture_notes="";
-                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
-                    }
-                    else
-                        dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
-
-                }
-            } else {
-                data.get(holder.getAdapterPosition()).is_sync = false;
-                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed) {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
-                } else {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
-                            subChapters.userid, subChapters.classid,
-                            subChapters.section_id, subChapters.lecture_id
-                            , subChapters.subjectid
-                    );
-                    if(subChapter==null) {
-                        data.get(holder.getAdapterPosition()).lecture_notes="";
-                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
-                    }
-                    else
-                        dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
-
-                }
-            }
-
-
         }*/
 
-       /* holder.completed.setVisibility(View.INVISIBLE);
-        holder.favourite.setVisibility(View.INVISIBLE);
-        holder.notes.setVisibility(View.INVISIBLE);
-        holder.doubts.setVisibility(View.INVISIBLE);*/
+
         //hideViewWithAnimation(holder);
         holder.favourite.postDelayed(new Runnable() {
             @Override
@@ -960,7 +957,66 @@ public class SubAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
 SubChapters d= data.get(holder.getAdapterPosition());
         data.get(holder.getAdapterPosition()).createdDtm = getDateTime();
-        if(loginType.isEmpty())
+        if(/*AppConfig.checkSDCardEnabled(context,d.userid,d.classid)&&*/AppConfig.checkSdcard(d.classid,context))
+        {
+
+            boolean completed = data.get(holder.getAdapterPosition()).lecture_completed;
+            data.get(holder.getAdapterPosition()).lecture_completed = !completed;
+            dbHelper = MyDatabase.getDatabase(context);
+            if (AppStatus.getInstance(context).isOnline()) {
+                action(data.get(holder.getAdapterPosition()));
+                data.get(holder.getAdapterPosition()).is_sync = true;
+                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed&&!data.get(holder.getAdapterPosition()).is_notes) {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
+                } else {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
+                            subChapters.userid, subChapters.classid,
+                            subChapters.section_id, subChapters.lecture_id
+                            , subChapters.subjectid
+                    );
+                    if(subChapter==null) {
+                        data.get(holder.getAdapterPosition()).lecture_notes="";
+                        data.get(holder.getAdapterPosition()).is_sync=true;
+                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
+                    }
+                    else
+                        dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
+
+                }
+            } else {
+                data.get(holder.getAdapterPosition()).is_sync = false;
+                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed) {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
+                } else {
+                    SubChapters subChapters = data.get(holder.getAdapterPosition());
+                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
+                            subChapters.userid, subChapters.classid,
+                            subChapters.section_id, subChapters.lecture_id
+                            , subChapters.subjectid
+                    );
+                    if(subChapter==null) {
+                        data.get(holder.getAdapterPosition()).is_sync=true;
+                        data.get(holder.getAdapterPosition()).lecture_notes="";
+                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
+                    }
+                    else
+                        dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
+                }
+            }
+        }else
+        {
+            if (AppStatus.getInstance(context).isOnline()) {
+                data.get(holder.getAdapterPosition()).lecture_completed = !data.get(holder.getAdapterPosition()).lecture_completed;
+                action(data.get(holder.getAdapterPosition()));
+            } else {
+                CommonUtils.showToast(context, context.getString(R.string.no_internet));
+                return;
+            }
+        }
+       /* if(loginType.isEmpty())
         {
             if (AppStatus.getInstance(context).isOnline()) {
                 data.get(holder.getAdapterPosition()).lecture_completed = !data.get(holder.getAdapterPosition()).lecture_completed;
@@ -1079,72 +1135,10 @@ SubChapters d= data.get(holder.getAdapterPosition());
                         dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
                 }
             }
-        }
-
-
-        /*data.get(holder.getAdapterPosition()).createdDtm = getDateTime();
-        if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (AppStatus.getInstance(context).isOnline()) {
-                data.get(holder.getAdapterPosition()).lecture_completed = !data.get(holder.getAdapterPosition()).lecture_completed;
-                action(data.get(holder.getAdapterPosition()));
-            } else {
-                CommonUtils.showToast(context, context.getString(R.string.no_internet));
-                return;
-            }
-        } else {
-            boolean completed = data.get(holder.getAdapterPosition()).lecture_completed;
-            data.get(holder.getAdapterPosition()).lecture_completed = !completed;
-            dbHelper = MyDatabase.getDatabase(context);
-            if (AppStatus.getInstance(context).isOnline()) {
-                action(data.get(holder.getAdapterPosition()));
-                data.get(holder.getAdapterPosition()).is_sync = true;
-                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed&&!data.get(holder.getAdapterPosition()).is_notes) {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
-                } else {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
-                            subChapters.userid, subChapters.classid,
-                            subChapters.section_id, subChapters.lecture_id
-                            , subChapters.subjectid
-                    );
-                    if(subChapter==null) {
-                        data.get(holder.getAdapterPosition()).lecture_notes="";
-                        data.get(holder.getAdapterPosition()).is_sync=true;
-                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
-                    }
-                    else
-                        dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
-
-                }
-            } else {
-                data.get(holder.getAdapterPosition()).is_sync = false;
-                if (!data.get(holder.getAdapterPosition()).lecture_bookmark && !data.get(holder.getAdapterPosition()).lecture_completed) {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    dbHelper.subjectChapterDAO().deleteBookmark(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid);
-                } else {
-                    SubChapters subChapters = data.get(holder.getAdapterPosition());
-                    SubChapters subChapter = dbHelper.subjectChapterDAO().getBookmarkorData(
-                            subChapters.userid, subChapters.classid,
-                            subChapters.section_id, subChapters.lecture_id
-                            , subChapters.subjectid
-                    );
-                    if(subChapter==null) {
-                        data.get(holder.getAdapterPosition()).is_sync=true;
-                        data.get(holder.getAdapterPosition()).lecture_notes="";
-                        dbHelper.subjectChapterDAO().addBookMark(data.get(holder.getAdapterPosition()));
-                    }
-                    else
-                    dbHelper.subjectChapterDAO().updateBookmarkCompleted(subChapters.userid, subChapters.classid, subChapters.section_id, subChapters.lecture_id, subChapters.subjectid,subChapters.is_sync,subChapters.lecture_bookmark,subChapters.lecture_completed,subChapters.is_notes);
-                }
-            }
         }*/
 
-        //hideViewWithAnimation(holder);
-        /*holder.completed.setVisibility(View.INVISIBLE);
-        holder.favourite.setVisibility(View.INVISIBLE);
-        holder.notes.setVisibility(View.INVISIBLE);
-        holder.doubts.setVisibility(View.INVISIBLE);*/
+
+
         holder.completed.postDelayed(new Runnable() {
             @Override
             public void run() {
