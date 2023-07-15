@@ -437,9 +437,21 @@ public class ReviewQuiz extends AppCompatActivity {
         access_token = userInfo[1];
      String   userid = userInfo[0];;
         loginType = userInfo[2];
+        if(/*AppConfig.checkSDCardEnabled(_this,userid,classid)&&*/AppConfig.checkSdcard(classid,getApplicationContext()))
+        {
+            if (lectureId==null||lectureId.equalsIgnoreCase("0"))
+                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id;
+            else
+                basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id + "/" + lectureId;
+        }else
+        {
+            if (lectureId==null||lectureId.equalsIgnoreCase("0"))
+                basePath = AppConfig.getOnlineURL(classid, false) + subjectId + "/" + section_id;
+            else
+                basePath = AppConfig.getOnlineURL(classid, false) + subjectId + "/" + section_id + "/" + lectureId;
+        }
 
-
-        if(loginType.isEmpty())
+        /*if(loginType.isEmpty())
         {
             if (lectureId==null||lectureId.equalsIgnoreCase("0"))
                 basePath = AppConfig.getOnlineURL(classid, false) + subjectId + "/" + section_id;
@@ -466,20 +478,8 @@ public class ReviewQuiz extends AppCompatActivity {
                 basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id;
             else
                 basePath = "file://" + AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id + "/" + lectureId;
-        }
-
-       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            if (lectureId==null||lectureId.equalsIgnoreCase("0"))
-                basePath = AppConfig.getOnlineURL(classid) + subjectId + "/" + section_id;
-            else
-                basePath = AppConfig.getOnlineURL(classid) + subjectId + "/" + section_id + "/" + lectureId;
-        }
-        else {
-            if (lectureId==null||lectureId.equalsIgnoreCase("0"))
-                basePath = "file://" + AppConfig.getSdCardPath(classid) + subjectId + "/" + section_id;
-            else
-                basePath = "file://" + AppConfig.getSdCardPath(classid) + subjectId + "/" + section_id + "/" + lectureId;
         }*/
+
 
         if(!basePath.trim().endsWith("/"))
             basePath=basePath+"/";

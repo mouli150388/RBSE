@@ -165,9 +165,27 @@ public class EditNotesActivity extends AppCompatActivity {
 
                     imm.hideSoftInputFromWindow(yourEditText.getWindowToken(), InputMethodManager.HIDE_IMPLICIT_ONLY);
 
+                    if(/*AppConfig.checkSDCardEnabled(_this,user_id,classid)&&*/AppConfig.checkSdcard(classid,getApplicationContext()))
+                    {
+                        if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
+                            saveNotes(yourEditText.getText().toString());
+                            saveNotesIntoLocal(false);
+                        }else
+                        {
+                            saveNotesIntoLocal(true);
+                        }
+                    }else
+                    {
+                        if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
+                            saveNotes(yourEditText.getText().toString());
+                        } else {
+                            // finish();
+                            CommonUtils.showToast(getApplicationContext(),getString(R.string.no_internet));
+                            // Toasty.info(VideoActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+                        }
+                    }
 
-
-                    if(loginType.isEmpty())
+                   /* if(loginType.isEmpty())
                     {
                         if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
                             saveNotes(yourEditText.getText().toString());
@@ -206,35 +224,35 @@ public class EditNotesActivity extends AppCompatActivity {
                         {
                             saveNotesIntoLocal(true);
                         }
-                    }
-
-                    /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-                        if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
-                            saveNotes(yourEditText.getText().toString());
-                        } else {
-                           // finish();
-                            CommonUtils.showToast(getApplicationContext(),getString(R.string.no_internet));
-                            // Toasty.info(VideoActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-                        }
-
-                    }else
-                    {
-                        if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
-                            saveNotes(yourEditText.getText().toString());
-                            saveNotesIntoLocal(false);
-                        }else
-                        {
-                            saveNotesIntoLocal(true);
-                        }
-
                     }*/
+
+
 
 
 
                 }
             });
+            if(/*AppConfig.checkSDCardEnabled(_this,user_id,classid)&&*/AppConfig.checkSdcard(classid,getApplicationContext()))
+            {
+                filePath= AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id + "/" + lecture_id + "/" + "mynotes.txt";
 
-            if(loginType.isEmpty())
+                getNotesFromLocal();
+            }else
+            {
+                if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
+                    try {
+                        getNotes();
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
+                } else {
+                    // finish();
+                    CommonUtils.showToast(getApplicationContext(),getString(R.string.no_internet));
+                    // Toasty.info(VideoActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
+                }
+
+            }
+            /*if(loginType.isEmpty())
             {
                 if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
                     try {
@@ -275,28 +293,9 @@ public class EditNotesActivity extends AppCompatActivity {
                 filePath= AppConfig.getSdCardPath(classid,getApplicationContext()) + subjectId + "/" + section_id + "/" + lecture_id + "/" + "mynotes.txt";
 
                 getNotesFromLocal();
-            }
-
-          /*  if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-                if (AppStatus.getInstance(EditNotesActivity.this).isOnline()) {
-                    try {
-                        getNotes();
-                    } catch (UnsupportedEncodingException e) {
-                        e.printStackTrace();
-                    }
-                } else {
-                   // finish();
-                    CommonUtils.showToast(getApplicationContext(),getString(R.string.no_internet));
-                    // Toasty.info(VideoActivity.this, "There is no internet.", Toast.LENGTH_SHORT, true).show();
-                }
-
-            }else
-            {
-
-                filePath= AppConfig.getSdCardPath(classid) + subjectId + "/" + section_id + "/" + lecture_id + "/" + "mynotes.txt";
-
-                getNotesFromLocal();
             }*/
+
+
 
 
         }

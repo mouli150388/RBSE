@@ -449,7 +449,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.lnr_syllabus:
                 AppController.getInstance().playAudio(R.raw.button_click);
-                if (AppConfig.checkSDCardEnabled(_this, userid, classId) && AppConfig.checkSdcard(classId,getContext())) {
+                if (/*AppConfig.checkSDCardEnabled(_this, userid, classId) &&*/ AppConfig.checkSdcard(classId,getContext())) {
                     web_intent = new Intent(_this, WebViewTestActivity.class);
                     web_intent.putExtra("data_path", "file:///" + AppConfig.getFAQSSDCardPath(getContext()));
                     web_intent.putExtra("name", getResources().getString(R.string.syllabus));
@@ -469,10 +469,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.lnr_complete:
                 AppController.getInstance().playAudio(R.raw.button_click);
-                if (!AppConfig.checkSDCardEnabled(_this, userid, classId) && !AppStatus.getInstance(_this).isOnline()) {
-                    CommonUtils.showToast(_this, getString(R.string.no_internet));
-                    return;
-                }
+
 
                 startActivity(new Intent(_this, CompletedTaskActivity.class));
                 _this.overridePendingTransition(R.anim.right_in, R.anim.left_out);
@@ -495,7 +492,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.lnr_terms:
                 AppController.getInstance().playAudio(R.raw.button_click);
-                if (AppConfig.checkSDCardEnabled(_this, userid, classId) && AppConfig.checkSdcard(classId,getContext())) {
+                if (/*AppConfig.checkSDCardEnabled(_this, userid, classId) &&*/ AppConfig.checkSdcard(classId,getContext())) {
                     web_intent = new Intent(_this, WebViewTestActivity.class);
                     web_intent.putExtra("data_path", "file:///" + AppConfig.getFAQSSDCardPath(getContext()) + "terms_of_use_m.htm");
                     web_intent.putExtra("name", getResources().getString(R.string.terms_conditions));
@@ -516,7 +513,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.lnr_about:
                 AppController.getInstance().playAudio(R.raw.button_click);
-                if (AppConfig.checkSDCardEnabled(_this, userid, classId) && AppConfig.checkSdcard(classId,getContext())) {
+                if (/*AppConfig.checkSDCardEnabled(_this, userid, classId) &&*/ AppConfig.checkSdcard(classId,getContext())) {
                     web_intent = new Intent(_this, WebViewTestActivity.class);
                     web_intent.putExtra("data_path", "file:///" + AppConfig.getFAQSSDCardPath(getContext()) + "about_us_m.htm");
                     web_intent.putExtra("name", getResources().getString(R.string.aboutcompany));
@@ -536,7 +533,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                 break;
             case R.id.lnr_faqs:
                 AppController.getInstance().playAudio(R.raw.button_click);
-                if (AppConfig.checkSDCardEnabled(_this, userid, classId) && AppConfig.checkSdcard(classId,getContext())) {
+                if (/*AppConfig.checkSDCardEnabled(_this, userid, classId) && */AppConfig.checkSdcard(classId,getContext())) {
                     web_intent = new Intent(_this, WebViewTestActivity.class);
                     web_intent.putExtra("data_path", "file:///" + AppConfig.getFAQSSDCardPath(getContext()) + "faqs_m.htm");
                     web_intent.putExtra("name", getResources().getString(R.string.faq));
@@ -577,7 +574,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
 //                break;
             case R.id.lnr_privacy:
                 AppController.getInstance().playAudio(R.raw.button_click);
-                if (AppConfig.checkSDCardEnabled(_this, userid, classId) && AppConfig.checkSdcard(classId,getContext())) {
+                if (/*AppConfig.checkSDCardEnabled(_this, userid, classId) &&*/ AppConfig.checkSdcard(classId,getContext())) {
                     web_intent = new Intent(_this, WebViewTestActivity.class);
                     web_intent.putExtra("data_path", "file:///" + AppConfig.getFAQSSDCardPath(getContext()) + "privacy_policy_m.htm");
                     web_intent.putExtra("name", getResources().getString(R.string.privacy));
@@ -603,7 +600,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
                         CommonUtils.showToast(_this, getString(R.string.no_internet));
                         return;
                     }
-                    if (AppConfig.checkSDCardEnabled(_this, userid, classId) && AppConfig.checkSdcard(classId,getContext())) {
+                    if (/*AppConfig.checkSDCardEnabled(_this, userid, classId) &&*/ AppConfig.checkSdcard(classId,getContext())) {
                         SessionManager.logoutUser(_this);
                         Intent intent = new Intent(_this, LoginActivity.class);
                         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_CLEAR_TASK);

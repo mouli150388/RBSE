@@ -559,8 +559,39 @@ public class SectionPerformanceFragment extends Fragment {
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         Date date = new Date();
 
+        if(/*AppConfig.checkSDCardEnabled(getActivity(),userId,classId)&&*/AppConfig.checkSdcard(classId,getContext()))
+        {
+            new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    MyDatabase dbhelper = MyDatabase.getDatabase(getActivity());
 
-        if(loginType.isEmpty())
+
+                    try {
+
+
+
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+
+                            }
+                        });
+
+
+
+
+
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+                }
+            }).start();
+        }else
+        {
+            callOnline();
+        }
+       /* if(loginType.isEmpty())
         {
             callOnline();
         }else if (loginType.equalsIgnoreCase("O")){
@@ -625,40 +656,9 @@ public class SectionPerformanceFragment extends Fragment {
                     }
                 }
             }).start();
-        }
-
-       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
-            callOnline();
-        } else {
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    MyDatabase dbhelper = MyDatabase.getDatabase(getActivity());
-
-
-                    try {
-
-
-
-                        getActivity().runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-
-                            }
-                        });
-
-
-
-
-
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
-                }
-            }).start();
-
-
         }*/
+
+
 
     }
 

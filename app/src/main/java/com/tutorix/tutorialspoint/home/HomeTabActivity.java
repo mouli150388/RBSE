@@ -527,7 +527,7 @@ public class HomeTabActivity extends AppCompatActivity implements HomeView, View
 
                 Intent i = new Intent(context, SyncService.class);  //is any of that needed?  idk.
 
-                if (AppConfig.checkSDCardEnabled(getApplicationContext(), userid, classId) && AppConfig.checkSdcard(classId,getApplicationContext()))
+                if (/*AppConfig.checkSDCardEnabled(getApplicationContext(), userid, classId) && */AppConfig.checkSdcard(classId,getApplicationContext()))
                     SyncService.enqueueWork(context, i);
                 /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()) {
 
@@ -541,7 +541,7 @@ public class HomeTabActivity extends AppCompatActivity implements HomeView, View
                 // not connected to the internet
                 /*if (loginType.equalsIgnoreCase("O") || loginType.isEmpty())
                         showNetworkAlert();*/
-                if (!(AppConfig.checkSDCardEnabled(getApplicationContext(), userid, classId) && AppConfig.checkSdcard(classId,getApplicationContext())))
+                if (/*!(AppConfig.checkSDCardEnabled(getApplicationContext(), userid, classId) && */AppConfig.checkSdcard(classId,getApplicationContext()))
                     showNetworkAlert();
             }
 

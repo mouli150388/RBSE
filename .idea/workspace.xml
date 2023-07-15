@@ -19,6 +19,17 @@
   <component name="ChangeListManager">
     <list default="true" id="111cee8f-5774-4e45-9a74-cbbc5252970f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/EditNotesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/EditNotesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/FacultiesActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/FacultiesActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/ProfileActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/activities/ProfileActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/SectionPerformanceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/anaylysis/SectionPerformanceFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/fragments/MenuFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/fragments/MenuFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeTabActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/home/HomeTabActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/ReviewQuiz.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/quiz/ReviewQuiz.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/tutorix/tutorialspoint/video/VideoActivityMVP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-hi/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-hi/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

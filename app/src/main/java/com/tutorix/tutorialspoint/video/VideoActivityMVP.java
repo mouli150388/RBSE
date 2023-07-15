@@ -1584,40 +1584,7 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
                         boolean error = jObj.getBoolean(Constants.errorFlag);
 
 
-                        if(loginType.isEmpty())
-                        {
-
-                        }else if (loginType.equalsIgnoreCase("O")){
-
-                            if(AppConfig.checkSDCardEnabled(_this,userid,classid)&&AppConfig.checkSdcard(classid,getApplicationContext()))
-                            {
-                                MyDatabase database = MyDatabase.getDatabase(_this);
-                                try {
-                                    TrackModel chapters = new TrackModel();
-                                    chapters.activity_type = "V";
-                                    chapters.activity_duration = a;
-                                    chapters.activity_date = getDateTime();
-                                    chapters.quiz_id = "";
-                                    chapters.subject_id = subjectId;
-                                    chapters.section_id = section_id;
-                                    chapters.lecture_id = fjson.getString("lecture_id");
-                                    chapters.class_id = classid;
-                                    chapters.user_id = userid;
-                                    chapters.videoduratrion = videoDuration;
-
-                                    chapters.lecture_name = lectureName;
-
-                                    chapters.is_sync = true;
-                                    chapters.duration_insec = CommonUtils.getSeconds(chapters.activity_duration);
-                                    database.trackDAO().insertTrack(chapters);
-                                } catch (JSONException e) {
-                                    e.printStackTrace();
-                                }
-                            }else
-                            {
-
-                            }
-                        }else
+                        if(AppConfig.checkSDCardEnabled(_this,userid,classid)&&AppConfig.checkSdcard(classid,getApplicationContext()))
                         {
                             MyDatabase database = MyDatabase.getDatabase(_this);
                             try {
@@ -1641,40 +1608,13 @@ public class VideoActivityMVP extends AppCompatActivity implements VideoRenderer
                             } catch (JSONException e) {
                                 e.printStackTrace();
                             }
-                        }
-
-
-                       /* if (loginType.equalsIgnoreCase("O") || loginType.isEmpty()){
-
                         }else
                         {
-                            MyDatabase database = MyDatabase.getDatabase(_this);
-                            try {
-                                TrackModel chapters = new TrackModel();
-                                chapters.activity_type = "V";
-                                chapters.activity_duration = a;
-                                chapters.activity_date = getDateTime();
-                                chapters.quiz_id = "";
-                                chapters.subject_id = subjectId;
-                                chapters.section_id = section_id;
-                                chapters.lecture_id = fjson.getString("lecture_id");
-                                chapters.class_id = classid;
-                                chapters.user_id = userid;
-                                chapters.videoduratrion = videoDuration;
-
-                                chapters.lecture_name = lectureName;
-
-                                chapters.is_sync = true;
-                                chapters.duration_insec = CommonUtils.getSeconds(chapters.activity_duration);
-                                database.trackDAO().insertTrack(chapters);
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
 
                         }
-                        if (typeRelease) {
-                            //finish();
-                        }*/
+
+
+
 
                     } catch (JSONException e) {
                         e.printStackTrace();

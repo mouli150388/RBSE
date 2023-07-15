@@ -327,14 +327,14 @@ public class HomeFragment extends Fragment {
         db=MyDatabase.getDatabase(getActivity());
         ActivationDetails aDetails = db.activationDAO().getActivationDetails(userid, classId);
 
-        if (aDetails != null && aDetails.activation_key != null && !aDetails.activation_key.isEmpty()) {
+       /* if (aDetails != null && aDetails.activation_key != null && !aDetails.activation_key.isEmpty()) {
 
             referral_layout.setVisibility(View.GONE);
         }else
         {
             referral_layout.setVisibility(View.VISIBLE);
-        }
-
+        }*/
+        referral_layout.setVisibility(View.GONE);
         try{
             lnr_language_selection.setVisibility(View.GONE);
             int crnt_cls=Integer.parseInt(classId)+5;

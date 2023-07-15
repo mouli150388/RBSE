@@ -30,7 +30,6 @@ import com.tutorix.tutorialspoint.AppController;
 import com.tutorix.tutorialspoint.R;
 import com.tutorix.tutorialspoint.SessionManager;
 import com.tutorix.tutorialspoint.adapters.FacultiesAdapter;
-import com.tutorix.tutorialspoint.utility.AppStatus;
 import com.tutorix.tutorialspoint.utility.CommonUtils;
 import com.tutorix.tutorialspoint.utility.Constants;
 import com.tutorix.tutorialspoint.utility.CustomDialog;
@@ -92,7 +91,7 @@ public class FacultiesActivity extends AppCompatActivity {
         adapter=new FacultiesAdapter(_this);
         viewpagerAnalysis.setAdapter(adapter);
         viewpagerAnalysis.setPageTransformer(true,new ParallaxPageTransformer());
-        if (AppStatus.getInstance(_this).isOnline()) {
+       /* if (AppStatus.getInstance(_this).isOnline()) {
             initList(access_token, user_id);
         } else {
             if(AppConfig.checkSDCardEnabled(_this,user_id,class_id)&&AppConfig.checkSdcard(class_id,getApplicationContext()))
@@ -102,14 +101,16 @@ public class FacultiesActivity extends AppCompatActivity {
             {
                 CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet_message));
             }
-           /* if(loginType.equalsIgnoreCase("S"))
-            {
-                initList(access_token, user_id);
-            }else
-            CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet_message));
-           */
-        }
 
+        }
+*/
+        if(/*AppConfig.checkSDCardEnabled(_this,user_id,class_id)&&*/AppConfig.checkSdcard(class_id,getApplicationContext()))
+        {
+            initList(access_token, user_id);
+        }else
+        {
+            CommonUtils.showToast(getApplicationContext(), getString(R.string.no_internet_message));
+        }
         viewpagerAnalysis.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
@@ -137,7 +138,7 @@ public class FacultiesActivity extends AppCompatActivity {
     }
 
     private void initList(String access_token, String user_id) {
-        if(AppConfig.checkSDCardEnabled(_this,user_id,class_id)&&AppConfig.checkSdcard(class_id,getApplicationContext()))
+        if(/*AppConfig.checkSDCardEnabled(_this,user_id,class_id)&&*/AppConfig.checkSdcard(class_id,getApplicationContext()))
         {
 
             File sdcard = new File(AppConfig.getFAQSSDCardPath(getApplicationContext()));

@@ -135,7 +135,7 @@ public class ProfileActivity extends AppCompatActivity {
         setProfileLogo(profile.photo);
 
 
-        if (!(profile.user_name).isEmpty()) {
+        if (profile.user_name!=null&&!(profile.user_name).isEmpty()) {
             tvUserName.setText("Name: " + capitalizeFirstChar(profile.user_name));
         }
         if (!profile.mobile_number.isEmpty()) {
@@ -143,46 +143,46 @@ public class ProfileActivity extends AppCompatActivity {
         }
 
 
-        if (profile.father_name.isEmpty() || profile.father_name.trim().equals("null")) {
+        if (profile.father_name==null||profile.father_name.isEmpty() || profile.father_name.trim().equals("null")) {
             tvUserFatherName.setHint("Father Name");
         } else {
             tvUserFatherName.setText("Father Name: " + capitalizeFirstChar(profile.father_name));
 
         }
 
-        if (profile.email_id.equalsIgnoreCase("null") || profile.email_id.isEmpty()) {
+        if (profile.email_id==null||profile.email_id.equalsIgnoreCase("null") || profile.email_id.isEmpty()) {
             tvUserMailId.setHint("Email Id");
         } else {
             tvUserMailId.setText("Email Id: " + profile.email_id);
 
         }
-        if (profile.address.isEmpty()) {
+        if (profile.address==null||profile.address.isEmpty()) {
             tvUserAddress.setHint("Address");
         } else {
             tvUserAddress.setText("Address: " + capitalizeFirstChar(profile.address));
 
         }
 
-        if (profile.city.isEmpty()) {
+        if (profile.city==null||profile.city.isEmpty()) {
             tvUserCity.setHint("City");
         } else {
             tvUserCity.setText("City: " + capitalizeFirstChar(profile.city));
 
         }
 
-        if (profile.state.isEmpty()) {
+        if (profile.state==null||profile.state.isEmpty()) {
             tvUserState.setHint("State");
         } else {
             tvUserState.setText("State: " + capitalizeFirstChar(profile.state));
         }
 
-        if (profile.postal_code.isEmpty()) {
+        if (profile.postal_code==null||profile.postal_code.isEmpty()) {
             userZip.setHint("Postal Code");
         } else {
             userZip.setText("Postal: " + capitalizeFirstChar(profile.postal_code));
         }
 
-        if (profile.country_code.isEmpty()) {
+        if (profile.country_code==null||profile.country_code.isEmpty()) {
             userCountry.setHint("Country");
         } else {
             userCountry.setText("Country: " + capitalizeFirstChar(checkCountry(profile.country_code)));
@@ -191,10 +191,10 @@ public class ProfileActivity extends AppCompatActivity {
         @SuppressLint("SimpleDateFormat")
         SimpleDateFormat sdf = new SimpleDateFormat("dd-MMM-yyyy");
         String gender_dob = "";
-        if (profile.gender.isEmpty() &&
+        if (profile.gender==null||profile.gender.isEmpty() &&
                 profile.date_of_birth.isEmpty()) {
            // tvClassName.setVisibility(View.GONE);
-        } else if (!profile.gender.isEmpty() &&
+        } else if (profile.gender!=null&&!profile.gender.isEmpty() &&
                 !profile.date_of_birth.isEmpty()) {
             try {
                 gender_dob = gender_dob +
@@ -208,7 +208,7 @@ public class ProfileActivity extends AppCompatActivity {
         } else if (!profile.gender.isEmpty()) {
             gender_dob = gender_dob + capitalizeFirstChar(profile.gender);
 
-        } else if (!profile.date_of_birth.isEmpty()) {
+        } else if (profile.date_of_birth!=null||!profile.date_of_birth.isEmpty()) {
            /* try {
                 gender_dob = gender_dob +
                         CommonUtils.calculateAge(sdf.parse(profile.date_of_birth)).getYears();
@@ -221,56 +221,56 @@ public class ProfileActivity extends AppCompatActivity {
 
         //tvClassName.setText(gender_dob);
 
-        if (profile.school_name.isEmpty()) {
+        if (profile.school_name==null||profile.school_name.isEmpty()) {
             tvSchoolName.setHint("School name");
         } else {
             tvSchoolName.setText("School name: " + profile.school_name);
 
         }
 
-        if (profile.roll_number.isEmpty()) {
+        if (profile.roll_number==null||profile.roll_number.isEmpty()) {
             tvRollNo.setHint("Roll no");
         } else {
             tvRollNo.setText("Roll no: " + profile.roll_number);
 
         }
 
-        if (profile.section_name.isEmpty()) {
+        if (profile.section_name==null||profile.section_name.isEmpty()) {
             tvSectionName.setHint("Section name");
         } else {
             tvSectionName.setText("Section name: " + profile.section_name);
 
         }
 
-        if (profile.school_address.isEmpty()) {
+        if (profile.school_address==null||profile.school_address.isEmpty()) {
             tv_schl_address.setHint("School Address");
         } else {
             tv_schl_address.setText("Address : " + profile.school_address);
 
         }
 
-        if (profile.school_city.isEmpty()) {
+        if (profile.school_city==null||profile.school_city.isEmpty()) {
             tv_schl_city.setHint("School City");
         } else {
             tvSectionName.setText("City : " + profile.school_city);
 
         }
 
-        if (profile.school_state.isEmpty()) {
+        if (profile.school_state==null||profile.school_state.isEmpty()) {
             tv_schl_state.setHint("School State ");
         } else {
             tv_schl_state.setText("State : " + profile.school_state);
 
         }
 
-        if (profile.school_postal_code.isEmpty()) {
+        if (profile.school_postal_code==null||profile.school_postal_code.isEmpty()) {
             tv_schl_zip.setHint("School Postal ");
         } else {
             tv_schl_zip.setText("Postal : " + profile.school_postal_code);
 
         }
 
-        if (profile.school_country_code.isEmpty()) {
+        if (profile.school_country_code==null||profile.school_country_code.isEmpty()) {
             tv_schl_country.setHint("School Country ");
         } else {
             tv_schl_country.setText("Country : " + checkCountry(profile.school_country_code));

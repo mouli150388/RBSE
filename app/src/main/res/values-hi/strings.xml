@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">BSER</string>
+    <string name="app_name">RBSE</string>
     <string name="title_activity_select_subject">विषय चुनें</string>
 
     <string name="action_settings">सेटिंग्स</string>
